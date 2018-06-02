@@ -1,0 +1,24 @@
+{
+  "name": "@fibjs/types",
+  "version": "1.0.0-dev",
+  "description": "fibjs's *.d.ts files for internal modules.",
+  "main": "index.js",
+  "typings": "declare",
+  "scripts": {
+    "test": "fibjs test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibjs/fib-types.git"
+  },
+  "keywords": [
+    "fibjs",
+    "typescript"
+  ],
+  "author": "richardo2016 <richardo2016@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fibjs/fib-types/issues"
+  },
+  "homepage": "https://github.com/fibjs/fib-types#readme"
+}
