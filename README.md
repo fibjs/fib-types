@@ -1,6 +1,12 @@
 # fib-types
 fibjs's *.d.ts files for internal modules.
 
+## Prerequisite
+
+- fibjs `> 0.25.0`
+
+Run `fibjs test` to check if fibjs installed correctly :)
+
 ## Usage
 
 ```
@@ -12,7 +18,7 @@ npm i -S fib-types
 ```
 
 ### Hint with IDE
-if you use some IDE support auto-complete feature for typescript(such as [Visual Studio Code]), auto-complete platte would display when you input sub-characters for module name('fs', 'vm' etc)
+if you use some IDE supporting auto-complete feature for typescript(such as [Visual Studio Code]), auto-complete platte would display when you typing sub-characters of module name('fs', 'vm' etc)
 
 To enable autocomplate of [Visual Studio Code], you must use `import` keyword to introduce the module rather than `'require'`, fibjs would auto compile it with internal typescript compiler.
 
@@ -30,6 +36,6 @@ import fs from 'fs' // wrong
 
 - [x] Basic type definition for internal C++ modules
 - [ ] Basic type definition for internal Javascript modules
-- [ ] For Every Module, Import its dependency Interface rather import all interfaces
+- [ ] For Every Module, Import its dependency Interface instead(now I introduce all interfaces)
 
 [Visual Studio Code]:https://www.visualstudio.com/
