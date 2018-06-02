@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief 可移动当前指针的流对象接口

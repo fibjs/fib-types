@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief XmlProcessingInstruction 对象表示 xml 处理指令

@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief 独立线程工作对象

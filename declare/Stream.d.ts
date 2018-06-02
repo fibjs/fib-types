@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief 流操作对象，用于二进制数据流读写

@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief XmlText 对象表示元素或属性的文本内容

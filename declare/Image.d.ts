@@ -14,6 +14,7 @@
 
 /// <reference path="gd.d.ts" />
 
+
 /** module Or Internal Object */
 /**
 	* @brief 图像处理对象，用以对图像进行转换，绘制，存储等操作

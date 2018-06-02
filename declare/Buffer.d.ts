@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief 二进制数据缓存对象，用于 io 读写的数据处理

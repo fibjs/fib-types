@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief XmlAttr 对象表示 XmlElement 对象的属性

@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief XmlComment 对象表示文档中注释节点的内容

@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief XmlCharacterData 接口提供了 XmlText 和 XmlComment 节点的常用功能
