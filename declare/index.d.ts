@@ -65,13 +65,27 @@ import _Global from 'global';
 
 declare global {
 
+		/** const Buffer: typeof _Global.Buffer */
+		/** const Int64: typeof _Global.Int64 */
+		/** const console: typeof _Global.console */
+		/** const process: typeof _Global.process */
+		/** const Master: typeof _Global.Master */
+		/** const global: typeof _Global.global */
+		/** const run: typeof _Global.run */
 		const require: typeof _Global.require
+		/** const argv: typeof _Global.argv */
 		const __filename: string
 	
 		const __dirname: string
 	
+		/** const setTimeout: typeof _Global.setTimeout */
+		/** const clearTimeout: typeof _Global.clearTimeout */
+		/** const setInterval: typeof _Global.setInterval */
+		/** const clearInterval: typeof _Global.clearInterval */
 		const setHrInterval: typeof _Global.setHrInterval
 		const clearHrInterval: typeof _Global.clearHrInterval
+		/** const setImmediate: typeof _Global.setImmediate */
+		/** const clearImmediate: typeof _Global.clearImmediate */
 		const GC: typeof _Global.GC
 		const repl: typeof _Global.repl
 }
