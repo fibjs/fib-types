@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief XmlCDATASection 对象表示文档中的 CDATA 区段

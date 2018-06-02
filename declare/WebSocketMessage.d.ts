@@ -14,6 +14,7 @@
 
 /// <reference path="ws.d.ts" />
 
+
 /** module Or Internal Object */
 /**
 	* @brief websocket 消息对象

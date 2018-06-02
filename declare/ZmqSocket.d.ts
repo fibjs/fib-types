@@ -14,6 +14,7 @@
 
 /// <reference path="zmq.d.ts" />
 
+
 /** module Or Internal Object */
 /**
 	* @brief ZeroMQ 套接口对象

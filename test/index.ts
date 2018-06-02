@@ -1,0 +1,1 @@
+require('./module-fs.ts')

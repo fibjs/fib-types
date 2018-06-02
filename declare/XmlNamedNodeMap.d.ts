@@ -12,6 +12,7 @@
 
 
 
+
 /** module Or Internal Object */
 /**
 	* @brief XmlNamedNodeMap 对象表示一个无顺序的属性列表

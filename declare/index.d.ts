@@ -60,15 +60,20 @@
 /// <reference path="zlib.d.ts" />
 /// <reference path="zmq.d.ts" />
 
-import _Process from 'process';
 import _Global from 'global';
-import _Console from 'console';
+/// <reference path="Buffer.d.ts" />
 
 declare global {
-	const process: typeof _Process;
-	const global: typeof _Global;
-	const require: typeof _Global.require;
+
+		const require: typeof _Global.require
+		const __filename: string
+	
+		const __dirname: string
+	
+		const setHrInterval: typeof _Global.setHrInterval
+		const clearHrInterval: typeof _Global.clearHrInterval
+		const GC: typeof _Global.GC
+		const repl: typeof _Global.repl
 }
-declare const console: typeof _Console;
 
 
