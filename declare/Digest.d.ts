@@ -42,6 +42,16 @@ declare class Digest extends _object {
 		*/
 	digest(data: Buffer): Buffer;
 
+	/**
+		* 
+		* @brief 计算并返回摘要
+		* @return 返回摘要的二进制数据
+		* 
+		* 
+		* 
+		*/
+	digest(): Buffer;
+
 } /** endof class */
 
 /** } /** endof `module Or Internal Object` */

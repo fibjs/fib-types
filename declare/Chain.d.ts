@@ -40,6 +40,16 @@ declare class Chain extends Handler {
 		*/
 	append(hdlrs: any[]): void;
 
+	/**
+		* 
+		* @brief 添加处理器
+		* @param hdlr 内置消息处理器，处理函数，链式处理数组，路由对象，详见 mq.Handler
+		* 
+		* 
+		* 
+		*/
+	append(hdlr: Handler): void;
+
 } /** endof class */
 
 /** } /** endof `module Or Internal Object` */

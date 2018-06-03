@@ -90,6 +90,18 @@ declare class ZipFile extends _object {
 
 	/**
 		* 
+		* @brief 解压指定文件到流
+		* @param member 指定要解压的文件名
+		* @param strm 指定要解压到的流
+		* @param password 解压密码, 默认没有密码
+		* 
+		* 
+		* @async
+		*/
+	extract(member: string, strm: SeekableStream, password?: string/** = ""*/): void;
+
+	/**
+		* 
 		* @brief 解压所有文件到指定路径
 		* @param path 指定要解压到的路径
 		* @param password 解压密码, 默认没有密码
@@ -110,6 +122,30 @@ declare class ZipFile extends _object {
 		* @async
 		*/
 	write(filename: string, inZipName: string, password?: string/** = ""*/): void;
+
+	/**
+		* 
+		* @brief 写入指定文件到压缩文件
+		* @param data 指定要写入的文件数据
+		* @param inZipName 压缩在zip文件内的文件名
+		* @param password 解压密码, 默认没有密码
+		* 
+		* 
+		* @async
+		*/
+	write(data: Buffer, inZipName: string, password?: string/** = ""*/): void;
+
+	/**
+		* 
+		* @brief 写入指定文件到压缩文件
+		* @param strm 指定要写入文件数据流
+		* @param inZipName 压缩在zip文件内的文件名
+		* @param password 解压密码, 默认没有密码
+		* 
+		* 
+		* @async
+		*/
+	write(strm: SeekableStream, inZipName: string, password?: string/** = ""*/): void;
 
 	/**
 		* 

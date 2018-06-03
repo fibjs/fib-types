@@ -46,6 +46,17 @@ declare class SslSocket extends Stream {
 
 	/**
 		* 
+		* @brief SslSocket 构造函数，创建一个新的 SslSocket 对象
+		* @param crt X509Cert 证书，用于客户端验证服务器
+		* @param key PKey 私钥，用于与客户端会话
+		* 
+		* 
+		* 
+		*/
+	constructor(crt: X509Cert, key: PKey);
+
+	/**
+		* 
 		* @brief 在给定的连接上连接 ssl 连接，客户端模式
 		* @param s 给定的底层连接
 		* @param server_name 指定服务器名称，可缺省

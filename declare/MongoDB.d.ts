@@ -44,6 +44,18 @@ declare class MongoDB extends _object {
 
 	/**
 		* 
+		* @brief 指定一个简单的 MongoDB 数据库命令
+		* @param cmd 指定命令名
+		* @param arg 指定命令参数
+		* @return 返回命令执行结果
+		* 
+		* 
+		* 
+		*/
+	runCommand(cmd: string, arg: any): Object;
+
+	/**
+		* 
 		* @brief 生成一个 mongodb _objectid 对象
 		* @param hexStr 初始化 16 进制字符串，缺省生成新的 id
 		* @return 新 _objectid 对象

@@ -286,6 +286,18 @@ declare module "xml" {
 
 	/**
 		* 
+		* @brief 解析 xml/html，并创建 XmlDocument 对象，解析时会根据指定的语种转换
+		* @param source 指定需要解析的 xml/html 二进制数据
+		* @param type 指定文本类型，缺省为 text/xml，也可指定为 text/html
+		* @return 返回创建的 XmlDocument 对象
+		* 
+		* 
+		* 
+		*/
+	export function parse(source: Buffer, type?: string/** = "text/xml"*/): XmlDocument;
+
+	/**
+		* 
 		* @brief 序列化 XmlNode 为字符串
 		* @param node 指定需要序列化的 XmlNode
 		* @return 返回序列化的字符串

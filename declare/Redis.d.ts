@@ -75,12 +75,30 @@ declare class Redis extends _object {
 
 	/**
 		* 
+		* @brief 同时设置一个或多个 key-value 对。如果某个给定 key 已经存在，那么 MSET 会用新值覆盖原来的旧值
+		* @param kvs 指定要设置的 key/value 列表
+		* 
+		* 
+		*/
+	mset(...kvs: any[]): void;
+
+	/**
+		* 
 		* @brief 同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在
 		* @param kvs 指定要设置的 key/value 对象
 		* 
 		* 
 		*/
 	msetNX(kvs: Object): void;
+
+	/**
+		* 
+		* @brief 同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在
+		* @param kvs 指定要设置的 key/value 列表
+		* 
+		* 
+		*/
+	msetNX(...kvs: any[]): void;
 
 	/**
 		* 
@@ -158,6 +176,16 @@ declare class Redis extends _object {
 		* 
 		*/
 	mget(keys: any[]): any[];
+
+	/**
+		* 
+		* @brief 返回所有(一个或多个)给定 key 的值。如果给定的 key 里面，有某个 key 不存在，那么这个 key 返回特殊值 nil 。
+		* @param keys 指定要查询的 key 列表
+		* @return 一个包含所有给定 key 的值的列表
+		* 
+		* 
+		*/
+	mget(...keys: any[]): any[];
 
 	/**
 		* 
@@ -257,6 +285,16 @@ declare class Redis extends _object {
 
 	/**
 		* 
+		* @brief 删除给定的一个或多个 key，不存在的 key 会被忽略
+		* @param keys 指定要删除的 key 列表
+		* @return 被删除 key 的数量
+		* 
+		* 
+		*/
+	del(...keys: any[]): number;
+
+	/**
+		* 
 		* @brief 为给定 key 设置生存时间，当 key 过期时，它会被自动删除
 		* @param key 指定要设定的 key
 		* @param ttl 以毫秒为单位为 key 设置生存时间
@@ -320,6 +358,16 @@ declare class Redis extends _object {
 
 	/**
 		* 
+		* @brief 订阅给定的一组频道的信息，当消息发生时自动调用相应的回调函数，同一频道同一函数只会回调一次
+		* @param map 指定频道映射关系，对象属性名称将作为频道名称，属性的值将作为回调函数
+		* 
+		* 
+		* 
+		*/
+	sub(map: Object): void;
+
+	/**
+		* 
 		* @brief 退订给定的频道的全部回调
 		* @param channel 指定退订的频道名称
 		* 
@@ -327,6 +375,37 @@ declare class Redis extends _object {
 		* 
 		*/
 	unsub(channel: Buffer): void;
+
+	/**
+		* 
+		* @brief 退订给定的频道的指定回调函数
+		* @param channel 指定退订的频道名称
+		* @param func 指定退订的回调函数
+		* 
+		* 
+		* 
+		*/
+	unsub(channel: Buffer, func: Function): void;
+
+	/**
+		* 
+		* @brief 退订一组给定的频道的全部回调
+		* @param channels 指定退订的频道数组
+		* 
+		* 
+		* 
+		*/
+	unsub(channels: any[]): void;
+
+	/**
+		* 
+		* @brief 退订给定的一组频道的指定回调函数
+		* @param map 指定频道映射关系，对象属性名称将作为频道名称，属性的值将作为回调函数
+		* 
+		* 
+		* 
+		*/
+	unsub(map: Object): void;
 
 	/**
 		* 
@@ -341,6 +420,16 @@ declare class Redis extends _object {
 
 	/**
 		* 
+		* @brief 订阅给定的一组频道模板的信息，当消息发生时自动调用相应的 func，同一频道同一函数只会回调一次
+		* @param map 指定频道映射关系，对象属性名称将作为频道模板，属性的值将作为回调函数
+		* 
+		* 
+		* 
+		*/
+	psub(map: Object): void;
+
+	/**
+		* 
 		* @brief 退订给定模板的频道的全部回调
 		* @param pattern 指定退订的频道模板
 		* 
@@ -348,6 +437,37 @@ declare class Redis extends _object {
 		* 
 		*/
 	unpsub(pattern: string): void;
+
+	/**
+		* 
+		* @brief 退订给定模板的频道的指定回调函数
+		* @param pattern 指定退订的频道模板
+		* @param func 指定退订的回调函数
+		* 
+		* 
+		* 
+		*/
+	unpsub(pattern: string, func: Function): void;
+
+	/**
+		* 
+		* @brief 退订一组给定模板的频道的全部回调
+		* @param patterns 指定发布的频道模板数组
+		* 
+		* 
+		* 
+		*/
+	unpsub(patterns: any[]): void;
+
+	/**
+		* 
+		* @brief 退订一组模板的频道的指定回调函数
+		* @param map 指定频道映射关系，对象属性名称将作为频道模板，属性的值将作为回调函数
+		* 
+		* 
+		* 
+		*/
+	unpsub(map: Object): void;
 
 	/**
 		* 

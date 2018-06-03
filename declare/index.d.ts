@@ -61,33 +61,37 @@
 /// <reference path="zmq.d.ts" />
 
 import _Global from 'global';
+import _Process from 'process';
 /// <reference path="Buffer.d.ts" />
 
 declare global {
 
-		/** const Buffer: typeof _Global.Buffer */
-		/** const Int64: typeof _Global.Int64 */
-		/** const console: typeof _Global.console */
-		/** const process: typeof _Global.process */
-		/** const Master: typeof _Global.Master */
-		/** const global: typeof _Global.global */
-		/** const run: typeof _Global.run */
-		const require: typeof _Global.require
-		/** const argv: typeof _Global.argv */
-		const __filename: string
+	/** const Buffer: Buffer; */
+	/** const Int64: Int64; */
+	/** const console: console; */
+	/** const process: process; */
+	/** const Master: Worker; */
+	/** const global: Object; */
+	/** const run: null; */
+	const require: typeof _Global.require
+	/** const argv: Array; */
+	const __filename: string;
 	
-		const __dirname: string
+	const __dirname: string;
 	
-		/** const setTimeout: typeof _Global.setTimeout */
-		/** const clearTimeout: typeof _Global.clearTimeout */
-		/** const setInterval: typeof _Global.setInterval */
-		/** const clearInterval: typeof _Global.clearInterval */
-		const setHrInterval: typeof _Global.setHrInterval
-		const clearHrInterval: typeof _Global.clearHrInterval
-		/** const setImmediate: typeof _Global.setImmediate */
-		/** const clearImmediate: typeof _Global.clearImmediate */
-		const GC: typeof _Global.GC
-		const repl: typeof _Global.repl
+	/** const setTimeout: Timer; */
+	/** const clearTimeout: null; */
+	/** const setInterval: Timer; */
+	/** const clearInterval: null; */
+	const setHrInterval: typeof _Global.setHrInterval
+	const clearHrInterval: typeof _Global.clearHrInterval
+	/** const setImmediate: Timer; */
+	/** const clearImmediate: null; */
+	const GC: typeof _Global.GC
+	const repl: typeof _Global.repl
+
+	const process: typeof _Process;
+	const global: typeof _Global;
 }
 
 

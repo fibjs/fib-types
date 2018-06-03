@@ -32,6 +32,38 @@ declare class Int64 extends _object {
 
 	/**
 		* 
+		* @brief Int64 构造函数
+		* @param hi 高32位数
+		* @param lo 低32位数
+		* 
+		* 
+		* 
+		*/
+	constructor(hi: number, lo: number);
+
+	/**
+		* 
+		* @brief Int64 构造函数
+		* @param num 初始化的值
+		* 
+		* 
+		* 
+		*/
+	constructor(num: Int64);
+
+	/**
+		* 
+		* @brief Int64 构造函数
+		* @param num 数字字符串
+		* @param base 数字字符串的编码方式，可以接受 2-16, 32, 64，默认为 10，为 10 时自动识别 0x 编码
+		* 
+		* 
+		* 
+		*/
+	constructor(num: string, base?: number/** = 10*/);
+
+	/**
+		* 
 		* @brief 将 Int64 内的数值与给定数值比较大小
 		* @param num 指定比较的数值
 		* @return 返回 1 表示 Int64 内的数值比指定数值更大，0 表示相等，-1 表示更小

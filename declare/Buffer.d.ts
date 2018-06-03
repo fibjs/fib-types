@@ -32,6 +32,67 @@ declare class Buffer extends _object {
 
 	/**
 		* 
+		* @brief 缓存对象构造函数
+		* @param datas 初始化数据数组
+		* 
+		* 
+		* 
+		*/
+	constructor(datas: ArrayBuffer);
+
+	/**
+		* 
+		* @brief 缓存对象构造函数
+		* @param datas 初始化数据数组
+		* 
+		* 
+		* 
+		*/
+	constructor(datas: TypedArray);
+
+	/**
+		* 
+		* @brief 缓存对象构造函数
+		* @param datas 初始化数据数组
+		* 
+		* 
+		* 
+		*/
+	constructor(datas: ArrayBufferView);
+
+	/**
+		* 
+		* @brief 缓存对象构造函数
+		* @param buffer 初始化Buffer对象
+		* 
+		* 
+		* 
+		*/
+	constructor(buffer: Buffer);
+
+	/**
+		* 
+		* @brief 缓存对象构造函数
+		* @param str 初始化字符串，字符串将以 utf-8 格式写入，缺省则创建一个空对象
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* 
+		* 
+		* 
+		*/
+	constructor(str: string, codec?: string/** = "utf8"*/);
+
+	/**
+		* 
+		* @brief 缓存对象构造函数
+		* @param size 初始化缓冲区大小
+		* 
+		* 
+		* 
+		*/
+	constructor(size?: number/** = 0*/);
+
+	/**
+		* 
 		* @brief 检测给定的变量是否是 Buffer 对象
 		* @param v 给定需要检测的变量
 		* @return 传入对象是否 Buffer 对象
@@ -53,6 +114,31 @@ declare class Buffer extends _object {
 		* 
 		*/
 	static from(buffer: Buffer, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Buffer;
+
+	/**
+		* 
+		* @brief 通过字符串创建 Buffer 对象
+		* @param str 初始化字符串，字符串将以 utf-8 格式写入
+		* @param byteOffset 指定数据起始位置，起始为 0
+		* @param length 指定数据长度，起始位 -1，表示剩余所有数据
+		* @return 返回 Buffer 实例
+		* 
+		* 
+		* 
+		*/
+	static from(str: string, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Buffer;
+
+	/**
+		* 
+		* @brief 通过字符串创建 Buffer 对象
+		* @param str 初始化字符串，字符串将以 utf-8 格式写入，缺省则创建一个空对象
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @return 返回 Buffer 实例
+		* 
+		* 
+		* 
+		*/
+	static from(str: string, codec?: string/** = "utf8"*/): Buffer;
 
 	/**
 		* 
@@ -78,6 +164,32 @@ declare class Buffer extends _object {
 		* 
 		*/
 	static alloc(size: number, fill?: number/** = 0*/, codec?: string/** = "utf8"*/): Buffer;
+
+	/**
+		* 
+		* @brief 分配一个指定长度的新缓存区。如果大小为0，将创建一个零长度的缓存区。
+		* @param size 缓冲区的所需长度
+		* @param fill 预先填充新缓冲区的值，可使用 string/buffer/integer 值类型。 默认值：0
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @return 填充好的新 Buffer 对象
+		* 
+		* 
+		* 
+		*/
+	static alloc(size: number, fill?: string/** = ""*/, codec?: string/** = "utf8"*/): Buffer;
+
+	/**
+		* 
+		* @brief 分配一个指定长度的新缓存区。如果大小为0，将创建一个零长度的缓存区。
+		* @param size 缓冲区的所需长度
+		* @param fill 预先填充新缓冲区的值，可使用 string/buffer/integer 值类型。 默认值：0
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @return 填充好的新 Buffer 对象
+		* 
+		* 
+		* 
+		*/
+	static alloc(size: number, fill: Buffer, codec?: string/** = "utf8"*/): Buffer;
 
 	/**
 		* 
@@ -115,6 +227,42 @@ declare class Buffer extends _object {
 
 	/**
 		* 
+		* @brief 返回字符串的实际字节长度
+		* @param str 待取字节的字符串，如果str为 ArrayBuffer/TypedArray/DataView/Buffer 对象，则返回它们的实际长度
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @return 返回实际字节长度
+		* 
+		* 
+		* 
+		*/
+	static byteLength(str: ArrayBuffer, codec?: string/** = "utf8"*/): number;
+
+	/**
+		* 
+		* @brief 返回字符串的实际字节长度
+		* @param str 待取字节的字符串，如果 str 为 ArrayBuffer/TypedArray/DataView/Buffer 对象，则返回它们的实际长度
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @return 返回实际字节长度
+		* 
+		* 
+		* 
+		*/
+	static byteLength(str: ArrayBufferView, codec?: string/** = "utf8"*/): number;
+
+	/**
+		* 
+		* @brief 返回字符串的实际字节长度
+		* @param str 待取字节的字符串，如果str为 ArrayBuffer/TypedArray/DataView/Buffer 对象，则返回它们的实际长度
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @return 返回实际字节长度
+		* 
+		* 
+		* 
+		*/
+	static byteLength(str: Buffer, codec?: string/** = "utf8"*/): number;
+
+	/**
+		* 
 		* @brief 检测编码格式是否被支持
 		* @param codec 待检测的编码格式
 		* @return 是否支持
@@ -146,6 +294,17 @@ declare class Buffer extends _object {
 
 	/**
 		* 
+		* @brief 在缓存对象尾部写入字符串，字符串将以 utf-8 格式写入
+		* @param str 要写入的字符串
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* 
+		* 
+		* 
+		*/
+	append(str: string, codec?: string/** = "utf8"*/): void;
+
+	/**
+		* 
 		* @brief 向缓存对象写入指定字符串，字符串默认为utf-8，越界时只写入部分数据
 		* @param str 待写入的字符串
 		* @param offset 写入起始位置
@@ -157,6 +316,31 @@ declare class Buffer extends _object {
 		* 
 		*/
 	write(str: string, offset?: number/** = 0*/, length?: number/** = -1*/, codec?: string/** = "utf8"*/): number;
+
+	/**
+		* 
+		* @brief 向缓存对象写入指定字符串，字符串默认为utf-8，越界时只写入部分数据
+		* @param str 待写入的字符串
+		* @param offset 写入起始位置
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @return 写入的数据字节长度
+		* 
+		* 
+		* 
+		*/
+	write(str: string, offset?: number/** = 0*/, codec?: string/** = "utf8"*/): number;
+
+	/**
+		* 
+		* @brief 向缓存对象写入指定字符串，字符串默认为utf-8，越界时只写入部分数据
+		* @param str 待写入的字符串
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @return 写入的数据字节长度
+		* 
+		* 
+		* 
+		*/
+	write(str: string, codec?: string/** = "utf8"*/): number;
 
 	/**
 		* 
@@ -173,6 +357,32 @@ declare class Buffer extends _object {
 
 	/**
 		* 
+		* @brief 为 Buffer 对象填充指定内容数据
+		* @param v 需要填充的数据，如果未指定 offset 和 end，将填充满整个 buffer
+		* @param offset 填充起始位置
+		* @param end 填充终止位置
+		* @return 返回当前 Buffer 对象
+		* 
+		* 
+		* 
+		*/
+	fill(v: Buffer, offset?: number/** = 0*/, end?: number/** = -1*/): Buffer;
+
+	/**
+		* 
+		* @brief 为 Buffer 对象填充指定内容数据
+		* @param v 需要填充的数据，如果未指定 offset 和 end，将填充满整个 buffer
+		* @param offset 填充起始位置
+		* @param end 填充终止位置
+		* @return 返回当前 Buffer 对象
+		* 
+		* 
+		* 
+		*/
+	fill(v: string, offset?: number/** = 0*/, end?: number/** = -1*/): Buffer;
+
+	/**
+		* 
 		* @brief 返回某个指定数据在 Buffer 中首次出现的位置
 		* @param v 待查找数据，如果未指定 offset，默认从起始位开始
 		* @param offset 起始查找位置
@@ -182,6 +392,30 @@ declare class Buffer extends _object {
 		* 
 		*/
 	indexOf(v: number, offset?: number/** = 0*/): number;
+
+	/**
+		* 
+		* @brief 返回某个指定数据在 Buffer 中首次出现的位置
+		* @param v 待查找数据，如果未指定 offset，默认从起始位开始
+		* @param offset 起始查找位置
+		* @return 返回查找到的位置，未找到返回 -1
+		* 
+		* 
+		* 
+		*/
+	indexOf(v: Buffer, offset?: number/** = 0*/): number;
+
+	/**
+		* 
+		* @brief 返回某个指定数据在 Buffer 中首次出现的位置
+		* @param v 待查找数据，如果未指定 offset，默认从起始位开始
+		* @param offset 起始查找位置
+		* @return 返回查找到的位置，未找到返回 -1
+		* 
+		* 
+		* 
+		*/
+	indexOf(v: string, offset?: number/** = 0*/): number;
 
 	/**
 		* 
@@ -721,6 +955,18 @@ declare class Buffer extends _object {
 
 	/**
 		* 
+		* @brief 返回一个新缓存对象，包含指定范围的数据，若范围超出缓存，则只返回有效部分数据
+		* @param start 指定范围的起始
+		* @param end 指定范围的结束
+		* @return 返回新的缓存对象
+		* 
+		* 
+		* 
+		*/
+	slice(start: number, end: number): Buffer;
+
+	/**
+		* 
 		* @brief 把当前对象中的所有元素放入一个字符串
 		* @param separator 分割字符，缺省为 ","
 		* @return 返回生成的字符串
@@ -837,6 +1083,28 @@ declare class Buffer extends _object {
 		* 
 		*/
 	toString(codec: string, offset?: number/** = 0*/, end: number): string;
+
+	/**
+		* 
+		* @brief 返回二进制数据的编码字符串
+		* @param codec 指定编码格式，允许值为："hex", "base64", "utf8", 或者系统支持的字符集
+		* @param offset 读取起始位置
+		* @return 返回对象的字符串表示
+		* 
+		* 
+		* 
+		*/
+	toString(codec: string, offset?: number/** = 0*/): string;
+
+	/**
+		* 
+		* @brief 返回二进制数据的 utf8 编码字符串
+		* @return 返回对象的字符串表示
+		* 
+		* 
+		* 
+		*/
+	toString(): string;
 
 } /** endof class */
 

@@ -40,6 +40,16 @@ declare class X509Crl extends _object {
 
 	/**
 		* 
+		* @brief 加载一个 PEM 格式的撤销证书，可多次调用
+		* @param pemCrl PEM 格式的撤销证书
+		* 
+		* 
+		* 
+		*/
+	load(pemCrl: string): void;
+
+	/**
+		* 
 		* @brief 加载一个 PEM/DER 格式的撤销证书，可多次调用
 		* @param filename 撤销证书文件名
 		* 

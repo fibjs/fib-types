@@ -32,6 +32,40 @@ declare class SandBox extends _object {
 
 	/**
 		* 
+		* @brief 构造一个新的安全沙箱对象，并初始化基础模块
+		* @param mods 指定要添加的模块对象字典
+		* @param require 自定义 require 函数，当模块不存在时，先调用自定义函数，无返回再从文件中加载
+		* 
+		* 
+		* 
+		*/
+	constructor(mods: Object, require: Function);
+
+	/**
+		* 
+		* @brief 构造一个独立 Global 新的安全沙箱对象，并初始化基础模块
+		* @param mods 指定要添加的模块对象字典
+		* @param global 指定初始化的 Global 属性
+		* 
+		* 
+		* 
+		*/
+	constructor(mods: Object, global: Object);
+
+	/**
+		* 
+		* @brief 构造一个独立 Global 新的安全沙箱对象，并初始化基础模块
+		* @param mods 指定要添加的模块对象字典
+		* @param require 自定义 require 函数，当模块不存在时，先调用自定义函数，无返回再从文件中加载
+		* @param global 指定初始化的 Global 属性
+		* 
+		* 
+		* 
+		*/
+	constructor(mods: Object, require: Function, global: Object);
+
+	/**
+		* 
 		* @brief 向沙箱中添加一个基础模块
 		* @param id 指定要添加的模块名称，此路径与当前运行脚本无关，必须为绝对路径或者模块名
 		* @param mod 指定要添加的模块对象
@@ -40,6 +74,16 @@ declare class SandBox extends _object {
 		* 
 		*/
 	add(id: string, mod: any): void;
+
+	/**
+		* 
+		* @brief 向沙箱中添加一组基础模块
+		* @param mods 指定要添加的模块对象字典，添加的 javascript 模块将会生成一份复制，以避免沙箱修改对象产生互相干扰
+		* 
+		* 
+		* 
+		*/
+	add(mods: Object): void;
 
 	/**
 		* 

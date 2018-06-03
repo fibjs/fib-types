@@ -57,6 +57,18 @@ declare class Socket extends Stream {
 
 	/**
 		* 
+		* @brief 将当前 Socket 绑定至指定地址的指定端口
+		* @param addr 指定绑定的地址
+		* @param port 指定绑定的端口
+		* @param allowIPv4 指定是否接受 ipv4 连接，缺省为 true。本参数在 ipv6 时有效，并依赖于操作系统
+		* 
+		* 
+		* 
+		*/
+	bind(addr: string, port: number, allowIPv4?: boolean/** = true*/): void;
+
+	/**
+		* 
 		* @brief 开始监听连接请求
 		* @param backlog 指定请求队列长度，超出的请求将被拒绝，缺省为 120
 		* 

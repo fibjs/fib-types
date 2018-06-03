@@ -55,6 +55,16 @@ declare class WebSocket extends EventEmitter {
 
 	/**
 		* 
+		* @brief 向对方发送一段二进制数据
+		* @param data 指定发送的二进制数据
+		* 
+		* 
+		* 
+		*/
+	send(data: Buffer): void;
+
+	/**
+		* 
 		* @brief 维持 fibjs 进程不退出，在对象绑定期间阻止 fibjs 进程退出
 		* @return 返回当前对象
 		* 

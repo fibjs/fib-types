@@ -240,6 +240,32 @@ declare module "zip" {
 		*/
 	export function open(path: string, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): ZipFile;
 
+	/**
+		* 
+		* @brief 打开一个zip文件
+		* @param data zip文件数据
+		* @param mod 打开文件模式, "r"代表读取, "w"代表创建, "a"代表在zip文件后追加
+		* @param compress_type 压缩类型, ZIP_STORED 代表不压缩, 仅存储。 默认使用ZIP_DEFLATED 代表使用zlib库进行压缩。
+		* @return 返回zip文件对象
+		* 
+		* 
+		* @async
+		*/
+	export function open(data: Buffer, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): ZipFile;
+
+	/**
+		* 
+		* @brief 打开一个zip文件
+		* @param strm zip文件流
+		* @param mod 打开文件模式, "r"代表读取, "w"代表创建, "a"代表在zip文件后追加
+		* @param compress_type 压缩类型, ZIP_STORED 代表不压缩, 仅存储。 默认使用ZIP_DEFLATED 代表使用zlib库进行压缩。
+		* @return 返回zip文件对象
+		* 
+		* 
+		* @async
+		*/
+	export function open(strm: SeekableStream, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): ZipFile;
+
 }
 
 /** } /** endof `module Or Internal Object` */

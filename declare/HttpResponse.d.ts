@@ -42,6 +42,17 @@ declare class HttpResponse extends HttpMessage {
 
 	/**
 		* 
+		* @brief 设置响应消息的返回状态，返回消息，并添加响应头
+		* @param statusCode 指定响应消息的返回状态
+		* @param headers 指定响应消息添加的响应头
+		* 
+		* 
+		* 
+		*/
+	writeHead(statusCode: number, headers?: Object/** = v8::Object::New(isolate)*/): void;
+
+	/**
+		* 
 		* @brief 向 cookies 添加一个 HttpCookie 对象
 		* @param cookie 指定要添加的 HttpCookie 对象
 		* 
