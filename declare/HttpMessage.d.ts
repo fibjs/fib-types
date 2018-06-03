@@ -65,6 +65,17 @@ declare class HttpMessage extends Message {
 
 	/**
 		* 
+		* @brief 添加一个消息头，添加数据并不修改已存在的键值的消息头
+		* @param name 指定要添加的键值
+		* @param value 指定要添加的数据
+		* 
+		* 
+		* 
+		*/
+	addHeader(name: string, value: any): void;
+
+	/**
+		* 
 		* @brief 设定一个消息头，设定数据将修改键值所对应的第一个数值，并清除相同键值的其余消息头
 		* @param map 指定要设定的键值数据字典
 		* 
@@ -72,6 +83,17 @@ declare class HttpMessage extends Message {
 		* 
 		*/
 	setHeader(map: Object): void;
+
+	/**
+		* 
+		* @brief 设定一个消息头，设定数据将修改键值所对应的第一个数值，并清除相同键值的其余消息头
+		* @param name 指定要设定的键值
+		* @param value 指定要设定的数据
+		* 
+		* 
+		* 
+		*/
+	setHeader(name: string, value: any): void;
 
 	/**
 		* 

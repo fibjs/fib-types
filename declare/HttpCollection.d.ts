@@ -73,6 +73,17 @@ declare class HttpCollection extends _object {
 
 	/**
 		* 
+		* @brief 添加一个键值数据，添加数据并不修改已存在的键值的数据
+		* @param name 指定要添加的键值
+		* @param value 指定要添加的数据
+		* 
+		* 
+		* 
+		*/
+	add(name: string, value: any): void;
+
+	/**
+		* 
 		* @brief 设定一个键值数据，设定数据将修改键值所对应的第一个数值，并清除相同键值的其余数据
 		* @param map 指定要设定的键值数据字典
 		* 
@@ -80,6 +91,17 @@ declare class HttpCollection extends _object {
 		* 
 		*/
 	set(map: Object): void;
+
+	/**
+		* 
+		* @brief 设定一个键值数据，设定数据将修改键值所对应的第一个数值，并清除相同键值的其余数据
+		* @param name 指定要设定的键值
+		* @param value 指定要设定的数据
+		* 
+		* 
+		* 
+		*/
+	set(name: string, value: any): void;
 
 	/**
 		* 

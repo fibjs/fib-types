@@ -32,6 +32,16 @@ declare class RedisList extends _object {
 
 	/**
 		* 
+		* @brief 将一个或多个值 value 插入到列表的表头
+		* @param values 指定要插入的数据
+		* @return 插入后，列表的长度
+		* 
+		* 
+		*/
+	push(...values: any[]): number;
+
+	/**
+		* 
 		* @brief 移除并返回列表 key 的头元素
 		* @return 列表的头元素，如果列表为空则返回 null
 		* 
@@ -48,6 +58,16 @@ declare class RedisList extends _object {
 		* 
 		*/
 	rpush(values: any[]): number;
+
+	/**
+		* 
+		* @brief 将一个或多个值 value 插入到列表的表尾(最右边)
+		* @param values 指定要插入的数据
+		* @return 插入后，列表的长度
+		* 
+		* 
+		*/
+	rpush(...values: any[]): number;
 
 	/**
 		* 

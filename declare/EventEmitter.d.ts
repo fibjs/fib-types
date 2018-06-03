@@ -43,6 +43,17 @@ declare class EventEmitter extends _object {
 	/**
 		* 
 		* @brief 绑定一个事件处理函数到对象
+		* @param map 指定事件映射关系，对象属性名称将作为事件名称，属性的值将作为事件处理函数
+		* @return 返回事件对象本身，便于链式调用
+		* 
+		* 
+		* 
+		*/
+	on(map: Object): Object;
+
+	/**
+		* 
+		* @brief 绑定一个事件处理函数到对象
 		* @param ev 指定事件的名称
 		* @param func 指定事件处理函数
 		* @return 返回事件对象本身，便于链式调用
@@ -51,6 +62,17 @@ declare class EventEmitter extends _object {
 		* 
 		*/
 	addListener(ev: string, func: Function): Object;
+
+	/**
+		* 
+		* @brief 绑定一个事件处理函数到对象
+		* @param map 指定事件映射关系，对象属性名称将作为事件名称，属性的值将作为事件处理函数
+		* @return 返回事件对象本身，便于链式调用
+		* 
+		* 
+		* 
+		*/
+	addListener(map: Object): Object;
 
 	/**
 		* 
@@ -66,6 +88,17 @@ declare class EventEmitter extends _object {
 
 	/**
 		* 
+		* @brief 绑定一个事件处理函数到对象起始
+		* @param map 指定事件映射关系，对象属性名称将作为事件名称，属性的值将作为事件处理函数
+		* @return 返回成功绑定的数量，如果函数已绑定则返回 0
+		* 
+		* 
+		* 
+		*/
+	prependListener(map: Object): Object;
+
+	/**
+		* 
 		* @brief 绑定一个一次性事件处理函数到对象，一次性处理函数只会触发一次
 		* @param ev 指定事件的名称
 		* @param func 指定事件处理函数
@@ -75,6 +108,17 @@ declare class EventEmitter extends _object {
 		* 
 		*/
 	once(ev: string, func: Function): Object;
+
+	/**
+		* 
+		* @brief 绑定一个一次性事件处理函数到对象，一次性处理函数只会触发一次
+		* @param map 指定事件映射关系，对象属性名称将作为事件名称，属性的值将作为事件处理函数
+		* @return 返回事件对象本身，便于链式调用
+		* 
+		* 
+		* 
+		*/
+	once(map: Object): Object;
 
 	/**
 		* 
@@ -90,6 +134,17 @@ declare class EventEmitter extends _object {
 
 	/**
 		* 
+		* @brief 绑定一个事件处理函数到对象起始
+		* @param map 指定事件映射关系，对象属性名称将作为事件名称，属性的值将作为事件处理函数
+		* @return 返回成功绑定的数量，如果函数已绑定则返回 0
+		* 
+		* 
+		* 
+		*/
+	prependOnceListener(map: Object): Object;
+
+	/**
+		* 
 		* @brief 从对象处理队列中取消指定函数
 		* @param ev 指定事件的名称
 		* @param func 指定事件处理函数
@@ -102,6 +157,28 @@ declare class EventEmitter extends _object {
 
 	/**
 		* 
+		* @brief 取消对象处理队列中的全部函数
+		* @param ev 指定事件的名称
+		* @return 返回事件对象本身，便于链式调用
+		* 
+		* 
+		* 
+		*/
+	off(ev: string): Object;
+
+	/**
+		* 
+		* @brief 从对象处理队列中取消指定函数
+		* @param map 指定事件映射关系，对象属性名称作为事件名称，属性的值作为事件处理函数
+		* @return 返回事件对象本身，便于链式调用
+		* 
+		* 
+		* 
+		*/
+	off(map: Object): Object;
+
+	/**
+		* 
 		* @brief 从对象处理队列中取消指定函数
 		* @param ev 指定事件的名称
 		* @param func 指定事件处理函数
@@ -111,6 +188,28 @@ declare class EventEmitter extends _object {
 		* 
 		*/
 	removeListener(ev: string, func: Function): Object;
+
+	/**
+		* 
+		* @brief 取消对象处理队列中的全部函数
+		* @param ev 指定事件的名称
+		* @return 返回事件对象本身，便于链式调用
+		* 
+		* 
+		* 
+		*/
+	removeListener(ev: string): Object;
+
+	/**
+		* 
+		* @brief 从对象处理队列中取消指定函数
+		* @param map 指定事件映射关系，对象属性名称作为事件名称，属性的值作为事件处理函数
+		* @return 返回事件对象本身，便于链式调用
+		* 
+		* 
+		* 
+		*/
+	removeListener(map: Object): Object;
 
 	/**
 		* 

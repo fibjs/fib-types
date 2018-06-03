@@ -32,6 +32,18 @@ declare class HttpCookie extends _object {
 
 	/**
 		* 
+		* @brief HttpCookie 构造函数，创建一个新的 HttpCookie 对象
+		* @param name 指定创建的 cookie 名称
+		* @param value 指定创建的 cookie 值
+		* @param opts 指定创建的 cookie 的其它属性
+		* 
+		* 
+		* 
+		*/
+	constructor(name: string, value: string, opts?: Object/** = v8::Object::New(isolate)*/);
+
+	/**
+		* 
 		* @brief 解析给定的字符串，填充 cookie 对象
 		* @param header 指定需要解析的 header 字符串
 		* 

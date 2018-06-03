@@ -286,6 +286,17 @@ declare module "hash" {
 
 	/**
 		* 
+		* @brief 根据指定的算法标识创建一个信息摘要运算对象
+		* @param algo 指定摘要运算算法
+		* @return 返回构造的信息摘要对象
+		* 
+		* 
+		* 
+		*/
+	export function digest(algo: number): Digest;
+
+	/**
+		* 
 		* @brief 创建一个 MD2 信息摘要运算对象
 		* @param data 创建同时更新的二进制数据
 		* @return 返回构造的信息摘要对象

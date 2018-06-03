@@ -318,6 +318,18 @@ declare module "zlib" {
 
 	/**
 		* 
+		* @brief 使用 deflate 算法压缩源流中的数据到流对象中(zlib格式)
+		* @param src 给定要压缩的数据所在的流
+		* @param stm 指定存储压缩数据的流
+		* @param level 指定压缩级别，缺省为 DEFAULT_COMPRESSION
+		* 
+		* 
+		* @async
+		*/
+	export function deflateTo(src: Stream, stm: Stream, level?: number/** = undefined*/): void;
+
+	/**
+		* 
 		* @brief 解压缩 deflate 算法压缩的数据(zlib格式)
 		* @param data 给定压缩后的数据
 		* @return 返回解压缩后的二进制数据
@@ -337,6 +349,17 @@ declare module "zlib" {
 		* @async
 		*/
 	export function inflateTo(data: Buffer, stm: Stream): void;
+
+	/**
+		* 
+		* @brief 解压缩源流中 deflate 算法压缩的数据到流对象中(zlib格式)
+		* @param src 给定要解压缩的数据所在的流
+		* @param stm 指定存储解压缩数据的流
+		* 
+		* 
+		* @async
+		*/
+	export function inflateTo(src: Stream, stm: Stream): void;
 
 	/**
 		* 
@@ -362,6 +385,17 @@ declare module "zlib" {
 
 	/**
 		* 
+		* @brief 使用 gzip 算法压缩源流中的数据到流对象中
+		* @param src 给定要压缩的数据所在的流
+		* @param stm 指定存储压缩数据的流
+		* 
+		* 
+		* @async
+		*/
+	export function gzipTo(src: Stream, stm: Stream): void;
+
+	/**
+		* 
 		* @brief 解压缩 gzip 算法压缩的数据
 		* @param data 给定压缩后的数据
 		* @return 返回解压缩后的二进制数据
@@ -381,6 +415,17 @@ declare module "zlib" {
 		* @async
 		*/
 	export function gunzipTo(data: Buffer, stm: Stream): void;
+
+	/**
+		* 
+		* @brief 解压缩源流中 gzip 算法压缩的数据到流对象中
+		* @param src 给定要解压缩的数据所在的流
+		* @param stm 指定存储解压缩数据的流
+		* 
+		* 
+		* @async
+		*/
+	export function gunzipTo(src: Stream, stm: Stream): void;
 
 	/**
 		* 
@@ -408,6 +453,18 @@ declare module "zlib" {
 
 	/**
 		* 
+		* @brief 使用 deflate 算法压缩源流中的数据到流对象中(deflateRaw)
+		* @param src 给定要压缩的数据所在的流
+		* @param stm 指定存储压缩数据的流
+		* @param level 指定压缩级别，缺省为 DEFAULT_COMPRESSION
+		* 
+		* 
+		* @async
+		*/
+	export function deflateRawTo(src: Stream, stm: Stream, level?: number/** = undefined*/): void;
+
+	/**
+		* 
 		* @brief 解压缩 deflate 算法压缩的数据(inflateRaw)
 		* @param data 给定压缩后的数据
 		* @return 返回解压缩后的二进制数据
@@ -427,6 +484,17 @@ declare module "zlib" {
 		* @async
 		*/
 	export function inflateRawTo(data: Buffer, stm: Stream): void;
+
+	/**
+		* 
+		* @brief 解压缩源流中 deflate 算法压缩的数据到流对象中(inflateRaw)
+		* @param src 给定要解压缩的数据所在的流
+		* @param stm 指定存储解压缩数据的流
+		* 
+		* 
+		* @async
+		*/
+	export function inflateRawTo(src: Stream, stm: Stream): void;
 
 }
 

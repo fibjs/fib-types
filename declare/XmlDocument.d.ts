@@ -42,6 +42,16 @@ declare class XmlDocument extends XmlNode {
 
 	/**
 		* 
+		* @brief 通过解析一个二进制 XML/HTML 字符串来组成该文档，并根据语种自动转换
+		* @param source 要解析的 XML/HTML 文本，取决于文档创建时的类型
+		* 
+		* 
+		* 
+		*/
+	load(source: Buffer): void;
+
+	/**
+		* 
 		* @brief 返回带有指定名称的所有元素的一个节点列表
 		* 
 		* 该方法将返回一个 XmlNodeList 对象（可以作为只读数组处理），该对象存放文档中具有指定标签名的所有 XmlElement 节点，它们存放的顺序就是在源文档中出现的顺序。 XmlNodeList 对象是“活”的，即如果在文档中添加或删除了指定标签名的元素，它的内容会自动进行必要的更新。

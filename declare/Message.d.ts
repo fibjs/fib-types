@@ -72,6 +72,16 @@ declare class Message extends _object {
 
 	/**
 		* 
+		* @brief 以 JSON 编码解析消息中的数据
+		* @return 返回解析的结果
+		* 
+		* 
+		* 
+		*/
+	json(): any;
+
+	/**
+		* 
 		* @brief 设置当前消息处理结束，Chain 处理器不再继续后面的事务
 		* 
 		* 

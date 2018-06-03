@@ -33,6 +33,16 @@ declare class DgramSocket extends EventEmitter {
 
 	/**
 		* 
+		* @brief 该方法会令 dgram.Socket 在 `opts` 指定的 `port` 和 `address` 上监听数据包信息。绑定完成时会触发一个 `listening` 事件。
+		* @param opts 指定绑定参数
+		* 
+		* 
+		* @async
+		*/
+	bind(opts: Object): void;
+
+	/**
+		* 
 		* @brief 在 socket 上发送一个数据包
 		* @param msg 指定发送的数据
 		* @param port 指定发送的目的端口
@@ -43,6 +53,21 @@ declare class DgramSocket extends EventEmitter {
 		* @async
 		*/
 	send(msg: Buffer, port: number, address?: string/** = ""*/): number;
+
+	/**
+		* 
+		* @brief 在 socket 上发送一个数据包
+		* @param msg 指定发送的数据
+		* @param offset 从指定偏移开始发送
+		* @param length 之发送指定长度
+		* @param port 指定发送的目的端口
+		* @param address 指定发送的目的地址
+		* @return 返回发送尺寸
+		* 
+		* 
+		* @async
+		*/
+	send(msg: Buffer, offset: number, length: number, port: number, address?: string/** = ""*/): number;
 
 	/**
 		* 
@@ -61,6 +86,16 @@ declare class DgramSocket extends EventEmitter {
 		* 
 		*/
 	close(): void;
+
+	/**
+		* 
+		* @brief 关闭当前 socket
+		* @param callback 关闭完成后的回调函数，它相当于为 `close` 事件添加了一个监听器
+		* 
+		* 
+		* 
+		*/
+	close(callback: Function): void;
 
 	/**
 		* 

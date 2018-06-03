@@ -213,6 +213,27 @@ declare module "process" {
 
 	/**
 		* 
+		* @brief 改变当前的 umask，Windows 不支持此方法
+		* @param mask 指定新的掩码， 字符串类型八进制(e.g: "0664")
+		* @return 返回之前的 mask
+		* 
+		* 
+		* 
+		*/
+	export function umask(mask: string): number;
+
+	/**
+		* 
+		* @brief 返回当前的 umask，Windows 不支持此方法
+		* @return 返回当前的 mask 值
+		* 
+		* 
+		* 
+		*/
+	export function umask(): number;
+
+	/**
+		* 
 		* @brief 返回系统高精度时间，此时间与当前时间无关，仅用于高精度计时
 		* @param diff 用于比较的初始时间
 		* @return 返回计时时间，格式为 [seconds, nanoseconds]
@@ -229,6 +250,16 @@ declare module "process" {
 		* 
 		*/
 	export function exit(): void;
+
+	/**
+		* 
+		* @brief 退出当前进程，并返回结果
+		* @param code 返回进程结果
+		* 
+		* 
+		* 
+		*/
+	export function exit(code: number): void;
 
 	/**
 		* 
@@ -317,6 +348,26 @@ declare module "process" {
 
 	/**
 		* 
+		* @brief 运行指定的命令行，接管进程输入输出流，并返回进程对象
+		* 
+		* opts 支持的选项如下：
+		* ```JavaScript
+		* {
+		* "timeout": 100, // 单位为 ms
+		* "envs": [] // 进程环境变量
+		* }
+		* ```
+		* @param command 指定运行的命令行
+		* @param opts 指定运行的选项
+		* @return 返回包含运行结果的进程对象
+		* 
+		* 
+		* 
+		*/
+	export function open(command: string, opts?: Object/** = v8::Object::New(isolate)*/): SubProcess;
+
+	/**
+		* 
 		* @brief 运行指定的命令行，并返回进程对象
 		* 
 		* opts 支持的选项如下：
@@ -338,6 +389,26 @@ declare module "process" {
 
 	/**
 		* 
+		* @brief 运行指定的命令行，并返回进程对象
+		* 
+		* opts 支持的选项如下：
+		* ```JavaScript
+		* {
+		* "timeout": 100, // 单位为 ms
+		* "envs": [] // 进程环境变量
+		* }
+		* ```
+		* @param command 指定运行的命令行
+		* @param opts 指定运行的选项
+		* @return 返回包含运行结果的进程对象
+		* 
+		* 
+		* 
+		*/
+	export function start(command: string, opts?: Object/** = v8::Object::New(isolate)*/): SubProcess;
+
+	/**
+		* 
 		* @brief 运行指定的命令行，并返回进程的结束代码
 		* 
 		* opts 支持的选项如下：
@@ -356,6 +427,26 @@ declare module "process" {
 		* 
 		*/
 	export function run(command: string, args: any[], opts?: Object/** = v8::Object::New(isolate)*/): number;
+
+	/**
+		* 
+		* @brief 运行指定的命令行，并返回进程的结束代码
+		* 
+		* opts 支持的选项如下：
+		* ```JavaScript
+		* {
+		* "timeout": 100, // 单位为 ms
+		* "envs": [] // 进程环境变量
+		* }
+		* ```
+		* @param command 指定运行的命令行
+		* @param opts 指定运行的选项
+		* @return 返回命令的运行结果
+		* 
+		* 
+		* 
+		*/
+	export function run(command: string, opts?: Object/** = v8::Object::New(isolate)*/): number;
 
 }
 

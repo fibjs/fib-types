@@ -51,6 +51,15 @@ declare class RedisHash extends _object {
 
 	/**
 		* 
+		* @brief 同时将多个 field-value (域-值)对设置到哈希表中，此命令会覆盖哈希表中已存在的域
+		* @param kvs 指定要设置的 field/value 列表
+		* 
+		* 
+		*/
+	mset(...kvs: any[]): void;
+
+	/**
+		* 
 		* @brief 返回哈希表中给定域 field 的值
 		* @param field 指定要查询的 field
 		* @return 给定域的值，当给定域不存在或是给定 key 不存在时，返回 null
@@ -68,6 +77,16 @@ declare class RedisHash extends _object {
 		* 
 		*/
 	mget(fields: any[]): any[];
+
+	/**
+		* 
+		* @brief 返回哈希表中，一个或多个给定域的值
+		* @param fields 指定要查询的域列表
+		* @return 一个包含所有给定域的值的列表
+		* 
+		* 
+		*/
+	mget(...fields: any[]): any[];
 
 	/**
 		* 
@@ -126,6 +145,16 @@ declare class RedisHash extends _object {
 		* 
 		*/
 	del(fields: any[]): number;
+
+	/**
+		* 
+		* @brief 删除哈希表中的一个或多个指定域，不存在的域将被忽略
+		* @param fields 指定要删除的域列表
+		* @return 被删除域的数量
+		* 
+		* 
+		*/
+	del(...fields: any[]): number;
 
 } /** endof class */
 
