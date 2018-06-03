@@ -323,6 +323,43 @@ declare module "registry" {
 
 	/**
 		* 
+		* @brief 设置指定键值为字符串
+		* @param root 指定注册表根
+		* @param key 指定键值
+		* @param value 指定字符串
+		* @param type 指定类型，允许的类型为 SZ 和 EXPAND_SZ，缺省为 SZ
+		* 
+		* 
+		* 
+		*/
+	export function set(root: number, key: string, value: string, type?: number/** = undefined*/): void;
+
+	/**
+		* 
+		* @brief 设置指定键值为多字符串
+		* @param root 指定注册表根
+		* @param key 指定键值
+		* @param value 指定多字符串数组
+		* 
+		* 
+		* 
+		*/
+	export function set(root: number, key: string, value: any[]): void;
+
+	/**
+		* 
+		* @brief 设置指定键值为二进制
+		* @param root 指定注册表根
+		* @param key 指定键值
+		* @param value 指定二进制数据
+		* 
+		* 
+		* 
+		*/
+	export function set(root: number, key: string, value: Buffer): void;
+
+	/**
+		* 
 		* @brief 删除指定键值的数值
 		* @param root 指定注册表根
 		* @param key 指定键值

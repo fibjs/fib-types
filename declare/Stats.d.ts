@@ -32,6 +32,17 @@ declare class Stats extends _object {
 
 	/**
 		* 
+		* @brief 数据统计对象构造方法
+		* @param staticKeys 指定静态计数器的名称，静态计数器不会被 reset
+		* @param keys 指定计数器的名称
+		* 
+		* 
+		* 
+		*/
+	constructor(staticKeys: any[], keys: any[]);
+
+	/**
+		* 
 		* @brief 指定的计数器增一
 		* @param key 指定计数器名称
 		* 

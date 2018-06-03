@@ -425,6 +425,39 @@ declare module "global" {
 		*/
 	export function repl(cmds?: any[]/** = v8::Array::New(isolate)*/): void;
 
+	/**
+		* 
+		* @brief 进入交互模式，可以交互执行内部命令和代码，仅在启动 js 可以引用
+		* 
+		* 同一时刻只允许一个 Stream repl，新建一个 Stream repl 时，前一个 repl 将被关闭。
+		* 
+		* 参数 cmd 格式如下：
+		* ```JavaScript
+		* [
+		* {
+		* cmd: ".test",
+		* help: "this is a test",
+		* exec: function(argv) {
+		* console.log(argv);
+		* }
+		* },
+		* {
+		* cmd: ".test1",
+		* help: "this is an other test",
+		* exec: function(argv) {
+		* console.log(argv);
+		* }
+		* }
+		* ]
+		* ```
+		* @param out 输入输出流对象，通常为网络连接
+		* @param cmds 补充命令
+		* 
+		* 
+		* 
+		*/
+	export function repl(out: Stream, cmds?: any[]/** = v8::Array::New(isolate)*/): void;
+
 }
 
 /** } /** endof `module Or Internal Object` */

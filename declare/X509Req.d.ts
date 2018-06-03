@@ -32,6 +32,19 @@ declare class X509Req extends _object {
 
 	/**
 		* 
+		* @brief X509Req 构造函数，根据给定的信息创建一个证书请求
+		* 
+		* @param subject 证书的主题可分辨名称
+		* @param key 证书的公钥
+		* @param hash 证书摘要算法，缺省为 hash.SHA1
+		* 
+		* 
+		* 
+		*/
+	constructor(subject: string, key: PKey, hash?: number/** = undefined*/);
+
+	/**
+		* 
 		* @brief 加载一个 DER 格式的证书请求
 		* @param derReq DER 格式的证书请求
 		* 
@@ -39,6 +52,16 @@ declare class X509Req extends _object {
 		* 
 		*/
 	load(derReq: Buffer): void;
+
+	/**
+		* 
+		* @brief 加载一个 PEM 格式的证书请求
+		* @param pemReq PEM 格式的证书请求
+		* 
+		* 
+		* 
+		*/
+	load(pemReq: string): void;
 
 	/**
 		* 

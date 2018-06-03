@@ -458,6 +458,28 @@ declare module "gd" {
 
 	/**
 		* 
+		* @brief 从流对象中解码图像
+		* @param stm 给定图像数据所在的流对象
+		* @return 返回解码成功的图像对象
+		* 
+		* 
+		* @async
+		*/
+	export function load(stm: SeekableStream): Image;
+
+	/**
+		* 
+		* @brief 从指定文件中解码图像
+		* @param fname 指定文件名
+		* @return 返回解码成功的图像对象
+		* 
+		* 
+		* @async
+		*/
+	export function load(fname: string): Image;
+
+	/**
+		* 
 		* @brief 通过 rgb 颜色分量生成组合颜色
 		* @param red 红色分量，范围为 0-255
 		* @param green 绿色分量，范围为 0-255

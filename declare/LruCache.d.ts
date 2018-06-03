@@ -63,6 +63,18 @@ declare class LruCache extends EventEmitter {
 
 	/**
 		* 
+		* @brief 查询指定键值的值，若不存在或过期，则调用回调函数更新数据
+		* @param name 指定要查询的键值
+		* @param updater 指定更新函数
+		* @return 返回键值所对应的值
+		* 
+		* 
+		* 
+		*/
+	get(name: string, updater: Function): any;
+
+	/**
+		* 
 		* @brief 设定一个键值数据，键值不存在则插入一条新数据
 		* @param name 指定要设定的键值
 		* @param value 指定要设定的数据
@@ -71,6 +83,16 @@ declare class LruCache extends EventEmitter {
 		* 
 		*/
 	set(name: string, value: any): void;
+
+	/**
+		* 
+		* @brief 设定一个键值数据，键值不存在则插入新数据
+		* @param map 指定要设定的键值数据字典
+		* 
+		* 
+		* 
+		*/
+	set(map: Object): void;
 
 	/**
 		* 

@@ -45,6 +45,18 @@ declare class SslHandler extends Handler {
 		*/
 	constructor(certs: any[], hdlr: Handler);
 
+	/**
+		* 
+		* @brief SslHandler 构造函数，创建一个新的 SslHandler 对象
+		* @param crt X509Cert 证书，用于客户端验证服务器
+		* @param key PKey 私钥，用于与客户端会话
+		* @param hdlr 内置消息处理器，处理函数，链式处理数组，路由对象，详见 mq.Handler
+		* 
+		* 
+		* 
+		*/
+	constructor(crt: X509Cert, key: PKey, hdlr: Handler);
+
 } /** endof class */
 
 /** } /** endof `module Or Internal Object` */

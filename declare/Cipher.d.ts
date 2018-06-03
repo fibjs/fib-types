@@ -33,6 +33,31 @@ declare class Cipher extends _object {
 
 	/**
 		* 
+		* @brief Cipher 构造函数
+		* @param provider 指定加密算法
+		* @param mode 指定分组密码工作模式
+		* @param key 指定加密解密密码
+		* 
+		* 
+		* 
+		*/
+	constructor(provider: number, mode: number, key: Buffer);
+
+	/**
+		* 
+		* @brief Cipher 构造函数
+		* @param provider 指定加密算法
+		* @param mode 指定分组密码工作模式
+		* @param key 指定加密解密密码
+		* @param iv 指定初始向量
+		* 
+		* 
+		* 
+		*/
+	constructor(provider: number, mode: number, key: Buffer, iv: Buffer);
+
+	/**
+		* 
 		* @brief 使用填充模式
 		* @param mode 指定填充模式，缺省为 PADDING_PKCS7
 		* 

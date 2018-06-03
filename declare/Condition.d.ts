@@ -30,6 +30,16 @@ declare class Condition extends Lock {
 
 	/**
 		* 
+		* @brief 条件变量构造函数
+		* @param lock 使用自行构造的锁
+		* 
+		* 
+		* 
+		*/
+	constructor(lock: Lock);
+
+	/**
+		* 
 		* @brief 使纤程进入阻塞状态
 		* 
 		* 

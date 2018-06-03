@@ -311,6 +311,77 @@ declare module "console" {
 
 	/**
 		* 
+		* @brief 添加 console 输出系统，支持的设备为 console, syslog, event 和 file，最多可以添加 10 个输出
+		* 
+		* 通过配置 console，可以将程序输出和系统错误发往不同设备，用于运行环境信息收集。
+		* 
+		* cfg 可以为一个设备配置对象：
+		* ```JavaScript
+		* console.add({
+		* type: "console",
+		* levels: [console.INFO, console.ERROR]  // 选项，省略则输出全部级别日志
+		* });
+		* ```
+		* 
+		* syslog 仅在 posix 平台有效：
+		* ```JavaScript
+		* console.add({
+		* type: "syslog",
+		* levels: [console.INFO, console.ERROR]
+		* });
+		* ```
+		* 
+		* event 仅在 windows 平台有效：
+		* ```JavaScript
+		* console.add({
+		* type: "event",
+		* levels: [console.INFO, console.ERROR]
+		* });
+		* ```
+		* 
+		* file 日志：
+		* ```JavaScript
+		* console.add({
+		* type: "file",
+		* levels: [console.INFO, console.ERROR],
+		* // 必选项，指定日志输出文件，可使用 s% 指定插入日期位置，不指定则添加在结尾
+		* path: "path/to/file_%s.log",
+		* // 选项，可选值为 "day", "hour", "minute", "###k", "###m", "###g"，缺省为 "1m"
+		* split: "30m",
+		* // 选项，可选范围为 2-128，缺省为 128
+		* count: 10
+		* });
+		* ```
+		* 
+		* @param cfg 输出配置
+		* 
+		* 
+		* 
+		*/
+	export function add(cfg: Object): void;
+
+	/**
+		* 
+		* @brief 批量添加 console 输出系统，支持的设备为 console, syslog, event 和 file，最多可以添加 10 个输出
+		* 
+		* 通过配置 console，可以将程序输出和系统错误发往不同设备，用于运行环境信息收集。
+		* 
+		* ```JavaScript
+		* console.add(["console", {
+		* type: "syslog",
+		* levels: [console.INFO, console.ERROR]
+		* }]);
+		* ```
+		* 
+		* @param cfg 输出配置数组
+		* 
+		* 
+		* 
+		*/
+	export function add(cfg: any[]): void;
+
+	/**
+		* 
 		* @brief 初始化到缺省设置，只在 console 输出信息
 		* 
 		* 
@@ -332,6 +403,18 @@ declare module "console" {
 
 	/**
 		* 
+		* @brief 记录普通日志信息，与 info 等同
+		* 
+		* 记录一般等级的日志信息。通常用于输出非错误性提示信息。
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function log(...args: any[]): void;
+
+	/**
+		* 
 		* @brief 记录调试日志信息
 		* 
 		* 记录调试日志信息。通常用于输出调试信息。不重要。
@@ -345,6 +428,18 @@ declare module "console" {
 
 	/**
 		* 
+		* @brief 记录调试日志信息
+		* 
+		* 记录调试日志信息。通常用于输出调试信息。不重要。
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function debug(...args: any[]): void;
+
+	/**
+		* 
 		* @brief 记录普通日志信息，与 log 等同
 		* 
 		* 记录一般等级的日志信息。通常用于输出非错误性提示信息。
@@ -355,6 +450,18 @@ declare module "console" {
 		* 
 		*/
 	export function info(fmt: string, ...args: any[]): void;
+
+	/**
+		* 
+		* @brief 记录普通日志信息，与 log 等同
+		* 
+		* 记录一般等级的日志信息。通常用于输出非错误性提示信息。
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function info(...args: any[]): void;
 
 	/**
 		* 
@@ -373,6 +480,18 @@ declare module "console" {
 		* 
 		* @brief 记录警告日志信息
 		* 
+		* 记录警告日志信息。通常用于输出提示性调试信息。一般重要。
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function notice(...args: any[]): void;
+
+	/**
+		* 
+		* @brief 记录警告日志信息
+		* 
 		* 记录警告日志信息。通常用于输出警告性调试信息。重要。
 		* @param fmt 格式化字符串
 		* @param args 可选参数列表
@@ -381,6 +500,18 @@ declare module "console" {
 		* 
 		*/
 	export function warn(fmt: string, ...args: any[]): void;
+
+	/**
+		* 
+		* @brief 记录警告日志信息
+		* 
+		* 记录警告日志信息。通常用于输出警告性调试信息。重要。
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function warn(...args: any[]): void;
 
 	/**
 		* 
@@ -397,6 +528,18 @@ declare module "console" {
 
 	/**
 		* 
+		* @brief 记录错误日志信息
+		* 
+		* 记录用于错误日志信息。通常用于输出错误信息。非常重要。系统的出错信息也会以此等级记录。
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function error(...args: any[]): void;
+
+	/**
+		* 
 		* @brief 记录关键错误日志信息
 		* 
 		* 记录用于关键错误日志信息。通常用于输出关键错误信息。非常重要。
@@ -410,6 +553,18 @@ declare module "console" {
 
 	/**
 		* 
+		* @brief 记录关键错误日志信息
+		* 
+		* 记录用于关键错误日志信息。通常用于输出关键错误信息。非常重要。
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function crit(...args: any[]): void;
+
+	/**
+		* 
 		* @brief 记录警报错误日志信息
 		* 
 		* 记录用于警报错误日志信息。通常用于输出警报错误信息。非常重要。为最高级别信息。
@@ -420,6 +575,18 @@ declare module "console" {
 		* 
 		*/
 	export function alert(fmt: string, ...args: any[]): void;
+
+	/**
+		* 
+		* @brief 记录警报错误日志信息
+		* 
+		* 记录用于警报错误日志信息。通常用于输出警报错误信息。非常重要。为最高级别信息。
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function alert(...args: any[]): void;
 
 	/**
 		* 
@@ -489,6 +656,16 @@ declare module "console" {
 
 	/**
 		* 
+		* @brief 向控制台输出格式化文本，输出内容不会记入日志系统，输出文本后不会自动换行，可连续输出
+		* @param args 可选参数列表
+		* 
+		* 
+		* 
+		*/
+	export function print(...args: any[]): void;
+
+	/**
+		* 
 		* @brief 移动控制台光标到指定位置
 		* @param row 指定新光标的行坐标
 		* @param column 指定新光标的列坐标
@@ -541,6 +718,23 @@ declare module "console" {
 
 	/**
 		* 
+		* @brief 按下一个按键
+		* 
+		* 参数 key 可以使用字符串传入功能键：
+		* - 功能键：f1 - f12
+		* - 方向键：up, down,left, right, home, end, pageup, pagedown
+		* - 编辑键：backspace, delete, insert, enter, tab, escape, space
+		* - 控制键：control, alt, shift, command
+		* @param key 指定按键，单字符直接传入，功能键传入名称
+		* @param modifier 指定控制键数组，可以为：control, alt, shift, command
+		* 
+		* 
+		* 
+		*/
+	export function keyDown(key: string, modifier: any[]): void;
+
+	/**
+		* 
 		* @brief 松开一个按键
 		* 
 		* 参数 key 可以使用字符串传入功能键：
@@ -558,6 +752,23 @@ declare module "console" {
 
 	/**
 		* 
+		* @brief 松开一个按键
+		* 
+		* 参数 key 可以使用字符串传入功能键：
+		* - 功能键：f1 - f12
+		* - 方向键：up, down,left, right, home, end, pageup, pagedown
+		* - 编辑键：backspace, delete, insert, enter, tab, escape, space
+		* - 控制键：control, alt, shift, command
+		* @param key 指定按键，单字符直接传入，功能键传入名称
+		* @param modifier 指定控制键数组，可以为：control, alt, shift, command
+		* 
+		* 
+		* 
+		*/
+	export function keyUp(key: string, modifier: any[]): void;
+
+	/**
+		* 
 		* @brief 点击并松开一个按键
 		* 
 		* 参数 key 可以使用字符串传入功能键：
@@ -572,6 +783,23 @@ declare module "console" {
 		* 
 		*/
 	export function keyTap(key: string, modifier?: string/** = ""*/): void;
+
+	/**
+		* 
+		* @brief 点击并松开一个按键
+		* 
+		* 参数 key 可以使用字符串传入功能键：
+		* - 功能键：f1 - f12
+		* - 方向键：up, down,left, right, home, end, pageup, pagedown
+		* - 编辑键：backspace, delete, insert, enter, tab, escape, space
+		* - 控制键：control, alt, shift, command
+		* @param key 指定按键，单字符直接传入，功能键传入名称
+		* @param modifier 指定控制键数组，可以为：control, alt, shift, command
+		* 
+		* 
+		* 
+		*/
+	export function keyTap(key: string, modifier: any[]): void;
 
 	/**
 		* 

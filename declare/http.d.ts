@@ -230,6 +230,29 @@ declare module "http" {
 
 	/**
 		* 
+		* @brief 请求指定的 url，并返回结果
+		* opts 包含请求的附加选项，支持的内容如下：
+		* ```JavaScript
+		* {
+		* "query": {},
+		* "body": SeekedStream | Buffer | String | {},
+		* "json": {},
+		* "headers": {}
+		* }
+		* ```
+		* 其中 body，json 不得同时出现。缺省为 {}，不包含任何附加信息
+		* @param method 指定 http 请求方法：GET, POST 等
+		* @param url 指定 url，必须是包含主机的完整 url
+		* @param opts 指定附加信息
+		* @return 返回服务器响应
+		* 
+		* 
+		* @async
+		*/
+	export function request(method: string, url: string, opts?: Object/** = v8::Object::New(isolate)*/): HttpResponse;
+
+	/**
+		* 
 		* @brief 用 GET 方法请求指定的 url，并返回结果，等同于 request("GET", ...)
 		* opts 包含请求的附加选项，支持的内容如下：
 		* ```JavaScript
