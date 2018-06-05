@@ -30,7 +30,7 @@ import * as fs from 'fs' // right
 import fs from 'fs' // wrong
 ```
 
-**Notice** not like latest nodejs, fibjs export one module without equivalent `'default'` member, that is, fibjs's module **isn't** esmodule style, it's CommonJs, so you must use `import * as xxx from 'xxx'` rather than `import xxx from 'xxx'`
+**Notice** As of **internal modules**, not like latest nodejs, fibjs export one internal module without equivalent `'default'` member, that is, fibjs's internal module **isn't** esmodule style, it's CommonJs, so you must use `import * as xxx from 'xxx'` rather than `import xxx from 'xxx'`
 
 ## TODO
 
