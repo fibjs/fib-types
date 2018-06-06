@@ -3,7 +3,7 @@
 
 import * as fs from 'fs'
 import * as path from 'path'
-import * as test from 'test'
+const test = require('test')
 
 test.setup()
 

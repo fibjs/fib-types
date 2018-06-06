@@ -80,10 +80,12 @@ declare global {
 	
 	/** const global: Object; */
 	/** const run: null; */
-	/** const require: Value; */
+	const require: typeof _Global.require
 	/** const argv: Array; */
-	/** const __filename: String; */
-	/** const __dirname: String; */
+	const __filename: string;
+	
+	const __dirname: string;
+	
 	/** const setTimeout: Timer; */
 	/** const clearTimeout: null; */
 	/** const setInterval: Timer; */
