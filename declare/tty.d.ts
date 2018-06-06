@@ -198,19 +198,26 @@
 	*/
 declare module "tty" {
 	
-	
-	
-	/**
-		* 
-		* @brief 查询是否是命令交互窗口
-		* @param fd 文件描述符
-		* @return 如果文件描述符同一个终端窗口关联则返回 true ，否则返回 false
-		* 
-		* 
-		* 
-		*/
-	export function isatty(fd: number): boolean;
 
+	module tty {
+		
+		
+		
+		
+		
+		/**
+			* 
+			* @brief 查询是否是命令交互窗口
+			* @param fd 文件描述符
+			* @return 如果文件描述符同一个终端窗口关联则返回 true ，否则返回 false
+			* 
+			* 
+			* 
+			*/
+		export function isatty(fd: number): boolean;
+	
+	} /** end of `module tty` */
+	export = tty
 }
 
 /** } /** endof `module Or Internal Object` */

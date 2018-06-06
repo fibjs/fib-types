@@ -11,20 +11,20 @@
 
 
 
+import base32 = require('base32')
 
-/// <reference path="base32.d.ts" />
+import base64 = require('base64')
 
-/// <reference path="base64.d.ts" />
+import base64vlq = require('base64vlq')
 
-/// <reference path="base64vlq.d.ts" />
+import hex = require('hex')
 
-/// <reference path="hex.d.ts" />
+import iconv = require('iconv')
 
-/// <reference path="iconv.d.ts" />
+import json = require('json')
 
-/// <reference path="json.d.ts" />
+import bson = require('bson')
 
-/// <reference path="bson.d.ts" />
 
 
 /// <reference path="Buffer.d.ts" />
@@ -212,53 +212,123 @@
 	*/
 declare module "encoding" {
 	
+	import base32NS = require('base32')
+	import base64NS = require('base64')
+	import base64vlqNS = require('base64vlq')
+	import hexNS = require('hex')
+	import iconvNS = require('iconv')
+	import jsonNS = require('json')
+	import bsonNS = require('bson')
+
+	module encoding {
+		
+		
+		
+		/**
+			* 
+			* @brief base32 编码与解码模块
+			* 
+			* 
+			*/
+		export const base32: typeof base32NS;
+		
+		/**
+			* 
+			* @brief base64 编码与解码模块
+			* 
+			* 
+			*/
+		export const base64: typeof base64NS;
+		
+		/**
+			* 
+			* @brief base64vlq 编码与解码模块
+			* 
+			* 
+			*/
+		export const base64vlq: typeof base64vlqNS;
+		
+		/**
+			* 
+			* @brief hex 编码与解码模块
+			* 
+			* 
+			*/
+		export const hex: typeof hexNS;
+		
+		/**
+			* 
+			* @brief iconv 编码与解码模块
+			* 
+			* 
+			*/
+		export const iconv: typeof iconvNS;
+		
+		/**
+			* 
+			* @brief json 编码与解码模块
+			* 
+			* 
+			*/
+		export const json: typeof jsonNS;
+		
+		/**
+			* 
+			* @brief bson 编码与解码模块
+			* 
+			* 
+			*/
+		export const bson: typeof bsonNS;
+		
+		
+		
+		/**
+			* 
+			* @brief 将字符串编码为 javascript 转义字符串，用以在 javascript 代码中包含文本
+			* @param str 要编码的字符串
+			* @param json 是否生成json兼容字符串
+			* @return 返回编码的字符串
+			* 
+			* 
+			* 
+			*/
+		export function jsstr(str: string, json?: boolean/** = false*/): string;
 	
+		/**
+			* 
+			* @brief url 字符串安全编码
+			* @param url 要编码的 url
+			* @return 返回编码的字符串
+			* 
+			* 
+			* 
+			*/
+		export function encodeURI(url: string): string;
 	
-	/**
-		* 
-		* @brief 将字符串编码为 javascript 转义字符串，用以在 javascript 代码中包含文本
-		* @param str 要编码的字符串
-		* @param json 是否生成json兼容字符串
-		* @return 返回编码的字符串
-		* 
-		* 
-		* 
-		*/
-	export function jsstr(str: string, json?: boolean/** = false*/): string;
-
-	/**
-		* 
-		* @brief url 字符串安全编码
-		* @param url 要编码的 url
-		* @return 返回编码的字符串
-		* 
-		* 
-		* 
-		*/
-	export function encodeURI(url: string): string;
-
-	/**
-		* 
-		* @brief url 部件字符串安全编码
-		* @param url 要编码的 url
-		* @return 返回编码的字符串
-		* 
-		* 
-		* 
-		*/
-	export function encodeURIComponent(url: string): string;
-
-	/**
-		* 
-		* @brief url 安全字符串解码
-		* @param url 要解码的 url
-		* @return 返回解码的字符串
-		* 
-		* 
-		* 
-		*/
-	export function decodeURI(url: string): string;
-
+		/**
+			* 
+			* @brief url 部件字符串安全编码
+			* @param url 要编码的 url
+			* @return 返回编码的字符串
+			* 
+			* 
+			* 
+			*/
+		export function encodeURIComponent(url: string): string;
+	
+		/**
+			* 
+			* @brief url 安全字符串解码
+			* @param url 要解码的 url
+			* @return 返回解码的字符串
+			* 
+			* 
+			* 
+			*/
+		export function decodeURI(url: string): string;
+	
+	} /** end of `module encoding` */
+	export = encoding
 }
 
 /** } /** endof `module Or Internal Object` */

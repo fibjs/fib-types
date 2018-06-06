@@ -198,8 +198,23 @@
 	*/
 declare module "string_decoder" {
 	
-	
-	
+
+	module string_decoder {
+		
+		
+		
+		/**
+			* 
+			* @brief 创建一个解码对象，参见 StringDecoder
+			* 
+			* 
+			*/
+		export const StringDecoder: StringDecoder;
+		
+		
+		
+	} /** end of `module string_decoder` */
+	export = string_decoder
 }
 
 /** } /** endof `module Or Internal Object` */

@@ -198,30 +198,37 @@
 	*/
 declare module "dns" {
 	
-	
-	
-	/**
-		* 
-		* @brief 查询给定的主机名的地址
-		* @param name 指定主机名
-		* @return 返回查询的 ip 字符串数组
-		* 
-		* 
-		* @async
-		*/
-	export function resolve(name: string): any[];
 
-	/**
-		* 
-		* @brief 查询给定的主机名的地址
-		* @param name 指定主机名
-		* @return 返回查询的 ip 字符串
-		* 
-		* 
-		* @async
-		*/
-	export function lookup(name: string): string;
-
+	module dns {
+		
+		
+		
+		
+		
+		/**
+			* 
+			* @brief 查询给定的主机名的地址
+			* @param name 指定主机名
+			* @return 返回查询的 ip 字符串数组
+			* 
+			* 
+			* @async
+			*/
+		export function resolve(name: string): any[];
+	
+		/**
+			* 
+			* @brief 查询给定的主机名的地址
+			* @param name 指定主机名
+			* @return 返回查询的 ip 字符串
+			* 
+			* 
+			* @async
+			*/
+		export function lookup(name: string): string;
+	
+	} /** end of `module dns` */
+	export = dns
 }
 
 /** } /** endof `module Or Internal Object` */
