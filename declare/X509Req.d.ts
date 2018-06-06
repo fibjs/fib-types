@@ -11,8 +11,8 @@
 /// <reference path="object.d.ts" />
 
 
+import hash = require('hash')
 
-/// <reference path="hash.d.ts" />
 
 
 /** module Or Internal Object */

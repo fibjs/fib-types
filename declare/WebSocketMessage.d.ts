@@ -11,8 +11,8 @@
 /// <reference path="object.d.ts" />
 
 
+import ws = require('ws')
 
-/// <reference path="ws.d.ts" />
 
 
 /** module Or Internal Object */

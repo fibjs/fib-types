@@ -198,89 +198,136 @@
 	*/
 declare module "coroutine" {
 	
+
+	module coroutine {
+		
+		
+		
+		/**
+			* 
+			* @brief 锁对象，参见 Lock
+			* 
+			* 
+			*/
+		export const Lock: Lock;
+		
+		/**
+			* 
+			* @brief 信号量对象，参见 Semaphore
+			* 
+			* 
+			*/
+		export const Semaphore: Semaphore;
+		
+		/**
+			* 
+			* @brief 条件变量对象，参见 Condition
+			* 
+			* 
+			*/
+		export const Condition: Condition;
+		
+		/**
+			* 
+			* @brief 事件对象，参见 Event
+			* 
+			* 
+			*/
+		export const Event: Event;
+		
+		/**
+			* 
+			* @brief 独立线程工作对象，参见 Worker
+			* 
+			* 
+			*/
+		export const Worker: Worker;
+		
+		
+		
+		/**
+			* 
+			* @brief 启动一个纤程并返回纤程对象
+			* @param func 制定纤程执行的函数
+			* @param args 可变参数序列，此序列会在纤程内传递给函数
+			* @return 返回纤程对象
+			* 
+			* 
+			* 
+			*/
+		export function start(func: Function, ...args: any[]): Fiber;
 	
+		/**
+			* 
+			* @brief 并行执行一组函数，并等待返回
+			* @param funcs 并行执行的函数数组
+			* @param fibers 限制并发 fiber 数量，缺省为 -1，启用与 funcs 数量相同 fiber
+			* @return 返回函数执行结果的数组
+			* 
+			* 
+			* 
+			*/
+		export function parallel(funcs: any[], fibers?: number/** = -1*/): any[];
 	
-	/**
-		* 
-		* @brief 启动一个纤程并返回纤程对象
-		* @param func 制定纤程执行的函数
-		* @param args 可变参数序列，此序列会在纤程内传递给函数
-		* @return 返回纤程对象
-		* 
-		* 
-		* 
-		*/
-	export function start(func: Function, ...args: any[]): Fiber;
-
-	/**
-		* 
-		* @brief 并行执行一组函数，并等待返回
-		* @param funcs 并行执行的函数数组
-		* @param fibers 限制并发 fiber 数量，缺省为 -1，启用与 funcs 数量相同 fiber
-		* @return 返回函数执行结果的数组
-		* 
-		* 
-		* 
-		*/
-	export function parallel(funcs: any[], fibers?: number/** = -1*/): any[];
-
-	/**
-		* 
-		* @brief 并行执行一个函数处理一组数据，并等待返回
-		* @param datas 并行执行的数据数组
-		* @param func 并行执行的函数
-		* @param fibers 限制并发 fiber 数量，缺省为 -1，启用与 datas 数量相同 fiber
-		* @return 返回函数执行结果的数组
-		* 
-		* 
-		* 
-		*/
-	export function parallel(datas: any[], func: Function, fibers?: number/** = -1*/): any[];
-
-	/**
-		* 
-		* @brief 并行执行一个函数多次，并等待返回
-		* @param func 并行执行的函数数
-		* @param num 重复任务数量
-		* @param fibers 限制并发 fiber 数量，缺省为 -1，启用与 funcs 数量相同 fiber
-		* @return 返回函数执行结果的数组
-		* 
-		* 
-		* 
-		*/
-	export function parallel(func: Function, num: number, fibers?: number/** = -1*/): any[];
-
-	/**
-		* 
-		* @brief 并行执行一组函数，并等待返回
-		* @param funcs 一组并行执行的函数
-		* @return 返回函数执行结果的数组
-		* 
-		* 
-		* 
-		*/
-	export function parallel(...funcs: any[]): any[];
-
-	/**
-		* 
-		* @brief 返回当前纤程
-		* @return 当前纤程对象
-		* 
-		* 
-		* 
-		*/
-	export function current(): Fiber;
-
-	/**
-		* 
-		* @brief 暂停当前纤程指定的时间
-		* @param ms 指定要暂停的时间，以毫秒为单位，缺省为 0，即有空闲立即回恢复运行
-		* 
-		* 
-		* @async
-		*/
-	export function sleep(ms?: number/** = 0*/): void;
-
+		/**
+			* 
+			* @brief 并行执行一个函数处理一组数据，并等待返回
+			* @param datas 并行执行的数据数组
+			* @param func 并行执行的函数
+			* @param fibers 限制并发 fiber 数量，缺省为 -1，启用与 datas 数量相同 fiber
+			* @return 返回函数执行结果的数组
+			* 
+			* 
+			* 
+			*/
+		export function parallel(datas: any[], func: Function, fibers?: number/** = -1*/): any[];
+	
+		/**
+			* 
+			* @brief 并行执行一个函数多次，并等待返回
+			* @param func 并行执行的函数数
+			* @param num 重复任务数量
+			* @param fibers 限制并发 fiber 数量，缺省为 -1，启用与 funcs 数量相同 fiber
+			* @return 返回函数执行结果的数组
+			* 
+			* 
+			* 
+			*/
+		export function parallel(func: Function, num: number, fibers?: number/** = -1*/): any[];
+	
+		/**
+			* 
+			* @brief 并行执行一组函数，并等待返回
+			* @param funcs 一组并行执行的函数
+			* @return 返回函数执行结果的数组
+			* 
+			* 
+			* 
+			*/
+		export function parallel(...funcs: any[]): any[];
+	
+		/**
+			* 
+			* @brief 返回当前纤程
+			* @return 当前纤程对象
+			* 
+			* 
+			* 
+			*/
+		export function current(): Fiber;
+	
+		/**
+			* 
+			* @brief 暂停当前纤程指定的时间
+			* @param ms 指定要暂停的时间，以毫秒为单位，缺省为 0，即有空闲立即回恢复运行
+			* 
+			* 
+			* @async
+			*/
+		export function sleep(ms?: number/** = 0*/): void;
+	
+	} /** end of `module coroutine` */
+	export = coroutine
 }
 
 /** } /** endof `module Or Internal Object` */

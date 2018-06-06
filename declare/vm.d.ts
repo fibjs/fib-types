@@ -198,8 +198,23 @@
 	*/
 declare module "vm" {
 	
-	
-	
+
+	module vm {
+		
+		
+		
+		/**
+			* 
+			* @brief 创建一个 SandBox 对象，参见 SandBox
+			* 
+			* 
+			*/
+		export const SandBox: SandBox;
+		
+		
+		
+	} /** end of `module vm` */
+	export = vm
 }
 
 /** } /** endof `module Or Internal Object` */

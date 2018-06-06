@@ -11,8 +11,8 @@
 /// <reference path="object.d.ts" />
 
 
+import gd = require('gd')
 
-/// <reference path="gd.d.ts" />
 
 
 /** module Or Internal Object */

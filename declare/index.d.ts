@@ -62,7 +62,13 @@
 
 import _Global from 'global';
 import _Process from 'process';
-/// <reference path="Buffer.d.ts" />
+
+declare const process: typeof _Process;
+declare const global: typeof _Global;
+declare const __filename: string;
+declare const __dirname: string;
+declare const module: string;
+declare const requrie: typeof _Global.require;
 
 declare global {
 
@@ -70,15 +76,14 @@ declare global {
 	/** const Int64: Int64; */
 	/** const console: console; */
 	/** const process: process; */
-	/** const Master: Worker; */
+	const Master: Worker;
+	
 	/** const global: Object; */
 	/** const run: null; */
-	const require: typeof _Global.require
+	/** const require: Value; */
 	/** const argv: Array; */
-	const __filename: string;
-	
-	const __dirname: string;
-	
+	/** const __filename: String; */
+	/** const __dirname: String; */
 	/** const setTimeout: Timer; */
 	/** const clearTimeout: null; */
 	/** const setInterval: Timer; */
@@ -89,9 +94,6 @@ declare global {
 	/** const clearImmediate: null; */
 	const GC: typeof _Global.GC
 	const repl: typeof _Global.repl
-
-	const process: typeof _Process;
-	const global: typeof _Global;
 }
 
 

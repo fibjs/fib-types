@@ -11,8 +11,8 @@
 /// <reference path="object.d.ts" />
 
 
+import zmq = require('zmq')
 
-/// <reference path="zmq.d.ts" />
 
 
 /** module Or Internal Object */

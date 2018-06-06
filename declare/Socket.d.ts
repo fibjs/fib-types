@@ -11,8 +11,8 @@
 /// <reference path="object.d.ts" />
 
 
+import net = require('net')
 
-/// <reference path="net.d.ts" />
 
 
 /** module Or Internal Object */

@@ -198,31 +198,38 @@
 	*/
 declare module "base64" {
 	
-	
-	
-	/**
-		* 
-		* @brief 以 base64 方式编码数据
-		* @param data 要编码的数据
-		* @param url 指定是否使用 url 安全字符编码
-		* @return 返回编码的字符串
-		* 
-		* 
-		* 
-		*/
-	export function encode(data: Buffer, url?: boolean/** = false*/): string;
 
-	/**
-		* 
-		* @brief 以 base64 方式解码字符串为二进制数据
-		* @param data 要解码的字符串
-		* @return 返回解码的二进制数据
-		* 
-		* 
-		* 
-		*/
-	export function decode(data: string): Buffer;
-
+	module base64 {
+		
+		
+		
+		
+		
+		/**
+			* 
+			* @brief 以 base64 方式编码数据
+			* @param data 要编码的数据
+			* @param url 指定是否使用 url 安全字符编码
+			* @return 返回编码的字符串
+			* 
+			* 
+			* 
+			*/
+		export function encode(data: Buffer, url?: boolean/** = false*/): string;
+	
+		/**
+			* 
+			* @brief 以 base64 方式解码字符串为二进制数据
+			* @param data 要解码的字符串
+			* @return 返回解码的二进制数据
+			* 
+			* 
+			* 
+			*/
+		export function decode(data: string): Buffer;
+	
+	} /** end of `module base64` */
+	export = base64
 }
 
 /** } /** endof `module Or Internal Object` */

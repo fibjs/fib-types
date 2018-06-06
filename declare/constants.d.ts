@@ -198,8 +198,15 @@
 	*/
 declare module "constants" {
 	
-	
-	
+
+	module constants {
+		
+		
+		
+		
+		
+	} /** end of `module constants` */
+	export = constants
 }
 
 /** } /** endof `module Or Internal Object` */
