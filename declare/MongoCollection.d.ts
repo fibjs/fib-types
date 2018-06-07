@@ -18,7 +18,8 @@
 	* @brief mongodb 数据库数据集对象
 	* @detail 使用 MongoDB.getCollection 创建：,```JavaScript,var col1 = mdb.getCollection('test');,var col = mdb.test;,```
 	*/
-declare class MongoCollection extends _object {
+
+declare class MongoCollection_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -30,7 +31,7 @@ declare class MongoCollection extends _object {
 		* 
 		* 
 		*/
-	find(query?: Object/** = v8::Object::New(isolate)*/, projection?: Object/** = v8::Object::New(isolate)*/): MongoCursor;
+	find(query?: Object/** = v8::Object::New(isolate)*/, projection?: Object/** = v8::Object::New(isolate)*/): MongoCursor_Classbase;
 
 	/**
 		* 
@@ -201,7 +202,7 @@ declare class MongoCollection extends _object {
 		* 
 		* 
 		*/
-	getIndexes(): MongoCursor;
+	getIndexes(): MongoCursor_Classbase;
 
 	/**
 		* 
@@ -212,7 +213,7 @@ declare class MongoCollection extends _object {
 		* 
 		* 
 		*/
-	getCollection(name: string): MongoCollection;
+	getCollection(name: string): MongoCollection_Classbase;
 
 } /** endof class */
 

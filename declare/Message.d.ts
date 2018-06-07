@@ -18,7 +18,8 @@
 	* @brief 基础消息对象
 	* @detail Message 对象兼容于 mq 各个模块，可用于构建自定义消息处理系统，创建方法：,```JavaScript,var mq = require("mq");,var m = new mq.Message();,```
 	*/
-declare class Message extends _object {
+
+declare class Message_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -37,7 +38,7 @@ declare class Message extends _object {
 		* 
 		* @async
 		*/
-	read(bytes?: number/** = -1*/): Buffer;
+	read(bytes?: number/** = -1*/): Buffer_Classbase;
 
 	/**
 		* 
@@ -47,7 +48,7 @@ declare class Message extends _object {
 		* 
 		* @async
 		*/
-	readAll(): Buffer;
+	readAll(): Buffer_Classbase;
 
 	/**
 		* 
@@ -57,7 +58,7 @@ declare class Message extends _object {
 		* 
 		* @async
 		*/
-	write(data: Buffer): void;
+	write(data: Buffer_Classbase): void;
 
 	/**
 		* 
@@ -114,7 +115,7 @@ declare class Message extends _object {
 		* 
 		* @async
 		*/
-	sendTo(stm: Stream): void;
+	sendTo(stm: Stream_Classbase): void;
 
 	/**
 		* 
@@ -124,7 +125,7 @@ declare class Message extends _object {
 		* 
 		* @async
 		*/
-	readFrom(stm: Stream): void;
+	readFrom(stm: Stream_Classbase): void;
 
 } /** endof class */
 

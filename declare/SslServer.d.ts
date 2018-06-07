@@ -18,7 +18,8 @@
 	* @brief ssl 服务器对象，可方便创建一个标准多纤程 ssl 服务器
 	* @detail SslServer 对象是将 TcpServer 和 SslHandler 组合封装的对象，方便快速搭建服务器，逻辑上相当于：,```JavaScript,var svr = new net.SslServer(addr, port, new ssl.Handler(crt, key, function(req){,   ...,}));,```,,创建方法：,```JavaScript,var ssl = require("ssl");,var svr = new http.Server(crt, key, function(req){,    ...,});,```
 	*/
-declare class SslServer extends TcpServer {
+/// <reference path="TcpServer.d.ts" />
+declare class SslServer_Classbase extends TcpServer_Classbase {
 	
 	/**
 		* 
@@ -44,7 +45,7 @@ declare class SslServer extends TcpServer {
 		* 
 		* 
 		*/
-	constructor(certs: any[], port: number, listener: Handler);
+	constructor(certs: any[], port: number, listener: Handler_Classbase);
 
 	/**
 		* 
@@ -71,7 +72,7 @@ declare class SslServer extends TcpServer {
 		* 
 		* 
 		*/
-	constructor(certs: any[], addr: string, port: number, listener: Handler);
+	constructor(certs: any[], addr: string, port: number, listener: Handler_Classbase);
 
 	/**
 		* 
@@ -84,7 +85,7 @@ declare class SslServer extends TcpServer {
 		* 
 		* 
 		*/
-	constructor(crt: X509Cert, key: PKey, port: number, listener: Handler);
+	constructor(crt: X509Cert_Classbase, key: PKey_Classbase, port: number, listener: Handler_Classbase);
 
 	/**
 		* 
@@ -98,7 +99,7 @@ declare class SslServer extends TcpServer {
 		* 
 		* 
 		*/
-	constructor(crt: X509Cert, key: PKey, addr: string, port: number, listener: Handler);
+	constructor(crt: X509Cert_Classbase, key: PKey_Classbase, addr: string, port: number, listener: Handler_Classbase);
 
 } /** endof class */
 

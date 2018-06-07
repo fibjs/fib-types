@@ -245,7 +245,7 @@ declare module "uuid" {
 			* 
 			* 
 			*/
-		export function node(): Buffer;
+		export function node(): Buffer_Classbase;
 	
 		/**
 			* 
@@ -257,7 +257,7 @@ declare module "uuid" {
 			* 
 			* 
 			*/
-		export function md5(ns: number, name: string): Buffer;
+		export function md5(ns: number, name: string): Buffer_Classbase;
 	
 		/**
 			* 
@@ -267,7 +267,7 @@ declare module "uuid" {
 			* 
 			* 
 			*/
-		export function random(): Buffer;
+		export function random(): Buffer_Classbase;
 	
 		/**
 			* 
@@ -279,7 +279,7 @@ declare module "uuid" {
 			* 
 			* 
 			*/
-		export function sha1(ns: number, name: string): Buffer;
+		export function sha1(ns: number, name: string): Buffer_Classbase;
 	
 		/**
 			* 
@@ -289,7 +289,7 @@ declare module "uuid" {
 			* 
 			* 
 			*/
-		export function snowflake(): Buffer;
+		export function snowflake(): Buffer_Classbase;
 	
 	} /** end of `module uuid` */
 	export = uuid

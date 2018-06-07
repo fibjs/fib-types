@@ -18,7 +18,8 @@
 	* @brief Redis 数据库客户端 Set 对象，此对象为包含指定 key 的客户端，只有调用其方法才会操作数据库
 	* @detail 用以操作 Redis 的 Set 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var set = rdb.getSet("test");,```
 	*/
-declare class RedisSet extends _object {
+
+declare class RedisSet_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -77,7 +78,7 @@ declare class RedisSet extends _object {
 		* 
 		* 
 		*/
-	exists(member: Buffer): boolean;
+	exists(member: Buffer_Classbase): boolean;
 
 	/**
 		* 
@@ -95,7 +96,7 @@ declare class RedisSet extends _object {
 		* 
 		* 
 		*/
-	pop(): Buffer;
+	pop(): Buffer_Classbase;
 
 	/**
 		* 

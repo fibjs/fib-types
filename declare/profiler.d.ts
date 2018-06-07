@@ -392,7 +392,7 @@ declare module "profiler" {
 			* 
 			* 
 			*/
-		export function loadSnapshot(fname: string): HeapSnapshot;
+		export function loadSnapshot(fname: string): HeapSnapshot_Classbase;
 	
 		/**
 			* 
@@ -402,7 +402,7 @@ declare module "profiler" {
 			* 
 			* 
 			*/
-		export function takeSnapshot(): HeapSnapshot;
+		export function takeSnapshot(): HeapSnapshot_Classbase;
 	
 		/**
 			* 
@@ -426,7 +426,7 @@ declare module "profiler" {
 			* 
 			* 
 			*/
-		export function start(fname: string, time?: number/** = 60000*/, interval?: number/** = 100*/): Timer;
+		export function start(fname: string, time?: number/** = 60000*/, interval?: number/** = 100*/): Timer_Classbase;
 	
 	} /** end of `module profiler` */
 	export = profiler

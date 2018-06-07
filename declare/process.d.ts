@@ -349,7 +349,7 @@ declare module "process" {
 			* 
 			* 
 			*/
-		export function open(command: string, args: any[], opts?: Object/** = v8::Object::New(isolate)*/): SubProcess;
+		export function open(command: string, args: any[], opts?: Object/** = v8::Object::New(isolate)*/): SubProcess_Classbase;
 	
 		/**
 			* 
@@ -369,7 +369,7 @@ declare module "process" {
 			* 
 			* 
 			*/
-		export function open(command: string, opts?: Object/** = v8::Object::New(isolate)*/): SubProcess;
+		export function open(command: string, opts?: Object/** = v8::Object::New(isolate)*/): SubProcess_Classbase;
 	
 		/**
 			* 
@@ -390,7 +390,7 @@ declare module "process" {
 			* 
 			* 
 			*/
-		export function start(command: string, args: any[], opts?: Object/** = v8::Object::New(isolate)*/): SubProcess;
+		export function start(command: string, args: any[], opts?: Object/** = v8::Object::New(isolate)*/): SubProcess_Classbase;
 	
 		/**
 			* 
@@ -410,7 +410,7 @@ declare module "process" {
 			* 
 			* 
 			*/
-		export function start(command: string, opts?: Object/** = v8::Object::New(isolate)*/): SubProcess;
+		export function start(command: string, opts?: Object/** = v8::Object::New(isolate)*/): SubProcess_Classbase;
 	
 		/**
 			* 

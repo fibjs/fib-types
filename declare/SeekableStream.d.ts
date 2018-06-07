@@ -18,7 +18,8 @@
 	* @brief 可移动当前指针的流对象接口
 	* @detail 
 	*/
-declare class SeekableStream extends Stream {
+/// <reference path="Stream.d.ts" />
+declare class SeekableStream_Classbase extends Stream_Classbase {
 	
 	/**
 		* 
@@ -67,7 +68,7 @@ declare class SeekableStream extends Stream {
 		* 
 		* @async
 		*/
-	readAll(): Buffer;
+	readAll(): Buffer_Classbase;
 
 	/**
 		* 
@@ -97,7 +98,7 @@ declare class SeekableStream extends Stream {
 		* 
 		* @async
 		*/
-	stat(): Stat;
+	stat(): Stat_Classbase;
 
 } /** endof class */
 

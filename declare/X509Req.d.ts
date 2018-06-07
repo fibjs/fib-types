@@ -20,7 +20,8 @@ import hash = require('hash')
 	* @brief x509 证书请求对象
 	* @detail X509Req 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.X509Req();,```
 	*/
-declare class X509Req extends _object {
+
+declare class X509Req_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -41,7 +42,7 @@ declare class X509Req extends _object {
 		* 
 		* 
 		*/
-	constructor(subject: string, key: PKey, hash?: number/** = undefined*/);
+	constructor(subject: string, key: PKey_Classbase, hash?: number/** = undefined*/);
 
 	/**
 		* 
@@ -51,7 +52,7 @@ declare class X509Req extends _object {
 		* 
 		* 
 		*/
-	load(derReq: Buffer): void;
+	load(derReq: Buffer_Classbase): void;
 
 	/**
 		* 
@@ -91,7 +92,7 @@ declare class X509Req extends _object {
 		* 
 		* 
 		*/
-	exportDer(): Buffer;
+	exportDer(): Buffer_Classbase;
 
 	/**
 		* 
@@ -116,7 +117,7 @@ declare class X509Req extends _object {
 		* 
 		* @async
 		*/
-	sign(issuer: string, key: PKey, opts?: Object/** = v8::Object::New(isolate)*/): X509Cert;
+	sign(issuer: string, key: PKey_Classbase, opts?: Object/** = v8::Object::New(isolate)*/): X509Cert_Classbase;
 
 } /** endof class */
 

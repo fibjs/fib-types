@@ -18,7 +18,8 @@
 	* @brief http Cookie 对象，用于添加和处理 cookie
 	* @detail 
 	*/
-declare class HttpCookie extends _object {
+
+declare class HttpCookie_Classbase extends _object_Classbase {
 	
 	/**
 		* 

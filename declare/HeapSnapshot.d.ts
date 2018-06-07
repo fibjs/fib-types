@@ -18,7 +18,8 @@
 	* @brief HeapSnapshots记录JS堆在某个时刻的状态
 	* @detail 
 	*/
-declare class HeapSnapshot extends _object {
+
+declare class HeapSnapshot_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -29,7 +30,7 @@ declare class HeapSnapshot extends _object {
 		* 
 		* 
 		*/
-	diff(before: HeapSnapshot): Object;
+	diff(before: HeapSnapshot_Classbase): Object;
 
 	/**
 		* 
@@ -40,7 +41,7 @@ declare class HeapSnapshot extends _object {
 		* 
 		* 
 		*/
-	getNodeById(id: number): HeapGraphNode;
+	getNodeById(id: number): HeapGraphNode_Classbase;
 
 	/**
 		* 

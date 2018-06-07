@@ -18,7 +18,8 @@
 	* @brief 对称加密算法对象
 	* @detail Cipher 对象属于 crypto 模块，创建：,```JavaScript,var c = new crypto.Cipher(crypto.AES, crypto.ECB, ...);,```
 	*/
-declare class Cipher extends _object {
+
+declare class Cipher_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -29,7 +30,7 @@ declare class Cipher extends _object {
 		* 
 		* 
 		*/
-	constructor(provider: number, key: Buffer);
+	constructor(provider: number, key: Buffer_Classbase);
 
 	/**
 		* 
@@ -41,7 +42,7 @@ declare class Cipher extends _object {
 		* 
 		* 
 		*/
-	constructor(provider: number, mode: number, key: Buffer);
+	constructor(provider: number, mode: number, key: Buffer_Classbase);
 
 	/**
 		* 
@@ -54,7 +55,7 @@ declare class Cipher extends _object {
 		* 
 		* 
 		*/
-	constructor(provider: number, mode: number, key: Buffer, iv: Buffer);
+	constructor(provider: number, mode: number, key: Buffer_Classbase, iv: Buffer_Classbase);
 
 	/**
 		* 
@@ -75,7 +76,7 @@ declare class Cipher extends _object {
 		* 
 		* @async
 		*/
-	encrypt(data: Buffer): Buffer;
+	encrypt(data: Buffer_Classbase): Buffer_Classbase;
 
 	/**
 		* 
@@ -86,7 +87,7 @@ declare class Cipher extends _object {
 		* 
 		* @async
 		*/
-	decrypt(data: Buffer): Buffer;
+	decrypt(data: Buffer_Classbase): Buffer_Classbase;
 
 } /** endof class */
 

@@ -18,7 +18,8 @@
 	* @brief 扩展消息处理器接口
 	* @detail 
 	*/
-declare class HandlerEx extends Handler {
+/// <reference path="Handler.d.ts" />
+declare class HandlerEx_Classbase extends Handler_Classbase {
 	
 	/**
 		* 

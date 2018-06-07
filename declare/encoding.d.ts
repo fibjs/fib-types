@@ -230,7 +230,8 @@ declare module "encoding" {
 			* 
 			* 
 			*/
-		export const base32: typeof base32NS;
+		
+		export class base32 extends base32_Classbase {}
 		
 		/**
 			* 
@@ -238,7 +239,8 @@ declare module "encoding" {
 			* 
 			* 
 			*/
-		export const base64: typeof base64NS;
+		
+		export class base64 extends base64_Classbase {}
 		
 		/**
 			* 
@@ -246,7 +248,8 @@ declare module "encoding" {
 			* 
 			* 
 			*/
-		export const base64vlq: typeof base64vlqNS;
+		
+		export class base64vlq extends base64vlq_Classbase {}
 		
 		/**
 			* 
@@ -254,7 +257,8 @@ declare module "encoding" {
 			* 
 			* 
 			*/
-		export const hex: typeof hexNS;
+		
+		export class hex extends hex_Classbase {}
 		
 		/**
 			* 
@@ -262,7 +266,8 @@ declare module "encoding" {
 			* 
 			* 
 			*/
-		export const iconv: typeof iconvNS;
+		
+		export class iconv extends iconv_Classbase {}
 		
 		/**
 			* 
@@ -270,7 +275,8 @@ declare module "encoding" {
 			* 
 			* 
 			*/
-		export const json: typeof jsonNS;
+		
+		export class json extends json_Classbase {}
 		
 		/**
 			* 
@@ -278,7 +284,8 @@ declare module "encoding" {
 			* 
 			* 
 			*/
-		export const bson: typeof bsonNS;
+		
+		export class bson extends bson_Classbase {}
 		
 		
 		

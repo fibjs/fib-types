@@ -290,7 +290,7 @@ declare module "gui" {
 			* 
 			* 
 			*/
-		export function open(url: string, opt?: Object/** = v8::Object::New(isolate)*/): WebView;
+		export function open(url: string, opt?: Object/** = v8::Object::New(isolate)*/): WebView_Classbase;
 	
 	} /** end of `module gui` */
 	export = gui

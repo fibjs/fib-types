@@ -377,7 +377,8 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export const Cipher: Cipher;
+		
+		export class Cipher extends Cipher_Classbase {}
 		
 		/**
 			* 
@@ -385,7 +386,8 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export const PKey: PKey;
+		
+		export class PKey extends PKey_Classbase {}
 		
 		/**
 			* 
@@ -393,7 +395,8 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export const X509Cert: X509Cert;
+		
+		export class X509Cert extends X509Cert_Classbase {}
 		
 		/**
 			* 
@@ -401,7 +404,8 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export const X509Crl: X509Crl;
+		
+		export class X509Crl extends X509Crl_Classbase {}
 		
 		/**
 			* 
@@ -409,7 +413,8 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export const X509Req: X509Req;
+		
+		export class X509Req extends X509Req_Classbase {}
 		
 		
 		
@@ -422,7 +427,7 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export function createHash(algo: string): Digest;
+		export function createHash(algo: string): Digest_Classbase;
 	
 		/**
 			* 
@@ -434,7 +439,7 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export function createHmac(algo: string, key: Buffer): Digest;
+		export function createHmac(algo: string, key: Buffer_Classbase): Digest_Classbase;
 	
 		/**
 			* 
@@ -446,7 +451,7 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export function loadPKey(filename: string, password?: string/** = ""*/): PKey;
+		export function loadPKey(filename: string, password?: string/** = ""*/): PKey_Classbase;
 	
 		/**
 			* 
@@ -459,7 +464,7 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export function loadCert(filename: string): X509Cert;
+		export function loadCert(filename: string): X509Cert_Classbase;
 	
 		/**
 			* 
@@ -470,7 +475,7 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export function loadCrl(filename: string): X509Crl;
+		export function loadCrl(filename: string): X509Crl_Classbase;
 	
 		/**
 			* 
@@ -481,7 +486,7 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export function loadReq(filename: string): X509Req;
+		export function loadReq(filename: string): X509Req_Classbase;
 	
 		/**
 			* 
@@ -492,7 +497,7 @@ declare module "crypto" {
 			* 
 			* @async
 			*/
-		export function randomBytes(size: number): Buffer;
+		export function randomBytes(size: number): Buffer_Classbase;
 	
 		/**
 			* 
@@ -503,7 +508,7 @@ declare module "crypto" {
 			* 
 			* @async
 			*/
-		export function simpleRandomBytes(size: number): Buffer;
+		export function simpleRandomBytes(size: number): Buffer_Classbase;
 	
 		/**
 			* 
@@ -514,7 +519,7 @@ declare module "crypto" {
 			* 
 			* @async
 			*/
-		export function pseudoRandomBytes(size: number): Buffer;
+		export function pseudoRandomBytes(size: number): Buffer_Classbase;
 	
 		/**
 			* 
@@ -527,7 +532,7 @@ declare module "crypto" {
 			* 
 			* 
 			*/
-		export function randomArt(data: Buffer, title: string, size?: number/** = 8*/): string;
+		export function randomArt(data: Buffer_Classbase, title: string, size?: number/** = 8*/): string;
 	
 		/**
 			* 
@@ -542,7 +547,7 @@ declare module "crypto" {
 			* 
 			* @async
 			*/
-		export function pbkdf1(password: Buffer, salt: Buffer, iterations: number, size: number, algo: number): Buffer;
+		export function pbkdf1(password: Buffer_Classbase, salt: Buffer_Classbase, iterations: number, size: number, algo: number): Buffer_Classbase;
 	
 		/**
 			* 
@@ -557,7 +562,7 @@ declare module "crypto" {
 			* 
 			* @async
 			*/
-		export function pbkdf1(password: Buffer, salt: Buffer, iterations: number, size: number, algoName: string): Buffer;
+		export function pbkdf1(password: Buffer_Classbase, salt: Buffer_Classbase, iterations: number, size: number, algoName: string): Buffer_Classbase;
 	
 		/**
 			* 
@@ -572,7 +577,7 @@ declare module "crypto" {
 			* 
 			* @async
 			*/
-		export function pbkdf2(password: Buffer, salt: Buffer, iterations: number, size: number, algo: number): Buffer;
+		export function pbkdf2(password: Buffer_Classbase, salt: Buffer_Classbase, iterations: number, size: number, algo: number): Buffer_Classbase;
 	
 		/**
 			* 
@@ -587,7 +592,7 @@ declare module "crypto" {
 			* 
 			* @async
 			*/
-		export function pbkdf2(password: Buffer, salt: Buffer, iterations: number, size: number, algoName: string): Buffer;
+		export function pbkdf2(password: Buffer_Classbase, salt: Buffer_Classbase, iterations: number, size: number, algoName: string): Buffer_Classbase;
 	
 	} /** end of `module crypto` */
 	export = crypto
