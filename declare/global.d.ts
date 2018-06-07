@@ -215,7 +215,8 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export const Buffer: Buffer;
+		
+		export class Buffer extends Buffer_Classbase {}
 		
 		/**
 			* 
@@ -223,7 +224,8 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export const Int64: Int64;
+		
+		export class Int64 extends Int64_Classbase {}
 		
 		/**
 			* 
@@ -231,7 +233,8 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export const console: typeof consoleNS;
+		
+		export class console extends console_Classbase {}
 		
 		/**
 			* 
@@ -239,7 +242,8 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export const process: typeof processNS;
+		
+		export class process extends process_Classbase {}
 		
 		
 		
@@ -332,7 +336,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function setTimeout(callback: Function, timeout: number, ...args: any[]): Timer;
+		export function setTimeout(callback: Function, timeout: number, ...args: any[]): Timer_Classbase;
 	
 		/**
 			* 
@@ -355,7 +359,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function setInterval(callback: Function, timeout: number, ...args: any[]): Timer;
+		export function setInterval(callback: Function, timeout: number, ...args: any[]): Timer_Classbase;
 	
 		/**
 			* 
@@ -392,7 +396,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function setHrInterval(callback: Function, timeout: number, ...args: any[]): Timer;
+		export function setHrInterval(callback: Function, timeout: number, ...args: any[]): Timer_Classbase;
 	
 		/**
 			* 
@@ -414,7 +418,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function setImmediate(callback: Function, ...args: any[]): Timer;
+		export function setImmediate(callback: Function, ...args: any[]): Timer_Classbase;
 	
 		/**
 			* 
@@ -495,7 +499,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function repl(out: Stream, cmds?: any[]/** = v8::Array::New(isolate)*/): void;
+		export function repl(out: Stream_Classbase, cmds?: any[]/** = v8::Array::New(isolate)*/): void;
 	
 	} /** end of `module global` */
 	export = global

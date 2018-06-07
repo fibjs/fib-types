@@ -209,7 +209,8 @@ declare module "coroutine" {
 			* 
 			* 
 			*/
-		export const Lock: Lock;
+		
+		export class Lock extends Lock_Classbase {}
 		
 		/**
 			* 
@@ -217,7 +218,8 @@ declare module "coroutine" {
 			* 
 			* 
 			*/
-		export const Semaphore: Semaphore;
+		
+		export class Semaphore extends Semaphore_Classbase {}
 		
 		/**
 			* 
@@ -225,7 +227,8 @@ declare module "coroutine" {
 			* 
 			* 
 			*/
-		export const Condition: Condition;
+		
+		export class Condition extends Condition_Classbase {}
 		
 		/**
 			* 
@@ -233,7 +236,8 @@ declare module "coroutine" {
 			* 
 			* 
 			*/
-		export const Event: Event;
+		
+		export class Event extends Event_Classbase {}
 		
 		/**
 			* 
@@ -241,7 +245,8 @@ declare module "coroutine" {
 			* 
 			* 
 			*/
-		export const Worker: Worker;
+		
+		export class Worker extends Worker_Classbase {}
 		
 		
 		
@@ -255,7 +260,7 @@ declare module "coroutine" {
 			* 
 			* 
 			*/
-		export function start(func: Function, ...args: any[]): Fiber;
+		export function start(func: Function, ...args: any[]): Fiber_Classbase;
 	
 		/**
 			* 
@@ -314,7 +319,7 @@ declare module "coroutine" {
 			* 
 			* 
 			*/
-		export function current(): Fiber;
+		export function current(): Fiber_Classbase;
 	
 		/**
 			* 

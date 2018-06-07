@@ -18,7 +18,8 @@
 	* @brief 包含 multipart 的一个条目数据
 	* @detail 
 	*/
-declare class HttpUploadData extends _object {
+
+declare class HttpUploadData_Classbase extends _object_Classbase {
 	
 } /** endof class */
 

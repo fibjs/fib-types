@@ -18,7 +18,8 @@
 	* @brief 事件信息对象，用于在事件中传递信息
 	* @detail 
 	*/
-declare class EventInfo extends _object {
+
+declare class EventInfo_Classbase extends _object_Classbase {
 	
 } /** endof class */
 

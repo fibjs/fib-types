@@ -18,7 +18,8 @@
 	* @brief XmlProcessingInstruction 对象表示 xml 处理指令
 	* @detail 
 	*/
-declare class XmlProcessingInstruction extends XmlNode {
+/// <reference path="XmlNode.d.ts" />
+declare class XmlProcessingInstruction_Classbase extends XmlNode_Classbase {
 	
 } /** endof class */
 

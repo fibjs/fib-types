@@ -18,7 +18,8 @@
 	* @brief XmlNodeList 对象代表一个有顺序的节点列表
 	* @detail 
 	*/
-declare class XmlNodeList extends _object {
+
+declare class XmlNodeList_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -29,7 +30,7 @@ declare class XmlNodeList extends _object {
 		* 
 		* 
 		*/
-	item(index: number): XmlNode;
+	item(index: number): XmlNode_Classbase;
 
 } /** endof class */
 

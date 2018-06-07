@@ -18,7 +18,8 @@
 	* @brief 64位整数对象
 	* @detail 创建方法：,```JavaScript,var n = new Int64(123);,```
 	*/
-declare class Int64 extends _object {
+
+declare class Int64_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -49,7 +50,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	constructor(num: Int64);
+	constructor(num: Int64_Classbase);
 
 	/**
 		* 
@@ -71,7 +72,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	compare(num: Int64): number;
+	compare(num: Int64_Classbase): number;
 
 	/**
 		* 
@@ -82,7 +83,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	shiftLeft(bits: number): Int64;
+	shiftLeft(bits: number): Int64_Classbase;
 
 	/**
 		* 
@@ -93,7 +94,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	shiftRight(bits: number): Int64;
+	shiftRight(bits: number): Int64_Classbase;
 
 	/**
 		* 
@@ -104,7 +105,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	and(num: Int64): Int64;
+	and(num: Int64_Classbase): Int64_Classbase;
 
 	/**
 		* 
@@ -115,7 +116,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	or(num: Int64): Int64;
+	or(num: Int64_Classbase): Int64_Classbase;
 
 	/**
 		* 
@@ -126,7 +127,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	xor(num: Int64): Int64;
+	xor(num: Int64_Classbase): Int64_Classbase;
 
 	/**
 		* 
@@ -137,7 +138,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	add(num: Int64): Int64;
+	add(num: Int64_Classbase): Int64_Classbase;
 
 	/**
 		* 
@@ -148,7 +149,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	sub(num: Int64): Int64;
+	sub(num: Int64_Classbase): Int64_Classbase;
 
 	/**
 		* 
@@ -159,7 +160,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	multi(num: Int64): Int64;
+	multi(num: Int64_Classbase): Int64_Classbase;
 
 	/**
 		* 
@@ -170,7 +171,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	div(num: Int64): Int64;
+	div(num: Int64_Classbase): Int64_Classbase;
 
 	/**
 		* 
@@ -181,7 +182,7 @@ declare class Int64 extends _object {
 		* 
 		* 
 		*/
-	equals(expected: object): boolean;
+	equals(expected: object_Classbase): boolean;
 
 	/**
 		* 

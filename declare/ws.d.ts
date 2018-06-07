@@ -289,7 +289,8 @@ declare module "ws" {
 			* 
 			* 
 			*/
-		export const Message: WebSocketMessage;
+		
+		export class WebSocketMessage extends WebSocketMessage_Classbase {}
 		
 		/**
 			* 
@@ -297,7 +298,8 @@ declare module "ws" {
 			* 
 			* 
 			*/
-		export const Socket: WebSocket;
+		
+		export class WebSocket extends WebSocket_Classbase {}
 		
 		
 		
@@ -311,7 +313,7 @@ declare module "ws" {
 			* 
 			* 
 			*/
-		export function upgrade(accept: Function): Handler;
+		export function upgrade(accept: Function): Handler_Classbase;
 	
 	} /** end of `module ws` */
 	export = ws

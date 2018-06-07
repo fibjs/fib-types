@@ -370,7 +370,7 @@ declare module "fs" {
 			* 
 			* @async
 			*/
-		export function stat(path: string): Stat;
+		export function stat(path: string): Stat_Classbase;
 	
 		/**
 			* 
@@ -381,7 +381,7 @@ declare module "fs" {
 			* 
 			* @async
 			*/
-		export function lstat(path: string): Stat;
+		export function lstat(path: string): Stat_Classbase;
 	
 		/**
 			* 
@@ -441,7 +441,7 @@ declare module "fs" {
 			* 
 			* @async
 			*/
-		export function read(fd: number, buffer: Buffer, offset?: number/** = 0*/, length?: number/** = 0*/, position?: number/** = -1*/): number;
+		export function read(fd: number, buffer: Buffer_Classbase, offset?: number/** = 0*/, length?: number/** = 0*/, position?: number/** = -1*/): number;
 	
 		/**
 			* 
@@ -515,7 +515,7 @@ declare module "fs" {
 			* 
 			* @async
 			*/
-		export function openFile(fname: string, flags?: string/** = "r"*/): SeekableStream;
+		export function openFile(fname: string, flags?: string/** = "r"*/): SeekableStream_Classbase;
 	
 		/**
 			* 
@@ -566,7 +566,7 @@ declare module "fs" {
 			* 
 			* @async
 			*/
-		export function openTextStream(fname: string, flags?: string/** = "r"*/): BufferedStream;
+		export function openTextStream(fname: string, flags?: string/** = "r"*/): BufferedStream_Classbase;
 	
 		/**
 			* 
@@ -623,7 +623,7 @@ declare module "fs" {
 			* 
 			* @async
 			*/
-		export function writeFile(fname: string, data: Buffer): void;
+		export function writeFile(fname: string, data: Buffer_Classbase): void;
 	
 		/**
 			* 
@@ -634,7 +634,7 @@ declare module "fs" {
 			* 
 			* @async
 			*/
-		export function appendFile(fname: string, data: Buffer): void;
+		export function appendFile(fname: string, data: Buffer_Classbase): void;
 	
 	} /** end of `module fs` */
 	export = fs
