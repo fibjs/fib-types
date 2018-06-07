@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class HttpCollection_Classbase extends _object_Classbase {
+declare class Class_HttpCollection extends Class__object {
 	
 	/**
 		* 

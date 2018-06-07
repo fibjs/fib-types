@@ -290,7 +290,7 @@ declare module "ws" {
 			* 
 			*/
 		
-		export class WebSocketMessage extends WebSocketMessage_Classbase {}
+		export class WebSocketMessage extends Class_WebSocketMessage {}
 		
 		/**
 			* 
@@ -299,7 +299,7 @@ declare module "ws" {
 			* 
 			*/
 		
-		export class WebSocket extends WebSocket_Classbase {}
+		export class WebSocket extends Class_WebSocket {}
 		
 		
 		
@@ -313,7 +313,7 @@ declare module "ws" {
 			* 
 			* 
 			*/
-		export function upgrade(accept: Function): Handler_Classbase;
+		export function upgrade(accept: Function): Class_Handler;
 	
 	} /** end of `module ws` */
 	export = ws

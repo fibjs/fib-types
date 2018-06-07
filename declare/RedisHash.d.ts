@@ -19,7 +19,7 @@
 	* @detail 用以操作 Redis 的 Hash 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var hash = rdb.getHash("test");,```
 	*/
 
-declare class RedisHash_Classbase extends _object_Classbase {
+declare class Class_RedisHash extends Class__object {
 	
 	/**
 		* 
@@ -29,7 +29,7 @@ declare class RedisHash_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	set(field: Buffer_Classbase, value: Buffer_Classbase): void;
+	set(field: Class_Buffer, value: Class_Buffer): void;
 
 	/**
 		* 
@@ -39,7 +39,7 @@ declare class RedisHash_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	setNX(field: Buffer_Classbase, value: Buffer_Classbase): void;
+	setNX(field: Class_Buffer, value: Class_Buffer): void;
 
 	/**
 		* 
@@ -67,7 +67,7 @@ declare class RedisHash_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	get(field: Buffer_Classbase): Buffer_Classbase;
+	get(field: Class_Buffer): Class_Buffer;
 
 	/**
 		* 
@@ -98,7 +98,7 @@ declare class RedisHash_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	incr(field: Buffer_Classbase, num?: number/** = 1*/): number;
+	incr(field: Class_Buffer, num?: number/** = 1*/): number;
 
 	/**
 		* 
@@ -135,7 +135,7 @@ declare class RedisHash_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	exists(field: Buffer_Classbase): boolean;
+	exists(field: Class_Buffer): boolean;
 
 	/**
 		* 

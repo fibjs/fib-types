@@ -19,7 +19,7 @@
 	* @detail Event 对象可独立创建，以用于组建自定义的事件系统：,```JavaScript,var EventEmitter = require('events');,,var e = new EventEmitter();,```
 	*/
 
-declare class EventEmitter_Classbase extends _object_Classbase {
+declare class Class_EventEmitter extends Class__object {
 	
 	/**
 		* 

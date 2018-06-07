@@ -19,7 +19,7 @@
 	* @detail 使用 db.open 或 db.openMySQL 创建，创建方式：,```JavaScript,var sql = db.openMSSQL("mssql://user:pass@host/db");,```
 	*/
 /// <reference path="DbConnection.d.ts" />
-declare class MSSQL_Classbase extends DbConnection_Classbase {
+declare class Class_MSSQL extends Class_DbConnection {
 	
 	/**
 		* 

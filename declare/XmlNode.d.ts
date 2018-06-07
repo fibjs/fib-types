@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class XmlNode_Classbase extends _object_Classbase {
+declare class Class_XmlNode extends Class__object {
 	
 	/**
 		* 
@@ -53,7 +53,7 @@ declare class XmlNode_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	cloneNode(deep?: boolean/** = true*/): XmlNode_Classbase;
+	cloneNode(deep?: boolean/** = true*/): Class_XmlNode;
 
 	/**
 		* 
@@ -89,7 +89,7 @@ declare class XmlNode_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	insertBefore(newChild: XmlNode_Classbase, refChild: XmlNode_Classbase): XmlNode_Classbase;
+	insertBefore(newChild: Class_XmlNode, refChild: Class_XmlNode): Class_XmlNode;
 
 	/**
 		* 
@@ -103,7 +103,7 @@ declare class XmlNode_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	insertAfter(newChild: XmlNode_Classbase, refChild: XmlNode_Classbase): XmlNode_Classbase;
+	insertAfter(newChild: Class_XmlNode, refChild: Class_XmlNode): Class_XmlNode;
 
 	/**
 		* 
@@ -116,7 +116,7 @@ declare class XmlNode_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	appendChild(newChild: XmlNode_Classbase): XmlNode_Classbase;
+	appendChild(newChild: Class_XmlNode): Class_XmlNode;
 
 	/**
 		* 
@@ -130,7 +130,7 @@ declare class XmlNode_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	replaceChild(newChild: XmlNode_Classbase, oldChild: XmlNode_Classbase): XmlNode_Classbase;
+	replaceChild(newChild: Class_XmlNode, oldChild: Class_XmlNode): Class_XmlNode;
 
 	/**
 		* 
@@ -141,7 +141,7 @@ declare class XmlNode_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	removeChild(oldChild: XmlNode_Classbase): XmlNode_Classbase;
+	removeChild(oldChild: Class_XmlNode): Class_XmlNode;
 
 } /** endof class */
 

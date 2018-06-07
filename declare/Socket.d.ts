@@ -21,7 +21,7 @@ import net = require('net')
 	* @detail Socket 属于 net 模块，创建方法,```JavaScript,var s = new net.Socket();,```
 	*/
 /// <reference path="Stream.d.ts" />
-declare class Socket_Classbase extends Stream_Classbase {
+declare class Class_Socket extends Class_Stream {
 	
 	/**
 		* 
@@ -86,7 +86,7 @@ declare class Socket_Classbase extends Stream_Classbase {
 		* 
 		* @async
 		*/
-	accept(): Socket_Classbase;
+	accept(): Class_Socket;
 
 	/**
 		* 
@@ -97,7 +97,7 @@ declare class Socket_Classbase extends Stream_Classbase {
 		* 
 		* @async
 		*/
-	recv(bytes?: number/** = -1*/): Buffer_Classbase;
+	recv(bytes?: number/** = -1*/): Class_Buffer;
 
 	/**
 		* 
@@ -122,7 +122,7 @@ declare class Socket_Classbase extends Stream_Classbase {
 		* 
 		* @async
 		*/
-	send(data: Buffer_Classbase): void;
+	send(data: Class_Buffer): void;
 
 	/**
 		* 
@@ -134,7 +134,7 @@ declare class Socket_Classbase extends Stream_Classbase {
 		* 
 		* @async
 		*/
-	sendto(data: Buffer_Classbase, host: string, port: number): void;
+	sendto(data: Class_Buffer, host: string, port: number): void;
 
 } /** endof class */
 

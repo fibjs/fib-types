@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 /// <reference path="XmlNode.d.ts" />
-declare class XmlDocumentType_Classbase extends XmlNode_Classbase {
+declare class Class_XmlDocumentType extends Class_XmlNode {
 	
 } /** endof class */
 

@@ -19,7 +19,7 @@
 	* @detail 用以将数据流转换为 http 协议消息，创建方式：,```JavaScript,var hdlr = new mq.HttpHandler(...);,```,或者：,```JavaScript,var hdlr = new http.Handler(...);,```
 	*/
 /// <reference path="HandlerEx.d.ts" />
-declare class HttpHandler_Classbase extends HandlerEx_Classbase {
+declare class Class_HttpHandler extends Class_HandlerEx {
 	
 	/**
 		* 
@@ -29,7 +29,7 @@ declare class HttpHandler_Classbase extends HandlerEx_Classbase {
 		* 
 		* 
 		*/
-	constructor(hdlr: Handler_Classbase);
+	constructor(hdlr: Class_Handler);
 
 	/**
 		* 

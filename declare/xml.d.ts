@@ -282,7 +282,7 @@ declare module "xml" {
 			* 
 			*/
 		
-		export class XmlDocument extends XmlDocument_Classbase {}
+		export class XmlDocument extends Class_XmlDocument {}
 		
 		
 		
@@ -296,7 +296,7 @@ declare module "xml" {
 			* 
 			* 
 			*/
-		export function parse(source: string, type?: string/** = "text/xml"*/): XmlDocument_Classbase;
+		export function parse(source: string, type?: string/** = "text/xml"*/): Class_XmlDocument;
 	
 		/**
 			* 
@@ -308,7 +308,7 @@ declare module "xml" {
 			* 
 			* 
 			*/
-		export function parse(source: Buffer_Classbase, type?: string/** = "text/xml"*/): XmlDocument_Classbase;
+		export function parse(source: Class_Buffer, type?: string/** = "text/xml"*/): Class_XmlDocument;
 	
 		/**
 			* 
@@ -319,7 +319,7 @@ declare module "xml" {
 			* 
 			* 
 			*/
-		export function serialize(node: XmlNode_Classbase): string;
+		export function serialize(node: Class_XmlNode): string;
 	
 	} /** end of `module xml` */
 	export = xml

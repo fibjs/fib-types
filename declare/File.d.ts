@@ -19,7 +19,7 @@
 	* @detail 文件操作对象用于对二进制文件进行操作，可使用 fs 模块打开和创建文件：,```JavaScript,var f = fs.openFile('test.txt');,```
 	*/
 /// <reference path="SeekableStream.d.ts" />
-declare class File_Classbase extends SeekableStream_Classbase {
+declare class Class_File extends Class_SeekableStream {
 	
 	/**
 		* 

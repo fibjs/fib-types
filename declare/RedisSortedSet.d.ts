@@ -19,7 +19,7 @@
 	* @detail 用以操作 Redis 的 SortedSet 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var set = rdb.getSortedSet("test");,```
 	*/
 
-declare class RedisSortedSet_Classbase extends _object_Classbase {
+declare class Class_RedisSortedSet extends Class__object {
 	
 	/**
 		* 
@@ -49,7 +49,7 @@ declare class RedisSortedSet_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	score(member: Buffer_Classbase): Buffer_Classbase;
+	score(member: Class_Buffer): Class_Buffer;
 
 	/**
 		* 
@@ -60,7 +60,7 @@ declare class RedisSortedSet_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	incr(member: Buffer_Classbase, num?: number/** = 1*/): Buffer_Classbase;
+	incr(member: Class_Buffer, num?: number/** = 1*/): Class_Buffer;
 
 	/**
 		* 
@@ -134,7 +134,7 @@ declare class RedisSortedSet_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	rank(member: Buffer_Classbase): number;
+	rank(member: Class_Buffer): number;
 
 	/**
 		* 
@@ -144,7 +144,7 @@ declare class RedisSortedSet_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	rankRev(member: Buffer_Classbase): number;
+	rankRev(member: Class_Buffer): number;
 
 } /** endof class */
 

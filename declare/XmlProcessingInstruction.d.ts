@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 /// <reference path="XmlNode.d.ts" />
-declare class XmlProcessingInstruction_Classbase extends XmlNode_Classbase {
+declare class Class_XmlProcessingInstruction extends Class_XmlNode {
 	
 } /** endof class */
 

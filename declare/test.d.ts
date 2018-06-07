@@ -216,7 +216,7 @@ declare module "test" {
 			* 
 			*/
 		
-		export class assert extends assert_Classbase {}
+		export class assert extends Class_assert {}
 		
 		
 		

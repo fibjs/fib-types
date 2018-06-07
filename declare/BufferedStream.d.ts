@@ -19,7 +19,7 @@
 	* @detail BufferedReader 对象用于对二进制流对象数据进行缓存，并提供文本读取能力，仅支持 utf-8 格式转换。创建方法：,```JavaScript,var reader = new io.BufferedStream(stream);,```
 	*/
 /// <reference path="Stream.d.ts" />
-declare class BufferedStream_Classbase extends Stream_Classbase {
+declare class Class_BufferedStream extends Class_Stream {
 	
 	/**
 		* 
@@ -29,7 +29,7 @@ declare class BufferedStream_Classbase extends Stream_Classbase {
 		* 
 		* 
 		*/
-	constructor(stm: Stream_Classbase);
+	constructor(stm: Class_Stream);
 
 	/**
 		* 

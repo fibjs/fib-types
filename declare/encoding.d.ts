@@ -231,7 +231,7 @@ declare module "encoding" {
 			* 
 			*/
 		
-		export class base32 extends base32_Classbase {}
+		export class base32 extends Class_base32 {}
 		
 		/**
 			* 
@@ -240,7 +240,7 @@ declare module "encoding" {
 			* 
 			*/
 		
-		export class base64 extends base64_Classbase {}
+		export class base64 extends Class_base64 {}
 		
 		/**
 			* 
@@ -249,7 +249,7 @@ declare module "encoding" {
 			* 
 			*/
 		
-		export class base64vlq extends base64vlq_Classbase {}
+		export class base64vlq extends Class_base64vlq {}
 		
 		/**
 			* 
@@ -258,7 +258,7 @@ declare module "encoding" {
 			* 
 			*/
 		
-		export class hex extends hex_Classbase {}
+		export class hex extends Class_hex {}
 		
 		/**
 			* 
@@ -267,7 +267,7 @@ declare module "encoding" {
 			* 
 			*/
 		
-		export class iconv extends iconv_Classbase {}
+		export class iconv extends Class_iconv {}
 		
 		/**
 			* 
@@ -276,7 +276,7 @@ declare module "encoding" {
 			* 
 			*/
 		
-		export class json extends json_Classbase {}
+		export class json extends Class_json {}
 		
 		/**
 			* 
@@ -285,7 +285,7 @@ declare module "encoding" {
 			* 
 			*/
 		
-		export class bson extends bson_Classbase {}
+		export class bson extends Class_bson {}
 		
 		
 		

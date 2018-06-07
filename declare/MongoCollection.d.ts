@@ -19,7 +19,7 @@
 	* @detail 使用 MongoDB.getCollection 创建：,```JavaScript,var col1 = mdb.getCollection('test');,var col = mdb.test;,```
 	*/
 
-declare class MongoCollection_Classbase extends _object_Classbase {
+declare class Class_MongoCollection extends Class__object {
 	
 	/**
 		* 
@@ -31,7 +31,7 @@ declare class MongoCollection_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	find(query?: Object/** = v8::Object::New(isolate)*/, projection?: Object/** = v8::Object::New(isolate)*/): MongoCursor_Classbase;
+	find(query?: Object/** = v8::Object::New(isolate)*/, projection?: Object/** = v8::Object::New(isolate)*/): Class_MongoCursor;
 
 	/**
 		* 
@@ -202,7 +202,7 @@ declare class MongoCollection_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	getIndexes(): MongoCursor_Classbase;
+	getIndexes(): Class_MongoCursor;
 
 	/**
 		* 
@@ -213,7 +213,7 @@ declare class MongoCollection_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	getCollection(name: string): MongoCollection_Classbase;
+	getCollection(name: string): Class_MongoCollection;
 
 } /** endof class */
 

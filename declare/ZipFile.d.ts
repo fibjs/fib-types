@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class ZipFile_Classbase extends _object_Classbase {
+declare class Class_ZipFile extends Class__object {
 	
 	/**
 		* 
@@ -64,7 +64,7 @@ declare class ZipFile_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	read(member: string, password?: string/** = ""*/): Buffer_Classbase;
+	read(member: string, password?: string/** = ""*/): Class_Buffer;
 
 	/**
 		* 
@@ -99,7 +99,7 @@ declare class ZipFile_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	extract(member: string, strm: SeekableStream_Classbase, password?: string/** = ""*/): void;
+	extract(member: string, strm: Class_SeekableStream, password?: string/** = ""*/): void;
 
 	/**
 		* 
@@ -134,7 +134,7 @@ declare class ZipFile_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	write(data: Buffer_Classbase, inZipName: string, password?: string/** = ""*/): void;
+	write(data: Class_Buffer, inZipName: string, password?: string/** = ""*/): void;
 
 	/**
 		* 
@@ -146,7 +146,7 @@ declare class ZipFile_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	write(strm: SeekableStream_Classbase, inZipName: string, password?: string/** = ""*/): void;
+	write(strm: Class_SeekableStream, inZipName: string, password?: string/** = ""*/): void;
 
 	/**
 		* 

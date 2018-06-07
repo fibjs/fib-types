@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class MongoID_Classbase extends _object_Classbase {
+declare class Class_MongoID extends Class__object {
 	
 } /** endof class */
 

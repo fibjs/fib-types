@@ -19,7 +19,7 @@
 	* @detail 使用 db.open 或 db.openSQLite 创建，创建方式：,```JavaScript,var slite = db.openSQLite("sqlite:/path/to/db");,```
 	*/
 /// <reference path="DbConnection.d.ts" />
-declare class SQLite_Classbase extends DbConnection_Classbase {
+declare class Class_SQLite extends Class_DbConnection {
 	
 	/**
 		* 

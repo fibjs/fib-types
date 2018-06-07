@@ -21,7 +21,7 @@ import zmq = require('zmq')
 	* @detail 
 	*/
 
-declare class ZmqSocket_Classbase extends _object_Classbase {
+declare class Class_ZmqSocket extends Class__object {
 	
 	/**
 		* 
@@ -61,7 +61,7 @@ declare class ZmqSocket_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	recv(): Buffer_Classbase;
+	recv(): Class_Buffer;
 
 	/**
 		* 
@@ -71,7 +71,7 @@ declare class ZmqSocket_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	send(data: Buffer_Classbase): void;
+	send(data: Class_Buffer): void;
 
 	/**
 		* 

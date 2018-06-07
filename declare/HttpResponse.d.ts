@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 /// <reference path="HttpMessage.d.ts" />
-declare class HttpResponse_Classbase extends HttpMessage_Classbase {
+declare class Class_HttpResponse extends Class_HttpMessage {
 	
 	/**
 		* 
@@ -60,7 +60,7 @@ declare class HttpResponse_Classbase extends HttpMessage_Classbase {
 		* 
 		* 
 		*/
-	addCookie(cookie: HttpCookie_Classbase): void;
+	addCookie(cookie: Class_HttpCookie): void;
 
 	/**
 		* 
@@ -80,7 +80,7 @@ declare class HttpResponse_Classbase extends HttpMessage_Classbase {
 		* 
 		* @async
 		*/
-	sendHeader(stm: Stream_Classbase): void;
+	sendHeader(stm: Class_Stream): void;
 
 } /** endof class */
 
