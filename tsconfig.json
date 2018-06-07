@@ -1,15 +1,8 @@
 {
     "compilerOptions": {
-        "target": "es5",
+        "target": "es6",
         "allowSyntheticDefaultImports": true,
-        "lib": [
-            "dom",
-            "es5",
-            "es2015.promise",
-            "es7",
-            "es2017"
-        ],
-        "module": "es2015",
+        "module": "commonjs",
         "moduleResolution": "node",
         "isolatedModules": false,
         "experimentalDecorators": true,
@@ -24,10 +17,7 @@
         "paths": {
         },
         "typeRoots": [
-            "../declare"
+            "./declare"
         ]
-    },
-    "include": [
-        "./**/*.ts"
-    ]
+    }
 }
