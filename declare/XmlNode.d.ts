@@ -18,7 +18,8 @@
 	* @brief XmlNode 对象是整个 DOM 的基础数据类型
 	* @detail 
 	*/
-declare class XmlNode extends _object {
+
+declare class XmlNode_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -52,7 +53,7 @@ declare class XmlNode extends _object {
 		* 
 		* 
 		*/
-	cloneNode(deep?: boolean/** = true*/): XmlNode;
+	cloneNode(deep?: boolean/** = true*/): XmlNode_Classbase;
 
 	/**
 		* 
@@ -88,7 +89,7 @@ declare class XmlNode extends _object {
 		* 
 		* 
 		*/
-	insertBefore(newChild: XmlNode, refChild: XmlNode): XmlNode;
+	insertBefore(newChild: XmlNode_Classbase, refChild: XmlNode_Classbase): XmlNode_Classbase;
 
 	/**
 		* 
@@ -102,7 +103,7 @@ declare class XmlNode extends _object {
 		* 
 		* 
 		*/
-	insertAfter(newChild: XmlNode, refChild: XmlNode): XmlNode;
+	insertAfter(newChild: XmlNode_Classbase, refChild: XmlNode_Classbase): XmlNode_Classbase;
 
 	/**
 		* 
@@ -115,7 +116,7 @@ declare class XmlNode extends _object {
 		* 
 		* 
 		*/
-	appendChild(newChild: XmlNode): XmlNode;
+	appendChild(newChild: XmlNode_Classbase): XmlNode_Classbase;
 
 	/**
 		* 
@@ -129,7 +130,7 @@ declare class XmlNode extends _object {
 		* 
 		* 
 		*/
-	replaceChild(newChild: XmlNode, oldChild: XmlNode): XmlNode;
+	replaceChild(newChild: XmlNode_Classbase, oldChild: XmlNode_Classbase): XmlNode_Classbase;
 
 	/**
 		* 
@@ -140,7 +141,7 @@ declare class XmlNode extends _object {
 		* 
 		* 
 		*/
-	removeChild(oldChild: XmlNode): XmlNode;
+	removeChild(oldChild: XmlNode_Classbase): XmlNode_Classbase;
 
 } /** endof class */
 

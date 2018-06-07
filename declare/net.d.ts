@@ -241,7 +241,8 @@ declare module "net" {
 			* 
 			* 
 			*/
-		export const Socket: Socket;
+		
+		export class Socket extends Socket_Classbase {}
 		
 		/**
 			* 
@@ -249,7 +250,8 @@ declare module "net" {
 			* 
 			* 
 			*/
-		export const Smtp: Smtp;
+		
+		export class Smtp extends Smtp_Classbase {}
 		
 		/**
 			* 
@@ -257,7 +259,8 @@ declare module "net" {
 			* 
 			* 
 			*/
-		export const TcpServer: TcpServer;
+		
+		export class TcpServer extends TcpServer_Classbase {}
 		
 		/**
 			* 
@@ -265,7 +268,8 @@ declare module "net" {
 			* 
 			* 
 			*/
-		export const Url: UrlObject;
+		
+		export class UrlObject extends UrlObject_Classbase {}
 		
 		
 		
@@ -323,7 +327,7 @@ declare module "net" {
 			* 
 			* @async
 			*/
-		export function connect(url: string, timeout?: number/** = 0*/): Stream;
+		export function connect(url: string, timeout?: number/** = 0*/): Stream_Classbase;
 	
 		/**
 			* 
@@ -335,7 +339,7 @@ declare module "net" {
 			* 
 			* @async
 			*/
-		export function openSmtp(url: string, timeout?: number/** = 0*/): Smtp;
+		export function openSmtp(url: string, timeout?: number/** = 0*/): Smtp_Classbase;
 	
 		/**
 			* 

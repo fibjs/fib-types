@@ -18,7 +18,8 @@
 	* @brief mongodb 数据库数据游标对象
 	* @detail 
 	*/
-declare class MongoCursor extends _object {
+
+declare class MongoCursor_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -29,7 +30,7 @@ declare class MongoCursor extends _object {
 		* 
 		* @async
 		*/
-	skip(num: number): MongoCursor;
+	skip(num: number): MongoCursor_Classbase;
 
 	/**
 		* 
@@ -40,7 +41,7 @@ declare class MongoCursor extends _object {
 		* 
 		* @async
 		*/
-	limit(size: number): MongoCursor;
+	limit(size: number): MongoCursor_Classbase;
 
 	/**
 		* 
@@ -51,7 +52,7 @@ declare class MongoCursor extends _object {
 		* 
 		* 
 		*/
-	sort(opts: Object): MongoCursor;
+	sort(opts: Object): MongoCursor_Classbase;
 
 	/**
 		* 
@@ -134,7 +135,7 @@ declare class MongoCursor extends _object {
 		* 
 		* 
 		*/
-	hint(opts: Object): MongoCursor;
+	hint(opts: Object): MongoCursor_Classbase;
 
 } /** endof class */
 

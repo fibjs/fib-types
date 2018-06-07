@@ -18,7 +18,8 @@
 	* @brief ssl 协议转换处理器
 	* @detail 用以将数据流转换为 ssl 流协议。SslHandler 是对 SslSocket 的封装，用于构建服务器，逻辑上相当于：,```JavaScript,var ss = new ssl.Socket(crt, key);,,function(s){,   var s1 = ss.accept(s);,   hdlr.invoke(s1);,   s1.close();,},```
 	*/
-declare class SslHandler extends Handler {
+/// <reference path="Handler.d.ts" />
+declare class SslHandler_Classbase extends Handler_Classbase {
 	
 	/**
 		* 
@@ -43,7 +44,7 @@ declare class SslHandler extends Handler {
 		* 
 		* 
 		*/
-	constructor(certs: any[], hdlr: Handler);
+	constructor(certs: any[], hdlr: Handler_Classbase);
 
 	/**
 		* 
@@ -55,7 +56,7 @@ declare class SslHandler extends Handler {
 		* 
 		* 
 		*/
-	constructor(crt: X509Cert, key: PKey, hdlr: Handler);
+	constructor(crt: X509Cert_Classbase, key: PKey_Classbase, hdlr: Handler_Classbase);
 
 } /** endof class */
 

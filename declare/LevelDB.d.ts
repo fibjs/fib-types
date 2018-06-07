@@ -18,7 +18,8 @@
 	* @brief LevelDB 数据库对象
 	* @detail 用以创建和管理字典对象，创建方法：,```JavaScript,var db = require("db");,var test = new db.openLevelDB("test.db");,```
 	*/
-declare class LevelDB extends _object {
+
+declare class LevelDB_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -29,7 +30,7 @@ declare class LevelDB extends _object {
 		* 
 		* @async
 		*/
-	has(key: Buffer): boolean;
+	has(key: Buffer_Classbase): boolean;
 
 	/**
 		* 
@@ -40,7 +41,7 @@ declare class LevelDB extends _object {
 		* 
 		* @async
 		*/
-	get(key: Buffer): Buffer;
+	get(key: Buffer_Classbase): Buffer_Classbase;
 
 	/**
 		* 
@@ -62,7 +63,7 @@ declare class LevelDB extends _object {
 		* 
 		* @async
 		*/
-	set(key: Buffer, value: Buffer): void;
+	set(key: Buffer_Classbase, value: Buffer_Classbase): void;
 
 	/**
 		* 
@@ -92,7 +93,7 @@ declare class LevelDB extends _object {
 		* 
 		* @async
 		*/
-	remove(key: Buffer): void;
+	remove(key: Buffer_Classbase): void;
 
 	/**
 		* 
@@ -136,7 +137,7 @@ declare class LevelDB extends _object {
 		* 
 		* 
 		*/
-	between(from: Buffer, to: Buffer, func: Function): void;
+	between(from: Buffer_Classbase, to: Buffer_Classbase, func: Function): void;
 
 	/**
 		* 
@@ -145,7 +146,7 @@ declare class LevelDB extends _object {
 		* 
 		* 
 		*/
-	begin(): LevelDB;
+	begin(): LevelDB_Classbase;
 
 	/**
 		* 

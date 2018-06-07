@@ -18,7 +18,8 @@
 	* @brief https 服务器对象
 	* @detail https 服务器对象是将 SslServer 和 HttpHandler 组合封装的对象，方便快速搭建服务器，逻辑上相当于：,```JavaScript,var svr = new net.SslServer(crt, key, addr, port, new http.Handler(function(req){,   ...,}));,```,,创建方法：,```JavaScript,var http = require("http");,var svr = new http.HttpsServer(crt, key, 443, function(req){,    ...,});,```
 	*/
-declare class HttpsServer extends HttpServer {
+/// <reference path="HttpServer.d.ts" />
+declare class HttpsServer_Classbase extends HttpServer_Classbase {
 	
 	/**
 		* 
@@ -44,7 +45,7 @@ declare class HttpsServer extends HttpServer {
 		* 
 		* 
 		*/
-	constructor(certs: any[], port: number, hdlr: Handler);
+	constructor(certs: any[], port: number, hdlr: Handler_Classbase);
 
 	/**
 		* 
@@ -71,7 +72,7 @@ declare class HttpsServer extends HttpServer {
 		* 
 		* 
 		*/
-	constructor(certs: any[], addr: string, port: number, hdlr: Handler);
+	constructor(certs: any[], addr: string, port: number, hdlr: Handler_Classbase);
 
 	/**
 		* 
@@ -84,7 +85,7 @@ declare class HttpsServer extends HttpServer {
 		* 
 		* 
 		*/
-	constructor(crt: X509Cert, key: PKey, port: number, hdlr: Handler);
+	constructor(crt: X509Cert_Classbase, key: PKey_Classbase, port: number, hdlr: Handler_Classbase);
 
 	/**
 		* 
@@ -98,7 +99,7 @@ declare class HttpsServer extends HttpServer {
 		* 
 		* 
 		*/
-	constructor(crt: X509Cert, key: PKey, addr: string, port: number, hdlr: Handler);
+	constructor(crt: X509Cert_Classbase, key: PKey_Classbase, addr: string, port: number, hdlr: Handler_Classbase);
 
 } /** endof class */
 

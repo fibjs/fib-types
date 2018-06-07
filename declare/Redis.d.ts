@@ -18,7 +18,8 @@
 	* @brief Redis 数据库客户端对象
 	* @detail 用以创建和管理 Redis 数据库，创建方法：,```JavaScript,var db = require("db");,var test = new db.openRedis("redis-server");,```
 	*/
-declare class Redis extends _object {
+
+declare class Redis_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -40,7 +41,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	set(key: Buffer, value: Buffer, ttl?: number/** = 0*/): void;
+	set(key: Buffer_Classbase, value: Buffer_Classbase, ttl?: number/** = 0*/): void;
 
 	/**
 		* 
@@ -51,7 +52,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	setNX(key: Buffer, value: Buffer, ttl?: number/** = 0*/): void;
+	setNX(key: Buffer_Classbase, value: Buffer_Classbase, ttl?: number/** = 0*/): void;
 
 	/**
 		* 
@@ -62,7 +63,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	setXX(key: Buffer, value: Buffer, ttl?: number/** = 0*/): void;
+	setXX(key: Buffer_Classbase, value: Buffer_Classbase, ttl?: number/** = 0*/): void;
 
 	/**
 		* 
@@ -109,7 +110,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	append(key: Buffer, value: Buffer): number;
+	append(key: Buffer_Classbase, value: Buffer_Classbase): number;
 
 	/**
 		* 
@@ -121,7 +122,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	setRange(key: Buffer, offset: number, value: Buffer): number;
+	setRange(key: Buffer_Classbase, offset: number, value: Buffer_Classbase): number;
 
 	/**
 		* 
@@ -133,7 +134,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	getRange(key: Buffer, start: number, end: number): Buffer;
+	getRange(key: Buffer_Classbase, start: number, end: number): Buffer_Classbase;
 
 	/**
 		* 
@@ -143,7 +144,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	strlen(key: Buffer): number;
+	strlen(key: Buffer_Classbase): number;
 
 	/**
 		* 
@@ -155,7 +156,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	bitcount(key: Buffer, start?: number/** = 0*/, end?: number/** = -1*/): number;
+	bitcount(key: Buffer_Classbase, start?: number/** = 0*/, end?: number/** = -1*/): number;
 
 	/**
 		* 
@@ -165,7 +166,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	get(key: Buffer): Buffer;
+	get(key: Buffer_Classbase): Buffer_Classbase;
 
 	/**
 		* 
@@ -196,7 +197,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	getset(key: Buffer, value: Buffer): Buffer;
+	getset(key: Buffer_Classbase, value: Buffer_Classbase): Buffer_Classbase;
 
 	/**
 		* 
@@ -207,7 +208,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	decr(key: Buffer, num?: number/** = 1*/): number;
+	decr(key: Buffer_Classbase, num?: number/** = 1*/): number;
 
 	/**
 		* 
@@ -218,7 +219,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	incr(key: Buffer, num?: number/** = 1*/): number;
+	incr(key: Buffer_Classbase, num?: number/** = 1*/): number;
 
 	/**
 		* 
@@ -230,7 +231,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	setBit(key: Buffer, offset: number, value: number): number;
+	setBit(key: Buffer_Classbase, offset: number, value: number): number;
 
 	/**
 		* 
@@ -241,7 +242,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	getBit(key: Buffer, offset: number): number;
+	getBit(key: Buffer_Classbase, offset: number): number;
 
 	/**
 		* 
@@ -251,7 +252,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	exists(key: Buffer): boolean;
+	exists(key: Buffer_Classbase): boolean;
 
 	/**
 		* 
@@ -261,7 +262,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	type(key: Buffer): string;
+	type(key: Buffer_Classbase): string;
 
 	/**
 		* 
@@ -302,7 +303,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	expire(key: Buffer, ttl: number): boolean;
+	expire(key: Buffer_Classbase, ttl: number): boolean;
 
 	/**
 		* 
@@ -312,7 +313,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	ttl(key: Buffer): number;
+	ttl(key: Buffer_Classbase): number;
 
 	/**
 		* 
@@ -322,7 +323,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	persist(key: Buffer): boolean;
+	persist(key: Buffer_Classbase): boolean;
 
 	/**
 		* 
@@ -332,7 +333,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	rename(key: Buffer, newkey: Buffer): void;
+	rename(key: Buffer_Classbase, newkey: Buffer_Classbase): void;
 
 	/**
 		* 
@@ -343,7 +344,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	renameNX(key: Buffer, newkey: Buffer): boolean;
+	renameNX(key: Buffer_Classbase, newkey: Buffer_Classbase): boolean;
 
 	/**
 		* 
@@ -354,7 +355,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	sub(channel: Buffer, func: Function): void;
+	sub(channel: Buffer_Classbase, func: Function): void;
 
 	/**
 		* 
@@ -374,7 +375,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	unsub(channel: Buffer): void;
+	unsub(channel: Buffer_Classbase): void;
 
 	/**
 		* 
@@ -385,7 +386,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	unsub(channel: Buffer, func: Function): void;
+	unsub(channel: Buffer_Classbase, func: Function): void;
 
 	/**
 		* 
@@ -479,7 +480,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	pub(channel: Buffer, message: Buffer): number;
+	pub(channel: Buffer_Classbase, message: Buffer_Classbase): number;
 
 	/**
 		* 
@@ -489,7 +490,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	getHash(key: Buffer): RedisHash;
+	getHash(key: Buffer_Classbase): RedisHash_Classbase;
 
 	/**
 		* 
@@ -499,7 +500,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	getList(key: Buffer): RedisList;
+	getList(key: Buffer_Classbase): RedisList_Classbase;
 
 	/**
 		* 
@@ -509,7 +510,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	getSet(key: Buffer): RedisSet;
+	getSet(key: Buffer_Classbase): RedisSet_Classbase;
 
 	/**
 		* 
@@ -519,7 +520,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	getSortedSet(key: Buffer): RedisSortedSet;
+	getSortedSet(key: Buffer_Classbase): RedisSortedSet_Classbase;
 
 	/**
 		* 
@@ -529,7 +530,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	dump(key: Buffer): Buffer;
+	dump(key: Buffer_Classbase): Buffer_Classbase;
 
 	/**
 		* 
@@ -540,7 +541,7 @@ declare class Redis extends _object {
 		* 
 		* 
 		*/
-	restore(key: Buffer, data: Buffer, ttl?: number/** = 0*/): void;
+	restore(key: Buffer_Classbase, data: Buffer_Classbase, ttl?: number/** = 0*/): void;
 
 	/**
 		* 

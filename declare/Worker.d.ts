@@ -18,7 +18,8 @@
 	* @brief 独立线程工作对象
 	* @detail 
 	*/
-declare class Worker extends EventEmitter {
+/// <reference path="EventEmitter.d.ts" />
+declare class Worker_Classbase extends EventEmitter_Classbase {
 	
 	/**
 		* 

@@ -18,7 +18,8 @@
 	* @brief 信息摘要对象
 	* @detail 
 	*/
-declare class Digest extends _object {
+
+declare class Digest_Classbase extends _object_Classbase {
 	
 	/**
 		* 
@@ -29,7 +30,7 @@ declare class Digest extends _object {
 		* 
 		* 
 		*/
-	update(data: Buffer): Digest;
+	update(data: Buffer_Classbase): Digest_Classbase;
 
 	/**
 		* 
@@ -40,7 +41,7 @@ declare class Digest extends _object {
 		* 
 		* 
 		*/
-	digest(data: Buffer): Buffer;
+	digest(data: Buffer_Classbase): Buffer_Classbase;
 
 	/**
 		* 
@@ -50,7 +51,7 @@ declare class Digest extends _object {
 		* 
 		* 
 		*/
-	digest(): Buffer;
+	digest(): Buffer_Classbase;
 
 } /** endof class */
 

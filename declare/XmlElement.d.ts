@@ -18,7 +18,8 @@
 	* @brief XmlElement 对象表示 XML 文档中的元素
 	* @detail 
 	*/
-declare class XmlElement extends XmlNode {
+/// <reference path="XmlNode.d.ts" />
+declare class XmlElement_Classbase extends XmlNode_Classbase {
 	
 	/**
 		* 
@@ -127,7 +128,7 @@ declare class XmlElement extends XmlNode {
 		* 
 		* 
 		*/
-	getElementsByTagName(tagName: string): XmlNodeList;
+	getElementsByTagName(tagName: string): XmlNodeList_Classbase;
 
 	/**
 		* 
@@ -141,7 +142,7 @@ declare class XmlElement extends XmlNode {
 		* 
 		* 
 		*/
-	getElementsByTagNameNS(namespaceURI: string, localName: string): XmlNodeList;
+	getElementsByTagNameNS(namespaceURI: string, localName: string): XmlNodeList_Classbase;
 
 	/**
 		* 
@@ -156,7 +157,7 @@ declare class XmlElement extends XmlNode {
 		* 
 		* 
 		*/
-	getElementById(id: string): XmlElement;
+	getElementById(id: string): XmlElement_Classbase;
 
 	/**
 		* 
@@ -169,7 +170,7 @@ declare class XmlElement extends XmlNode {
 		* 
 		* 
 		*/
-	getElementsByClassName(className: string): XmlNodeList;
+	getElementsByClassName(className: string): XmlNodeList_Classbase;
 
 } /** endof class */
 
