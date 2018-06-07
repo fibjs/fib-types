@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 /// <reference path="XmlNode.d.ts" />
-declare class XmlElement_Classbase extends XmlNode_Classbase {
+declare class Class_XmlElement extends Class_XmlNode {
 	
 	/**
 		* 
@@ -128,7 +128,7 @@ declare class XmlElement_Classbase extends XmlNode_Classbase {
 		* 
 		* 
 		*/
-	getElementsByTagName(tagName: string): XmlNodeList_Classbase;
+	getElementsByTagName(tagName: string): Class_XmlNodeList;
 
 	/**
 		* 
@@ -142,7 +142,7 @@ declare class XmlElement_Classbase extends XmlNode_Classbase {
 		* 
 		* 
 		*/
-	getElementsByTagNameNS(namespaceURI: string, localName: string): XmlNodeList_Classbase;
+	getElementsByTagNameNS(namespaceURI: string, localName: string): Class_XmlNodeList;
 
 	/**
 		* 
@@ -157,7 +157,7 @@ declare class XmlElement_Classbase extends XmlNode_Classbase {
 		* 
 		* 
 		*/
-	getElementById(id: string): XmlElement_Classbase;
+	getElementById(id: string): Class_XmlElement;
 
 	/**
 		* 
@@ -170,7 +170,7 @@ declare class XmlElement_Classbase extends XmlNode_Classbase {
 		* 
 		* 
 		*/
-	getElementsByClassName(className: string): XmlNodeList_Classbase;
+	getElementsByClassName(className: string): Class_XmlNodeList;
 
 } /** endof class */
 

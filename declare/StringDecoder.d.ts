@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class StringDecoder_Classbase extends _object_Classbase {
+declare class Class_StringDecoder extends Class__object {
 	
 	/**
 		* 
@@ -50,7 +50,7 @@ declare class StringDecoder_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	end(buf: Buffer_Classbase): string;
+	end(buf: Class_Buffer): string;
 
 	/**
 		* 
@@ -61,7 +61,7 @@ declare class StringDecoder_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	write(buf: Buffer_Classbase): string;
+	write(buf: Class_Buffer): string;
 
 	/**
 		* 
@@ -73,7 +73,7 @@ declare class StringDecoder_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	text(buf: Buffer_Classbase, offset: number): string;
+	text(buf: Class_Buffer, offset: number): string;
 
 	/**
 		* 
@@ -84,7 +84,7 @@ declare class StringDecoder_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	fillLast(buf: Buffer_Classbase): string;
+	fillLast(buf: Class_Buffer): string;
 
 } /** endof class */
 

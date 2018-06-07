@@ -216,7 +216,7 @@ declare module "global" {
 			* 
 			*/
 		
-		export class Buffer extends Buffer_Classbase {}
+		export class Buffer extends Class_Buffer {}
 		
 		/**
 			* 
@@ -225,7 +225,7 @@ declare module "global" {
 			* 
 			*/
 		
-		export class Int64 extends Int64_Classbase {}
+		export class Int64 extends Class_Int64 {}
 		
 		/**
 			* 
@@ -234,7 +234,7 @@ declare module "global" {
 			* 
 			*/
 		
-		export class console extends console_Classbase {}
+		export class console extends Class_console {}
 		
 		/**
 			* 
@@ -243,7 +243,7 @@ declare module "global" {
 			* 
 			*/
 		
-		export class process extends process_Classbase {}
+		export class process extends Class_process {}
 		
 		
 		
@@ -336,7 +336,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function setTimeout(callback: Function, timeout: number, ...args: any[]): Timer_Classbase;
+		export function setTimeout(callback: Function, timeout: number, ...args: any[]): Class_Timer;
 	
 		/**
 			* 
@@ -359,7 +359,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function setInterval(callback: Function, timeout: number, ...args: any[]): Timer_Classbase;
+		export function setInterval(callback: Function, timeout: number, ...args: any[]): Class_Timer;
 	
 		/**
 			* 
@@ -396,7 +396,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function setHrInterval(callback: Function, timeout: number, ...args: any[]): Timer_Classbase;
+		export function setHrInterval(callback: Function, timeout: number, ...args: any[]): Class_Timer;
 	
 		/**
 			* 
@@ -418,7 +418,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function setImmediate(callback: Function, ...args: any[]): Timer_Classbase;
+		export function setImmediate(callback: Function, ...args: any[]): Class_Timer;
 	
 		/**
 			* 
@@ -499,7 +499,7 @@ declare module "global" {
 			* 
 			* 
 			*/
-		export function repl(out: Stream_Classbase, cmds?: any[]/** = v8::Array::New(isolate)*/): void;
+		export function repl(out: Class_Stream, cmds?: any[]/** = v8::Array::New(isolate)*/): void;
 	
 	} /** end of `module global` */
 	export = global

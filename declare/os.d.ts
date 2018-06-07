@@ -210,7 +210,7 @@ declare module "os" {
 			* 
 			*/
 		
-		export class Service extends Service_Classbase {}
+		export class Service extends Class_Service {}
 		
 		
 		
@@ -384,7 +384,7 @@ declare module "os" {
 			* 
 			* @async
 			*/
-		export function openPrinter(name: string): BufferedStream_Classbase;
+		export function openPrinter(name: string): Class_BufferedStream;
 	
 		/**
 			* 

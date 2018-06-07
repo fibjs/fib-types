@@ -298,7 +298,7 @@ declare module "zmq" {
 			* 
 			*/
 		
-		export class ZmqSocket extends ZmqSocket_Classbase {}
+		export class ZmqSocket extends Class_ZmqSocket {}
 		
 		
 		

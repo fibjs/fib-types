@@ -19,7 +19,7 @@
 	* @detail Stat 对象通过 fs.stat, File.stat, fs.readdir 查询，不可独立创建
 	*/
 
-declare class Stat_Classbase extends _object_Classbase {
+declare class Class_Stat extends Class__object {
 	
 	/**
 		* 

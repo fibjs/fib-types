@@ -19,7 +19,7 @@
 	* @detail Buffer 对象为全局基础类，在任何时候都可以直接以 new Buffer(...) 创建：,```JavaScript,var buf = new Buffer();,```
 	*/
 
-declare class Buffer_Classbase extends _object_Classbase {
+declare class Class_Buffer extends Class__object {
 	
 	/**
 		* 
@@ -69,7 +69,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	constructor(buffer: Buffer_Classbase);
+	constructor(buffer: Class_Buffer);
 
 	/**
 		* 
@@ -114,7 +114,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static from(buffer: Buffer_Classbase, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Buffer_Classbase;
+	static from(buffer: Class_Buffer, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Class_Buffer;
 
 	/**
 		* 
@@ -127,7 +127,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static from(str: string, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Buffer_Classbase;
+	static from(str: string, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Class_Buffer;
 
 	/**
 		* 
@@ -139,7 +139,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static from(str: string, codec?: string/** = "utf8"*/): Buffer_Classbase;
+	static from(str: string, codec?: string/** = "utf8"*/): Class_Buffer;
 
 	/**
 		* 
@@ -151,7 +151,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static concat(buflist: any[], cutLength?: number/** = -1*/): Buffer_Classbase;
+	static concat(buflist: any[], cutLength?: number/** = -1*/): Class_Buffer;
 
 	/**
 		* 
@@ -164,7 +164,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static alloc(size: number, fill?: number/** = 0*/, codec?: string/** = "utf8"*/): Buffer_Classbase;
+	static alloc(size: number, fill?: number/** = 0*/, codec?: string/** = "utf8"*/): Class_Buffer;
 
 	/**
 		* 
@@ -177,7 +177,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static alloc(size: number, fill?: string/** = ""*/, codec?: string/** = "utf8"*/): Buffer_Classbase;
+	static alloc(size: number, fill?: string/** = ""*/, codec?: string/** = "utf8"*/): Class_Buffer;
 
 	/**
 		* 
@@ -190,7 +190,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static alloc(size: number, fill: Buffer_Classbase, codec?: string/** = "utf8"*/): Buffer_Classbase;
+	static alloc(size: number, fill: Class_Buffer, codec?: string/** = "utf8"*/): Class_Buffer;
 
 	/**
 		* 
@@ -201,7 +201,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static allocUnsafe(size: number): Buffer_Classbase;
+	static allocUnsafe(size: number): Class_Buffer;
 
 	/**
 		* 
@@ -212,7 +212,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static allocUnsafeSlow(size: number): Buffer_Classbase;
+	static allocUnsafeSlow(size: number): Class_Buffer;
 
 	/**
 		* 
@@ -260,7 +260,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	static byteLength(str: Buffer_Classbase, codec?: string/** = "utf8"*/): number;
+	static byteLength(str: Class_Buffer, codec?: string/** = "utf8"*/): number;
 
 	/**
 		* 
@@ -291,7 +291,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	append(data: Buffer_Classbase): void;
+	append(data: Class_Buffer): void;
 
 	/**
 		* 
@@ -354,7 +354,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	fill(v: number, offset?: number/** = 0*/, end?: number/** = -1*/): Buffer_Classbase;
+	fill(v: number, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
 
 	/**
 		* 
@@ -367,7 +367,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	fill(v: Buffer_Classbase, offset?: number/** = 0*/, end?: number/** = -1*/): Buffer_Classbase;
+	fill(v: Class_Buffer, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
 
 	/**
 		* 
@@ -380,7 +380,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	fill(v: string, offset?: number/** = 0*/, end?: number/** = -1*/): Buffer_Classbase;
+	fill(v: string, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
 
 	/**
 		* 
@@ -404,7 +404,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	indexOf(v: Buffer_Classbase, offset?: number/** = 0*/): number;
+	indexOf(v: Class_Buffer, offset?: number/** = 0*/): number;
 
 	/**
 		* 
@@ -427,7 +427,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	compare(buf: Buffer_Classbase): number;
+	compare(buf: Class_Buffer): number;
 
 	/**
 		* 
@@ -441,7 +441,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	copy(targetBuffer: Buffer_Classbase, targetStart?: number/** = 0*/, sourceStart?: number/** = 0*/, sourceEnd?: number/** = -1*/): number;
+	copy(targetBuffer: Class_Buffer, targetStart?: number/** = 0*/, sourceStart?: number/** = 0*/, sourceEnd?: number/** = -1*/): number;
 
 	/**
 		* 
@@ -621,7 +621,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	readInt64LE(offset?: number/** = 0*/, noAssert?: boolean/** = false*/): Int64_Classbase;
+	readInt64LE(offset?: number/** = 0*/, noAssert?: boolean/** = false*/): Class_Int64;
 
 	/**
 		* 
@@ -633,7 +633,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	readInt64BE(offset?: number/** = 0*/, noAssert?: boolean/** = false*/): Int64_Classbase;
+	readInt64BE(offset?: number/** = 0*/, noAssert?: boolean/** = false*/): Class_Int64;
 
 	/**
 		* 
@@ -876,7 +876,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	writeInt64LE(value: Int64_Classbase, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt64LE(value: Class_Int64, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 		* 
@@ -889,7 +889,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	writeInt64BE(value: Int64_Classbase, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt64BE(value: Class_Int64, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 		* 
@@ -952,7 +952,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	slice(start?: number/** = 0*/): Buffer_Classbase;
+	slice(start?: number/** = 0*/): Class_Buffer;
 
 	/**
 		* 
@@ -964,7 +964,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	slice(start: number, end: number): Buffer_Classbase;
+	slice(start: number, end: number): Class_Buffer;
 
 	/**
 		* 
@@ -985,7 +985,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	reverse(): Buffer_Classbase;
+	reverse(): Class_Buffer;
 
 	/**
 		* 
@@ -996,7 +996,7 @@ declare class Buffer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	equals(expected: object_Classbase): boolean;
+	equals(expected: Class_object): boolean;
 
 	/**
 		* 

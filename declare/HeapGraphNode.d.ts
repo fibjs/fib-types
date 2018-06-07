@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class HeapGraphNode_Classbase extends _object_Classbase {
+declare class Class_HeapGraphNode extends Class__object {
 	
 } /** endof class */
 

@@ -19,7 +19,7 @@
 	* @detail LruCache 用以维护一个 LRU 缓存，创建方法：,```JavaScript,var util = require("util");,var c = new util.LruCache(10, 100);,```
 	*/
 /// <reference path="EventEmitter.d.ts" />
-declare class LruCache_Classbase extends EventEmitter_Classbase {
+declare class Class_LruCache extends Class_EventEmitter {
 	
 	/**
 		* 

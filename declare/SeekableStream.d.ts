@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 /// <reference path="Stream.d.ts" />
-declare class SeekableStream_Classbase extends Stream_Classbase {
+declare class Class_SeekableStream extends Class_Stream {
 	
 	/**
 		* 
@@ -68,7 +68,7 @@ declare class SeekableStream_Classbase extends Stream_Classbase {
 		* 
 		* @async
 		*/
-	readAll(): Buffer_Classbase;
+	readAll(): Class_Buffer;
 
 	/**
 		* 
@@ -98,7 +98,7 @@ declare class SeekableStream_Classbase extends Stream_Classbase {
 		* 
 		* @async
 		*/
-	stat(): Stat_Classbase;
+	stat(): Class_Stat;
 
 } /** endof class */
 

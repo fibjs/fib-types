@@ -19,7 +19,7 @@
 	* @detail 使用 db.open 或 db.openMongoDB 创建，创建方式：,```JavaScript,var mdb = db.openMongoDB("mongodb://host/db");,```
 	*/
 
-declare class MongoDB_Classbase extends _object_Classbase {
+declare class Class_MongoDB extends Class__object {
 	
 	/**
 		* 
@@ -30,7 +30,7 @@ declare class MongoDB_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	getCollection(name: string): MongoCollection_Classbase;
+	getCollection(name: string): Class_MongoCollection;
 
 	/**
 		* 
@@ -64,7 +64,7 @@ declare class MongoDB_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	oid(hexStr?: string/** = ""*/): MongoID_Classbase;
+	oid(hexStr?: string/** = ""*/): Class_MongoID;
 
 	/**
 		* 

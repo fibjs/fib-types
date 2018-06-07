@@ -210,7 +210,7 @@ declare module "vm" {
 			* 
 			*/
 		
-		export class SandBox extends SandBox_Classbase {}
+		export class SandBox extends Class_SandBox {}
 		
 		
 		

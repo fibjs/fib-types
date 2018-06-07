@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class HeapGraphEdge_Classbase extends _object_Classbase {
+declare class Class_HeapGraphEdge extends Class__object {
 	
 	/**
 		* 
@@ -29,7 +29,7 @@ declare class HeapGraphEdge_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	getFromNode(): HeapGraphNode_Classbase;
+	getFromNode(): Class_HeapGraphNode;
 
 	/**
 		* 
@@ -39,7 +39,7 @@ declare class HeapGraphEdge_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	getToNode(): HeapGraphNode_Classbase;
+	getToNode(): Class_HeapGraphNode;
 
 } /** endof class */
 

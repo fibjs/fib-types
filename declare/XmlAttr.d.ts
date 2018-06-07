@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class XmlAttr_Classbase extends _object_Classbase {
+declare class Class_XmlAttr extends Class__object {
 	
 } /** endof class */
 

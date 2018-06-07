@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 /// <reference path="Message.d.ts" />
-declare class HttpMessage_Classbase extends Message_Classbase {
+declare class Class_HttpMessage extends Class_Message {
 	
 	/**
 		* 

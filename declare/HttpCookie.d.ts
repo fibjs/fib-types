@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class HttpCookie_Classbase extends _object_Classbase {
+declare class Class_HttpCookie extends Class__object {
 	
 	/**
 		* 

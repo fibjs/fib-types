@@ -19,7 +19,7 @@
 	* @detail X509Cert 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.X509Cert();,```
 	*/
 
-declare class X509Cert_Classbase extends _object_Classbase {
+declare class Class_X509Cert extends Class__object {
 	
 	/**
 		* 
@@ -37,7 +37,7 @@ declare class X509Cert_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	load(derCert: Buffer_Classbase): void;
+	load(derCert: Class_Buffer): void;
 
 	/**
 		* 
@@ -81,7 +81,7 @@ declare class X509Cert_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	verify(cert: X509Cert_Classbase): boolean;
+	verify(cert: Class_X509Cert): boolean;
 
 	/**
 		* 

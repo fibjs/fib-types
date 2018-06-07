@@ -19,7 +19,7 @@
 	* @detail 消息处理器链处理对象用于链接一系列消息处理器，按照指定的顺序链式处理。创建方法：,```JavaScript,var chain = new mq.Chain([,  func1, func2,]);,```
 	*/
 /// <reference path="Handler.d.ts" />
-declare class Chain_Classbase extends Handler_Classbase {
+declare class Class_Chain extends Class_Handler {
 	
 	/**
 		* 
@@ -49,7 +49,7 @@ declare class Chain_Classbase extends Handler_Classbase {
 		* 
 		* 
 		*/
-	append(hdlr: Handler_Classbase): void;
+	append(hdlr: Class_Handler): void;
 
 } /** endof class */
 

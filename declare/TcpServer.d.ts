@@ -19,7 +19,7 @@
 	* @detail 使用 TcpServer 对象可以迅速创建一个多纤程并发处理的 tcp 服务器。,```JavaScript,function func(conn),{,    var data;,,    while(data = conn.read()),        conn.write(data);,,    conn.close();,},,new net.TcpServer(8080, func).run();,```
 	*/
 
-declare class TcpServer_Classbase extends _object_Classbase {
+declare class Class_TcpServer extends Class__object {
 	
 	/**
 		* 
@@ -30,7 +30,7 @@ declare class TcpServer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	constructor(port: number, listener: Handler_Classbase);
+	constructor(port: number, listener: Class_Handler);
 
 	/**
 		* 
@@ -42,7 +42,7 @@ declare class TcpServer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	constructor(addr: string, port: number, listener: Handler_Classbase);
+	constructor(addr: string, port: number, listener: Class_Handler);
 
 	/**
 		* 

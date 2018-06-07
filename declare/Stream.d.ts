@@ -19,7 +19,7 @@
 	* @detail Stream 为基础对象，用于为流处理定义标准借口，不能独立创建
 	*/
 
-declare class Stream_Classbase extends _object_Classbase {
+declare class Class_Stream extends Class__object {
 	
 	/**
 		* 
@@ -30,7 +30,7 @@ declare class Stream_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	read(bytes?: number/** = -1*/): Buffer_Classbase;
+	read(bytes?: number/** = -1*/): Class_Buffer;
 
 	/**
 		* 
@@ -40,7 +40,7 @@ declare class Stream_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	write(data: Buffer_Classbase): void;
+	write(data: Class_Buffer): void;
 
 	/**
 		* 
@@ -68,7 +68,7 @@ declare class Stream_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	copyTo(stm: Stream_Classbase, bytes?: number/** = -1*/): number;
+	copyTo(stm: Class_Stream, bytes?: number/** = -1*/): number;
 
 } /** endof class */
 

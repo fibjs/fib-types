@@ -19,7 +19,7 @@
 	* @detail 用以操作 Redis 的 Set 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var set = rdb.getSet("test");,```
 	*/
 
-declare class RedisSet_Classbase extends _object_Classbase {
+declare class Class_RedisSet extends Class__object {
 	
 	/**
 		* 
@@ -78,7 +78,7 @@ declare class RedisSet_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	exists(member: Buffer_Classbase): boolean;
+	exists(member: Class_Buffer): boolean;
 
 	/**
 		* 
@@ -96,7 +96,7 @@ declare class RedisSet_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	pop(): Buffer_Classbase;
+	pop(): Class_Buffer;
 
 	/**
 		* 

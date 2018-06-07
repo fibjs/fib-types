@@ -19,7 +19,7 @@
 	* @detail 通过一个事件达到对一组纤程进行控制的目的（事件对象的状态为bool类型）
 	*/
 /// <reference path="Lock.d.ts" />
-declare class Event_Classbase extends Lock_Classbase {
+declare class Class_Event extends Class_Lock {
 	
 	/**
 		* 

@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class MongoCursor_Classbase extends _object_Classbase {
+declare class Class_MongoCursor extends Class__object {
 	
 	/**
 		* 
@@ -30,7 +30,7 @@ declare class MongoCursor_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	skip(num: number): MongoCursor_Classbase;
+	skip(num: number): Class_MongoCursor;
 
 	/**
 		* 
@@ -41,7 +41,7 @@ declare class MongoCursor_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	limit(size: number): MongoCursor_Classbase;
+	limit(size: number): Class_MongoCursor;
 
 	/**
 		* 
@@ -52,7 +52,7 @@ declare class MongoCursor_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	sort(opts: Object): MongoCursor_Classbase;
+	sort(opts: Object): Class_MongoCursor;
 
 	/**
 		* 
@@ -135,7 +135,7 @@ declare class MongoCursor_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	hint(opts: Object): MongoCursor_Classbase;
+	hint(opts: Object): Class_MongoCursor;
 
 } /** endof class */
 

@@ -19,7 +19,7 @@
 	* @detail 用以操作 Redis 的 List 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var list = rdb.getList("test");,```
 	*/
 
-declare class RedisList_Classbase extends _object_Classbase {
+declare class Class_RedisList extends Class__object {
 	
 	/**
 		* 
@@ -48,7 +48,7 @@ declare class RedisList_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	pop(): Buffer_Classbase;
+	pop(): Class_Buffer;
 
 	/**
 		* 
@@ -77,7 +77,7 @@ declare class RedisList_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	rpop(): Buffer_Classbase;
+	rpop(): Class_Buffer;
 
 	/**
 		* 
@@ -87,7 +87,7 @@ declare class RedisList_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	set(index: number, value: Buffer_Classbase): void;
+	set(index: number, value: Class_Buffer): void;
 
 	/**
 		* 
@@ -97,7 +97,7 @@ declare class RedisList_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	get(index: number): Buffer_Classbase;
+	get(index: number): Class_Buffer;
 
 	/**
 		* 
@@ -108,7 +108,7 @@ declare class RedisList_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	insertBefore(pivot: Buffer_Classbase, value: Buffer_Classbase): number;
+	insertBefore(pivot: Class_Buffer, value: Class_Buffer): number;
 
 	/**
 		* 
@@ -119,7 +119,7 @@ declare class RedisList_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	insertAfter(pivot: Buffer_Classbase, value: Buffer_Classbase): number;
+	insertAfter(pivot: Class_Buffer, value: Class_Buffer): number;
 
 	/**
 		* 
@@ -130,7 +130,7 @@ declare class RedisList_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	remove(count: number, value: Buffer_Classbase): number;
+	remove(count: number, value: Class_Buffer): number;
 
 	/**
 		* 

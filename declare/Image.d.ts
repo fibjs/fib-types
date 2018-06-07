@@ -21,7 +21,7 @@ import gd = require('gd')
 	* @detail Image 对象属于 gd 模块，创建：,```JavaScript,var img = gd.create(640, 480);,var img1 = gd.load(data);,```
 	*/
 
-declare class Image_Classbase extends _object_Classbase {
+declare class Class_Image extends Class__object {
 	
 	/**
 		* 
@@ -33,7 +33,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	getData(format?: number/** = undefined*/, quality?: number/** = 85*/): Buffer_Classbase;
+	getData(format?: number/** = undefined*/, quality?: number/** = 85*/): Class_Buffer;
 
 	/**
 		* 
@@ -45,7 +45,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	save(stm: Stream_Classbase, format?: number/** = undefined*/, quality?: number/** = 85*/): void;
+	save(stm: Class_Stream, format?: number/** = undefined*/, quality?: number/** = 85*/): void;
 
 	/**
 		* 
@@ -528,7 +528,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	clone(): Image_Classbase;
+	clone(): Class_Image;
 
 	/**
 		* 
@@ -540,7 +540,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	resample(width: number, height: number): Image_Classbase;
+	resample(width: number, height: number): Class_Image;
 
 	/**
 		* 
@@ -554,7 +554,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	crop(x: number, y: number, width: number, height: number): Image_Classbase;
+	crop(x: number, y: number, width: number, height: number): Class_Image;
 
 	/**
 		* 
@@ -600,7 +600,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	copy(source: Image_Classbase, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number): void;
+	copy(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number): void;
 
 	/**
 		* 
@@ -617,7 +617,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	copyMerge(source: Image_Classbase, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, percent: number): void;
+	copyMerge(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, percent: number): void;
 
 	/**
 		* 
@@ -634,7 +634,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	copyMergeGray(source: Image_Classbase, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, percent: number): void;
+	copyMergeGray(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, percent: number): void;
 
 	/**
 		* 
@@ -652,7 +652,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	copyResized(source: Image_Classbase, dstX: number, dstY: number, srcX: number, srcY: number, dstW: number, dstH: number, srcW: number, srcH: number): void;
+	copyResized(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, dstW: number, dstH: number, srcW: number, srcH: number): void;
 
 	/**
 		* 
@@ -670,7 +670,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	copyResampled(source: Image_Classbase, dstX: number, dstY: number, srcX: number, srcY: number, dstW: number, dstH: number, srcW: number, srcH: number): void;
+	copyResampled(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, dstW: number, dstH: number, srcW: number, srcH: number): void;
 
 	/**
 		* 
@@ -687,7 +687,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	copyRotated(source: Image_Classbase, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, angle: number): void;
+	copyRotated(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, angle: number): void;
 
 	/**
 		* 
@@ -736,7 +736,7 @@ declare class Image_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	affine(affine: any[], x?: number/** = -1*/, y?: number/** = -1*/, width?: number/** = -1*/, height?: number/** = -1*/): Image_Classbase;
+	affine(affine: any[], x?: number/** = -1*/, y?: number/** = -1*/, width?: number/** = -1*/, height?: number/** = -1*/): Class_Image;
 
 	/**
 		* 

@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class XmlNodeList_Classbase extends _object_Classbase {
+declare class Class_XmlNodeList extends Class__object {
 	
 	/**
 		* 
@@ -30,7 +30,7 @@ declare class XmlNodeList_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	item(index: number): XmlNode_Classbase;
+	item(index: number): Class_XmlNode;
 
 } /** endof class */
 

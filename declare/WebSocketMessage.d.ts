@@ -21,7 +21,7 @@ import ws = require('ws')
 	* @detail 创建方法：,```JavaScript,var ws = require("ws");,,var msg = new ws.Message();,```
 	*/
 /// <reference path="Message.d.ts" />
-declare class WebSocketMessage_Classbase extends Message_Classbase {
+declare class Class_WebSocketMessage extends Class_Message {
 	
 	/**
 		* 

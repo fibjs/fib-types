@@ -210,7 +210,7 @@ declare module "string_decoder" {
 			* 
 			*/
 		
-		export class StringDecoder extends StringDecoder_Classbase {}
+		export class StringDecoder extends Class_StringDecoder {}
 		
 		
 		

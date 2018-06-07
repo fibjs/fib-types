@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class DbConnection_Classbase extends _object_Classbase {
+declare class Class_DbConnection extends Class__object {
 	
 	/**
 		* 
