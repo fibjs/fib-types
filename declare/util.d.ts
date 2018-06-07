@@ -210,7 +210,7 @@ declare module "util" {
 			* 
 			*/
 		
-		export class Stats extends Stats_Classbase {}
+		export class Stats extends Class_Stats {}
 		
 		/**
 			* 
@@ -219,7 +219,7 @@ declare module "util" {
 			* 
 			*/
 		
-		export class LruCache extends LruCache_Classbase {}
+		export class LruCache extends Class_LruCache {}
 		
 		
 		
@@ -870,7 +870,7 @@ declare module "util" {
 			* 
 			* 
 			*/
-		export function compile(srcname: string, script: string, mode?: number/** = 0*/): Buffer_Classbase;
+		export function compile(srcname: string, script: string, mode?: number/** = 0*/): Class_Buffer;
 	
 		/**
 			* 

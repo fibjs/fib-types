@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class Digest_Classbase extends _object_Classbase {
+declare class Class_Digest extends Class__object {
 	
 	/**
 		* 
@@ -30,7 +30,7 @@ declare class Digest_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	update(data: Buffer_Classbase): Digest_Classbase;
+	update(data: Class_Buffer): Class_Digest;
 
 	/**
 		* 
@@ -41,7 +41,7 @@ declare class Digest_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	digest(data: Buffer_Classbase): Buffer_Classbase;
+	digest(data: Class_Buffer): Class_Buffer;
 
 	/**
 		* 
@@ -51,7 +51,7 @@ declare class Digest_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	digest(): Buffer_Classbase;
+	digest(): Class_Buffer;
 
 } /** endof class */
 

@@ -19,7 +19,7 @@
 	* @detail 创建方法：,```JavaScript,var n = new Int64(123);,```
 	*/
 
-declare class Int64_Classbase extends _object_Classbase {
+declare class Class_Int64 extends Class__object {
 	
 	/**
 		* 
@@ -50,7 +50,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	constructor(num: Int64_Classbase);
+	constructor(num: Class_Int64);
 
 	/**
 		* 
@@ -72,7 +72,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	compare(num: Int64_Classbase): number;
+	compare(num: Class_Int64): number;
 
 	/**
 		* 
@@ -83,7 +83,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	shiftLeft(bits: number): Int64_Classbase;
+	shiftLeft(bits: number): Class_Int64;
 
 	/**
 		* 
@@ -94,7 +94,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	shiftRight(bits: number): Int64_Classbase;
+	shiftRight(bits: number): Class_Int64;
 
 	/**
 		* 
@@ -105,7 +105,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	and(num: Int64_Classbase): Int64_Classbase;
+	and(num: Class_Int64): Class_Int64;
 
 	/**
 		* 
@@ -116,7 +116,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	or(num: Int64_Classbase): Int64_Classbase;
+	or(num: Class_Int64): Class_Int64;
 
 	/**
 		* 
@@ -127,7 +127,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	xor(num: Int64_Classbase): Int64_Classbase;
+	xor(num: Class_Int64): Class_Int64;
 
 	/**
 		* 
@@ -138,7 +138,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	add(num: Int64_Classbase): Int64_Classbase;
+	add(num: Class_Int64): Class_Int64;
 
 	/**
 		* 
@@ -149,7 +149,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	sub(num: Int64_Classbase): Int64_Classbase;
+	sub(num: Class_Int64): Class_Int64;
 
 	/**
 		* 
@@ -160,7 +160,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	multi(num: Int64_Classbase): Int64_Classbase;
+	multi(num: Class_Int64): Class_Int64;
 
 	/**
 		* 
@@ -171,7 +171,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	div(num: Int64_Classbase): Int64_Classbase;
+	div(num: Class_Int64): Class_Int64;
 
 	/**
 		* 
@@ -182,7 +182,7 @@ declare class Int64_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	equals(expected: object_Classbase): boolean;
+	equals(expected: Class_object): boolean;
 
 	/**
 		* 

@@ -243,7 +243,7 @@ declare module "zip" {
 			* 
 			* @async
 			*/
-		export function open(path: string, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): ZipFile_Classbase;
+		export function open(path: string, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
 	
 		/**
 			* 
@@ -256,7 +256,7 @@ declare module "zip" {
 			* 
 			* @async
 			*/
-		export function open(data: Buffer_Classbase, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): ZipFile_Classbase;
+		export function open(data: Class_Buffer, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
 	
 		/**
 			* 
@@ -269,7 +269,7 @@ declare module "zip" {
 			* 
 			* @async
 			*/
-		export function open(strm: SeekableStream_Classbase, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): ZipFile_Classbase;
+		export function open(strm: Class_SeekableStream, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
 	
 	} /** end of `module zip` */
 	export = zip

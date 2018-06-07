@@ -19,7 +19,7 @@
 	* @detail PKey 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.PKey();,```
 	*/
 
-declare class PKey_Classbase extends _object_Classbase {
+declare class Class_PKey extends Class__object {
 	
 	/**
 		* 
@@ -38,7 +38,7 @@ declare class PKey_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	constructor(DerKey: Buffer_Classbase, password?: string/** = ""*/);
+	constructor(DerKey: Class_Buffer, password?: string/** = ""*/);
 
 	/**
 		* 
@@ -141,7 +141,7 @@ declare class PKey_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	clone(): PKey_Classbase;
+	clone(): Class_PKey;
 
 	/**
 		* 
@@ -152,7 +152,7 @@ declare class PKey_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	importKey(DerKey: Buffer_Classbase, password?: string/** = ""*/): void;
+	importKey(DerKey: Class_Buffer, password?: string/** = ""*/): void;
 
 	/**
 		* 
@@ -246,7 +246,7 @@ declare class PKey_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	exportDer(): Buffer_Classbase;
+	exportDer(): Class_Buffer;
 
 	/**
 		* 
@@ -267,7 +267,7 @@ declare class PKey_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	encrypt(data: Buffer_Classbase): Buffer_Classbase;
+	encrypt(data: Class_Buffer): Class_Buffer;
 
 	/**
 		* 
@@ -278,7 +278,7 @@ declare class PKey_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	decrypt(data: Buffer_Classbase): Buffer_Classbase;
+	decrypt(data: Class_Buffer): Class_Buffer;
 
 	/**
 		* 
@@ -290,7 +290,7 @@ declare class PKey_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	sign(data: Buffer_Classbase, alg?: number/** = 0*/): Buffer_Classbase;
+	sign(data: Class_Buffer, alg?: number/** = 0*/): Class_Buffer;
 
 	/**
 		* 
@@ -303,7 +303,7 @@ declare class PKey_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	verify(data: Buffer_Classbase, sign: Buffer_Classbase, alg?: number/** = 0*/): boolean;
+	verify(data: Class_Buffer, sign: Class_Buffer, alg?: number/** = 0*/): boolean;
 
 } /** endof class */
 

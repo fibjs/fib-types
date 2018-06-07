@@ -245,7 +245,7 @@ declare module "zlib" {
 			* 
 			* 
 			*/
-		export function createDeflate(to: Stream_Classbase): Stream_Classbase;
+		export function createDeflate(to: Class_Stream): Class_Stream;
 	
 		/**
 			* 
@@ -255,7 +255,7 @@ declare module "zlib" {
 			* 
 			* 
 			*/
-		export function createDeflateRaw(to: Stream_Classbase): Stream_Classbase;
+		export function createDeflateRaw(to: Class_Stream): Class_Stream;
 	
 		/**
 			* 
@@ -265,7 +265,7 @@ declare module "zlib" {
 			* 
 			* 
 			*/
-		export function createGunzip(to: Stream_Classbase): Stream_Classbase;
+		export function createGunzip(to: Class_Stream): Class_Stream;
 	
 		/**
 			* 
@@ -275,7 +275,7 @@ declare module "zlib" {
 			* 
 			* 
 			*/
-		export function createGzip(to: Stream_Classbase): Stream_Classbase;
+		export function createGzip(to: Class_Stream): Class_Stream;
 	
 		/**
 			* 
@@ -285,7 +285,7 @@ declare module "zlib" {
 			* 
 			* 
 			*/
-		export function createInflate(to: Stream_Classbase): Stream_Classbase;
+		export function createInflate(to: Class_Stream): Class_Stream;
 	
 		/**
 			* 
@@ -295,7 +295,7 @@ declare module "zlib" {
 			* 
 			* 
 			*/
-		export function createInflateRaw(to: Stream_Classbase): Stream_Classbase;
+		export function createInflateRaw(to: Class_Stream): Class_Stream;
 	
 		/**
 			* 
@@ -307,7 +307,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function deflate(data: Buffer_Classbase, level?: number/** = undefined*/): Buffer_Classbase;
+		export function deflate(data: Class_Buffer, level?: number/** = undefined*/): Class_Buffer;
 	
 		/**
 			* 
@@ -319,7 +319,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function deflateTo(data: Buffer_Classbase, stm: Stream_Classbase, level?: number/** = undefined*/): void;
+		export function deflateTo(data: Class_Buffer, stm: Class_Stream, level?: number/** = undefined*/): void;
 	
 		/**
 			* 
@@ -331,7 +331,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function deflateTo(src: Stream_Classbase, stm: Stream_Classbase, level?: number/** = undefined*/): void;
+		export function deflateTo(src: Class_Stream, stm: Class_Stream, level?: number/** = undefined*/): void;
 	
 		/**
 			* 
@@ -342,7 +342,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function inflate(data: Buffer_Classbase): Buffer_Classbase;
+		export function inflate(data: Class_Buffer): Class_Buffer;
 	
 		/**
 			* 
@@ -353,7 +353,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function inflateTo(data: Buffer_Classbase, stm: Stream_Classbase): void;
+		export function inflateTo(data: Class_Buffer, stm: Class_Stream): void;
 	
 		/**
 			* 
@@ -364,7 +364,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function inflateTo(src: Stream_Classbase, stm: Stream_Classbase): void;
+		export function inflateTo(src: Class_Stream, stm: Class_Stream): void;
 	
 		/**
 			* 
@@ -375,7 +375,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function gzip(data: Buffer_Classbase): Buffer_Classbase;
+		export function gzip(data: Class_Buffer): Class_Buffer;
 	
 		/**
 			* 
@@ -386,7 +386,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function gzipTo(data: Buffer_Classbase, stm: Stream_Classbase): void;
+		export function gzipTo(data: Class_Buffer, stm: Class_Stream): void;
 	
 		/**
 			* 
@@ -397,7 +397,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function gzipTo(src: Stream_Classbase, stm: Stream_Classbase): void;
+		export function gzipTo(src: Class_Stream, stm: Class_Stream): void;
 	
 		/**
 			* 
@@ -408,7 +408,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function gunzip(data: Buffer_Classbase): Buffer_Classbase;
+		export function gunzip(data: Class_Buffer): Class_Buffer;
 	
 		/**
 			* 
@@ -419,7 +419,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function gunzipTo(data: Buffer_Classbase, stm: Stream_Classbase): void;
+		export function gunzipTo(data: Class_Buffer, stm: Class_Stream): void;
 	
 		/**
 			* 
@@ -430,7 +430,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function gunzipTo(src: Stream_Classbase, stm: Stream_Classbase): void;
+		export function gunzipTo(src: Class_Stream, stm: Class_Stream): void;
 	
 		/**
 			* 
@@ -442,7 +442,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function deflateRaw(data: Buffer_Classbase, level?: number/** = undefined*/): Buffer_Classbase;
+		export function deflateRaw(data: Class_Buffer, level?: number/** = undefined*/): Class_Buffer;
 	
 		/**
 			* 
@@ -454,7 +454,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function deflateRawTo(data: Buffer_Classbase, stm: Stream_Classbase, level?: number/** = undefined*/): void;
+		export function deflateRawTo(data: Class_Buffer, stm: Class_Stream, level?: number/** = undefined*/): void;
 	
 		/**
 			* 
@@ -466,7 +466,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function deflateRawTo(src: Stream_Classbase, stm: Stream_Classbase, level?: number/** = undefined*/): void;
+		export function deflateRawTo(src: Class_Stream, stm: Class_Stream, level?: number/** = undefined*/): void;
 	
 		/**
 			* 
@@ -477,7 +477,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function inflateRaw(data: Buffer_Classbase): Buffer_Classbase;
+		export function inflateRaw(data: Class_Buffer): Class_Buffer;
 	
 		/**
 			* 
@@ -488,7 +488,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function inflateRawTo(data: Buffer_Classbase, stm: Stream_Classbase): void;
+		export function inflateRawTo(data: Class_Buffer, stm: Class_Stream): void;
 	
 		/**
 			* 
@@ -499,7 +499,7 @@ declare module "zlib" {
 			* 
 			* @async
 			*/
-		export function inflateRawTo(src: Stream_Classbase, stm: Stream_Classbase): void;
+		export function inflateRawTo(src: Class_Stream, stm: Class_Stream): void;
 	
 	} /** end of `module zlib` */
 	export = zlib

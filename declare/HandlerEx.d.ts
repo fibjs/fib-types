@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 /// <reference path="Handler.d.ts" />
-declare class HandlerEx_Classbase extends Handler_Classbase {
+declare class Class_HandlerEx extends Class_Handler {
 	
 	/**
 		* 

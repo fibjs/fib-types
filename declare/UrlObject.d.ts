@@ -19,7 +19,7 @@
 	* @detail 基础模块。提供 url 的格式化，解析与拼装,```JavaScript,var url = new net.Url('http://www.xici.net/');,var url = new net.Url({protocol: 'http:', hostname:'www.xici.net', pathname:'/'});,```
 	*/
 
-declare class UrlObject_Classbase extends _object_Classbase {
+declare class Class_UrlObject extends Class__object {
 	
 	/**
 		* 
@@ -74,7 +74,7 @@ declare class UrlObject_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	resolve(url: string): UrlObject_Classbase;
+	resolve(url: string): Class_UrlObject;
 
 	/**
 		* 

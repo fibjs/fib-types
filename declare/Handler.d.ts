@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class Handler_Classbase extends _object_Classbase {
+declare class Class_Handler extends Class__object {
 	
 	/**
 		* 
@@ -60,7 +60,7 @@ declare class Handler_Classbase extends _object_Classbase {
 		* 
 		* @async
 		*/
-	invoke(v: object_Classbase): Handler_Classbase;
+	invoke(v: Class_object): Class_Handler;
 
 } /** endof class */
 

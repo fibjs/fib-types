@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class _object_Classbase  {
+declare class Class__object  {
 	
 	/**
 		* 

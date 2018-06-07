@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class EventInfo_Classbase extends _object_Classbase {
+declare class Class_EventInfo extends Class__object {
 	
 } /** endof class */
 

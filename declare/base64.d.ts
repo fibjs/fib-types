@@ -215,7 +215,7 @@ declare module "base64" {
 			* 
 			* 
 			*/
-		export function encode(data: Buffer_Classbase, url?: boolean/** = false*/): string;
+		export function encode(data: Class_Buffer, url?: boolean/** = false*/): string;
 	
 		/**
 			* 
@@ -226,7 +226,7 @@ declare module "base64" {
 			* 
 			* 
 			*/
-		export function decode(data: string): Buffer_Classbase;
+		export function decode(data: string): Class_Buffer;
 	
 	} /** end of `module base64` */
 	export = base64

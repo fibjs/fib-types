@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class HeapSnapshot_Classbase extends _object_Classbase {
+declare class Class_HeapSnapshot extends Class__object {
 	
 	/**
 		* 
@@ -30,7 +30,7 @@ declare class HeapSnapshot_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	diff(before: HeapSnapshot_Classbase): Object;
+	diff(before: Class_HeapSnapshot): Object;
 
 	/**
 		* 
@@ -41,7 +41,7 @@ declare class HeapSnapshot_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	getNodeById(id: number): HeapGraphNode_Classbase;
+	getNodeById(id: number): Class_HeapGraphNode;
 
 	/**
 		* 

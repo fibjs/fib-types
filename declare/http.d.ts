@@ -210,7 +210,7 @@ declare module "http" {
 			* 
 			*/
 		
-		export class HttpRequest extends HttpRequest_Classbase {}
+		export class HttpRequest extends Class_HttpRequest {}
 		
 		/**
 			* 
@@ -219,7 +219,7 @@ declare module "http" {
 			* 
 			*/
 		
-		export class HttpResponse extends HttpResponse_Classbase {}
+		export class HttpResponse extends Class_HttpResponse {}
 		
 		/**
 			* 
@@ -228,7 +228,7 @@ declare module "http" {
 			* 
 			*/
 		
-		export class HttpCookie extends HttpCookie_Classbase {}
+		export class HttpCookie extends Class_HttpCookie {}
 		
 		/**
 			* 
@@ -237,7 +237,7 @@ declare module "http" {
 			* 
 			*/
 		
-		export class HttpServer extends HttpServer_Classbase {}
+		export class HttpServer extends Class_HttpServer {}
 		
 		/**
 			* 
@@ -246,7 +246,7 @@ declare module "http" {
 			* 
 			*/
 		
-		export class HttpClient extends HttpClient_Classbase {}
+		export class HttpClient extends Class_HttpClient {}
 		
 		/**
 			* 
@@ -255,7 +255,7 @@ declare module "http" {
 			* 
 			*/
 		
-		export class HttpsServer extends HttpsServer_Classbase {}
+		export class HttpsServer extends Class_HttpsServer {}
 		
 		/**
 			* 
@@ -264,7 +264,7 @@ declare module "http" {
 			* 
 			*/
 		
-		export class HttpHandler extends HttpHandler_Classbase {}
+		export class HttpHandler extends Class_HttpHandler {}
 		
 		
 		
@@ -282,7 +282,7 @@ declare module "http" {
 			* 
 			* 
 			*/
-		export function fileHandler(root: string, mimes?: Object/** = v8::Object::New(isolate)*/, autoIndex?: boolean/** = false*/): Handler_Classbase;
+		export function fileHandler(root: string, mimes?: Object/** = v8::Object::New(isolate)*/, autoIndex?: boolean/** = false*/): Class_Handler;
 	
 		/**
 			* 
@@ -294,7 +294,7 @@ declare module "http" {
 			* 
 			* @async
 			*/
-		export function request(conn: Stream_Classbase, req: HttpRequest_Classbase): HttpResponse_Classbase;
+		export function request(conn: Class_Stream, req: Class_HttpRequest): Class_HttpResponse;
 	
 		/**
 			* 
@@ -317,7 +317,7 @@ declare module "http" {
 			* 
 			* @async
 			*/
-		export function request(method: string, url: string, opts?: Object/** = v8::Object::New(isolate)*/): HttpResponse_Classbase;
+		export function request(method: string, url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 			* 
@@ -339,7 +339,7 @@ declare module "http" {
 			* 
 			* @async
 			*/
-		export function get(url: string, opts?: Object/** = v8::Object::New(isolate)*/): HttpResponse_Classbase;
+		export function get(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 			* 
@@ -361,7 +361,7 @@ declare module "http" {
 			* 
 			* @async
 			*/
-		export function post(url: string, opts?: Object/** = v8::Object::New(isolate)*/): HttpResponse_Classbase;
+		export function post(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 			* 
@@ -383,7 +383,7 @@ declare module "http" {
 			* 
 			* @async
 			*/
-		export function del(url: string, opts?: Object/** = v8::Object::New(isolate)*/): HttpResponse_Classbase;
+		export function del(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 			* 
@@ -405,7 +405,7 @@ declare module "http" {
 			* 
 			* @async
 			*/
-		export function put(url: string, opts?: Object/** = v8::Object::New(isolate)*/): HttpResponse_Classbase;
+		export function put(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 			* 
@@ -427,7 +427,7 @@ declare module "http" {
 			* 
 			* @async
 			*/
-		export function patch(url: string, opts?: Object/** = v8::Object::New(isolate)*/): HttpResponse_Classbase;
+		export function patch(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 	} /** end of `module http` */
 	export = http

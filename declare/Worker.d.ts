@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 /// <reference path="EventEmitter.d.ts" />
-declare class Worker_Classbase extends EventEmitter_Classbase {
+declare class Class_Worker extends Class_EventEmitter {
 	
 	/**
 		* 

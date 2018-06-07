@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class Timer_Classbase extends _object_Classbase {
+declare class Class_Timer extends Class__object {
 	
 	/**
 		* 
@@ -29,7 +29,7 @@ declare class Timer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	ref(): Timer_Classbase;
+	ref(): Class_Timer;
 
 	/**
 		* 
@@ -39,7 +39,7 @@ declare class Timer_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	unref(): Timer_Classbase;
+	unref(): Class_Timer;
 
 	/**
 		* 

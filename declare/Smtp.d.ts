@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class Smtp_Classbase extends _object_Classbase {
+declare class Class_Smtp extends Class__object {
 	
 	/**
 		* 

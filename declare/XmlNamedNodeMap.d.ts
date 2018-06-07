@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class XmlNamedNodeMap_Classbase extends _object_Classbase {
+declare class Class_XmlNamedNodeMap extends Class__object {
 	
 	/**
 		* 
@@ -30,7 +30,7 @@ declare class XmlNamedNodeMap_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	item(index: number): XmlAttr_Classbase;
+	item(index: number): Class_XmlAttr;
 
 	/**
 		* 
@@ -41,7 +41,7 @@ declare class XmlNamedNodeMap_Classbase extends _object_Classbase {
 		* 
 		* 
 		*/
-	getNamedItem(name: string): XmlAttr_Classbase;
+	getNamedItem(name: string): Class_XmlAttr;
 
 } /** endof class */
 

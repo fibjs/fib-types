@@ -19,7 +19,7 @@
 	* @detail 
 	*/
 
-declare class HttpUploadData_Classbase extends _object_Classbase {
+declare class Class_HttpUploadData extends Class__object {
 	
 } /** endof class */
 
