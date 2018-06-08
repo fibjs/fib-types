@@ -1,11 +1,6 @@
 # fib-types
+
 fibjs's *.d.ts files for internal modules.
-
-## Prerequisite
-
-- fibjs `> 0.25.0`
-
-Run `fibjs test` to check if fibjs installed correctly :)
 
 ## Usage
 
