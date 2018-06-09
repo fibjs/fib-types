@@ -42,7 +42,7 @@ declare class Class_Condition extends Class_Lock {
 	 * 
 	 * 
 	 */
-	constructor(lock?: Class_Lock);
+	constructor(lock: Class_Lock);
 
 	/**
 	 * 

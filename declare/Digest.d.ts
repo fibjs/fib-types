@@ -47,7 +47,7 @@ declare class Class_Digest extends Class__object {
 	 * 
 	 * 
 	 */
-	update(data?: Class_Buffer): Class_Digest;
+	update(data: Class_Buffer): Class_Digest;
 
 	/**
 	 * 
@@ -58,7 +58,7 @@ declare class Class_Digest extends Class__object {
 	 * 
 	 * 
 	 */
-	digest(data?: Class_Buffer): Class_Buffer;
+	digest(data: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 

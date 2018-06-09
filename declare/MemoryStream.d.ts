@@ -42,7 +42,7 @@ declare class Class_MemoryStream extends Class_SeekableStream {
 	 * 
 	 * 
 	 */
-	setTime(d?: Date): void;
+	setTime(d: Date): void;
 
 	/**
 	 * 

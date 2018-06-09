@@ -35,7 +35,7 @@ declare class Class_MongoDB extends Class__object {
 	 * 
 	 * 
 	 */
-	getCollection(name?: string): Class_MongoCollection;
+	getCollection(name: string): Class_MongoCollection;
 
 	/**
 	 * 
@@ -46,7 +46,7 @@ declare class Class_MongoDB extends Class__object {
 	 * 
 	 * 
 	 */
-	runCommand(cmd?: Object): Object;
+	runCommand(cmd: Object): Object;
 
 	/**
 	 * 
@@ -58,7 +58,7 @@ declare class Class_MongoDB extends Class__object {
 	 * 
 	 * 
 	 */
-	runCommand(cmd?: string, arg?: any): Object;
+	runCommand(cmd: string, arg: any): Object;
 
 	/**
 	 * 

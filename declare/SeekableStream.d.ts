@@ -35,7 +35,7 @@ declare class Class_SeekableStream extends Class_Stream {
 	 * 
 	 * 
 	 */
-	seek(offset?: number, whence?: number): void;
+	seek(offset: number, whence: number): void;
 
 	/**
 	 * 
@@ -83,7 +83,7 @@ declare class Class_SeekableStream extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	truncate(bytes?: number): void;
+	truncate(bytes: number): void;
 
 	/**
 	 * 

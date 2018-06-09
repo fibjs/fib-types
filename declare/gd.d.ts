@@ -451,7 +451,7 @@ declare module "gd" {
 		 * 
 		 * @async
 		 */
-		export function create(width?: number, height?: number, color?: number/** = undefined*/): Class_Image;
+		export function create(width: number, height: number, color?: number/** = undefined*/): Class_Image;
 	
 		/**
 		 * 
@@ -462,7 +462,7 @@ declare module "gd" {
 		 * 
 		 * @async
 		 */
-		export function load(data?: Class_Buffer): Class_Image;
+		export function load(data: Class_Buffer): Class_Image;
 	
 		/**
 		 * 
@@ -473,7 +473,7 @@ declare module "gd" {
 		 * 
 		 * @async
 		 */
-		export function load(stm?: Class_SeekableStream): Class_Image;
+		export function load(stm: Class_SeekableStream): Class_Image;
 	
 		/**
 		 * 
@@ -484,7 +484,7 @@ declare module "gd" {
 		 * 
 		 * @async
 		 */
-		export function load(fname?: string): Class_Image;
+		export function load(fname: string): Class_Image;
 	
 		/**
 		 * 
@@ -497,7 +497,7 @@ declare module "gd" {
 		 * 
 		 * 
 		 */
-		export function rgb(red?: number, green?: number, blue?: number): number;
+		export function rgb(red: number, green: number, blue: number): number;
 	
 		/**
 		 * 
@@ -511,7 +511,7 @@ declare module "gd" {
 		 * 
 		 * 
 		 */
-		export function rgba(red?: number, green?: number, blue?: number, alpha?: number): number;
+		export function rgba(red: number, green: number, blue: number, alpha: number): number;
 	
 		/**
 		 * 
@@ -524,7 +524,7 @@ declare module "gd" {
 		 * 
 		 * 
 		 */
-		export function hsl(hue?: number, saturation?: number, lightness?: number): number;
+		export function hsl(hue: number, saturation: number, lightness: number): number;
 	
 		/**
 		 * 
@@ -538,7 +538,7 @@ declare module "gd" {
 		 * 
 		 * 
 		 */
-		export function hsla(hue?: number, saturation?: number, lightness?: number, alpha?: number): number;
+		export function hsla(hue: number, saturation: number, lightness: number, alpha: number): number;
 	
 		/**
 		 * 
@@ -551,7 +551,7 @@ declare module "gd" {
 		 * 
 		 * 
 		 */
-		export function hsb(hue?: number, saturation?: number, brightness?: number): number;
+		export function hsb(hue: number, saturation: number, brightness: number): number;
 	
 		/**
 		 * 
@@ -565,7 +565,7 @@ declare module "gd" {
 		 * 
 		 * 
 		 */
-		export function hsba(hue?: number, saturation?: number, brightness?: number, alpha?: number): number;
+		export function hsba(hue: number, saturation: number, brightness: number, alpha: number): number;
 	
 		/**
 		 * 
@@ -576,7 +576,7 @@ declare module "gd" {
 		 * 
 		 * 
 		 */
-		export function color(color?: string): number;
+		export function color(color: string): number;
 	
 	} /** end of `module gd` */
 	export = gd

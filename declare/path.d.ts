@@ -218,7 +218,7 @@ declare module "path" {
 		 * 
 		 * 
 		 */
-		export function normalize(path?: string): string;
+		export function normalize(path: string): string;
 	
 		/**
 		 * 
@@ -231,7 +231,7 @@ declare module "path" {
 		 * 
 		 * 
 		 */
-		export function basename(path?: string, ext?: string/** = ""*/): string;
+		export function basename(path: string, ext?: string/** = ""*/): string;
 	
 		/**
 		 * 
@@ -243,7 +243,7 @@ declare module "path" {
 		 * 
 		 * 
 		 */
-		export function extname(path?: string): string;
+		export function extname(path: string): string;
 	
 		/**
 		 * 
@@ -255,7 +255,7 @@ declare module "path" {
 		 * 
 		 * 
 		 */
-		export function dirname(path?: string): string;
+		export function dirname(path: string): string;
 	
 		/**
 		 * 
@@ -267,7 +267,7 @@ declare module "path" {
 		 * 
 		 * 
 		 */
-		export function fullpath(path?: string): string;
+		export function fullpath(path: string): string;
 	
 		/**
 		 * 
@@ -279,7 +279,7 @@ declare module "path" {
 		 * 
 		 * 
 		 */
-		export function isAbsolute(path?: string): boolean;
+		export function isAbsolute(path: string): boolean;
 	
 		/**
 		 * 

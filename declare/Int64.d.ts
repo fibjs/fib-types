@@ -69,7 +69,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(hi?: number, lo?: number);
+	constructor(hi: number, lo: number);
 
 	/**
 	 * 
@@ -79,7 +79,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(num?: Class_Int64);
+	constructor(num: Class_Int64);
 
 	/**
 	 * 
@@ -90,7 +90,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(num?: string, base?: number/** = 10*/);
+	constructor(num: string, base?: number/** = 10*/);
 
 	/**
 	 * 
@@ -101,7 +101,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	compare(num?: Class_Int64): number;
+	compare(num: Class_Int64): number;
 
 	/**
 	 * 
@@ -112,7 +112,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	shiftLeft(bits?: number): Class_Int64;
+	shiftLeft(bits: number): Class_Int64;
 
 	/**
 	 * 
@@ -123,7 +123,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	shiftRight(bits?: number): Class_Int64;
+	shiftRight(bits: number): Class_Int64;
 
 	/**
 	 * 
@@ -134,7 +134,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	and(num?: Class_Int64): Class_Int64;
+	and(num: Class_Int64): Class_Int64;
 
 	/**
 	 * 
@@ -145,7 +145,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	or(num?: Class_Int64): Class_Int64;
+	or(num: Class_Int64): Class_Int64;
 
 	/**
 	 * 
@@ -156,7 +156,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	xor(num?: Class_Int64): Class_Int64;
+	xor(num: Class_Int64): Class_Int64;
 
 	/**
 	 * 
@@ -167,7 +167,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	add(num?: Class_Int64): Class_Int64;
+	add(num: Class_Int64): Class_Int64;
 
 	/**
 	 * 
@@ -178,7 +178,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	sub(num?: Class_Int64): Class_Int64;
+	sub(num: Class_Int64): Class_Int64;
 
 	/**
 	 * 
@@ -189,7 +189,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	multi(num?: Class_Int64): Class_Int64;
+	multi(num: Class_Int64): Class_Int64;
 
 	/**
 	 * 
@@ -200,7 +200,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	div(num?: Class_Int64): Class_Int64;
+	div(num: Class_Int64): Class_Int64;
 
 	/**
 	 * 
@@ -211,7 +211,7 @@ declare class Class_Int64 extends Class__object {
 	 * 
 	 * 
 	 */
-	equals(expected?: Class__object): boolean;
+	equals(expected: Class__object): boolean;
 
 	/**
 	 * 

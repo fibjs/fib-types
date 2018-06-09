@@ -159,7 +159,7 @@ declare class Class_Message extends Class__object {
 	 * 
 	 * @async
 	 */
-	write(data?: Class_Buffer): void;
+	write(data: Class_Buffer): void;
 
 	/**
 	 * 
@@ -170,7 +170,7 @@ declare class Class_Message extends Class__object {
 	 * 
 	 * 
 	 */
-	json(data?: any): any;
+	json(data: any): any;
 
 	/**
 	 * 
@@ -216,7 +216,7 @@ declare class Class_Message extends Class__object {
 	 * 
 	 * @async
 	 */
-	sendTo(stm?: Class_Stream): void;
+	sendTo(stm: Class_Stream): void;
 
 	/**
 	 * 
@@ -226,7 +226,7 @@ declare class Class_Message extends Class__object {
 	 * 
 	 * @async
 	 */
-	readFrom(stm?: Class_Stream): void;
+	readFrom(stm: Class_Stream): void;
 
 } /** endof class */
 

@@ -124,7 +124,7 @@ declare class Class_WebView extends Class_EventEmitter {
 	 * 
 	 * @async
 	 */
-	setHtml(html?: string): void;
+	setHtml(html: string): void;
 
 	/**
 	 * 
@@ -163,7 +163,7 @@ declare class Class_WebView extends Class_EventEmitter {
 	 * 
 	 * @async
 	 */
-	postMessage(msg?: string): void;
+	postMessage(msg: string): void;
 
 } /** endof class */
 

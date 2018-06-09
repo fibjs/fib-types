@@ -110,7 +110,7 @@ declare class Class_HttpServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(port?: number, hdlr?: Class_Handler);
+	constructor(port: number, hdlr: Class_Handler);
 
 	/**
 	 * 
@@ -122,7 +122,7 @@ declare class Class_HttpServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(addr?: string, port?: number, hdlr?: Class_Handler);
+	constructor(addr: string, port: number, hdlr: Class_Handler);
 
 	/**
 	 * 
@@ -143,7 +143,7 @@ declare class Class_HttpServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	onerror(hdlrs?: Object): void;
+	onerror(hdlrs: Object): void;
 
 	/**
 	 * 

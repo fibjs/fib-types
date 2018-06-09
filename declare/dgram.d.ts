@@ -214,13 +214,11 @@ declare module "dgram" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief dgram.Socket 对象是一个封装了数据包函数功能的 EventEmitter。参见 DgramSocket\n     dgram.Socket 实例是由 dgram.createSocket() 创建的。创建 dgram.Socket 实例不需要使用 new 关键字。\n    ","deprecated":null,"name":"Socket","type":"DgramSocket","doc":{"descript":"dgram.Socket 对象是一个封装了数据包函数功能的 EventEmitter。参见 DgramSocket","detail":["dgram.Socket 实例是由 dgram.createSocket() 创建的。创建 dgram.Socket 实例不需要使用 new 关键字。"],"params":[]},"overs":[{"memType":"object","comments":"! @brief dgram.Socket 对象是一个封装了数据包函数功能的 EventEmitter。参见 DgramSocket\n     dgram.Socket 实例是由 dgram.createSocket() 创建的。创建 dgram.Socket 实例不需要使用 new 关键字。\n    ","deprecated":null,"name":"Socket","type":"DgramSocket","doc":{"descript":"dgram.Socket 对象是一个封装了数据包函数功能的 EventEmitter。参见 DgramSocket","detail":["dgram.Socket 实例是由 dgram.createSocket() 创建的。创建 dgram.Socket 实例不需要使用 new 关键字。"],"params":[]}}]} */
-		
 		export class DgramSocket extends Class_DgramSocket {}
 		
 		
 		
+		
 		/**
 		 * 
 		 * @brief 创建一个 dgram.Socket 对象
@@ -240,7 +238,7 @@ declare module "dgram" {
 		 * 
 		 * 
 		 */
-		export function createSocket(opts?: Object): Class_DgramSocket;
+		export function createSocket(opts: Object): Class_DgramSocket;
 	
 		/**
 		 * 
@@ -262,7 +260,7 @@ declare module "dgram" {
 		 * 
 		 * 
 		 */
-		export function createSocket(opts?: Object, callback?: Function): Class_DgramSocket;
+		export function createSocket(opts: Object, callback: Function): Class_DgramSocket;
 	
 		/**
 		 * 
@@ -273,7 +271,7 @@ declare module "dgram" {
 		 * 
 		 * 
 		 */
-		export function createSocket(type?: string): Class_DgramSocket;
+		export function createSocket(type: string): Class_DgramSocket;
 	
 		/**
 		 * 
@@ -285,7 +283,7 @@ declare module "dgram" {
 		 * 
 		 * 
 		 */
-		export function createSocket(type?: string, callback?: Function): Class_DgramSocket;
+		export function createSocket(type: string, callback: Function): Class_DgramSocket;
 	
 	} /** end of `module dgram` */
 	export = dgram

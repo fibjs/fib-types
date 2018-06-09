@@ -34,7 +34,7 @@ declare class Class_RedisHash extends Class__object {
 	 * 
 	 * 
 	 */
-	set(field?: Class_Buffer, value?: Class_Buffer): void;
+	set(field: Class_Buffer, value: Class_Buffer): void;
 
 	/**
 	 * 
@@ -44,7 +44,7 @@ declare class Class_RedisHash extends Class__object {
 	 * 
 	 * 
 	 */
-	setNX(field?: Class_Buffer, value?: Class_Buffer): void;
+	setNX(field: Class_Buffer, value: Class_Buffer): void;
 
 	/**
 	 * 
@@ -53,7 +53,7 @@ declare class Class_RedisHash extends Class__object {
 	 * 
 	 * 
 	 */
-	mset(kvs?: Object): void;
+	mset(kvs: Object): void;
 
 	/**
 	 * 
@@ -72,7 +72,7 @@ declare class Class_RedisHash extends Class__object {
 	 * 
 	 * 
 	 */
-	get(field?: Class_Buffer): Class_Buffer;
+	get(field: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -82,7 +82,7 @@ declare class Class_RedisHash extends Class__object {
 	 * 
 	 * 
 	 */
-	mget(fields?: any[]): any[];
+	mget(fields: any[]): any[];
 
 	/**
 	 * 
@@ -103,7 +103,7 @@ declare class Class_RedisHash extends Class__object {
 	 * 
 	 * 
 	 */
-	incr(field?: Class_Buffer, num?: number/** = 1*/): number;
+	incr(field: Class_Buffer, num?: number/** = 1*/): number;
 
 	/**
 	 * 
@@ -140,7 +140,7 @@ declare class Class_RedisHash extends Class__object {
 	 * 
 	 * 
 	 */
-	exists(field?: Class_Buffer): boolean;
+	exists(field: Class_Buffer): boolean;
 
 	/**
 	 * 
@@ -150,7 +150,7 @@ declare class Class_RedisHash extends Class__object {
 	 * 
 	 * 
 	 */
-	del(fields?: any[]): number;
+	del(fields: any[]): number;
 
 	/**
 	 * 

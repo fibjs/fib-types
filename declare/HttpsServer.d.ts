@@ -74,7 +74,7 @@ declare class Class_HttpsServer extends Class_HttpServer {
 	 * 
 	 * 
 	 */
-	constructor(certs?: any[], port?: number, hdlr?: Class_Handler);
+	constructor(certs: any[], port: number, hdlr: Class_Handler);
 
 	/**
 	 * 
@@ -101,7 +101,7 @@ declare class Class_HttpsServer extends Class_HttpServer {
 	 * 
 	 * 
 	 */
-	constructor(certs?: any[], addr?: string, port?: number, hdlr?: Class_Handler);
+	constructor(certs: any[], addr: string, port: number, hdlr: Class_Handler);
 
 	/**
 	 * 
@@ -114,7 +114,7 @@ declare class Class_HttpsServer extends Class_HttpServer {
 	 * 
 	 * 
 	 */
-	constructor(crt?: Class_X509Cert, key?: Class_PKey, port?: number, hdlr?: Class_Handler);
+	constructor(crt: Class_X509Cert, key: Class_PKey, port: number, hdlr: Class_Handler);
 
 	/**
 	 * 
@@ -128,7 +128,7 @@ declare class Class_HttpsServer extends Class_HttpServer {
 	 * 
 	 * 
 	 */
-	constructor(crt?: Class_X509Cert, key?: Class_PKey, addr?: string, port?: number, hdlr?: Class_Handler);
+	constructor(crt: Class_X509Cert, key: Class_PKey, addr: string, port: number, hdlr: Class_Handler);
 
 } /** endof class */
 

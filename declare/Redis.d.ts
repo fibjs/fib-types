@@ -48,7 +48,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	command(cmd?: string, ...args: any[]): any;
+	command(cmd: string, ...args: any[]): any;
 
 	/**
 	 * 
@@ -59,7 +59,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	set(key?: Class_Buffer, value?: Class_Buffer, ttl?: number/** = 0*/): void;
+	set(key: Class_Buffer, value: Class_Buffer, ttl?: number/** = 0*/): void;
 
 	/**
 	 * 
@@ -70,7 +70,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	setNX(key?: Class_Buffer, value?: Class_Buffer, ttl?: number/** = 0*/): void;
+	setNX(key: Class_Buffer, value: Class_Buffer, ttl?: number/** = 0*/): void;
 
 	/**
 	 * 
@@ -81,7 +81,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	setXX(key?: Class_Buffer, value?: Class_Buffer, ttl?: number/** = 0*/): void;
+	setXX(key: Class_Buffer, value: Class_Buffer, ttl?: number/** = 0*/): void;
 
 	/**
 	 * 
@@ -90,7 +90,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	mset(kvs?: Object): void;
+	mset(kvs: Object): void;
 
 	/**
 	 * 
@@ -108,7 +108,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	msetNX(kvs?: Object): void;
+	msetNX(kvs: Object): void;
 
 	/**
 	 * 
@@ -128,7 +128,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	append(key?: Class_Buffer, value?: Class_Buffer): number;
+	append(key: Class_Buffer, value: Class_Buffer): number;
 
 	/**
 	 * 
@@ -140,7 +140,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	setRange(key?: Class_Buffer, offset?: number, value?: Class_Buffer): number;
+	setRange(key: Class_Buffer, offset: number, value: Class_Buffer): number;
 
 	/**
 	 * 
@@ -152,7 +152,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	getRange(key?: Class_Buffer, start?: number, end?: number): Class_Buffer;
+	getRange(key: Class_Buffer, start: number, end: number): Class_Buffer;
 
 	/**
 	 * 
@@ -162,7 +162,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	strlen(key?: Class_Buffer): number;
+	strlen(key: Class_Buffer): number;
 
 	/**
 	 * 
@@ -174,7 +174,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	bitcount(key?: Class_Buffer, start?: number/** = 0*/, end?: number/** = -1*/): number;
+	bitcount(key: Class_Buffer, start?: number/** = 0*/, end?: number/** = -1*/): number;
 
 	/**
 	 * 
@@ -184,7 +184,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	get(key?: Class_Buffer): Class_Buffer;
+	get(key: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -194,7 +194,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	mget(keys?: any[]): any[];
+	mget(keys: any[]): any[];
 
 	/**
 	 * 
@@ -215,7 +215,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	getset(key?: Class_Buffer, value?: Class_Buffer): Class_Buffer;
+	getset(key: Class_Buffer, value: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -226,7 +226,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	decr(key?: Class_Buffer, num?: number/** = 1*/): number;
+	decr(key: Class_Buffer, num?: number/** = 1*/): number;
 
 	/**
 	 * 
@@ -237,7 +237,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	incr(key?: Class_Buffer, num?: number/** = 1*/): number;
+	incr(key: Class_Buffer, num?: number/** = 1*/): number;
 
 	/**
 	 * 
@@ -249,7 +249,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	setBit(key?: Class_Buffer, offset?: number, value?: number): number;
+	setBit(key: Class_Buffer, offset: number, value: number): number;
 
 	/**
 	 * 
@@ -260,7 +260,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	getBit(key?: Class_Buffer, offset?: number): number;
+	getBit(key: Class_Buffer, offset: number): number;
 
 	/**
 	 * 
@@ -270,7 +270,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	exists(key?: Class_Buffer): boolean;
+	exists(key: Class_Buffer): boolean;
 
 	/**
 	 * 
@@ -280,7 +280,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	type(key?: Class_Buffer): string;
+	type(key: Class_Buffer): string;
 
 	/**
 	 * 
@@ -290,7 +290,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	keys(pattern?: string): any[];
+	keys(pattern: string): any[];
 
 	/**
 	 * 
@@ -300,7 +300,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	del(keys?: any[]): number;
+	del(keys: any[]): number;
 
 	/**
 	 * 
@@ -321,7 +321,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	expire(key?: Class_Buffer, ttl?: number): boolean;
+	expire(key: Class_Buffer, ttl: number): boolean;
 
 	/**
 	 * 
@@ -331,7 +331,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	ttl(key?: Class_Buffer): number;
+	ttl(key: Class_Buffer): number;
 
 	/**
 	 * 
@@ -341,7 +341,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	persist(key?: Class_Buffer): boolean;
+	persist(key: Class_Buffer): boolean;
 
 	/**
 	 * 
@@ -351,7 +351,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	rename(key?: Class_Buffer, newkey?: Class_Buffer): void;
+	rename(key: Class_Buffer, newkey: Class_Buffer): void;
 
 	/**
 	 * 
@@ -362,7 +362,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	renameNX(key?: Class_Buffer, newkey?: Class_Buffer): boolean;
+	renameNX(key: Class_Buffer, newkey: Class_Buffer): boolean;
 
 	/**
 	 * 
@@ -373,7 +373,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	sub(channel?: Class_Buffer, func?: Function): void;
+	sub(channel: Class_Buffer, func: Function): void;
 
 	/**
 	 * 
@@ -383,7 +383,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	sub(map?: Object): void;
+	sub(map: Object): void;
 
 	/**
 	 * 
@@ -393,7 +393,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	unsub(channel?: Class_Buffer): void;
+	unsub(channel: Class_Buffer): void;
 
 	/**
 	 * 
@@ -404,7 +404,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	unsub(channel?: Class_Buffer, func?: Function): void;
+	unsub(channel: Class_Buffer, func: Function): void;
 
 	/**
 	 * 
@@ -414,7 +414,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	unsub(channels?: any[]): void;
+	unsub(channels: any[]): void;
 
 	/**
 	 * 
@@ -424,7 +424,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	unsub(map?: Object): void;
+	unsub(map: Object): void;
 
 	/**
 	 * 
@@ -435,7 +435,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	psub(pattern?: string, func?: Function): void;
+	psub(pattern: string, func: Function): void;
 
 	/**
 	 * 
@@ -445,7 +445,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	psub(map?: Object): void;
+	psub(map: Object): void;
 
 	/**
 	 * 
@@ -455,7 +455,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	unpsub(pattern?: string): void;
+	unpsub(pattern: string): void;
 
 	/**
 	 * 
@@ -466,7 +466,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	unpsub(pattern?: string, func?: Function): void;
+	unpsub(pattern: string, func: Function): void;
 
 	/**
 	 * 
@@ -476,7 +476,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	unpsub(patterns?: any[]): void;
+	unpsub(patterns: any[]): void;
 
 	/**
 	 * 
@@ -486,7 +486,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	unpsub(map?: Object): void;
+	unpsub(map: Object): void;
 
 	/**
 	 * 
@@ -498,7 +498,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	pub(channel?: Class_Buffer, message?: Class_Buffer): number;
+	pub(channel: Class_Buffer, message: Class_Buffer): number;
 
 	/**
 	 * 
@@ -508,7 +508,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	getHash(key?: Class_Buffer): Class_RedisHash;
+	getHash(key: Class_Buffer): Class_RedisHash;
 
 	/**
 	 * 
@@ -518,7 +518,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	getList(key?: Class_Buffer): Class_RedisList;
+	getList(key: Class_Buffer): Class_RedisList;
 
 	/**
 	 * 
@@ -528,7 +528,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	getSet(key?: Class_Buffer): Class_RedisSet;
+	getSet(key: Class_Buffer): Class_RedisSet;
 
 	/**
 	 * 
@@ -538,7 +538,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	getSortedSet(key?: Class_Buffer): Class_RedisSortedSet;
+	getSortedSet(key: Class_Buffer): Class_RedisSortedSet;
 
 	/**
 	 * 
@@ -548,7 +548,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	dump(key?: Class_Buffer): Class_Buffer;
+	dump(key: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -559,7 +559,7 @@ declare class Class_Redis extends Class__object {
 	 * 
 	 * 
 	 */
-	restore(key?: Class_Buffer, data?: Class_Buffer, ttl?: number/** = 0*/): void;
+	restore(key: Class_Buffer, data: Class_Buffer, ttl?: number/** = 0*/): void;
 
 	/**
 	 * 

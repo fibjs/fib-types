@@ -260,7 +260,7 @@ declare module "uuid" {
 		 * 
 		 * 
 		 */
-		export function md5(ns?: number, name?: string): Class_Buffer;
+		export function md5(ns: number, name: string): Class_Buffer;
 	
 		/**
 		 * 
@@ -282,7 +282,7 @@ declare module "uuid" {
 		 * 
 		 * 
 		 */
-		export function sha1(ns?: number, name?: string): Class_Buffer;
+		export function sha1(ns: number, name: string): Class_Buffer;
 	
 		/**
 		 * 

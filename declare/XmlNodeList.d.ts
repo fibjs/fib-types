@@ -48,7 +48,7 @@ declare class Class_XmlNodeList extends Class__object {
 	 * 
 	 * 
 	 */
-	item(index?: number): Class_XmlNode;
+	item(index: number): Class_XmlNode;
 
 } /** endof class */
 

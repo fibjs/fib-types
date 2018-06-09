@@ -103,7 +103,7 @@ declare class Class_StringDecoder extends Class__object {
 	 * 
 	 * 
 	 */
-	end(buf?: Class_Buffer): string;
+	end(buf: Class_Buffer): string;
 
 	/**
 	 * 
@@ -114,7 +114,7 @@ declare class Class_StringDecoder extends Class__object {
 	 * 
 	 * 
 	 */
-	write(buf?: Class_Buffer): string;
+	write(buf: Class_Buffer): string;
 
 	/**
 	 * 
@@ -126,7 +126,7 @@ declare class Class_StringDecoder extends Class__object {
 	 * 
 	 * 
 	 */
-	text(buf?: Class_Buffer, offset?: number): string;
+	text(buf: Class_Buffer, offset: number): string;
 
 	/**
 	 * 
@@ -137,7 +137,7 @@ declare class Class_StringDecoder extends Class__object {
 	 * 
 	 * 
 	 */
-	fillLast(buf?: Class_Buffer): string;
+	fillLast(buf: Class_Buffer): string;
 
 } /** endof class */
 

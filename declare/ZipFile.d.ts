@@ -57,7 +57,7 @@ declare class Class_ZipFile extends Class__object {
 	 * 
 	 * @async
 	 */
-	getinfo(member?: string): any;
+	getinfo(member: string): any;
 
 	/**
 	 * 
@@ -69,7 +69,7 @@ declare class Class_ZipFile extends Class__object {
 	 * 
 	 * @async
 	 */
-	read(member?: string, password?: string/** = ""*/): Class_Buffer;
+	read(member: string, password?: string/** = ""*/): Class_Buffer;
 
 	/**
 	 * 
@@ -92,7 +92,7 @@ declare class Class_ZipFile extends Class__object {
 	 * 
 	 * @async
 	 */
-	extract(member?: string, path?: string, password?: string/** = ""*/): void;
+	extract(member: string, path: string, password?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -104,7 +104,7 @@ declare class Class_ZipFile extends Class__object {
 	 * 
 	 * @async
 	 */
-	extract(member?: string, strm?: Class_SeekableStream, password?: string/** = ""*/): void;
+	extract(member: string, strm: Class_SeekableStream, password?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -115,7 +115,7 @@ declare class Class_ZipFile extends Class__object {
 	 * 
 	 * @async
 	 */
-	extractAll(path?: string, password?: string/** = ""*/): void;
+	extractAll(path: string, password?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -127,7 +127,7 @@ declare class Class_ZipFile extends Class__object {
 	 * 
 	 * @async
 	 */
-	write(filename?: string, inZipName?: string, password?: string/** = ""*/): void;
+	write(filename: string, inZipName: string, password?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -139,7 +139,7 @@ declare class Class_ZipFile extends Class__object {
 	 * 
 	 * @async
 	 */
-	write(data?: Class_Buffer, inZipName?: string, password?: string/** = ""*/): void;
+	write(data: Class_Buffer, inZipName: string, password?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -151,7 +151,7 @@ declare class Class_ZipFile extends Class__object {
 	 * 
 	 * @async
 	 */
-	write(strm?: Class_SeekableStream, inZipName?: string, password?: string/** = ""*/): void;
+	write(strm: Class_SeekableStream, inZipName: string, password?: string/** = ""*/): void;
 
 	/**
 	 * 

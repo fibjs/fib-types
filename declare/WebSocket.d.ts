@@ -132,7 +132,7 @@ declare class Class_WebSocket extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	constructor(url?: string, protocol?: string/** = ""*/, origin?: string/** = ""*/);
+	constructor(url: string, protocol?: string/** = ""*/, origin?: string/** = ""*/);
 
 	/**
 	 * 
@@ -153,7 +153,7 @@ declare class Class_WebSocket extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	send(data?: string): void;
+	send(data: string): void;
 
 	/**
 	 * 
@@ -163,7 +163,7 @@ declare class Class_WebSocket extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	send(data?: Class_Buffer): void;
+	send(data: Class_Buffer): void;
 
 	/**
 	 * 

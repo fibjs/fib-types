@@ -218,10 +218,8 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 断言测试模块，如果测试值为假，则报错，报错行为可设定继续运行或者错误抛出 ","deprecated":null,"name":"assert","type":"assert","doc":{"descript":"断言测试模块，如果测试值为假，则报错，报错行为可设定继续运行或者错误抛出","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 断言测试模块，如果测试值为假，则报错，报错行为可设定继续运行或者错误抛出 ","deprecated":null,"name":"assert","type":"assert","doc":{"descript":"断言测试模块，如果测试值为假，则报错，报错行为可设定继续运行或者错误抛出","detail":[],"params":[]}}]} */
 		
-		export class assert extends Class_assert {}
+		export const assert: typeof assertNS
 		
 		
 		
@@ -234,7 +232,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function describe(name?: string, block?: Function): void;
+		export function describe(name: string, block: Function): void;
 	
 		/**
 		 * 
@@ -245,7 +243,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function xdescribe(name?: string, block?: Function): void;
+		export function xdescribe(name: string, block: Function): void;
 	
 		/**
 		 * 
@@ -256,7 +254,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function odescribe(name?: string, block?: Function): void;
+		export function odescribe(name: string, block: Function): void;
 	
 		/**
 		 * 
@@ -267,7 +265,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function it(name?: string, block?: Function): void;
+		export function it(name: string, block: Function): void;
 	
 		/**
 		 * 
@@ -278,7 +276,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function xit(name?: string, block?: Function): void;
+		export function xit(name: string, block: Function): void;
 	
 		/**
 		 * 
@@ -289,7 +287,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function oit(name?: string, block?: Function): void;
+		export function oit(name: string, block: Function): void;
 	
 		/**
 		 * 
@@ -299,7 +297,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function before(func?: Function): void;
+		export function before(func: Function): void;
 	
 		/**
 		 * 
@@ -309,7 +307,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function after(func?: Function): void;
+		export function after(func: Function): void;
 	
 		/**
 		 * 
@@ -319,7 +317,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function beforeEach(func?: Function): void;
+		export function beforeEach(func: Function): void;
 	
 		/**
 		 * 
@@ -329,7 +327,7 @@ declare module "test" {
 		 * 
 		 * 
 		 */
-		export function afterEach(func?: Function): void;
+		export function afterEach(func: Function): void;
 	
 		/**
 		 * 

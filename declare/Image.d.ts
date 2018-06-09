@@ -146,7 +146,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	save(stm?: Class_Stream, format?: number/** = undefined*/, quality?: number/** = 85*/): void;
+	save(stm: Class_Stream, format?: number/** = undefined*/, quality?: number/** = 85*/): void;
 
 	/**
 	 * 
@@ -158,7 +158,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	save(fname?: string, format?: number/** = undefined*/, quality?: number/** = 85*/): void;
+	save(fname: string, format?: number/** = undefined*/, quality?: number/** = 85*/): void;
 
 	/**
 	 * 
@@ -171,7 +171,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorAllocate(red?: number, green?: number, blue?: number): number;
+	colorAllocate(red: number, green: number, blue: number): number;
 
 	/**
 	 * 
@@ -182,7 +182,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorAllocate(color?: number): number;
+	colorAllocate(color: number): number;
 
 	/**
 	 * 
@@ -196,7 +196,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorAllocateAlpha(red?: number, green?: number, blue?: number, alpha?: number): number;
+	colorAllocateAlpha(red: number, green: number, blue: number, alpha: number): number;
 
 	/**
 	 * 
@@ -207,7 +207,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorAllocateAlpha(color?: number): number;
+	colorAllocateAlpha(color: number): number;
 
 	/**
 	 * 
@@ -220,7 +220,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorClosest(red?: number, green?: number, blue?: number): number;
+	colorClosest(red: number, green: number, blue: number): number;
 
 	/**
 	 * 
@@ -231,7 +231,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorClosest(color?: number): number;
+	colorClosest(color: number): number;
 
 	/**
 	 * 
@@ -244,7 +244,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorClosestHWB(red?: number, green?: number, blue?: number): number;
+	colorClosestHWB(red: number, green: number, blue: number): number;
 
 	/**
 	 * 
@@ -255,7 +255,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorClosestHWB(color?: number): number;
+	colorClosestHWB(color: number): number;
 
 	/**
 	 * 
@@ -269,7 +269,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorClosestAlpha(red?: number, green?: number, blue?: number, alpha?: number): number;
+	colorClosestAlpha(red: number, green: number, blue: number, alpha: number): number;
 
 	/**
 	 * 
@@ -280,7 +280,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorClosestAlpha(color?: number): number;
+	colorClosestAlpha(color: number): number;
 
 	/**
 	 * 
@@ -293,7 +293,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorExact(red?: number, green?: number, blue?: number): number;
+	colorExact(red: number, green: number, blue: number): number;
 
 	/**
 	 * 
@@ -304,7 +304,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorExact(color?: number): number;
+	colorExact(color: number): number;
 
 	/**
 	 * 
@@ -318,7 +318,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorExactAlpha(red?: number, green?: number, blue?: number, alpha?: number): number;
+	colorExactAlpha(red: number, green: number, blue: number, alpha: number): number;
 
 	/**
 	 * 
@@ -329,7 +329,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorExactAlpha(color?: number): number;
+	colorExactAlpha(color: number): number;
 
 	/**
 	 * 
@@ -342,7 +342,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorResolve(red?: number, green?: number, blue?: number): number;
+	colorResolve(red: number, green: number, blue: number): number;
 
 	/**
 	 * 
@@ -353,7 +353,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorResolve(color?: number): number;
+	colorResolve(color: number): number;
 
 	/**
 	 * 
@@ -367,7 +367,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorResolveAlpha(red?: number, green?: number, blue?: number, alpha?: number): number;
+	colorResolveAlpha(red: number, green: number, blue: number, alpha: number): number;
 
 	/**
 	 * 
@@ -378,7 +378,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorResolveAlpha(color?: number): number;
+	colorResolveAlpha(color: number): number;
 
 	/**
 	 * 
@@ -388,7 +388,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	colorDeallocate(color?: number): void;
+	colorDeallocate(color: number): void;
 
 	/**
 	 * 
@@ -401,7 +401,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	clip(x1?: number, y1?: number, x2?: number, y2?: number): void;
+	clip(x1: number, y1: number, x2: number, y2: number): void;
 
 	/**
 	 * 
@@ -413,7 +413,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	getPixel(x?: number, y?: number): number;
+	getPixel(x: number, y: number): number;
 
 	/**
 	 * 
@@ -425,7 +425,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	getTrueColorPixel(x?: number, y?: number): number;
+	getTrueColorPixel(x: number, y: number): number;
 
 	/**
 	 * 
@@ -437,7 +437,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	setPixel(x?: number, y?: number, color?: number): void;
+	setPixel(x: number, y: number, color: number): void;
 
 	/**
 	 * 
@@ -447,7 +447,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	setThickness(thickness?: number): void;
+	setThickness(thickness: number): void;
 
 	/**
 	 * 
@@ -461,7 +461,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	line(x1?: number, y1?: number, x2?: number, y2?: number, color?: number): void;
+	line(x1: number, y1: number, x2: number, y2: number, color: number): void;
 
 	/**
 	 * 
@@ -475,7 +475,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	rectangle(x1?: number, y1?: number, x2?: number, y2?: number, color?: number): void;
+	rectangle(x1: number, y1: number, x2: number, y2: number, color: number): void;
 
 	/**
 	 * 
@@ -489,7 +489,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	filledRectangle(x1?: number, y1?: number, x2?: number, y2?: number, color?: number): void;
+	filledRectangle(x1: number, y1: number, x2: number, y2: number, color: number): void;
 
 	/**
 	 * 
@@ -500,7 +500,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	polygon(points?: any[], color?: number): void;
+	polygon(points: any[], color: number): void;
 
 	/**
 	 * 
@@ -511,7 +511,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	openPolygon(points?: any[], color?: number): void;
+	openPolygon(points: any[], color: number): void;
 
 	/**
 	 * 
@@ -522,7 +522,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	filledPolygon(points?: any[], color?: number): void;
+	filledPolygon(points: any[], color: number): void;
 
 	/**
 	 * 
@@ -536,7 +536,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	ellipse(x?: number, y?: number, width?: number, height?: number, color?: number): void;
+	ellipse(x: number, y: number, width: number, height: number, color: number): void;
 
 	/**
 	 * 
@@ -550,7 +550,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	filledEllipse(x?: number, y?: number, width?: number, height?: number, color?: number): void;
+	filledEllipse(x: number, y: number, width: number, height: number, color: number): void;
 
 	/**
 	 * 
@@ -566,7 +566,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	arc(x?: number, y?: number, width?: number, height?: number, start?: number, end?: number, color?: number): void;
+	arc(x: number, y: number, width: number, height: number, start: number, end: number, color: number): void;
 
 	/**
 	 * 
@@ -583,7 +583,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	filledArc(x?: number, y?: number, width?: number, height?: number, start?: number, end?: number, color?: number, style?: number/** = undefined*/): void;
+	filledArc(x: number, y: number, width: number, height: number, start: number, end: number, color: number, style?: number/** = undefined*/): void;
 
 	/**
 	 * 
@@ -595,7 +595,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	fill(x?: number, y?: number, color?: number): void;
+	fill(x: number, y: number, color: number): void;
 
 	/**
 	 * 
@@ -608,7 +608,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * 
 	 */
-	fillToBorder(x?: number, y?: number, borderColor?: number, color?: number): void;
+	fillToBorder(x: number, y: number, borderColor: number, color: number): void;
 
 	/**
 	 * 
@@ -619,7 +619,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	colorReplace(src?: number, dst?: number): void;
+	colorReplace(src: number, dst: number): void;
 
 	/**
 	 * 
@@ -641,7 +641,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	resample(width?: number, height?: number): Class_Image;
+	resample(width: number, height: number): Class_Image;
 
 	/**
 	 * 
@@ -655,7 +655,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	crop(x?: number, y?: number, width?: number, height?: number): Class_Image;
+	crop(x: number, y: number, width: number, height: number): Class_Image;
 
 	/**
 	 * 
@@ -675,7 +675,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	rotate(dir?: number): void;
+	rotate(dir: number): void;
 
 	/**
 	 * 
@@ -701,7 +701,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	copy(source?: Class_Image, dstX?: number, dstY?: number, srcX?: number, srcY?: number, width?: number, height?: number): void;
+	copy(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number): void;
 
 	/**
 	 * 
@@ -718,7 +718,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	copyMerge(source?: Class_Image, dstX?: number, dstY?: number, srcX?: number, srcY?: number, width?: number, height?: number, percent?: number): void;
+	copyMerge(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, percent: number): void;
 
 	/**
 	 * 
@@ -735,7 +735,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	copyMergeGray(source?: Class_Image, dstX?: number, dstY?: number, srcX?: number, srcY?: number, width?: number, height?: number, percent?: number): void;
+	copyMergeGray(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, percent: number): void;
 
 	/**
 	 * 
@@ -753,7 +753,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	copyResized(source?: Class_Image, dstX?: number, dstY?: number, srcX?: number, srcY?: number, dstW?: number, dstH?: number, srcW?: number, srcH?: number): void;
+	copyResized(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, dstW: number, dstH: number, srcW: number, srcH: number): void;
 
 	/**
 	 * 
@@ -771,7 +771,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	copyResampled(source?: Class_Image, dstX?: number, dstY?: number, srcX?: number, srcY?: number, dstW?: number, dstH?: number, srcW?: number, srcH?: number): void;
+	copyResampled(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, dstW: number, dstH: number, srcW: number, srcH: number): void;
 
 	/**
 	 * 
@@ -788,7 +788,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	copyRotated(source?: Class_Image, dstX?: number, dstY?: number, srcX?: number, srcY?: number, width?: number, height?: number, angle?: number): void;
+	copyRotated(source: Class_Image, dstX: number, dstY: number, srcX: number, srcY: number, width: number, height: number, angle: number): void;
 
 	/**
 	 * 
@@ -815,7 +815,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	filter(filterType?: number, arg1?: number/** = 0*/, arg2?: number/** = 0*/, arg3?: number/** = 0*/, arg4?: number/** = 0*/): void;
+	filter(filterType: number, arg1?: number/** = 0*/, arg2?: number/** = 0*/, arg3?: number/** = 0*/, arg4?: number/** = 0*/): void;
 
 	/**
 	 * 
@@ -837,7 +837,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	affine(affine?: any[], x?: number/** = -1*/, y?: number/** = -1*/, width?: number/** = -1*/, height?: number/** = -1*/): Class_Image;
+	affine(affine: any[], x?: number/** = -1*/, y?: number/** = -1*/, width?: number/** = -1*/, height?: number/** = -1*/): Class_Image;
 
 	/**
 	 * 
@@ -847,7 +847,7 @@ declare class Class_Image extends Class__object {
 	 * 
 	 * @async
 	 */
-	gaussianBlur(radius?: number): void;
+	gaussianBlur(radius: number): void;
 
 } /** endof class */
 

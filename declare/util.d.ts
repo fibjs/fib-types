@@ -212,10 +212,8 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 数据统计对象，用以构建应用运行时数据收集，参见 Stats 对象。","deprecated":null,"name":"Stats","type":"Stats","doc":{"descript":"数据统计对象，用以构建应用运行时数据收集，参见 Stats 对象。","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 数据统计对象，用以构建应用运行时数据收集，参见 Stats 对象。","deprecated":null,"name":"Stats","type":"Stats","doc":{"descript":"数据统计对象，用以构建应用运行时数据收集，参见 Stats 对象。","detail":[],"params":[]}}]} */
-		
 		export class Stats extends Class_Stats {}
+		
 		
 		/**
 		 * 
@@ -223,10 +221,8 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief LRU(least recently used) 缓存对象，参见 LruCache 对象。","deprecated":null,"name":"LruCache","type":"LruCache","doc":{"descript":"LRU(least recently used) 缓存对象，参见 LruCache 对象。","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief LRU(least recently used) 缓存对象，参见 LruCache 对象。","deprecated":null,"name":"LruCache","type":"LruCache","doc":{"descript":"LRU(least recently used) 缓存对象，参见 LruCache 对象。","detail":[],"params":[]}}]} */
-		
 		export class LruCache extends Class_LruCache {}
+		
 		
 		
 		
@@ -241,7 +237,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function format(fmt?: string, ...args: any[]): string;
+		export function format(fmt: string, ...args: any[]): string;
 	
 		/**
 		 * 
@@ -265,7 +261,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function inherits(constructor?: any, superConstructor?: any): void;
+		export function inherits(constructor: any, superConstructor: any): void;
 	
 		/**
 		 * 
@@ -278,7 +274,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function inspect(obj?: Object, options?: Object/** = v8::Object::New(isolate)*/): string;
+		export function inspect(obj: Object, options?: Object/** = v8::Object::New(isolate)*/): string;
 	
 		/**
 		 * 
@@ -290,7 +286,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isEmpty(v?: any): boolean;
+		export function isEmpty(v: any): boolean;
 	
 		/**
 		 * 
@@ -302,7 +298,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isArray(v?: any): boolean;
+		export function isArray(v: any): boolean;
 	
 		/**
 		 * 
@@ -314,7 +310,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isBoolean(v?: any): boolean;
+		export function isBoolean(v: any): boolean;
 	
 		/**
 		 * 
@@ -326,7 +322,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isNull(v?: any): boolean;
+		export function isNull(v: any): boolean;
 	
 		/**
 		 * 
@@ -338,7 +334,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isNullOrUndefined(v?: any): boolean;
+		export function isNullOrUndefined(v: any): boolean;
 	
 		/**
 		 * 
@@ -350,7 +346,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isNumber(v?: any): boolean;
+		export function isNumber(v: any): boolean;
 	
 		/**
 		 * 
@@ -362,7 +358,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isString(v?: any): boolean;
+		export function isString(v: any): boolean;
 	
 		/**
 		 * 
@@ -374,7 +370,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isUndefined(v?: any): boolean;
+		export function isUndefined(v: any): boolean;
 	
 		/**
 		 * 
@@ -386,7 +382,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isRegExp(v?: any): boolean;
+		export function isRegExp(v: any): boolean;
 	
 		/**
 		 * 
@@ -398,7 +394,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isObject(v?: any): boolean;
+		export function isObject(v: any): boolean;
 	
 		/**
 		 * 
@@ -410,7 +406,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isDate(v?: any): boolean;
+		export function isDate(v: any): boolean;
 	
 		/**
 		 * 
@@ -422,7 +418,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isNativeError(v?: any): boolean;
+		export function isNativeError(v: any): boolean;
 	
 		/**
 		 * 
@@ -434,7 +430,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isPrimitive(v?: any): boolean;
+		export function isPrimitive(v: any): boolean;
 	
 		/**
 		 * 
@@ -446,7 +442,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isSymbol(v?: any): boolean;
+		export function isSymbol(v: any): boolean;
 	
 		/**
 		 * 
@@ -458,7 +454,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isDataView(v?: any): boolean;
+		export function isDataView(v: any): boolean;
 	
 		/**
 		 * 
@@ -470,7 +466,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isExternal(v?: any): boolean;
+		export function isExternal(v: any): boolean;
 	
 		/**
 		 * 
@@ -482,7 +478,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isMap(v?: any): boolean;
+		export function isMap(v: any): boolean;
 	
 		/**
 		 * 
@@ -494,7 +490,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isMapIterator(v?: any): boolean;
+		export function isMapIterator(v: any): boolean;
 	
 		/**
 		 * 
@@ -506,7 +502,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isPromise(v?: any): boolean;
+		export function isPromise(v: any): boolean;
 	
 		/**
 		 * 
@@ -518,7 +514,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isAsyncFunction(v?: any): boolean;
+		export function isAsyncFunction(v: any): boolean;
 	
 		/**
 		 * 
@@ -530,7 +526,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isSet(v?: any): boolean;
+		export function isSet(v: any): boolean;
 	
 		/**
 		 * 
@@ -542,7 +538,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isSetIterator(v?: any): boolean;
+		export function isSetIterator(v: any): boolean;
 	
 		/**
 		 * 
@@ -554,7 +550,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isTypedArray(v?: any): boolean;
+		export function isTypedArray(v: any): boolean;
 	
 		/**
 		 * 
@@ -566,7 +562,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isUint8Array(v?: any): boolean;
+		export function isUint8Array(v: any): boolean;
 	
 		/**
 		 * 
@@ -578,7 +574,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isFunction(v?: any): boolean;
+		export function isFunction(v: any): boolean;
 	
 		/**
 		 * 
@@ -590,7 +586,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function isBuffer(v?: any): boolean;
+		export function isBuffer(v: any): boolean;
 	
 		/**
 		 * 
@@ -603,7 +599,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function has(v?: any, key?: string): boolean;
+		export function has(v: any, key: string): boolean;
 	
 		/**
 		 * 
@@ -615,7 +611,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function keys(v?: any): any[];
+		export function keys(v: any): any[];
 	
 		/**
 		 * 
@@ -627,7 +623,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function values(v?: any): any[];
+		export function values(v: any): any[];
 	
 		/**
 		 * 
@@ -639,7 +635,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function clone(v?: any): any;
+		export function clone(v: any): any;
 	
 		/**
 		 * 
@@ -652,7 +648,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function extend(v?: any, ...objs: any[]): any;
+		export function extend(v: any, ...objs: any[]): any;
 	
 		/**
 		 * 
@@ -665,7 +661,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function _extend(v?: any, ...objs: any[]): any;
+		export function _extend(v: any, ...objs: any[]): any;
 	
 		/**
 		 * 
@@ -678,7 +674,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function pick(v?: any, ...objs: any[]): Object;
+		export function pick(v: any, ...objs: any[]): Object;
 	
 		/**
 		 * 
@@ -691,7 +687,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function omit(v?: any, ...keys: any[]): Object;
+		export function omit(v: any, ...keys: any[]): Object;
 	
 		/**
 		 * 
@@ -703,7 +699,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function first(v?: any): any;
+		export function first(v: any): any;
 	
 		/**
 		 * 
@@ -716,7 +712,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function first(v?: any, n?: number): any;
+		export function first(v: any, n: number): any;
 	
 		/**
 		 * 
@@ -728,7 +724,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function last(v?: any): any;
+		export function last(v: any): any;
 	
 		/**
 		 * 
@@ -741,7 +737,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function last(v?: any, n?: number): any;
+		export function last(v: any, n: number): any;
 	
 		/**
 		 * 
@@ -754,7 +750,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function unique(v?: any, sorted?: boolean/** = false*/): any[];
+		export function unique(v: any, sorted?: boolean/** = false*/): any[];
 	
 		/**
 		 * 
@@ -791,7 +787,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function flatten(arr?: any, shallow?: boolean/** = false*/): any[];
+		export function flatten(arr: any, shallow?: boolean/** = false*/): any[];
 	
 		/**
 		 * 
@@ -804,7 +800,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function without(arr?: any, ...els: any[]): any[];
+		export function without(arr: any, ...els: any[]): any[];
 	
 		/**
 		 * 
@@ -817,7 +813,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function difference(list?: any[], ...arrs: any[]): any[];
+		export function difference(list: any[], ...arrs: any[]): any[];
 	
 		/**
 		 * 
@@ -831,7 +827,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function each(list?: any, iterator?: Function, context?: any/** = v8::Undefined(isolate)*/): any;
+		export function each(list: any, iterator: Function, context?: any/** = v8::Undefined(isolate)*/): any;
 	
 		/**
 		 * 
@@ -845,7 +841,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function map(list?: any, iterator?: Function, context?: any/** = v8::Undefined(isolate)*/): any[];
+		export function map(list: any, iterator: Function, context?: any/** = v8::Undefined(isolate)*/): any[];
 	
 		/**
 		 * 
@@ -860,7 +856,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function reduce(list?: any, iterator?: Function, memo?: any, context?: any/** = v8::Undefined(isolate)*/): any;
+		export function reduce(list: any, iterator: Function, memo: any, context?: any/** = v8::Undefined(isolate)*/): any;
 	
 		/**
 		 * 
@@ -877,7 +873,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function compile(srcname?: string, script?: string, mode?: number/** = 0*/): Class_Buffer;
+		export function compile(srcname: string, script: string, mode?: number/** = 0*/): Class_Buffer;
 	
 		/**
 		 * 
@@ -933,7 +929,7 @@ declare module "util" {
 		 * 
 		 * 
 		 */
-		export function sync(func?: Function, async_func?: boolean/** = false*/): Function;
+		export function sync(func: Function, async_func?: boolean/** = false*/): Function;
 	
 		/**
 		 * 

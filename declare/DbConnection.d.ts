@@ -84,7 +84,7 @@ declare class Class_DbConnection extends Class__object {
 	 * 
 	 * 
 	 */
-	trans(func?: Function): boolean;
+	trans(func: Function): boolean;
 
 	/**
 	 * 
@@ -97,7 +97,7 @@ declare class Class_DbConnection extends Class__object {
 	 * 
 	 * @async
 	 */
-	execute(sql?: string, ...args: any[]): any[];
+	execute(sql: string, ...args: any[]): any[];
 
 	/**
 	 * 
@@ -110,7 +110,7 @@ declare class Class_DbConnection extends Class__object {
 	 * 
 	 * 
 	 */
-	format(sql?: string, ...args: any[]): string;
+	format(sql: string, ...args: any[]): string;
 
 } /** endof class */
 

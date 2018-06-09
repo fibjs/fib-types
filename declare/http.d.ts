@@ -212,10 +212,8 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 http 请求对象，参见 HttpRequest ","deprecated":null,"name":"Request","type":"HttpRequest","doc":{"descript":"创建一个 http 请求对象，参见 HttpRequest","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 http 请求对象，参见 HttpRequest ","deprecated":null,"name":"Request","type":"HttpRequest","doc":{"descript":"创建一个 http 请求对象，参见 HttpRequest","detail":[],"params":[]}}]} */
-		
 		export class HttpRequest extends Class_HttpRequest {}
+		
 		
 		/**
 		 * 
@@ -223,10 +221,8 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 http 响应对象，参见 HttpResponse ","deprecated":null,"name":"Response","type":"HttpResponse","doc":{"descript":"创建一个 http 响应对象，参见 HttpResponse","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 http 响应对象，参见 HttpResponse ","deprecated":null,"name":"Response","type":"HttpResponse","doc":{"descript":"创建一个 http 响应对象，参见 HttpResponse","detail":[],"params":[]}}]} */
-		
 		export class HttpResponse extends Class_HttpResponse {}
+		
 		
 		/**
 		 * 
@@ -234,10 +230,8 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 http cookie 对象，参见 HttpCookie ","deprecated":null,"name":"Cookie","type":"HttpCookie","doc":{"descript":"创建一个 http cookie 对象，参见 HttpCookie","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 http cookie 对象，参见 HttpCookie ","deprecated":null,"name":"Cookie","type":"HttpCookie","doc":{"descript":"创建一个 http cookie 对象，参见 HttpCookie","detail":[],"params":[]}}]} */
-		
 		export class HttpCookie extends Class_HttpCookie {}
+		
 		
 		/**
 		 * 
@@ -245,10 +239,8 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 http 服务器，参见 HttpServer ","deprecated":null,"name":"Server","type":"HttpServer","doc":{"descript":"创建一个 http 服务器，参见 HttpServer","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 http 服务器，参见 HttpServer ","deprecated":null,"name":"Server","type":"HttpServer","doc":{"descript":"创建一个 http 服务器，参见 HttpServer","detail":[],"params":[]}}]} */
-		
 		export class HttpServer extends Class_HttpServer {}
+		
 		
 		/**
 		 * 
@@ -256,10 +248,8 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 http 客户端，参见 HttpClient ","deprecated":null,"name":"Client","type":"HttpClient","doc":{"descript":"创建一个 http 客户端，参见 HttpClient","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 http 客户端，参见 HttpClient ","deprecated":null,"name":"Client","type":"HttpClient","doc":{"descript":"创建一个 http 客户端，参见 HttpClient","detail":[],"params":[]}}]} */
-		
 		export class HttpClient extends Class_HttpClient {}
+		
 		
 		/**
 		 * 
@@ -267,10 +257,8 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 https 服务器，参见 HttpsServer ","deprecated":null,"name":"HttpsServer","type":"HttpsServer","doc":{"descript":"创建一个 https 服务器，参见 HttpsServer","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 https 服务器，参见 HttpsServer ","deprecated":null,"name":"HttpsServer","type":"HttpsServer","doc":{"descript":"创建一个 https 服务器，参见 HttpsServer","detail":[],"params":[]}}]} */
-		
 		export class HttpsServer extends Class_HttpsServer {}
+		
 		
 		/**
 		 * 
@@ -278,10 +266,8 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 http 协议处理器对象，参见 HttpHandler ","deprecated":null,"name":"Handler","type":"HttpHandler","doc":{"descript":"创建一个 http 协议处理器对象，参见 HttpHandler","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 http 协议处理器对象，参见 HttpHandler ","deprecated":null,"name":"Handler","type":"HttpHandler","doc":{"descript":"创建一个 http 协议处理器对象，参见 HttpHandler","detail":[],"params":[]}}]} */
-		
 		export class HttpHandler extends Class_HttpHandler {}
+		
 		
 		
 		
@@ -299,7 +285,7 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-		export function fileHandler(root?: string, mimes?: Object/** = v8::Object::New(isolate)*/, autoIndex?: boolean/** = false*/): Class_Handler;
+		export function fileHandler(root: string, mimes?: Object/** = v8::Object::New(isolate)*/, autoIndex?: boolean/** = false*/): Class_Handler;
 	
 		/**
 		 * 
@@ -311,7 +297,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function request(conn?: Class_Stream, req?: Class_HttpRequest): Class_HttpResponse;
+		export function request(conn: Class_Stream, req: Class_HttpRequest): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -334,7 +320,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function request(method?: string, url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function request(method: string, url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -356,7 +342,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function get(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function get(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -378,7 +364,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function post(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function post(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -400,7 +386,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function del(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function del(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -422,7 +408,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function put(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function put(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -444,7 +430,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function patch(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function patch(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 	} /** end of `module http` */
 	export = http

@@ -217,7 +217,7 @@ declare module "db" {
 		 * 
 		 * @async
 		 */
-		export function open(connString?: string): Class__object;
+		export function open(connString: string): Class__object;
 	
 		/**
 		 * 
@@ -228,7 +228,7 @@ declare module "db" {
 		 * 
 		 * @async
 		 */
-		export function openMySQL(connString?: string): Class_MySQL;
+		export function openMySQL(connString: string): Class_MySQL;
 	
 		/**
 		 * 
@@ -239,7 +239,7 @@ declare module "db" {
 		 * 
 		 * @async
 		 */
-		export function openMSSQL(connString?: string): Class_MSSQL;
+		export function openMSSQL(connString: string): Class_MSSQL;
 	
 		/**
 		 * 
@@ -250,7 +250,7 @@ declare module "db" {
 		 * 
 		 * @async
 		 */
-		export function openSQLite(connString?: string): Class_SQLite;
+		export function openSQLite(connString: string): Class_SQLite;
 	
 		/**
 		 * 
@@ -261,7 +261,7 @@ declare module "db" {
 		 * 
 		 * @async
 		 */
-		export function openMongoDB(connString?: string): Class_MongoDB;
+		export function openMongoDB(connString: string): Class_MongoDB;
 	
 		/**
 		 * 
@@ -272,7 +272,7 @@ declare module "db" {
 		 * 
 		 * @async
 		 */
-		export function openLevelDB(connString?: string): Class_LevelDB;
+		export function openLevelDB(connString: string): Class_LevelDB;
 	
 		/**
 		 * 
@@ -283,7 +283,7 @@ declare module "db" {
 		 * 
 		 * @async
 		 */
-		export function openRedis(connString?: string): Class_Redis;
+		export function openRedis(connString: string): Class_Redis;
 	
 		/**
 		 * 
@@ -296,7 +296,7 @@ declare module "db" {
 		 * 
 		 * 
 		 */
-		export function format(sql?: string, ...args: any[]): string;
+		export function format(sql: string, ...args: any[]): string;
 	
 		/**
 		 * 
@@ -309,7 +309,7 @@ declare module "db" {
 		 * 
 		 * 
 		 */
-		export function formatMySQL(sql?: string, ...args: any[]): string;
+		export function formatMySQL(sql: string, ...args: any[]): string;
 	
 		/**
 		 * 
@@ -322,7 +322,7 @@ declare module "db" {
 		 * 
 		 * 
 		 */
-		export function formatMSSQL(sql?: string, ...args: any[]): string;
+		export function formatMSSQL(sql: string, ...args: any[]): string;
 	
 		/**
 		 * 
@@ -334,7 +334,7 @@ declare module "db" {
 		 * 
 		 * 
 		 */
-		export function escape(str?: string, mysql?: boolean/** = false*/): string;
+		export function escape(str: string, mysql?: boolean/** = false*/): string;
 	
 	} /** end of `module db` */
 	export = db

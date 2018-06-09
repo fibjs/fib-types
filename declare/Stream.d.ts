@@ -45,7 +45,7 @@ declare class Class_Stream extends Class__object {
 	 * 
 	 * @async
 	 */
-	write(data?: Class_Buffer): void;
+	write(data: Class_Buffer): void;
 
 	/**
 	 * 
@@ -73,7 +73,7 @@ declare class Class_Stream extends Class__object {
 	 * 
 	 * @async
 	 */
-	copyTo(stm?: Class_Stream, bytes?: number/** = -1*/): number;
+	copyTo(stm: Class_Stream, bytes?: number/** = -1*/): number;
 
 } /** endof class */
 

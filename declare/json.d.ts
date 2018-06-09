@@ -217,7 +217,7 @@ declare module "json" {
 		 * 
 		 * 
 		 */
-		export function encode(data?: any): string;
+		export function encode(data: any): string;
 	
 		/**
 		 * 
@@ -228,7 +228,7 @@ declare module "json" {
 		 * 
 		 * 
 		 */
-		export function decode(data?: string): any;
+		export function decode(data: string): any;
 	
 	} /** end of `module json` */
 	export = json
