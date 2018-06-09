@@ -212,10 +212,8 @@ declare module "string_decoder" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个解码对象，参见 StringDecoder ","deprecated":null,"name":"StringDecoder","type":"StringDecoder","doc":{"descript":"创建一个解码对象，参见 StringDecoder","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个解码对象，参见 StringDecoder ","deprecated":null,"name":"StringDecoder","type":"StringDecoder","doc":{"descript":"创建一个解码对象，参见 StringDecoder","detail":[],"params":[]}}]} */
-		
 		export class StringDecoder extends Class_StringDecoder {}
+		
 		
 		
 		

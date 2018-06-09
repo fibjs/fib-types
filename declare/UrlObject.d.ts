@@ -216,7 +216,7 @@ declare class Class_UrlObject extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(args?: Object);
+	constructor(args: Object);
 
 	/**
 	 * 
@@ -240,7 +240,7 @@ declare class Class_UrlObject extends Class__object {
 	 * 
 	 * 
 	 */
-	parse(url?: string, parseQueryString?: boolean/** = false*/, slashesDenoteHost?: boolean/** = false*/): void;
+	parse(url: string, parseQueryString?: boolean/** = false*/, slashesDenoteHost?: boolean/** = false*/): void;
 
 	/**
 	 * 
@@ -250,7 +250,7 @@ declare class Class_UrlObject extends Class__object {
 	 * 
 	 * 
 	 */
-	format(args?: Object): void;
+	format(args: Object): void;
 
 	/**
 	 * 
@@ -261,7 +261,7 @@ declare class Class_UrlObject extends Class__object {
 	 * 
 	 * 
 	 */
-	resolve(url?: string): Class_UrlObject;
+	resolve(url: string): Class_UrlObject;
 
 	/**
 	 * 

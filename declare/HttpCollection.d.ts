@@ -43,7 +43,7 @@ declare class Class_HttpCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	has(name?: string): boolean;
+	has(name: string): boolean;
 
 	/**
 	 * 
@@ -54,7 +54,7 @@ declare class Class_HttpCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	first(name?: string): any;
+	first(name: string): any;
 
 	/**
 	 * 
@@ -65,7 +65,7 @@ declare class Class_HttpCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	all(name?: string): any[];
+	all(name: string): any[];
 
 	/**
 	 * 
@@ -75,7 +75,7 @@ declare class Class_HttpCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	add(map?: Object): void;
+	add(map: Object): void;
 
 	/**
 	 * 
@@ -86,7 +86,7 @@ declare class Class_HttpCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	add(name?: string, value?: any): void;
+	add(name: string, value: any): void;
 
 	/**
 	 * 
@@ -96,7 +96,7 @@ declare class Class_HttpCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	set(map?: Object): void;
+	set(map: Object): void;
 
 	/**
 	 * 
@@ -107,7 +107,7 @@ declare class Class_HttpCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	set(name?: string, value?: any): void;
+	set(name: string, value: any): void;
 
 	/**
 	 * 
@@ -117,7 +117,7 @@ declare class Class_HttpCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	remove(name?: string): void;
+	remove(name: string): void;
 
 } /** endof class */
 

@@ -45,7 +45,7 @@ declare class Class_DgramSocket extends Class_EventEmitter {
 	 * 
 	 * @async
 	 */
-	bind(opts?: Object): void;
+	bind(opts: Object): void;
 
 	/**
 	 * 
@@ -58,7 +58,7 @@ declare class Class_DgramSocket extends Class_EventEmitter {
 	 * 
 	 * @async
 	 */
-	send(msg?: Class_Buffer, port?: number, address?: string/** = ""*/): number;
+	send(msg: Class_Buffer, port: number, address?: string/** = ""*/): number;
 
 	/**
 	 * 
@@ -73,7 +73,7 @@ declare class Class_DgramSocket extends Class_EventEmitter {
 	 * 
 	 * @async
 	 */
-	send(msg?: Class_Buffer, offset?: number, length?: number, port?: number, address?: string/** = ""*/): number;
+	send(msg: Class_Buffer, offset: number, length: number, port: number, address?: string/** = ""*/): number;
 
 	/**
 	 * 
@@ -101,7 +101,7 @@ declare class Class_DgramSocket extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	close(callback?: Function): void;
+	close(callback: Function): void;
 
 	/**
 	 * 
@@ -131,7 +131,7 @@ declare class Class_DgramSocket extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	setRecvBufferSize(size?: number): void;
+	setRecvBufferSize(size: number): void;
 
 	/**
 	 * 
@@ -141,7 +141,7 @@ declare class Class_DgramSocket extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	setSendBufferSize(size?: number): void;
+	setSendBufferSize(size: number): void;
 
 	/**
 	 * 
@@ -151,7 +151,7 @@ declare class Class_DgramSocket extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	setBroadcast(flag?: boolean): void;
+	setBroadcast(flag: boolean): void;
 
 	/**
 	 * 

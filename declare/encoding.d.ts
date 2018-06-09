@@ -233,10 +233,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief base32 编码与解码模块 ","deprecated":null,"name":"base32","type":"base32","doc":{"descript":"base32 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief base32 编码与解码模块 ","deprecated":null,"name":"base32","type":"base32","doc":{"descript":"base32 编码与解码模块","detail":[],"params":[]}}]} */
 		
-		export class base32 extends Class_base32 {}
+		export const base32: typeof base32NS
 		
 		/**
 		 * 
@@ -244,10 +242,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief base64 编码与解码模块 ","deprecated":null,"name":"base64","type":"base64","doc":{"descript":"base64 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief base64 编码与解码模块 ","deprecated":null,"name":"base64","type":"base64","doc":{"descript":"base64 编码与解码模块","detail":[],"params":[]}}]} */
 		
-		export class base64 extends Class_base64 {}
+		export const base64: typeof base64NS
 		
 		/**
 		 * 
@@ -255,10 +251,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief base64vlq 编码与解码模块 ","deprecated":null,"name":"base64vlq","type":"base64vlq","doc":{"descript":"base64vlq 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief base64vlq 编码与解码模块 ","deprecated":null,"name":"base64vlq","type":"base64vlq","doc":{"descript":"base64vlq 编码与解码模块","detail":[],"params":[]}}]} */
 		
-		export class base64vlq extends Class_base64vlq {}
+		export const base64vlq: typeof base64vlqNS
 		
 		/**
 		 * 
@@ -266,10 +260,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief hex 编码与解码模块 ","deprecated":null,"name":"hex","type":"hex","doc":{"descript":"hex 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief hex 编码与解码模块 ","deprecated":null,"name":"hex","type":"hex","doc":{"descript":"hex 编码与解码模块","detail":[],"params":[]}}]} */
 		
-		export class hex extends Class_hex {}
+		export const hex: typeof hexNS
 		
 		/**
 		 * 
@@ -277,10 +269,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief iconv 编码与解码模块 ","deprecated":null,"name":"iconv","type":"iconv","doc":{"descript":"iconv 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief iconv 编码与解码模块 ","deprecated":null,"name":"iconv","type":"iconv","doc":{"descript":"iconv 编码与解码模块","detail":[],"params":[]}}]} */
 		
-		export class iconv extends Class_iconv {}
+		export const iconv: typeof iconvNS
 		
 		/**
 		 * 
@@ -288,10 +278,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief json 编码与解码模块 ","deprecated":null,"name":"json","type":"json","doc":{"descript":"json 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief json 编码与解码模块 ","deprecated":null,"name":"json","type":"json","doc":{"descript":"json 编码与解码模块","detail":[],"params":[]}}]} */
 		
-		export class json extends Class_json {}
+		export const json: typeof jsonNS
 		
 		/**
 		 * 
@@ -299,10 +287,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief bson 编码与解码模块 ","deprecated":null,"name":"bson","type":"bson","doc":{"descript":"bson 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief bson 编码与解码模块 ","deprecated":null,"name":"bson","type":"bson","doc":{"descript":"bson 编码与解码模块","detail":[],"params":[]}}]} */
 		
-		export class bson extends Class_bson {}
+		export const bson: typeof bsonNS
 		
 		
 		
@@ -316,7 +302,7 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-		export function jsstr(str?: string, json?: boolean/** = false*/): string;
+		export function jsstr(str: string, json?: boolean/** = false*/): string;
 	
 		/**
 		 * 
@@ -327,7 +313,7 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-		export function encodeURI(url?: string): string;
+		export function encodeURI(url: string): string;
 	
 		/**
 		 * 
@@ -338,7 +324,7 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-		export function encodeURIComponent(url?: string): string;
+		export function encodeURIComponent(url: string): string;
 	
 		/**
 		 * 
@@ -349,7 +335,7 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-		export function decodeURI(url?: string): string;
+		export function decodeURI(url: string): string;
 	
 	} /** end of `module encoding` */
 	export = encoding

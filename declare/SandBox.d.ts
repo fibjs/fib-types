@@ -46,7 +46,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(mods?: Object);
+	constructor(mods: Object);
 
 	/**
 	 * 
@@ -57,7 +57,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(mods?: Object, require?: Function);
+	constructor(mods: Object, require: Function);
 
 	/**
 	 * 
@@ -68,7 +68,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(mods?: Object, global?: Object);
+	constructor(mods: Object, global: Object);
 
 	/**
 	 * 
@@ -80,7 +80,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(mods?: Object, require?: Function, global?: Object);
+	constructor(mods: Object, require: Function, global: Object);
 
 	/**
 	 * 
@@ -91,7 +91,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	add(id?: string, mod?: any): void;
+	add(id: string, mod: any): void;
 
 	/**
 	 * 
@@ -101,7 +101,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	add(mods?: Object): void;
+	add(mods: Object): void;
 
 	/**
 	 * 
@@ -113,7 +113,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	addScript(srcname?: string, script?: Class_Buffer): any;
+	addScript(srcname: string, script: Class_Buffer): any;
 
 	/**
 	 * 
@@ -123,7 +123,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	remove(id?: string): void;
+	remove(id: string): void;
 
 	/**
 	 * 
@@ -144,7 +144,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	run(fname?: string, argv?: any[]/** = v8::Array::New(isolate)*/): void;
+	run(fname: string, argv?: any[]/** = v8::Array::New(isolate)*/): void;
 
 	/**
 	 * 
@@ -156,7 +156,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	resolve(id?: string, base?: string): string;
+	resolve(id: string, base: string): string;
 
 	/**
 	 * 
@@ -168,7 +168,7 @@ declare class Class_SandBox extends Class__object {
 	 * 
 	 * 
 	 */
-	require(id?: string, base?: string): any;
+	require(id: string, base: string): any;
 
 } /** endof class */
 

@@ -74,7 +74,7 @@ declare class Class_SslServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(certs?: any[], port?: number, listener?: Class_Handler);
+	constructor(certs: any[], port: number, listener: Class_Handler);
 
 	/**
 	 * 
@@ -101,7 +101,7 @@ declare class Class_SslServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(certs?: any[], addr?: string, port?: number, listener?: Class_Handler);
+	constructor(certs: any[], addr: string, port: number, listener: Class_Handler);
 
 	/**
 	 * 
@@ -114,7 +114,7 @@ declare class Class_SslServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(crt?: Class_X509Cert, key?: Class_PKey, port?: number, listener?: Class_Handler);
+	constructor(crt: Class_X509Cert, key: Class_PKey, port: number, listener: Class_Handler);
 
 	/**
 	 * 
@@ -128,7 +128,7 @@ declare class Class_SslServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(crt?: Class_X509Cert, key?: Class_PKey, addr?: string, port?: number, listener?: Class_Handler);
+	constructor(crt: Class_X509Cert, key: Class_PKey, addr: string, port: number, listener: Class_Handler);
 
 } /** endof class */
 

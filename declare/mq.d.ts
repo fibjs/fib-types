@@ -212,10 +212,8 @@ declare module "mq" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个消息对象，参见 Message ","deprecated":null,"name":"Message","type":"Message","doc":{"descript":"创建一个消息对象，参见 Message","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个消息对象，参见 Message ","deprecated":null,"name":"Message","type":"Message","doc":{"descript":"创建一个消息对象，参见 Message","detail":[],"params":[]}}]} */
-		
 		export class Message extends Class_Message {}
+		
 		
 		/**
 		 * 
@@ -223,10 +221,8 @@ declare module "mq" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 http 协议处理器对象，参见 HttpHandler ","deprecated":null,"name":"HttpHandler","type":"HttpHandler","doc":{"descript":"创建一个 http 协议处理器对象，参见 HttpHandler","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 http 协议处理器对象，参见 HttpHandler ","deprecated":null,"name":"HttpHandler","type":"HttpHandler","doc":{"descript":"创建一个 http 协议处理器对象，参见 HttpHandler","detail":[],"params":[]}}]} */
-		
 		export class HttpHandler extends Class_HttpHandler {}
+		
 		
 		/**
 		 * 
@@ -256,10 +252,8 @@ declare module "mq" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个消息处理器对象，传递值内置处理器则直接返回\n\n     hdlr 接受内置消息处理器，处理函数，链式处理数组，路由对象：\n     - Function javascript 函数，将使用此函数进行处理\n     - Handler 内置处理器，将使用此处理器进行处理\n     - 链式处理数组，等同于返回 new mq.Chain(hdlr)，参见 Chain\n     - 路由对象，等同于返回 new mq.Routing(hdlr)，参见 Routing\n\n     消息处理函数语法如下：\n     ```JavaScript\n     function func(v){\n     }\n     ```\n     参数 v 为正在处理的消息，返回结果允许有四种:\n     - Function javascript 函数，将使用此函数进行下一阶段处理\n     - Handler 内置处理器，将使用此处理器进行下一阶段处理\n     - 链式处理数组，等同于 new mq.Chain(v)，参见 Chain\n     - 路由对象，等同于 new mq.Routing(v)，参见 Routing\n\n     无返回或者其他的返回结果将结束消息处理。\n     @param hdlr 内置消息处理器，处理函数，链式处理数组，路由对象\n     @return 返回封装了处理函数的处理器\n     ","deprecated":null,"name":"Handler","type":"Handler","doc":{"descript":"创建一个消息处理器对象，传递值内置处理器则直接返回","detail":["hdlr 接受内置消息处理器，处理函数，链式处理数组，路由对象：","- Function javascript 函数，将使用此函数进行处理","- Handler 内置处理器，将使用此处理器进行处理","- 链式处理数组，等同于返回 new mq.Chain(hdlr)，参见 Chain","- 路由对象，等同于返回 new mq.Routing(hdlr)，参见 Routing","","消息处理函数语法如下：","```JavaScript","function func(v){","}","```","参数 v 为正在处理的消息，返回结果允许有四种:","- Function javascript 函数，将使用此函数进行下一阶段处理","- Handler 内置处理器，将使用此处理器进行下一阶段处理","- 链式处理数组，等同于 new mq.Chain(v)，参见 Chain","- 路由对象，等同于 new mq.Routing(v)，参见 Routing","","无返回或者其他的返回结果将结束消息处理。"],"params":[{"name":"hdlr","descript":"内置消息处理器，处理函数，链式处理数组，路由对象","detail":[]}],"return":{"descript":"返回封装了处理函数的处理器","detail":[]}},"overs":[{"memType":"object","comments":"! @brief 创建一个消息处理器对象，传递值内置处理器则直接返回\n\n     hdlr 接受内置消息处理器，处理函数，链式处理数组，路由对象：\n     - Function javascript 函数，将使用此函数进行处理\n     - Handler 内置处理器，将使用此处理器进行处理\n     - 链式处理数组，等同于返回 new mq.Chain(hdlr)，参见 Chain\n     - 路由对象，等同于返回 new mq.Routing(hdlr)，参见 Routing\n\n     消息处理函数语法如下：\n     ```JavaScript\n     function func(v){\n     }\n     ```\n     参数 v 为正在处理的消息，返回结果允许有四种:\n     - Function javascript 函数，将使用此函数进行下一阶段处理\n     - Handler 内置处理器，将使用此处理器进行下一阶段处理\n     - 链式处理数组，等同于 new mq.Chain(v)，参见 Chain\n     - 路由对象，等同于 new mq.Routing(v)，参见 Routing\n\n     无返回或者其他的返回结果将结束消息处理。\n     @param hdlr 内置消息处理器，处理函数，链式处理数组，路由对象\n     @return 返回封装了处理函数的处理器\n     ","deprecated":null,"name":"Handler","type":"Handler","doc":{"descript":"创建一个消息处理器对象，传递值内置处理器则直接返回","detail":["hdlr 接受内置消息处理器，处理函数，链式处理数组，路由对象：","- Function javascript 函数，将使用此函数进行处理","- Handler 内置处理器，将使用此处理器进行处理","- 链式处理数组，等同于返回 new mq.Chain(hdlr)，参见 Chain","- 路由对象，等同于返回 new mq.Routing(hdlr)，参见 Routing","","消息处理函数语法如下：","```JavaScript","function func(v){","}","```","参数 v 为正在处理的消息，返回结果允许有四种:","- Function javascript 函数，将使用此函数进行下一阶段处理","- Handler 内置处理器，将使用此处理器进行下一阶段处理","- 链式处理数组，等同于 new mq.Chain(v)，参见 Chain","- 路由对象，等同于 new mq.Routing(v)，参见 Routing","","无返回或者其他的返回结果将结束消息处理。"],"params":[{"name":"hdlr","descript":"内置消息处理器，处理函数，链式处理数组，路由对象","detail":[]}],"return":{"descript":"返回封装了处理函数的处理器","detail":[]}}}]} */
-		
 		export class Handler extends Class_Handler {}
+		
 		
 		/**
 		 * 
@@ -267,10 +261,8 @@ declare module "mq" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个消息处理器链处理对象，参见 Chain ","deprecated":null,"name":"Chain","type":"Chain","doc":{"descript":"创建一个消息处理器链处理对象，参见 Chain","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个消息处理器链处理对象，参见 Chain ","deprecated":null,"name":"Chain","type":"Chain","doc":{"descript":"创建一个消息处理器链处理对象，参见 Chain","detail":[],"params":[]}}]} */
-		
 		export class Chain extends Class_Chain {}
+		
 		
 		/**
 		 * 
@@ -278,10 +270,8 @@ declare module "mq" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个消息处理器路由对象，参见 Routing","deprecated":null,"name":"Routing","type":"Routing","doc":{"descript":"创建一个消息处理器路由对象，参见 Routing","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个消息处理器路由对象，参见 Routing","deprecated":null,"name":"Routing","type":"Routing","doc":{"descript":"创建一个消息处理器路由对象，参见 Routing","detail":[],"params":[]}}]} */
-		
 		export class Routing extends Class_Routing {}
+		
 		
 		
 		
@@ -306,7 +296,7 @@ declare module "mq" {
 		 * 
 		 * @async
 		 */
-		export function invoke(hdlr?: Class_Handler, v?: Class__object): void;
+		export function invoke(hdlr: Class_Handler, v: Class__object): void;
 	
 	} /** end of `module mq` */
 	export = mq

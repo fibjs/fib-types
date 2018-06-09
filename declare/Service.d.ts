@@ -84,7 +84,7 @@ declare class Class_Service extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	constructor(name?: string, worker?: Function, event?: Object/** = v8::Object::New(isolate)*/);
+	constructor(name: string, worker: Function, event?: Object/** = v8::Object::New(isolate)*/);
 
 	/**
 	 * 
@@ -105,7 +105,7 @@ declare class Class_Service extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	static install(name?: string, cmd?: string, displayName?: string/** = ""*/, description?: string/** = ""*/): void;
+	static install(name: string, cmd: string, displayName?: string/** = ""*/, description?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -115,7 +115,7 @@ declare class Class_Service extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	static remove(name?: string): void;
+	static remove(name: string): void;
 
 	/**
 	 * 
@@ -125,7 +125,7 @@ declare class Class_Service extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	static start(name?: string): void;
+	static start(name: string): void;
 
 	/**
 	 * 
@@ -135,7 +135,7 @@ declare class Class_Service extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	static stop(name?: string): void;
+	static stop(name: string): void;
 
 	/**
 	 * 
@@ -145,7 +145,7 @@ declare class Class_Service extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	static restart(name?: string): void;
+	static restart(name: string): void;
 
 	/**
 	 * 
@@ -156,7 +156,7 @@ declare class Class_Service extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	static isInstalled(name?: string): boolean;
+	static isInstalled(name: string): boolean;
 
 	/**
 	 * 
@@ -167,7 +167,7 @@ declare class Class_Service extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	static isRunning(name?: string): boolean;
+	static isRunning(name: string): boolean;
 
 } /** endof class */
 

@@ -85,7 +85,7 @@ declare class Class_SslHandler extends Class_Handler {
 	 * 
 	 * 
 	 */
-	constructor(certs?: any[], hdlr?: Class_Handler);
+	constructor(certs: any[], hdlr: Class_Handler);
 
 	/**
 	 * 
@@ -97,7 +97,7 @@ declare class Class_SslHandler extends Class_Handler {
 	 * 
 	 * 
 	 */
-	constructor(crt?: Class_X509Cert, key?: Class_PKey, hdlr?: Class_Handler);
+	constructor(crt: Class_X509Cert, key: Class_PKey, hdlr: Class_Handler);
 
 } /** endof class */
 

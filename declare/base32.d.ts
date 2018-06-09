@@ -217,7 +217,7 @@ declare module "base32" {
 		 * 
 		 * 
 		 */
-		export function encode(data?: Class_Buffer): string;
+		export function encode(data: Class_Buffer): string;
 	
 		/**
 		 * 
@@ -228,7 +228,7 @@ declare module "base32" {
 		 * 
 		 * 
 		 */
-		export function decode(data?: string): Class_Buffer;
+		export function decode(data: string): Class_Buffer;
 	
 	} /** end of `module base32` */
 	export = base32

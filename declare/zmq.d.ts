@@ -300,10 +300,8 @@ declare module "zmq" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief ZmqSocket 对象，参见 ZmqSocket ","deprecated":null,"name":"Socket","type":"ZmqSocket","doc":{"descript":"ZmqSocket 对象，参见 ZmqSocket","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief ZmqSocket 对象，参见 ZmqSocket ","deprecated":null,"name":"Socket","type":"ZmqSocket","doc":{"descript":"ZmqSocket 对象，参见 ZmqSocket","detail":[],"params":[]}}]} */
-		
 		export class ZmqSocket extends Class_ZmqSocket {}
+		
 		
 		
 		

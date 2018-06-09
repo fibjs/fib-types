@@ -34,7 +34,7 @@ declare class Class_Chain extends Class_Handler {
 	 * 
 	 * 
 	 */
-	constructor(hdlrs?: any[]);
+	constructor(hdlrs: any[]);
 
 	/**
 	 * 
@@ -44,7 +44,7 @@ declare class Class_Chain extends Class_Handler {
 	 * 
 	 * 
 	 */
-	append(hdlrs?: any[]): void;
+	append(hdlrs: any[]): void;
 
 	/**
 	 * 
@@ -54,7 +54,7 @@ declare class Class_Chain extends Class_Handler {
 	 * 
 	 * 
 	 */
-	append(hdlr?: Class_Handler): void;
+	append(hdlr: Class_Handler): void;
 
 } /** endof class */
 

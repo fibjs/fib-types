@@ -45,7 +45,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	constructor(method?: string, map?: Object);
+	constructor(method: string, map: Object);
 
 	/**
 	 * 
@@ -56,7 +56,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	append(route?: Class_Routing): Class_Routing;
+	append(route: Class_Routing): Class_Routing;
 
 	/**
 	 * 
@@ -67,7 +67,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	append(map?: Object): Class_Routing;
+	append(map: Object): Class_Routing;
 
 	/**
 	 * 
@@ -79,7 +79,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	append(pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	append(pattern: string, hdlr: Class_Handler): Class_Routing;
 
 	/**
 	 * 
@@ -92,7 +92,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	append(method?: string, pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	append(method: string, pattern: string, hdlr: Class_Handler): Class_Routing;
 
 	/**
 	 * 
@@ -103,7 +103,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	all(map?: Object): Class_Routing;
+	all(map: Object): Class_Routing;
 
 	/**
 	 * 
@@ -115,7 +115,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	all(pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	all(pattern: string, hdlr: Class_Handler): Class_Routing;
 
 	/**
 	 * 
@@ -126,7 +126,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	get(map?: Object): Class_Routing;
+	get(map: Object): Class_Routing;
 
 	/**
 	 * 
@@ -138,7 +138,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	get(pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	get(pattern: string, hdlr: Class_Handler): Class_Routing;
 
 	/**
 	 * 
@@ -149,7 +149,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	post(map?: Object): Class_Routing;
+	post(map: Object): Class_Routing;
 
 	/**
 	 * 
@@ -161,7 +161,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	post(pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	post(pattern: string, hdlr: Class_Handler): Class_Routing;
 
 	/**
 	 * 
@@ -172,7 +172,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	del(map?: Object): Class_Routing;
+	del(map: Object): Class_Routing;
 
 	/**
 	 * 
@@ -184,7 +184,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	del(pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	del(pattern: string, hdlr: Class_Handler): Class_Routing;
 
 	/**
 	 * 
@@ -195,7 +195,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	put(map?: Object): Class_Routing;
+	put(map: Object): Class_Routing;
 
 	/**
 	 * 
@@ -207,7 +207,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	put(pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	put(pattern: string, hdlr: Class_Handler): Class_Routing;
 
 	/**
 	 * 
@@ -218,7 +218,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	patch(map?: Object): Class_Routing;
+	patch(map: Object): Class_Routing;
 
 	/**
 	 * 
@@ -230,7 +230,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	patch(pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	patch(pattern: string, hdlr: Class_Handler): Class_Routing;
 
 	/**
 	 * 
@@ -241,7 +241,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	find(map?: Object): Class_Routing;
+	find(map: Object): Class_Routing;
 
 	/**
 	 * 
@@ -253,7 +253,7 @@ declare class Class_Routing extends Class_Handler {
 	 * 
 	 * 
 	 */
-	find(pattern?: string, hdlr?: Class_Handler): Class_Routing;
+	find(pattern: string, hdlr: Class_Handler): Class_Routing;
 
 } /** endof class */
 

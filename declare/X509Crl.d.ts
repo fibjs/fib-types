@@ -42,7 +42,7 @@ declare class Class_X509Crl extends Class__object {
 	 * 
 	 * 
 	 */
-	load(derCrl?: Class_Buffer): void;
+	load(derCrl: Class_Buffer): void;
 
 	/**
 	 * 
@@ -52,7 +52,7 @@ declare class Class_X509Crl extends Class__object {
 	 * 
 	 * 
 	 */
-	load(pemCrl?: string): void;
+	load(pemCrl: string): void;
 
 	/**
 	 * 
@@ -62,7 +62,7 @@ declare class Class_X509Crl extends Class__object {
 	 * 
 	 * 
 	 */
-	loadFile(filename?: string): void;
+	loadFile(filename: string): void;
 
 	/**
 	 * 

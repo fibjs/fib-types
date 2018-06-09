@@ -71,7 +71,7 @@ declare class Class_LruCache extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	constructor(size?: number, timeout?: number/** = 0*/);
+	constructor(size: number, timeout?: number/** = 0*/);
 
 	/**
 	 * 
@@ -90,7 +90,7 @@ declare class Class_LruCache extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	has(name?: string): boolean;
+	has(name: string): boolean;
 
 	/**
 	 * 
@@ -101,7 +101,7 @@ declare class Class_LruCache extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	get(name?: string): any;
+	get(name: string): any;
 
 	/**
 	 * 
@@ -113,7 +113,7 @@ declare class Class_LruCache extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	get(name?: string, updater?: Function): any;
+	get(name: string, updater: Function): any;
 
 	/**
 	 * 
@@ -124,7 +124,7 @@ declare class Class_LruCache extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	set(name?: string, value?: any): void;
+	set(name: string, value: any): void;
 
 	/**
 	 * 
@@ -134,7 +134,7 @@ declare class Class_LruCache extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	set(map?: Object): void;
+	set(map: Object): void;
 
 	/**
 	 * 
@@ -144,7 +144,7 @@ declare class Class_LruCache extends Class_EventEmitter {
 	 * 
 	 * 
 	 */
-	remove(name?: string): void;
+	remove(name: string): void;
 
 	/**
 	 * 

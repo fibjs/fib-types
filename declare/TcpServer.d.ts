@@ -82,7 +82,7 @@ declare class Class_TcpServer extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(port?: number, listener?: Class_Handler);
+	constructor(port: number, listener: Class_Handler);
 
 	/**
 	 * 
@@ -94,7 +94,7 @@ declare class Class_TcpServer extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(addr?: string, port?: number, listener?: Class_Handler);
+	constructor(addr: string, port: number, listener: Class_Handler);
 
 	/**
 	 * 

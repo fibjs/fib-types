@@ -58,7 +58,7 @@ declare class Class_MySQL extends Class_DbConnection {
 	 * 
 	 * @async
 	 */
-	use(dbName?: string): void;
+	use(dbName: string): void;
 
 } /** endof class */
 

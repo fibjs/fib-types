@@ -73,7 +73,7 @@ declare class Class_SubProcess extends Class_BufferedStream {
 	 * 
 	 * 
 	 */
-	kill(signal?: number): void;
+	kill(signal: number): void;
 
 	/**
 	 * 
@@ -94,7 +94,7 @@ declare class Class_SubProcess extends Class_BufferedStream {
 	 * 
 	 * 
 	 */
-	findWindow(name?: string): any;
+	findWindow(name: string): any;
 
 } /** endof class */
 

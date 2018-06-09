@@ -80,7 +80,7 @@ declare class Class_HttpResponse extends Class_HttpMessage {
 	 * 
 	 * 
 	 */
-	writeHead(statusCode?: number, statusMessage?: string, headers?: Object/** = v8::Object::New(isolate)*/): void;
+	writeHead(statusCode: number, statusMessage: string, headers?: Object/** = v8::Object::New(isolate)*/): void;
 
 	/**
 	 * 
@@ -91,7 +91,7 @@ declare class Class_HttpResponse extends Class_HttpMessage {
 	 * 
 	 * 
 	 */
-	writeHead(statusCode?: number, headers?: Object/** = v8::Object::New(isolate)*/): void;
+	writeHead(statusCode: number, headers?: Object/** = v8::Object::New(isolate)*/): void;
 
 	/**
 	 * 
@@ -101,7 +101,7 @@ declare class Class_HttpResponse extends Class_HttpMessage {
 	 * 
 	 * 
 	 */
-	addCookie(cookie?: Class_HttpCookie): void;
+	addCookie(cookie: Class_HttpCookie): void;
 
 	/**
 	 * 
@@ -111,7 +111,7 @@ declare class Class_HttpResponse extends Class_HttpMessage {
 	 * 
 	 * 
 	 */
-	redirect(url?: string): void;
+	redirect(url: string): void;
 
 	/**
 	 * 
@@ -121,7 +121,7 @@ declare class Class_HttpResponse extends Class_HttpMessage {
 	 * 
 	 * @async
 	 */
-	sendHeader(stm?: Class_Stream): void;
+	sendHeader(stm: Class_Stream): void;
 
 } /** endof class */
 

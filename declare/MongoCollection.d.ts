@@ -59,7 +59,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	findAndModify(query?: Object): Object;
+	findAndModify(query: Object): Object;
 
 	/**
 	 * 
@@ -69,7 +69,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	insert(documents?: any[]): void;
+	insert(documents: any[]): void;
 
 	/**
 	 * 
@@ -79,7 +79,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	insert(document?: Object): void;
+	insert(document: Object): void;
 
 	/**
 	 * 
@@ -89,7 +89,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	save(document?: Object): void;
+	save(document: Object): void;
 
 	/**
 	 * 
@@ -102,7 +102,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	update(query?: Object, document?: Object, upsert?: boolean/** = false*/, multi?: boolean/** = false*/): void;
+	update(query: Object, document: Object, upsert?: boolean/** = false*/, multi?: boolean/** = false*/): void;
 
 	/**
 	 * 
@@ -114,7 +114,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	update(query?: Object, document?: Object, options?: Object): void;
+	update(query: Object, document: Object, options: Object): void;
 
 	/**
 	 * 
@@ -124,7 +124,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	remove(query?: Object): void;
+	remove(query: Object): void;
 
 	/**
 	 * 
@@ -135,7 +135,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	runCommand(cmd?: Object): Object;
+	runCommand(cmd: Object): Object;
 
 	/**
 	 * 
@@ -147,7 +147,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	runCommand(cmd?: string, arg?: Object/** = v8::Object::New(isolate)*/): Object;
+	runCommand(cmd: string, arg?: Object/** = v8::Object::New(isolate)*/): Object;
 
 	/**
 	 * 
@@ -166,7 +166,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	ensureIndex(keys?: Object, options?: Object/** = v8::Object::New(isolate)*/): void;
+	ensureIndex(keys: Object, options?: Object/** = v8::Object::New(isolate)*/): void;
 
 	/**
 	 * 
@@ -187,7 +187,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	dropIndex(name?: string): Object;
+	dropIndex(name: string): Object;
 
 	/**
 	 * 
@@ -218,7 +218,7 @@ declare class Class_MongoCollection extends Class__object {
 	 * 
 	 * 
 	 */
-	getCollection(name?: string): Class_MongoCollection;
+	getCollection(name: string): Class_MongoCollection;
 
 } /** endof class */
 

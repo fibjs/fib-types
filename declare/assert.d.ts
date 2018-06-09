@@ -324,7 +324,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function closeTo(actual?: any, expected?: any, delta?: any, msg?: string/** = ""*/): void;
+		export function closeTo(actual: any, expected: any, delta: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -337,7 +337,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function notCloseTo(actual?: any, expected?: any, delta?: any, msg?: string/** = ""*/): void;
+		export function notCloseTo(actual: any, expected: any, delta: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -349,7 +349,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function lessThan(actual?: any, expected?: any, msg?: string/** = ""*/): void;
+		export function lessThan(actual: any, expected: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -361,7 +361,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function notLessThan(actual?: any, expected?: any, msg?: string/** = ""*/): void;
+		export function notLessThan(actual: any, expected: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -373,7 +373,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function greaterThan(actual?: any, expected?: any, msg?: string/** = ""*/): void;
+		export function greaterThan(actual: any, expected: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -385,7 +385,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function notGreaterThan(actual?: any, expected?: any, msg?: string/** = ""*/): void;
+		export function notGreaterThan(actual: any, expected: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -396,7 +396,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function exist(actual?: any, msg?: string/** = ""*/): void;
+		export function exist(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -407,7 +407,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function notExist(actual?: any, msg?: string/** = ""*/): void;
+		export function notExist(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -418,7 +418,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isTrue(actual?: any, msg?: string/** = ""*/): void;
+		export function isTrue(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -429,7 +429,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotTrue(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotTrue(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -440,7 +440,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isFalse(actual?: any, msg?: string/** = ""*/): void;
+		export function isFalse(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -451,7 +451,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotFalse(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotFalse(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -462,7 +462,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNull(actual?: any, msg?: string/** = ""*/): void;
+		export function isNull(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -473,7 +473,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotNull(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotNull(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -484,7 +484,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isUndefined(actual?: any, msg?: string/** = ""*/): void;
+		export function isUndefined(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -495,7 +495,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isDefined(actual?: any, msg?: string/** = ""*/): void;
+		export function isDefined(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -506,7 +506,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isFunction(actual?: any, msg?: string/** = ""*/): void;
+		export function isFunction(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -517,7 +517,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotFunction(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotFunction(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -528,7 +528,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isObject(actual?: any, msg?: string/** = ""*/): void;
+		export function isObject(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -539,7 +539,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotObject(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotObject(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -550,7 +550,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isArray(actual?: any, msg?: string/** = ""*/): void;
+		export function isArray(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -561,7 +561,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotArray(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotArray(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -572,7 +572,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isString(actual?: any, msg?: string/** = ""*/): void;
+		export function isString(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -583,7 +583,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotString(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotString(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -594,7 +594,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNumber(actual?: any, msg?: string/** = ""*/): void;
+		export function isNumber(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -605,7 +605,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotNumber(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotNumber(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -616,7 +616,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isBoolean(actual?: any, msg?: string/** = ""*/): void;
+		export function isBoolean(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -627,7 +627,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function isNotBoolean(actual?: any, msg?: string/** = ""*/): void;
+		export function isNotBoolean(actual: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -639,7 +639,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function typeOf(actual?: any, type?: string, msg?: string/** = ""*/): void;
+		export function typeOf(actual: any, type: string, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -651,7 +651,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function notTypeOf(actual?: any, type?: string, msg?: string/** = ""*/): void;
+		export function notTypeOf(actual: any, type: string, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -663,7 +663,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function property(object?: any, prop?: any, msg?: string/** = ""*/): void;
+		export function property(object: any, prop: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -675,7 +675,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function notProperty(object?: any, prop?: any, msg?: string/** = ""*/): void;
+		export function notProperty(object: any, prop: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -687,7 +687,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function deepProperty(object?: any, prop?: any, msg?: string/** = ""*/): void;
+		export function deepProperty(object: any, prop: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -699,7 +699,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function notDeepProperty(object?: any, prop?: any, msg?: string/** = ""*/): void;
+		export function notDeepProperty(object: any, prop: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -712,7 +712,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function propertyVal(object?: any, prop?: any, value?: any, msg?: string/** = ""*/): void;
+		export function propertyVal(object: any, prop: any, value: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -725,7 +725,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function propertyNotVal(object?: any, prop?: any, value?: any, msg?: string/** = ""*/): void;
+		export function propertyNotVal(object: any, prop: any, value: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -738,7 +738,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function deepPropertyVal(object?: any, prop?: any, value?: any, msg?: string/** = ""*/): void;
+		export function deepPropertyVal(object: any, prop: any, value: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -751,7 +751,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function deepPropertyNotVal(object?: any, prop?: any, value?: any, msg?: string/** = ""*/): void;
+		export function deepPropertyNotVal(object: any, prop: any, value: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -762,7 +762,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function throws(block?: Function, msg?: string/** = ""*/): void;
+		export function throws(block: Function, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -773,7 +773,7 @@ declare module "assert" {
 		 * 
 		 * 
 		 */
-		export function doesNotThrow(block?: Function, msg?: string/** = ""*/): void;
+		export function doesNotThrow(block: Function, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 

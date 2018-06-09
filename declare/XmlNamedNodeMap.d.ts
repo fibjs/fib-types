@@ -48,7 +48,7 @@ declare class Class_XmlNamedNodeMap extends Class__object {
 	 * 
 	 * 
 	 */
-	item(index?: number): Class_XmlAttr;
+	item(index: number): Class_XmlAttr;
 
 	/**
 	 * 
@@ -59,7 +59,7 @@ declare class Class_XmlNamedNodeMap extends Class__object {
 	 * 
 	 * 
 	 */
-	getNamedItem(name?: string): Class_XmlAttr;
+	getNamedItem(name: string): Class_XmlAttr;
 
 } /** endof class */
 

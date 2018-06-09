@@ -217,7 +217,7 @@ declare module "dns" {
 		 * 
 		 * @async
 		 */
-		export function resolve(name?: string): any[];
+		export function resolve(name: string): any[];
 	
 		/**
 		 * 
@@ -228,7 +228,7 @@ declare module "dns" {
 		 * 
 		 * @async
 		 */
-		export function lookup(name?: string): string;
+		export function lookup(name: string): string;
 	
 	} /** end of `module dns` */
 	export = dns

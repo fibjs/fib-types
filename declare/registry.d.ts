@@ -290,7 +290,7 @@ declare module "registry" {
 		 * 
 		 * 
 		 */
-		export function listSubKey(root?: number, key?: string): any[];
+		export function listSubKey(root: number, key: string): any[];
 	
 		/**
 		 * 
@@ -302,7 +302,7 @@ declare module "registry" {
 		 * 
 		 * 
 		 */
-		export function listValue(root?: number, key?: string): any[];
+		export function listValue(root: number, key: string): any[];
 	
 		/**
 		 * 
@@ -314,7 +314,7 @@ declare module "registry" {
 		 * 
 		 * 
 		 */
-		export function get(root?: number, key?: string): any;
+		export function get(root: number, key: string): any;
 	
 		/**
 		 * 
@@ -327,7 +327,7 @@ declare module "registry" {
 		 * 
 		 * 
 		 */
-		export function set(root?: number, key?: string, value?: number, type?: number/** = undefined*/): void;
+		export function set(root: number, key: string, value: number, type?: number/** = undefined*/): void;
 	
 		/**
 		 * 
@@ -340,7 +340,7 @@ declare module "registry" {
 		 * 
 		 * 
 		 */
-		export function set(root?: number, key?: string, value?: string, type?: number/** = undefined*/): void;
+		export function set(root: number, key: string, value: string, type?: number/** = undefined*/): void;
 	
 		/**
 		 * 
@@ -352,7 +352,7 @@ declare module "registry" {
 		 * 
 		 * 
 		 */
-		export function set(root?: number, key?: string, value?: any[]): void;
+		export function set(root: number, key: string, value: any[]): void;
 	
 		/**
 		 * 
@@ -364,7 +364,7 @@ declare module "registry" {
 		 * 
 		 * 
 		 */
-		export function set(root?: number, key?: string, value?: Class_Buffer): void;
+		export function set(root: number, key: string, value: Class_Buffer): void;
 	
 		/**
 		 * 
@@ -375,7 +375,7 @@ declare module "registry" {
 		 * 
 		 * 
 		 */
-		export function del(root?: number, key?: string): void;
+		export function del(root: number, key: string): void;
 	
 	} /** end of `module registry` */
 	export = registry

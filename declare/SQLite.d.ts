@@ -57,7 +57,7 @@ declare class Class_SQLite extends Class_DbConnection {
 	 * 
 	 * @async
 	 */
-	backup(fileName?: string): void;
+	backup(fileName: string): void;
 
 } /** endof class */
 

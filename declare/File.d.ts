@@ -58,7 +58,7 @@ declare class Class_File extends Class_SeekableStream {
 	 * 
 	 * @async
 	 */
-	chmod(mode?: number): void;
+	chmod(mode: number): void;
 
 } /** endof class */
 

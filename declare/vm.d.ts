@@ -212,10 +212,8 @@ declare module "vm" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 SandBox 对象，参见 SandBox ","deprecated":null,"name":"SandBox","type":"SandBox","doc":{"descript":"创建一个 SandBox 对象，参见 SandBox","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 SandBox 对象，参见 SandBox ","deprecated":null,"name":"SandBox","type":"SandBox","doc":{"descript":"创建一个 SandBox 对象，参见 SandBox","detail":[],"params":[]}}]} */
-		
 		export class SandBox extends Class_SandBox {}
+		
 		
 		
 		

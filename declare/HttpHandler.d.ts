@@ -82,7 +82,7 @@ declare class Class_HttpHandler extends Class_HandlerEx {
 	 * 
 	 * 
 	 */
-	constructor(hdlr?: Class_Handler);
+	constructor(hdlr: Class_Handler);
 
 	/**
 	 * 

@@ -39,7 +39,7 @@ declare class Class_XmlText extends Class_XmlCharacterData {
 	 * 
 	 * 
 	 */
-	splitText(offset?: number): Class_XmlText;
+	splitText(offset: number): Class_XmlText;
 
 } /** endof class */
 

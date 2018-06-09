@@ -34,7 +34,7 @@ declare class Class_RedisSet extends Class__object {
 	 * 
 	 * 
 	 */
-	add(members?: any[]): number;
+	add(members: any[]): number;
 
 	/**
 	 * 
@@ -54,7 +54,7 @@ declare class Class_RedisSet extends Class__object {
 	 * 
 	 * 
 	 */
-	remove(members?: any[]): number;
+	remove(members: any[]): number;
 
 	/**
 	 * 
@@ -83,7 +83,7 @@ declare class Class_RedisSet extends Class__object {
 	 * 
 	 * 
 	 */
-	exists(member?: Class_Buffer): boolean;
+	exists(member: Class_Buffer): boolean;
 
 	/**
 	 * 
@@ -120,7 +120,7 @@ declare class Class_RedisSet extends Class__object {
 	 * 
 	 * 
 	 */
-	randMember(count?: number): any;
+	randMember(count: number): any;
 
 } /** endof class */
 

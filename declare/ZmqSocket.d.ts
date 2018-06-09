@@ -58,7 +58,7 @@ declare class Class_ZmqSocket extends Class__object {
 	 * 
 	 * 
 	 */
-	bind(addr?: string): void;
+	bind(addr: string): void;
 
 	/**
 	 * 
@@ -68,7 +68,7 @@ declare class Class_ZmqSocket extends Class__object {
 	 * 
 	 * 
 	 */
-	connect(addr?: string): void;
+	connect(addr: string): void;
 
 	/**
 	 * 
@@ -88,7 +88,7 @@ declare class Class_ZmqSocket extends Class__object {
 	 * 
 	 * 
 	 */
-	send(data?: Class_Buffer): void;
+	send(data: Class_Buffer): void;
 
 	/**
 	 * 

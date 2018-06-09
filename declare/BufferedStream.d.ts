@@ -70,7 +70,7 @@ declare class Class_BufferedStream extends Class_Stream {
 	 * 
 	 * 
 	 */
-	constructor(stm?: Class_Stream);
+	constructor(stm: Class_Stream);
 
 	/**
 	 * 
@@ -81,7 +81,7 @@ declare class Class_BufferedStream extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	readText(size?: number): string;
+	readText(size: number): string;
 
 	/**
 	 * 
@@ -115,7 +115,7 @@ declare class Class_BufferedStream extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	readUntil(mk?: string, maxlen?: number/** = -1*/): string;
+	readUntil(mk: string, maxlen?: number/** = -1*/): string;
 
 	/**
 	 * 
@@ -125,7 +125,7 @@ declare class Class_BufferedStream extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	writeText(txt?: string): void;
+	writeText(txt: string): void;
 
 	/**
 	 * 
@@ -135,7 +135,7 @@ declare class Class_BufferedStream extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	writeLine(txt?: string): void;
+	writeLine(txt: string): void;
 
 } /** endof class */
 

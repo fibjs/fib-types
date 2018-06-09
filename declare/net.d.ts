@@ -244,10 +244,8 @@ declare module "net" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 Socket 对象，参见 Socket ","deprecated":null,"name":"Socket","type":"Socket","doc":{"descript":"创建一个 Socket 对象，参见 Socket","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 Socket 对象，参见 Socket ","deprecated":null,"name":"Socket","type":"Socket","doc":{"descript":"创建一个 Socket 对象，参见 Socket","detail":[],"params":[]}}]} */
-		
 		export class Socket extends Class_Socket {}
+		
 		
 		/**
 		 * 
@@ -255,10 +253,8 @@ declare module "net" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 Smtp 对象，参见 Smtp ","deprecated":null,"name":"Smtp","type":"Smtp","doc":{"descript":"创建一个 Smtp 对象，参见 Smtp","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 Smtp 对象，参见 Smtp ","deprecated":null,"name":"Smtp","type":"Smtp","doc":{"descript":"创建一个 Smtp 对象，参见 Smtp","detail":[],"params":[]}}]} */
-		
 		export class Smtp extends Class_Smtp {}
+		
 		
 		/**
 		 * 
@@ -266,10 +262,8 @@ declare module "net" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 TcpServer 对象，参见 TcpServer ","deprecated":null,"name":"TcpServer","type":"TcpServer","doc":{"descript":"创建一个 TcpServer 对象，参见 TcpServer","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 TcpServer 对象，参见 TcpServer ","deprecated":null,"name":"TcpServer","type":"TcpServer","doc":{"descript":"创建一个 TcpServer 对象，参见 TcpServer","detail":[],"params":[]}}]} */
-		
 		export class TcpServer extends Class_TcpServer {}
+		
 		
 		/**
 		 * 
@@ -277,10 +271,8 @@ declare module "net" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 创建一个 UrlObject 对象，参见 UrlObject ","deprecated":null,"name":"Url","type":"UrlObject","doc":{"descript":"创建一个 UrlObject 对象，参见 UrlObject","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 UrlObject 对象，参见 UrlObject ","deprecated":null,"name":"Url","type":"UrlObject","doc":{"descript":"创建一个 UrlObject 对象，参见 UrlObject","detail":[],"params":[]}}]} */
-		
 		export class UrlObject extends Class_UrlObject {}
+		
 		
 		
 		
@@ -304,7 +296,7 @@ declare module "net" {
 		 * 
 		 * @async
 		 */
-		export function resolve(name?: string, family?: number/** = undefined*/): string;
+		export function resolve(name: string, family?: number/** = undefined*/): string;
 	
 		/**
 		 * 
@@ -315,7 +307,7 @@ declare module "net" {
 		 * 
 		 * @async
 		 */
-		export function ip(name?: string): string;
+		export function ip(name: string): string;
 	
 		/**
 		 * 
@@ -326,7 +318,7 @@ declare module "net" {
 		 * 
 		 * @async
 		 */
-		export function ipv6(name?: string): string;
+		export function ipv6(name: string): string;
 	
 		/**
 		 * 
@@ -338,7 +330,7 @@ declare module "net" {
 		 * 
 		 * @async
 		 */
-		export function connect(url?: string, timeout?: number/** = 0*/): Class_Stream;
+		export function connect(url: string, timeout?: number/** = 0*/): Class_Stream;
 	
 		/**
 		 * 
@@ -350,7 +342,7 @@ declare module "net" {
 		 * 
 		 * @async
 		 */
-		export function openSmtp(url?: string, timeout?: number/** = 0*/): Class_Smtp;
+		export function openSmtp(url: string, timeout?: number/** = 0*/): Class_Smtp;
 	
 		/**
 		 * 

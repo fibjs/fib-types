@@ -212,10 +212,8 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 锁对象，参见 Lock ","deprecated":null,"name":"Lock","type":"Lock","doc":{"descript":"锁对象，参见 Lock","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 锁对象，参见 Lock ","deprecated":null,"name":"Lock","type":"Lock","doc":{"descript":"锁对象，参见 Lock","detail":[],"params":[]}}]} */
-		
 		export class Lock extends Class_Lock {}
+		
 		
 		/**
 		 * 
@@ -223,10 +221,8 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 信号量对象，参见 Semaphore ","deprecated":null,"name":"Semaphore","type":"Semaphore","doc":{"descript":"信号量对象，参见 Semaphore","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 信号量对象，参见 Semaphore ","deprecated":null,"name":"Semaphore","type":"Semaphore","doc":{"descript":"信号量对象，参见 Semaphore","detail":[],"params":[]}}]} */
-		
 		export class Semaphore extends Class_Semaphore {}
+		
 		
 		/**
 		 * 
@@ -234,10 +230,8 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 条件变量对象，参见 Condition ","deprecated":null,"name":"Condition","type":"Condition","doc":{"descript":"条件变量对象，参见 Condition","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 条件变量对象，参见 Condition ","deprecated":null,"name":"Condition","type":"Condition","doc":{"descript":"条件变量对象，参见 Condition","detail":[],"params":[]}}]} */
-		
 		export class Condition extends Class_Condition {}
+		
 		
 		/**
 		 * 
@@ -245,10 +239,8 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 事件对象，参见 Event ","deprecated":null,"name":"Event","type":"Event","doc":{"descript":"事件对象，参见 Event","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 事件对象，参见 Event ","deprecated":null,"name":"Event","type":"Event","doc":{"descript":"事件对象，参见 Event","detail":[],"params":[]}}]} */
-		
 		export class Event extends Class_Event {}
+		
 		
 		/**
 		 * 
@@ -256,10 +248,8 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-
-		/** {"memType":"object","comments":"! @brief 独立线程工作对象，参见 Worker ","deprecated":null,"name":"Worker","type":"Worker","doc":{"descript":"独立线程工作对象，参见 Worker","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 独立线程工作对象，参见 Worker ","deprecated":null,"name":"Worker","type":"Worker","doc":{"descript":"独立线程工作对象，参见 Worker","detail":[],"params":[]}}]} */
-		
 		export class Worker extends Class_Worker {}
+		
 		
 		
 		
@@ -273,7 +263,7 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-		export function start(func?: Function, ...args: any[]): Class_Fiber;
+		export function start(func: Function, ...args: any[]): Class_Fiber;
 	
 		/**
 		 * 
@@ -285,7 +275,7 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-		export function parallel(funcs?: any[], fibers?: number/** = -1*/): any[];
+		export function parallel(funcs: any[], fibers?: number/** = -1*/): any[];
 	
 		/**
 		 * 
@@ -298,7 +288,7 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-		export function parallel(datas?: any[], func?: Function, fibers?: number/** = -1*/): any[];
+		export function parallel(datas: any[], func: Function, fibers?: number/** = -1*/): any[];
 	
 		/**
 		 * 
@@ -311,7 +301,7 @@ declare module "coroutine" {
 		 * 
 		 * 
 		 */
-		export function parallel(func?: Function, num?: number, fibers?: number/** = -1*/): any[];
+		export function parallel(func: Function, num: number, fibers?: number/** = -1*/): any[];
 	
 		/**
 		 * 

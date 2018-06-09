@@ -34,7 +34,7 @@ declare class Class_MSSQL extends Class_DbConnection {
 	 * 
 	 * @async
 	 */
-	use(dbName?: string): void;
+	use(dbName: string): void;
 
 } /** endof class */
 
