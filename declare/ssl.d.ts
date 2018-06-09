@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -297,6 +300,8 @@ declare module "ssl" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 创建一个 SslSocket 对象，参见 SslSocket ","deprecated":null,"name":"Socket","type":"SslSocket","doc":{"descript":"创建一个 SslSocket 对象，参见 SslSocket","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 SslSocket 对象，参见 SslSocket ","deprecated":null,"name":"Socket","type":"SslSocket","doc":{"descript":"创建一个 SslSocket 对象，参见 SslSocket","detail":[],"params":[]}}]} */
 		
 		export class SslSocket extends Class_SslSocket {}
 		
@@ -306,6 +311,8 @@ declare module "ssl" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 创建一个 SslHandler 对象，参见 SslHandler ","deprecated":null,"name":"Handler","type":"SslHandler","doc":{"descript":"创建一个 SslHandler 对象，参见 SslHandler","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 SslHandler 对象，参见 SslHandler ","deprecated":null,"name":"Handler","type":"SslHandler","doc":{"descript":"创建一个 SslHandler 对象，参见 SslHandler","detail":[],"params":[]}}]} */
 		
 		export class SslHandler extends Class_SslHandler {}
 		
@@ -315,6 +322,8 @@ declare module "ssl" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 创建一个 SslServer 对象，参见 SslServer ","deprecated":null,"name":"Server","type":"SslServer","doc":{"descript":"创建一个 SslServer 对象，参见 SslServer","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 SslServer 对象，参见 SslServer ","deprecated":null,"name":"Server","type":"SslServer","doc":{"descript":"创建一个 SslServer 对象，参见 SslServer","detail":[],"params":[]}}]} */
 		
 		export class SslServer extends Class_SslServer {}
 		
@@ -330,7 +339,7 @@ declare module "ssl" {
 		 * 
 		 * @async
 		 */
-		export function connect(url: string, timeout?: number/** = 0*/): Class_Stream;
+		export function connect(url?: string, timeout?: number/** = 0*/): Class_Stream;
 	
 		/**
 		 * 
@@ -341,7 +350,7 @@ declare module "ssl" {
 		 * 
 		 * 
 		 */
-		export function setClientCert(crt: Class_X509Cert, key: Class_PKey): void;
+		export function setClientCert(crt?: Class_X509Cert, key?: Class_PKey): void;
 	
 		/**
 		 * 
@@ -353,7 +362,7 @@ declare module "ssl" {
 		 * 
 		 * 
 		 */
-		export function loadClientCertFile(crtFile: string, keyFile: string, password?: string/** = ""*/): void;
+		export function loadClientCertFile(crtFile?: string, keyFile?: string, password?: string/** = ""*/): void;
 	
 		/**
 		 * 

@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -82,7 +85,7 @@ declare class Class_SslHandler extends Class_Handler {
 	 * 
 	 * 
 	 */
-	constructor(certs: any[], hdlr: Class_Handler);
+	constructor(certs?: any[], hdlr?: Class_Handler);
 
 	/**
 	 * 
@@ -94,7 +97,7 @@ declare class Class_SslHandler extends Class_Handler {
 	 * 
 	 * 
 	 */
-	constructor(crt: Class_X509Cert, key: Class_PKey, hdlr: Class_Handler);
+	constructor(crt?: Class_X509Cert, key?: Class_PKey, hdlr?: Class_Handler);
 
 } /** endof class */
 

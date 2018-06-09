@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -116,7 +119,7 @@ declare class Class_HttpMessage extends Class_Message {
 	 * 
 	 * 
 	 */
-	hasHeader(name: string): boolean;
+	hasHeader(name?: string): boolean;
 
 	/**
 	 * 
@@ -127,7 +130,7 @@ declare class Class_HttpMessage extends Class_Message {
 	 * 
 	 * 
 	 */
-	firstHeader(name: string): any;
+	firstHeader(name?: string): any;
 
 	/**
 	 * 
@@ -138,7 +141,7 @@ declare class Class_HttpMessage extends Class_Message {
 	 * 
 	 * 
 	 */
-	allHeader(name: string): any[];
+	allHeader(name?: string): any[];
 
 	/**
 	 * 
@@ -148,7 +151,7 @@ declare class Class_HttpMessage extends Class_Message {
 	 * 
 	 * 
 	 */
-	addHeader(map: Object): void;
+	addHeader(map?: Object): void;
 
 	/**
 	 * 
@@ -159,7 +162,7 @@ declare class Class_HttpMessage extends Class_Message {
 	 * 
 	 * 
 	 */
-	addHeader(name: string, value: any): void;
+	addHeader(name?: string, value?: any): void;
 
 	/**
 	 * 
@@ -169,7 +172,7 @@ declare class Class_HttpMessage extends Class_Message {
 	 * 
 	 * 
 	 */
-	setHeader(map: Object): void;
+	setHeader(map?: Object): void;
 
 	/**
 	 * 
@@ -180,7 +183,7 @@ declare class Class_HttpMessage extends Class_Message {
 	 * 
 	 * 
 	 */
-	setHeader(name: string, value: any): void;
+	setHeader(name?: string, value?: any): void;
 
 	/**
 	 * 
@@ -190,7 +193,7 @@ declare class Class_HttpMessage extends Class_Message {
 	 * 
 	 * 
 	 */
-	removeHeader(name: string): void;
+	removeHeader(name?: string): void;
 
 } /** endof class */
 

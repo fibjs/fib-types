@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -31,7 +34,7 @@ declare class Class_Handler extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(hdlrs: any[]);
+	constructor(hdlrs?: any[]);
 
 	/**
 	 * 
@@ -41,7 +44,7 @@ declare class Class_Handler extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(map: Object);
+	constructor(map?: Object);
 
 	/**
 	 * 
@@ -51,7 +54,7 @@ declare class Class_Handler extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(hdlr: Function);
+	constructor(hdlr?: Function);
 
 	/**
 	 * 
@@ -62,7 +65,7 @@ declare class Class_Handler extends Class__object {
 	 * 
 	 * @async
 	 */
-	invoke(v: Class_object): Class_Handler;
+	invoke(v?: Class__object): Class_Handler;
 
 } /** endof class */
 

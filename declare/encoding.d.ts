@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -230,6 +233,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief base32 编码与解码模块 ","deprecated":null,"name":"base32","type":"base32","doc":{"descript":"base32 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief base32 编码与解码模块 ","deprecated":null,"name":"base32","type":"base32","doc":{"descript":"base32 编码与解码模块","detail":[],"params":[]}}]} */
 		
 		export class base32 extends Class_base32 {}
 		
@@ -239,6 +244,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief base64 编码与解码模块 ","deprecated":null,"name":"base64","type":"base64","doc":{"descript":"base64 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief base64 编码与解码模块 ","deprecated":null,"name":"base64","type":"base64","doc":{"descript":"base64 编码与解码模块","detail":[],"params":[]}}]} */
 		
 		export class base64 extends Class_base64 {}
 		
@@ -248,6 +255,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief base64vlq 编码与解码模块 ","deprecated":null,"name":"base64vlq","type":"base64vlq","doc":{"descript":"base64vlq 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief base64vlq 编码与解码模块 ","deprecated":null,"name":"base64vlq","type":"base64vlq","doc":{"descript":"base64vlq 编码与解码模块","detail":[],"params":[]}}]} */
 		
 		export class base64vlq extends Class_base64vlq {}
 		
@@ -257,6 +266,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief hex 编码与解码模块 ","deprecated":null,"name":"hex","type":"hex","doc":{"descript":"hex 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief hex 编码与解码模块 ","deprecated":null,"name":"hex","type":"hex","doc":{"descript":"hex 编码与解码模块","detail":[],"params":[]}}]} */
 		
 		export class hex extends Class_hex {}
 		
@@ -266,6 +277,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief iconv 编码与解码模块 ","deprecated":null,"name":"iconv","type":"iconv","doc":{"descript":"iconv 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief iconv 编码与解码模块 ","deprecated":null,"name":"iconv","type":"iconv","doc":{"descript":"iconv 编码与解码模块","detail":[],"params":[]}}]} */
 		
 		export class iconv extends Class_iconv {}
 		
@@ -275,6 +288,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief json 编码与解码模块 ","deprecated":null,"name":"json","type":"json","doc":{"descript":"json 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief json 编码与解码模块 ","deprecated":null,"name":"json","type":"json","doc":{"descript":"json 编码与解码模块","detail":[],"params":[]}}]} */
 		
 		export class json extends Class_json {}
 		
@@ -284,6 +299,8 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief bson 编码与解码模块 ","deprecated":null,"name":"bson","type":"bson","doc":{"descript":"bson 编码与解码模块","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief bson 编码与解码模块 ","deprecated":null,"name":"bson","type":"bson","doc":{"descript":"bson 编码与解码模块","detail":[],"params":[]}}]} */
 		
 		export class bson extends Class_bson {}
 		
@@ -299,7 +316,7 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-		export function jsstr(str: string, json?: boolean/** = false*/): string;
+		export function jsstr(str?: string, json?: boolean/** = false*/): string;
 	
 		/**
 		 * 
@@ -310,7 +327,7 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-		export function encodeURI(url: string): string;
+		export function encodeURI(url?: string): string;
 	
 		/**
 		 * 
@@ -321,7 +338,7 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-		export function encodeURIComponent(url: string): string;
+		export function encodeURIComponent(url?: string): string;
 	
 		/**
 		 * 
@@ -332,7 +349,7 @@ declare module "encoding" {
 		 * 
 		 * 
 		 */
-		export function decodeURI(url: string): string;
+		export function decodeURI(url?: string): string;
 	
 	} /** end of `module encoding` */
 	export = encoding

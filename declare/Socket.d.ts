@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -129,7 +132,7 @@ declare class Class_Socket extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	connect(host: string, port: number): void;
+	connect(host?: string, port?: number): void;
 
 	/**
 	 * 
@@ -140,7 +143,7 @@ declare class Class_Socket extends Class_Stream {
 	 * 
 	 * 
 	 */
-	bind(port: number, allowIPv4?: boolean/** = true*/): void;
+	bind(port?: number, allowIPv4?: boolean/** = true*/): void;
 
 	/**
 	 * 
@@ -152,7 +155,7 @@ declare class Class_Socket extends Class_Stream {
 	 * 
 	 * 
 	 */
-	bind(addr: string, port: number, allowIPv4?: boolean/** = true*/): void;
+	bind(addr?: string, port?: number, allowIPv4?: boolean/** = true*/): void;
 
 	/**
 	 * 
@@ -208,7 +211,7 @@ declare class Class_Socket extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	send(data: Class_Buffer): void;
+	send(data?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -220,7 +223,7 @@ declare class Class_Socket extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	sendto(data: Class_Buffer, host: string, port: number): void;
+	sendto(data?: Class_Buffer, host?: string, port?: number): void;
 
 } /** endof class */
 

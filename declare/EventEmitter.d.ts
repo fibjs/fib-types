@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -53,7 +56,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	on(ev: string, func: Function): Object;
+	on(ev?: string, func?: Function): Object;
 
 	/**
 	 * 
@@ -64,7 +67,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	on(map: Object): Object;
+	on(map?: Object): Object;
 
 	/**
 	 * 
@@ -76,7 +79,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	addListener(ev: string, func: Function): Object;
+	addListener(ev?: string, func?: Function): Object;
 
 	/**
 	 * 
@@ -87,7 +90,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	addListener(map: Object): Object;
+	addListener(map?: Object): Object;
 
 	/**
 	 * 
@@ -99,7 +102,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	prependListener(ev: string, func: Function): Object;
+	prependListener(ev?: string, func?: Function): Object;
 
 	/**
 	 * 
@@ -110,7 +113,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	prependListener(map: Object): Object;
+	prependListener(map?: Object): Object;
 
 	/**
 	 * 
@@ -122,7 +125,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	once(ev: string, func: Function): Object;
+	once(ev?: string, func?: Function): Object;
 
 	/**
 	 * 
@@ -133,7 +136,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	once(map: Object): Object;
+	once(map?: Object): Object;
 
 	/**
 	 * 
@@ -145,7 +148,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	prependOnceListener(ev: string, func: Function): Object;
+	prependOnceListener(ev?: string, func?: Function): Object;
 
 	/**
 	 * 
@@ -156,7 +159,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	prependOnceListener(map: Object): Object;
+	prependOnceListener(map?: Object): Object;
 
 	/**
 	 * 
@@ -168,7 +171,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	off(ev: string, func: Function): Object;
+	off(ev?: string, func?: Function): Object;
 
 	/**
 	 * 
@@ -179,7 +182,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	off(ev: string): Object;
+	off(ev?: string): Object;
 
 	/**
 	 * 
@@ -190,7 +193,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	off(map: Object): Object;
+	off(map?: Object): Object;
 
 	/**
 	 * 
@@ -202,7 +205,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	removeListener(ev: string, func: Function): Object;
+	removeListener(ev?: string, func?: Function): Object;
 
 	/**
 	 * 
@@ -213,7 +216,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	removeListener(ev: string): Object;
+	removeListener(ev?: string): Object;
 
 	/**
 	 * 
@@ -224,7 +227,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	removeListener(map: Object): Object;
+	removeListener(map?: Object): Object;
 
 	/**
 	 * 
@@ -245,7 +248,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	setMaxListeners(n: number): void;
+	setMaxListeners(n?: number): void;
 
 	/**
 	 * 
@@ -266,7 +269,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	listeners(ev: string): any[];
+	listeners(ev?: string): any[];
 
 	/**
 	 * 
@@ -277,7 +280,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	listenerCount(ev: string): number;
+	listenerCount(ev?: string): number;
 
 	/**
 	 * 
@@ -299,7 +302,7 @@ declare class Class_EventEmitter extends Class__object {
 	 * 
 	 * 
 	 */
-	emit(ev: string, ...args: any[]): boolean;
+	emit(ev?: string, ...args: any[]): boolean;
 
 } /** endof class */
 

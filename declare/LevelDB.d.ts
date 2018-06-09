@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -32,7 +35,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * @async
 	 */
-	has(key: Class_Buffer): boolean;
+	has(key?: Class_Buffer): boolean;
 
 	/**
 	 * 
@@ -43,7 +46,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * @async
 	 */
-	get(key: Class_Buffer): Class_Buffer;
+	get(key?: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -54,7 +57,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * 
 	 */
-	mget(keys: any[]): any[];
+	mget(keys?: any[]): any[];
 
 	/**
 	 * 
@@ -65,7 +68,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * @async
 	 */
-	set(key: Class_Buffer, value: Class_Buffer): void;
+	set(key?: Class_Buffer, value?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -75,7 +78,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * 
 	 */
-	mset(map: Object): void;
+	mset(map?: Object): void;
 
 	/**
 	 * 
@@ -85,7 +88,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * 
 	 */
-	mremove(keys: any[]): void;
+	mremove(keys?: any[]): void;
 
 	/**
 	 * 
@@ -95,7 +98,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * @async
 	 */
-	remove(key: Class_Buffer): void;
+	remove(key?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -116,7 +119,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * 
 	 */
-	forEach(func: Function): void;
+	forEach(func?: Function): void;
 
 	/**
 	 * 
@@ -139,7 +142,7 @@ declare class Class_LevelDB extends Class__object {
 	 * 
 	 * 
 	 */
-	between(from: Class_Buffer, to: Class_Buffer, func: Function): void;
+	between(from?: Class_Buffer, to?: Class_Buffer, func?: Function): void;
 
 	/**
 	 * 

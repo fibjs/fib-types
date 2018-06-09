@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -238,7 +241,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function exists(path: string): boolean;
+		export function exists(path?: string): boolean;
 	
 		/**
 		 * 
@@ -249,7 +252,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function access(path: string, mode?: number/** = 0*/): void;
+		export function access(path?: string, mode?: number/** = 0*/): void;
 	
 		/**
 		 * 
@@ -260,7 +263,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function link(oldPath: string, newPath: string): void;
+		export function link(oldPath?: string, newPath?: string): void;
 	
 		/**
 		 * 
@@ -270,7 +273,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function unlink(path: string): void;
+		export function unlink(path?: string): void;
 	
 		/**
 		 * 
@@ -281,7 +284,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function mkdir(path: string, mode?: number/** = 0777*/): void;
+		export function mkdir(path?: string, mode?: number/** = 0777*/): void;
 	
 		/**
 		 * 
@@ -291,7 +294,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function rmdir(path: string): void;
+		export function rmdir(path?: string): void;
 	
 		/**
 		 * 
@@ -302,7 +305,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function rename(from: string, to: string): void;
+		export function rename(from?: string, to?: string): void;
 	
 		/**
 		 * 
@@ -313,7 +316,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function copy(from: string, to: string): void;
+		export function copy(from?: string, to?: string): void;
 	
 		/**
 		 * 
@@ -324,7 +327,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function chmod(path: string, mode: number): void;
+		export function chmod(path?: string, mode?: number): void;
 	
 		/**
 		 * 
@@ -335,7 +338,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function lchmod(path: string, mode: number): void;
+		export function lchmod(path?: string, mode?: number): void;
 	
 		/**
 		 * 
@@ -347,7 +350,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function chown(path: string, uid: number, gid: number): void;
+		export function chown(path?: string, uid?: number, gid?: number): void;
 	
 		/**
 		 * 
@@ -359,7 +362,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function lchown(path: string, uid: number, gid: number): void;
+		export function lchown(path?: string, uid?: number, gid?: number): void;
 	
 		/**
 		 * 
@@ -370,7 +373,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function stat(path: string): Class_Stat;
+		export function stat(path?: string): Class_Stat;
 	
 		/**
 		 * 
@@ -381,7 +384,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function lstat(path: string): Class_Stat;
+		export function lstat(path?: string): Class_Stat;
 	
 		/**
 		 * 
@@ -392,7 +395,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function readlink(path: string): string;
+		export function readlink(path?: string): string;
 	
 		/**
 		 * 
@@ -403,7 +406,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function realpath(path: string): string;
+		export function realpath(path?: string): string;
 	
 		/**
 		 * 
@@ -415,7 +418,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function symlink(target: string, linkpath: string, type?: string/** = "file"*/): void;
+		export function symlink(target?: string, linkpath?: string, type?: string/** = "file"*/): void;
 	
 		/**
 		 * 
@@ -426,7 +429,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function truncate(path: string, len: number): void;
+		export function truncate(path?: string, len?: number): void;
 	
 		/**
 		 * 
@@ -441,7 +444,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function read(fd: number, buffer: Class_Buffer, offset?: number/** = 0*/, length?: number/** = 0*/, position?: number/** = -1*/): number;
+		export function read(fd?: number, buffer?: Class_Buffer, offset?: number/** = 0*/, length?: number/** = 0*/, position?: number/** = -1*/): number;
 	
 		/**
 		 * 
@@ -452,7 +455,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function fchmod(fd: number, mode: number): void;
+		export function fchmod(fd?: number, mode?: number): void;
 	
 		/**
 		 * 
@@ -464,7 +467,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function fchown(fd: number, uid: number, gid: number): void;
+		export function fchown(fd?: number, uid?: number, gid?: number): void;
 	
 		/**
 		 * 
@@ -474,7 +477,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function fdatasync(fd: number): void;
+		export function fdatasync(fd?: number): void;
 	
 		/**
 		 * 
@@ -484,7 +487,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function fsync(fd: number): void;
+		export function fsync(fd?: number): void;
 	
 		/**
 		 * 
@@ -495,7 +498,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function readdir(path: string): any[];
+		export function readdir(path?: string): any[];
 	
 		/**
 		 * 
@@ -515,7 +518,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function openFile(fname: string, flags?: string/** = "r"*/): Class_SeekableStream;
+		export function openFile(fname?: string, flags?: string/** = "r"*/): Class_SeekableStream;
 	
 		/**
 		 * 
@@ -536,7 +539,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function open(fname: string, flags?: string/** = "r"*/, mode?: number/** = 0666*/): number;
+		export function open(fname?: string, flags?: string/** = "r"*/, mode?: number/** = 0666*/): number;
 	
 		/**
 		 * 
@@ -546,7 +549,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function close(fd: number): void;
+		export function close(fd?: number): void;
 	
 		/**
 		 * 
@@ -566,7 +569,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function openTextStream(fname: string, flags?: string/** = "r"*/): Class_BufferedStream;
+		export function openTextStream(fname?: string, flags?: string/** = "r"*/): Class_BufferedStream;
 	
 		/**
 		 * 
@@ -577,7 +580,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function readTextFile(fname: string): string;
+		export function readTextFile(fname?: string): string;
 	
 		/**
 		 * 
@@ -589,7 +592,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function readFile(fname: string, encoding?: string/** = ""*/): any;
+		export function readFile(fname?: string, encoding?: string/** = ""*/): any;
 	
 		/**
 		 * 
@@ -601,7 +604,7 @@ declare module "fs" {
 		 * 
 		 * 
 		 */
-		export function readLines(fname: string, maxlines?: number/** = -1*/): any[];
+		export function readLines(fname?: string, maxlines?: number/** = -1*/): any[];
 	
 		/**
 		 * 
@@ -612,7 +615,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function writeTextFile(fname: string, txt: string): void;
+		export function writeTextFile(fname?: string, txt?: string): void;
 	
 		/**
 		 * 
@@ -623,7 +626,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function writeFile(fname: string, data: Class_Buffer): void;
+		export function writeFile(fname?: string, data?: Class_Buffer): void;
 	
 		/**
 		 * 
@@ -634,7 +637,7 @@ declare module "fs" {
 		 * 
 		 * @async
 		 */
-		export function appendFile(fname: string, data: Class_Buffer): void;
+		export function appendFile(fname?: string, data?: Class_Buffer): void;
 	
 	} /** end of `module fs` */
 	export = fs

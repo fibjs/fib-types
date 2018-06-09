@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -71,7 +74,7 @@ declare class Class_SslServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(certs: any[], port: number, listener: Class_Handler);
+	constructor(certs?: any[], port?: number, listener?: Class_Handler);
 
 	/**
 	 * 
@@ -98,7 +101,7 @@ declare class Class_SslServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(certs: any[], addr: string, port: number, listener: Class_Handler);
+	constructor(certs?: any[], addr?: string, port?: number, listener?: Class_Handler);
 
 	/**
 	 * 
@@ -111,7 +114,7 @@ declare class Class_SslServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(crt: Class_X509Cert, key: Class_PKey, port: number, listener: Class_Handler);
+	constructor(crt?: Class_X509Cert, key?: Class_PKey, port?: number, listener?: Class_Handler);
 
 	/**
 	 * 
@@ -125,7 +128,7 @@ declare class Class_SslServer extends Class_TcpServer {
 	 * 
 	 * 
 	 */
-	constructor(crt: Class_X509Cert, key: Class_PKey, addr: string, port: number, listener: Class_Handler);
+	constructor(crt?: Class_X509Cert, key?: Class_PKey, addr?: string, port?: number, listener?: Class_Handler);
 
 } /** endof class */
 

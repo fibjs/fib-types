@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -81,7 +84,7 @@ declare class Class_DbConnection extends Class__object {
 	 * 
 	 * 
 	 */
-	trans(func: Function): boolean;
+	trans(func?: Function): boolean;
 
 	/**
 	 * 
@@ -94,7 +97,7 @@ declare class Class_DbConnection extends Class__object {
 	 * 
 	 * @async
 	 */
-	execute(sql: string, ...args: any[]): any[];
+	execute(sql?: string, ...args: any[]): any[];
 
 	/**
 	 * 
@@ -107,7 +110,7 @@ declare class Class_DbConnection extends Class__object {
 	 * 
 	 * 
 	 */
-	format(sql: string, ...args: any[]): string;
+	format(sql?: string, ...args: any[]): string;
 
 } /** endof class */
 

@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -214,7 +217,7 @@ declare module "querystring" {
 		 * 
 		 * 
 		 */
-		export function escape(str: string): string;
+		export function escape(str?: string): string;
 	
 		/**
 		 * 
@@ -225,7 +228,7 @@ declare module "querystring" {
 		 * 
 		 * 
 		 */
-		export function unescape(str: string): string;
+		export function unescape(str?: string): string;
 	
 		/**
 		 * 
@@ -239,7 +242,7 @@ declare module "querystring" {
 		 * 
 		 * 
 		 */
-		export function parse(str: string, sep?: string/** = "&"*/, eq?: string/** = "="*/, opt?: Object/** = v8::Object::New(isolate)*/): Class_HttpCollection;
+		export function parse(str?: string, sep?: string/** = "&"*/, eq?: string/** = "="*/, opt?: Object/** = v8::Object::New(isolate)*/): Class_HttpCollection;
 	
 		/**
 		 * 
@@ -253,7 +256,7 @@ declare module "querystring" {
 		 * 
 		 * 
 		 */
-		export function stringify(obj: Object, sep?: string/** = "&"*/, eq?: string/** = "="*/, opt?: Object/** = v8::Object::New(isolate)*/): string;
+		export function stringify(obj?: Object, sep?: string/** = "&"*/, eq?: string/** = "="*/, opt?: Object/** = v8::Object::New(isolate)*/): string;
 	
 	} /** end of `module querystring` */
 	export = querystring

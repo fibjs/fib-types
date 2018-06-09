@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -149,7 +152,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getAttribute(name: string): string;
+	getAttribute(name?: string): string;
 
 	/**
 	 * 
@@ -161,7 +164,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getAttributeNS(namespaceURI: string, localName: string): string;
+	getAttributeNS(namespaceURI?: string, localName?: string): string;
 
 	/**
 	 * 
@@ -174,7 +177,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	setAttribute(name: string, value: string): void;
+	setAttribute(name?: string, value?: string): void;
 
 	/**
 	 * 
@@ -188,7 +191,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	setAttributeNS(namespaceURI: string, qualifiedName: string, value: string): void;
+	setAttributeNS(namespaceURI?: string, qualifiedName?: string, value?: string): void;
 
 	/**
 	 * 
@@ -198,7 +201,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	removeAttribute(name: string): void;
+	removeAttribute(name?: string): void;
 
 	/**
 	 * 
@@ -209,7 +212,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	removeAttributeNS(namespaceURI: string, localName: string): void;
+	removeAttributeNS(namespaceURI?: string, localName?: string): void;
 
 	/**
 	 * 
@@ -220,7 +223,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	hasAttribute(name: string): boolean;
+	hasAttribute(name?: string): boolean;
 
 	/**
 	 * 
@@ -232,7 +235,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	hasAttributeNS(namespaceURI: string, localName: string): boolean;
+	hasAttributeNS(namespaceURI?: string, localName?: string): boolean;
 
 	/**
 	 * 
@@ -247,7 +250,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getElementsByTagName(tagName: string): Class_XmlNodeList;
+	getElementsByTagName(tagName?: string): Class_XmlNodeList;
 
 	/**
 	 * 
@@ -261,7 +264,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getElementsByTagNameNS(namespaceURI: string, localName: string): Class_XmlNodeList;
+	getElementsByTagNameNS(namespaceURI?: string, localName?: string): Class_XmlNodeList;
 
 	/**
 	 * 
@@ -276,7 +279,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getElementById(id: string): Class_XmlElement;
+	getElementById(id?: string): Class_XmlElement;
 
 	/**
 	 * 
@@ -289,7 +292,7 @@ declare class Class_XmlElement extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getElementsByClassName(className: string): Class_XmlNodeList;
+	getElementsByClassName(className?: string): Class_XmlNodeList;
 
 } /** endof class */
 

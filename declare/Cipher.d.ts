@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -80,7 +83,7 @@ declare class Class_Cipher extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(provider: number, key: Class_Buffer);
+	constructor(provider?: number, key?: Class_Buffer);
 
 	/**
 	 * 
@@ -92,7 +95,7 @@ declare class Class_Cipher extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(provider: number, mode: number, key: Class_Buffer);
+	constructor(provider?: number, mode?: number, key?: Class_Buffer);
 
 	/**
 	 * 
@@ -105,7 +108,7 @@ declare class Class_Cipher extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(provider: number, mode: number, key: Class_Buffer, iv: Class_Buffer);
+	constructor(provider?: number, mode?: number, key?: Class_Buffer, iv?: Class_Buffer);
 
 	/**
 	 * 
@@ -115,7 +118,7 @@ declare class Class_Cipher extends Class__object {
 	 * 
 	 * 
 	 */
-	paddingMode(mode: number): void;
+	paddingMode(mode?: number): void;
 
 	/**
 	 * 
@@ -126,7 +129,7 @@ declare class Class_Cipher extends Class__object {
 	 * 
 	 * @async
 	 */
-	encrypt(data: Class_Buffer): Class_Buffer;
+	encrypt(data?: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -137,7 +140,7 @@ declare class Class_Cipher extends Class__object {
 	 * 
 	 * @async
 	 */
-	decrypt(data: Class_Buffer): Class_Buffer;
+	decrypt(data?: Class_Buffer): Class_Buffer;
 
 } /** endof class */
 

@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -68,7 +71,7 @@ declare class Class_X509Req extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(subject: string, key: Class_PKey, hash?: number/** = undefined*/);
+	constructor(subject?: string, key?: Class_PKey, hash?: number/** = undefined*/);
 
 	/**
 	 * 
@@ -78,7 +81,7 @@ declare class Class_X509Req extends Class__object {
 	 * 
 	 * 
 	 */
-	load(derReq: Class_Buffer): void;
+	load(derReq?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -88,7 +91,7 @@ declare class Class_X509Req extends Class__object {
 	 * 
 	 * 
 	 */
-	load(pemReq: string): void;
+	load(pemReq?: string): void;
 
 	/**
 	 * 
@@ -98,7 +101,7 @@ declare class Class_X509Req extends Class__object {
 	 * 
 	 * 
 	 */
-	loadFile(filename: string): void;
+	loadFile(filename?: string): void;
 
 	/**
 	 * 
@@ -143,7 +146,7 @@ declare class Class_X509Req extends Class__object {
 	 * 
 	 * @async
 	 */
-	sign(issuer: string, key: Class_PKey, opts?: Object/** = v8::Object::New(isolate)*/): Class_X509Cert;
+	sign(issuer?: string, key?: Class_PKey, opts?: Object/** = v8::Object::New(isolate)*/): Class_X509Cert;
 
 } /** endof class */
 

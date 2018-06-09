@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -63,7 +66,7 @@ declare class Class_Smtp extends Class__object {
 	 * 
 	 * @async
 	 */
-	connect(url: string): void;
+	connect(url?: string): void;
 
 	/**
 	 * 
@@ -75,7 +78,7 @@ declare class Class_Smtp extends Class__object {
 	 * 
 	 * @async
 	 */
-	command(cmd: string, arg: string): string;
+	command(cmd?: string, arg?: string): string;
 
 	/**
 	 * 
@@ -96,7 +99,7 @@ declare class Class_Smtp extends Class__object {
 	 * 
 	 * @async
 	 */
-	login(username: string, password: string): void;
+	login(username?: string, password?: string): void;
 
 	/**
 	 * 
@@ -106,7 +109,7 @@ declare class Class_Smtp extends Class__object {
 	 * 
 	 * @async
 	 */
-	from(address: string): void;
+	from(address?: string): void;
 
 	/**
 	 * 
@@ -116,7 +119,7 @@ declare class Class_Smtp extends Class__object {
 	 * 
 	 * @async
 	 */
-	to(address: string): void;
+	to(address?: string): void;
 
 	/**
 	 * 
@@ -126,7 +129,7 @@ declare class Class_Smtp extends Class__object {
 	 * 
 	 * @async
 	 */
-	data(txt: string): void;
+	data(txt?: string): void;
 
 	/**
 	 * 

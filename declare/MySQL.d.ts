@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -55,7 +58,7 @@ declare class Class_MySQL extends Class_DbConnection {
 	 * 
 	 * @async
 	 */
-	use(dbName: string): void;
+	use(dbName?: string): void;
 
 } /** endof class */
 

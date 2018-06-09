@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -32,7 +35,7 @@ declare class Class_MongoDB extends Class__object {
 	 * 
 	 * 
 	 */
-	getCollection(name: string): Class_MongoCollection;
+	getCollection(name?: string): Class_MongoCollection;
 
 	/**
 	 * 
@@ -43,7 +46,7 @@ declare class Class_MongoDB extends Class__object {
 	 * 
 	 * 
 	 */
-	runCommand(cmd: Object): Object;
+	runCommand(cmd?: Object): Object;
 
 	/**
 	 * 
@@ -55,7 +58,7 @@ declare class Class_MongoDB extends Class__object {
 	 * 
 	 * 
 	 */
-	runCommand(cmd: string, arg: any): Object;
+	runCommand(cmd?: string, arg?: any): Object;
 
 	/**
 	 * 

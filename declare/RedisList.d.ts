@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -31,7 +34,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	push(values: any[]): number;
+	push(values?: any[]): number;
 
 	/**
 	 * 
@@ -60,7 +63,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	rpush(values: any[]): number;
+	rpush(values?: any[]): number;
 
 	/**
 	 * 
@@ -89,7 +92,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	set(index: number, value: Class_Buffer): void;
+	set(index?: number, value?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -99,7 +102,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	get(index: number): Class_Buffer;
+	get(index?: number): Class_Buffer;
 
 	/**
 	 * 
@@ -110,7 +113,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	insertBefore(pivot: Class_Buffer, value: Class_Buffer): number;
+	insertBefore(pivot?: Class_Buffer, value?: Class_Buffer): number;
 
 	/**
 	 * 
@@ -121,7 +124,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	insertAfter(pivot: Class_Buffer, value: Class_Buffer): number;
+	insertAfter(pivot?: Class_Buffer, value?: Class_Buffer): number;
 
 	/**
 	 * 
@@ -132,7 +135,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	remove(count: number, value: Class_Buffer): number;
+	remove(count?: number, value?: Class_Buffer): number;
 
 	/**
 	 * 
@@ -142,7 +145,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	trim(start: number, stop: number): void;
+	trim(start?: number, stop?: number): void;
 
 	/**
 	 * 
@@ -162,7 +165,7 @@ declare class Class_RedisList extends Class__object {
 	 * 
 	 * 
 	 */
-	range(start: number, stop: number): any[];
+	range(start?: number, stop?: number): any[];
 
 } /** endof class */
 

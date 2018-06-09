@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -209,6 +212,8 @@ declare module "string_decoder" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 创建一个解码对象，参见 StringDecoder ","deprecated":null,"name":"StringDecoder","type":"StringDecoder","doc":{"descript":"创建一个解码对象，参见 StringDecoder","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个解码对象，参见 StringDecoder ","deprecated":null,"name":"StringDecoder","type":"StringDecoder","doc":{"descript":"创建一个解码对象，参见 StringDecoder","detail":[],"params":[]}}]} */
 		
 		export class StringDecoder extends Class_StringDecoder {}
 		

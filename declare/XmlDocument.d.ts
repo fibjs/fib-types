@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -147,7 +150,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	load(source: string): void;
+	load(source?: string): void;
 
 	/**
 	 * 
@@ -157,7 +160,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	load(source: Class_Buffer): void;
+	load(source?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -170,7 +173,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getElementsByTagName(tagName: string): Class_XmlNodeList;
+	getElementsByTagName(tagName?: string): Class_XmlNodeList;
 
 	/**
 	 * 
@@ -184,7 +187,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getElementsByTagNameNS(namespaceURI: string, localName: string): Class_XmlNodeList;
+	getElementsByTagNameNS(namespaceURI?: string, localName?: string): Class_XmlNodeList;
 
 	/**
 	 * 
@@ -197,7 +200,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getElementById(id: string): Class_XmlElement;
+	getElementById(id?: string): Class_XmlElement;
 
 	/**
 	 * 
@@ -210,7 +213,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	getElementsByClassName(className: string): Class_XmlNodeList;
+	getElementsByClassName(className?: string): Class_XmlNodeList;
 
 	/**
 	 * 
@@ -221,7 +224,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	createElement(tagName: string): Class_XmlElement;
+	createElement(tagName?: string): Class_XmlElement;
 
 	/**
 	 * 
@@ -233,7 +236,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	createElementNS(namespaceURI: string, qualifiedName: string): Class_XmlElement;
+	createElementNS(namespaceURI?: string, qualifiedName?: string): Class_XmlElement;
 
 	/**
 	 * 
@@ -244,7 +247,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	createTextNode(data: string): Class_XmlText;
+	createTextNode(data?: string): Class_XmlText;
 
 	/**
 	 * 
@@ -255,7 +258,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	createComment(data: string): Class_XmlComment;
+	createComment(data?: string): Class_XmlComment;
 
 	/**
 	 * 
@@ -266,7 +269,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	createCDATASection(data: string): Class_XmlCDATASection;
+	createCDATASection(data?: string): Class_XmlCDATASection;
 
 	/**
 	 * 
@@ -278,7 +281,7 @@ declare class Class_XmlDocument extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	createProcessingInstruction(target: string, data: string): Class_XmlProcessingInstruction;
+	createProcessingInstruction(target?: string, data?: string): Class_XmlProcessingInstruction;
 
 } /** endof class */
 

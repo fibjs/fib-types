@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -215,7 +218,7 @@ declare module "path_win32" {
 		 * 
 		 * 
 		 */
-		export function normalize(path: string): string;
+		export function normalize(path?: string): string;
 	
 		/**
 		 * 
@@ -228,7 +231,7 @@ declare module "path_win32" {
 		 * 
 		 * 
 		 */
-		export function basename(path: string, ext?: string/** = ""*/): string;
+		export function basename(path?: string, ext?: string/** = ""*/): string;
 	
 		/**
 		 * 
@@ -240,7 +243,7 @@ declare module "path_win32" {
 		 * 
 		 * 
 		 */
-		export function extname(path: string): string;
+		export function extname(path?: string): string;
 	
 		/**
 		 * 
@@ -252,7 +255,7 @@ declare module "path_win32" {
 		 * 
 		 * 
 		 */
-		export function dirname(path: string): string;
+		export function dirname(path?: string): string;
 	
 		/**
 		 * 
@@ -264,7 +267,7 @@ declare module "path_win32" {
 		 * 
 		 * 
 		 */
-		export function fullpath(path: string): string;
+		export function fullpath(path?: string): string;
 	
 		/**
 		 * 
@@ -276,7 +279,7 @@ declare module "path_win32" {
 		 * 
 		 * 
 		 */
-		export function isAbsolute(path: string): boolean;
+		export function isAbsolute(path?: string): boolean;
 	
 		/**
 		 * 

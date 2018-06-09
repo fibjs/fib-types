@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -100,7 +103,7 @@ declare class Class_StringDecoder extends Class__object {
 	 * 
 	 * 
 	 */
-	end(buf: Class_Buffer): string;
+	end(buf?: Class_Buffer): string;
 
 	/**
 	 * 
@@ -111,7 +114,7 @@ declare class Class_StringDecoder extends Class__object {
 	 * 
 	 * 
 	 */
-	write(buf: Class_Buffer): string;
+	write(buf?: Class_Buffer): string;
 
 	/**
 	 * 
@@ -123,7 +126,7 @@ declare class Class_StringDecoder extends Class__object {
 	 * 
 	 * 
 	 */
-	text(buf: Class_Buffer, offset: number): string;
+	text(buf?: Class_Buffer, offset?: number): string;
 
 	/**
 	 * 
@@ -134,7 +137,7 @@ declare class Class_StringDecoder extends Class__object {
 	 * 
 	 * 
 	 */
-	fillLast(buf: Class_Buffer): string;
+	fillLast(buf?: Class_Buffer): string;
 
 } /** endof class */
 
