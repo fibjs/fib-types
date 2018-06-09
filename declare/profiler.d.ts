@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -381,7 +384,7 @@ declare module "profiler" {
 		 * 
 		 * 
 		 */
-		export function saveSnapshot(fname: string): void;
+		export function saveSnapshot(fname?: string): void;
 	
 		/**
 		 * 
@@ -392,7 +395,7 @@ declare module "profiler" {
 		 * 
 		 * 
 		 */
-		export function loadSnapshot(fname: string): Class_HeapSnapshot;
+		export function loadSnapshot(fname?: string): Class_HeapSnapshot;
 	
 		/**
 		 * 
@@ -413,7 +416,7 @@ declare module "profiler" {
 		 * 
 		 * 
 		 */
-		export function diff(test: Function): Object;
+		export function diff(test?: Function): Object;
 	
 		/**
 		 * 
@@ -426,7 +429,7 @@ declare module "profiler" {
 		 * 
 		 * 
 		 */
-		export function start(fname: string, time?: number/** = 60000*/, interval?: number/** = 100*/): Class_Timer;
+		export function start(fname?: string, time?: number/** = 60000*/, interval?: number/** = 100*/): Class_Timer;
 	
 	} /** end of `module profiler` */
 	export = profiler

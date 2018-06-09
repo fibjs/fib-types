@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -226,7 +229,7 @@ declare class Class_XmlNode extends Class__object {
 	 * 
 	 * 
 	 */
-	lookupPrefix(namespaceURI: string): string;
+	lookupPrefix(namespaceURI?: string): string;
 
 	/**
 	 * 
@@ -237,7 +240,7 @@ declare class Class_XmlNode extends Class__object {
 	 * 
 	 * 
 	 */
-	lookupNamespaceURI(prefix: string): string;
+	lookupNamespaceURI(prefix?: string): string;
 
 	/**
 	 * 
@@ -251,7 +254,7 @@ declare class Class_XmlNode extends Class__object {
 	 * 
 	 * 
 	 */
-	insertBefore(newChild: Class_XmlNode, refChild: Class_XmlNode): Class_XmlNode;
+	insertBefore(newChild?: Class_XmlNode, refChild?: Class_XmlNode): Class_XmlNode;
 
 	/**
 	 * 
@@ -265,7 +268,7 @@ declare class Class_XmlNode extends Class__object {
 	 * 
 	 * 
 	 */
-	insertAfter(newChild: Class_XmlNode, refChild: Class_XmlNode): Class_XmlNode;
+	insertAfter(newChild?: Class_XmlNode, refChild?: Class_XmlNode): Class_XmlNode;
 
 	/**
 	 * 
@@ -278,7 +281,7 @@ declare class Class_XmlNode extends Class__object {
 	 * 
 	 * 
 	 */
-	appendChild(newChild: Class_XmlNode): Class_XmlNode;
+	appendChild(newChild?: Class_XmlNode): Class_XmlNode;
 
 	/**
 	 * 
@@ -292,7 +295,7 @@ declare class Class_XmlNode extends Class__object {
 	 * 
 	 * 
 	 */
-	replaceChild(newChild: Class_XmlNode, oldChild: Class_XmlNode): Class_XmlNode;
+	replaceChild(newChild?: Class_XmlNode, oldChild?: Class_XmlNode): Class_XmlNode;
 
 	/**
 	 * 
@@ -303,7 +306,7 @@ declare class Class_XmlNode extends Class__object {
 	 * 
 	 * 
 	 */
-	removeChild(oldChild: Class_XmlNode): Class_XmlNode;
+	removeChild(oldChild?: Class_XmlNode): Class_XmlNode;
 
 } /** endof class */
 

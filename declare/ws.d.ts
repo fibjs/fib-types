@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -289,6 +292,8 @@ declare module "ws" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 创建一个 websocket 消息对象，参见 WebSocketMessage ","deprecated":null,"name":"Message","type":"WebSocketMessage","doc":{"descript":"创建一个 websocket 消息对象，参见 WebSocketMessage","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 websocket 消息对象，参见 WebSocketMessage ","deprecated":null,"name":"Message","type":"WebSocketMessage","doc":{"descript":"创建一个 websocket 消息对象，参见 WebSocketMessage","detail":[],"params":[]}}]} */
 		
 		export class WebSocketMessage extends Class_WebSocketMessage {}
 		
@@ -298,6 +303,8 @@ declare module "ws" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief WebSocket 对象，参见 WebSocket ","deprecated":null,"name":"Socket","type":"WebSocket","doc":{"descript":"WebSocket 对象，参见 WebSocket","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief WebSocket 对象，参见 WebSocket ","deprecated":null,"name":"Socket","type":"WebSocket","doc":{"descript":"WebSocket 对象，参见 WebSocket","detail":[],"params":[]}}]} */
 		
 		export class WebSocket extends Class_WebSocket {}
 		
@@ -313,7 +320,7 @@ declare module "ws" {
 		 * 
 		 * 
 		 */
-		export function upgrade(accept: Function): Class_Handler;
+		export function upgrade(accept?: Function): Class_Handler;
 	
 	} /** end of `module ws` */
 	export = ws

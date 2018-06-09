@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -59,7 +62,7 @@ declare class Class_XmlCharacterData extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	substringData(offset: number, count: number): string;
+	substringData(offset?: number, count?: number): string;
 
 	/**
 	 * 
@@ -69,7 +72,7 @@ declare class Class_XmlCharacterData extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	appendData(arg: string): void;
+	appendData(arg?: string): void;
 
 	/**
 	 * 
@@ -80,7 +83,7 @@ declare class Class_XmlCharacterData extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	insertData(offset: number, arg: string): void;
+	insertData(offset?: number, arg?: string): void;
 
 	/**
 	 * 
@@ -91,7 +94,7 @@ declare class Class_XmlCharacterData extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	deleteData(offset: number, count: number): void;
+	deleteData(offset?: number, count?: number): void;
 
 	/**
 	 * 
@@ -103,7 +106,7 @@ declare class Class_XmlCharacterData extends Class_XmlNode {
 	 * 
 	 * 
 	 */
-	replaceData(offset: number, count: number, arg: string): void;
+	replaceData(offset?: number, count?: number, arg?: string): void;
 
 } /** endof class */
 

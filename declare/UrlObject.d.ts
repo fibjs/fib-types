@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -213,7 +216,7 @@ declare class Class_UrlObject extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(args: Object);
+	constructor(args?: Object);
 
 	/**
 	 * 
@@ -237,7 +240,7 @@ declare class Class_UrlObject extends Class__object {
 	 * 
 	 * 
 	 */
-	parse(url: string, parseQueryString?: boolean/** = false*/, slashesDenoteHost?: boolean/** = false*/): void;
+	parse(url?: string, parseQueryString?: boolean/** = false*/, slashesDenoteHost?: boolean/** = false*/): void;
 
 	/**
 	 * 
@@ -247,7 +250,7 @@ declare class Class_UrlObject extends Class__object {
 	 * 
 	 * 
 	 */
-	format(args: Object): void;
+	format(args?: Object): void;
 
 	/**
 	 * 
@@ -258,7 +261,7 @@ declare class Class_UrlObject extends Class__object {
 	 * 
 	 * 
 	 */
-	resolve(url: string): Class_UrlObject;
+	resolve(url?: string): Class_UrlObject;
 
 	/**
 	 * 

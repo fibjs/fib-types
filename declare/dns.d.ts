@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -214,7 +217,7 @@ declare module "dns" {
 		 * 
 		 * @async
 		 */
-		export function resolve(name: string): any[];
+		export function resolve(name?: string): any[];
 	
 		/**
 		 * 
@@ -225,7 +228,7 @@ declare module "dns" {
 		 * 
 		 * @async
 		 */
-		export function lookup(name: string): string;
+		export function lookup(name?: string): string;
 	
 	} /** end of `module dns` */
 	export = dns

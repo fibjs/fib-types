@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -214,7 +217,7 @@ declare module "url" {
 		 * 
 		 * 
 		 */
-		export function format(args: Object): string;
+		export function format(args?: Object): string;
 	
 		/**
 		 * 
@@ -227,7 +230,7 @@ declare module "url" {
 		 * 
 		 * 
 		 */
-		export function parse(url: string, parseQueryString?: boolean/** = false*/, slashesDenoteHost?: boolean/** = false*/): Class_UrlObject;
+		export function parse(url?: string, parseQueryString?: boolean/** = false*/, slashesDenoteHost?: boolean/** = false*/): Class_UrlObject;
 	
 	} /** end of `module url` */
 	export = url

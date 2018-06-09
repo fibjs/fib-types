@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -377,6 +380,8 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief Cipher 构造函数，参见 Cipher ","deprecated":null,"name":"Cipher","type":"Cipher","doc":{"descript":"Cipher 构造函数，参见 Cipher","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief Cipher 构造函数，参见 Cipher ","deprecated":null,"name":"Cipher","type":"Cipher","doc":{"descript":"Cipher 构造函数，参见 Cipher","detail":[],"params":[]}}]} */
 		
 		export class Cipher extends Class_Cipher {}
 		
@@ -386,6 +391,8 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief PKey 构造函数，参见 PKey ","deprecated":null,"name":"PKey","type":"PKey","doc":{"descript":"PKey 构造函数，参见 PKey","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief PKey 构造函数，参见 PKey ","deprecated":null,"name":"PKey","type":"PKey","doc":{"descript":"PKey 构造函数，参见 PKey","detail":[],"params":[]}}]} */
 		
 		export class PKey extends Class_PKey {}
 		
@@ -395,6 +402,8 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief X509Cert 构造函数，参见 X509Cert ","deprecated":null,"name":"X509Cert","type":"X509Cert","doc":{"descript":"X509Cert 构造函数，参见 X509Cert","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief X509Cert 构造函数，参见 X509Cert ","deprecated":null,"name":"X509Cert","type":"X509Cert","doc":{"descript":"X509Cert 构造函数，参见 X509Cert","detail":[],"params":[]}}]} */
 		
 		export class X509Cert extends Class_X509Cert {}
 		
@@ -404,6 +413,8 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief X509Crl 构造函数，参见 X509Crl ","deprecated":null,"name":"X509Crl","type":"X509Crl","doc":{"descript":"X509Crl 构造函数，参见 X509Crl","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief X509Crl 构造函数，参见 X509Crl ","deprecated":null,"name":"X509Crl","type":"X509Crl","doc":{"descript":"X509Crl 构造函数，参见 X509Crl","detail":[],"params":[]}}]} */
 		
 		export class X509Crl extends Class_X509Crl {}
 		
@@ -413,6 +424,8 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief X509Req 构造函数，参见 X509Req ","deprecated":null,"name":"X509Req","type":"X509Req","doc":{"descript":"X509Req 构造函数，参见 X509Req","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief X509Req 构造函数，参见 X509Req ","deprecated":null,"name":"X509Req","type":"X509Req","doc":{"descript":"X509Req 构造函数，参见 X509Req","detail":[],"params":[]}}]} */
 		
 		export class X509Req extends Class_X509Req {}
 		
@@ -427,7 +440,7 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
-		export function createHash(algo: string): Class_Digest;
+		export function createHash(algo?: string): Class_Digest;
 	
 		/**
 		 * 
@@ -439,7 +452,7 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
-		export function createHmac(algo: string, key: Class_Buffer): Class_Digest;
+		export function createHmac(algo?: string, key?: Class_Buffer): Class_Digest;
 	
 		/**
 		 * 
@@ -451,7 +464,7 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
-		export function loadPKey(filename: string, password?: string/** = ""*/): Class_PKey;
+		export function loadPKey(filename?: string, password?: string/** = ""*/): Class_PKey;
 	
 		/**
 		 * 
@@ -464,7 +477,7 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
-		export function loadCert(filename: string): Class_X509Cert;
+		export function loadCert(filename?: string): Class_X509Cert;
 	
 		/**
 		 * 
@@ -475,7 +488,7 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
-		export function loadCrl(filename: string): Class_X509Crl;
+		export function loadCrl(filename?: string): Class_X509Crl;
 	
 		/**
 		 * 
@@ -486,7 +499,7 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
-		export function loadReq(filename: string): Class_X509Req;
+		export function loadReq(filename?: string): Class_X509Req;
 	
 		/**
 		 * 
@@ -497,7 +510,7 @@ declare module "crypto" {
 		 * 
 		 * @async
 		 */
-		export function randomBytes(size: number): Class_Buffer;
+		export function randomBytes(size?: number): Class_Buffer;
 	
 		/**
 		 * 
@@ -508,7 +521,7 @@ declare module "crypto" {
 		 * 
 		 * @async
 		 */
-		export function simpleRandomBytes(size: number): Class_Buffer;
+		export function simpleRandomBytes(size?: number): Class_Buffer;
 	
 		/**
 		 * 
@@ -519,7 +532,7 @@ declare module "crypto" {
 		 * 
 		 * @async
 		 */
-		export function pseudoRandomBytes(size: number): Class_Buffer;
+		export function pseudoRandomBytes(size?: number): Class_Buffer;
 	
 		/**
 		 * 
@@ -532,7 +545,7 @@ declare module "crypto" {
 		 * 
 		 * 
 		 */
-		export function randomArt(data: Class_Buffer, title: string, size?: number/** = 8*/): string;
+		export function randomArt(data?: Class_Buffer, title?: string, size?: number/** = 8*/): string;
 	
 		/**
 		 * 
@@ -547,7 +560,7 @@ declare module "crypto" {
 		 * 
 		 * @async
 		 */
-		export function pbkdf1(password: Class_Buffer, salt: Class_Buffer, iterations: number, size: number, algo: number): Class_Buffer;
+		export function pbkdf1(password?: Class_Buffer, salt?: Class_Buffer, iterations?: number, size?: number, algo?: number): Class_Buffer;
 	
 		/**
 		 * 
@@ -562,7 +575,7 @@ declare module "crypto" {
 		 * 
 		 * @async
 		 */
-		export function pbkdf1(password: Class_Buffer, salt: Class_Buffer, iterations: number, size: number, algoName: string): Class_Buffer;
+		export function pbkdf1(password?: Class_Buffer, salt?: Class_Buffer, iterations?: number, size?: number, algoName?: string): Class_Buffer;
 	
 		/**
 		 * 
@@ -577,7 +590,7 @@ declare module "crypto" {
 		 * 
 		 * @async
 		 */
-		export function pbkdf2(password: Class_Buffer, salt: Class_Buffer, iterations: number, size: number, algo: number): Class_Buffer;
+		export function pbkdf2(password?: Class_Buffer, salt?: Class_Buffer, iterations?: number, size?: number, algo?: number): Class_Buffer;
 	
 		/**
 		 * 
@@ -592,7 +605,7 @@ declare module "crypto" {
 		 * 
 		 * @async
 		 */
-		export function pbkdf2(password: Class_Buffer, salt: Class_Buffer, iterations: number, size: number, algoName: string): Class_Buffer;
+		export function pbkdf2(password?: Class_Buffer, salt?: Class_Buffer, iterations?: number, size?: number, algoName?: string): Class_Buffer;
 	
 	} /** end of `module crypto` */
 	export = crypto

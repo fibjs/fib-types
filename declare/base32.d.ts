@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -214,7 +217,7 @@ declare module "base32" {
 		 * 
 		 * 
 		 */
-		export function encode(data: Class_Buffer): string;
+		export function encode(data?: Class_Buffer): string;
 	
 		/**
 		 * 
@@ -225,7 +228,7 @@ declare module "base32" {
 		 * 
 		 * 
 		 */
-		export function decode(data: string): Class_Buffer;
+		export function decode(data?: string): Class_Buffer;
 	
 	} /** end of `module base32` */
 	export = base32

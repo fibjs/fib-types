@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -209,6 +212,8 @@ declare module "os" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief Service 构造函数，参见 Service ","deprecated":null,"name":"Service","type":"Service","doc":{"descript":"Service 构造函数，参见 Service","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief Service 构造函数，参见 Service ","deprecated":null,"name":"Service","type":"Service","doc":{"descript":"Service 构造函数，参见 Service","detail":[],"params":[]}}]} */
 		
 		export class Service extends Class_Service {}
 		
@@ -384,7 +389,7 @@ declare module "os" {
 		 * 
 		 * @async
 		 */
-		export function openPrinter(name: string): Class_BufferedStream;
+		export function openPrinter(name?: string): Class_BufferedStream;
 	
 		/**
 		 * 
@@ -418,7 +423,7 @@ declare module "os" {
 		 * 
 		 * 
 		 */
-		export function dateAdd(d: Date, num: number, part: string): Date;
+		export function dateAdd(d?: Date, num?: number, part?: string): Date;
 	
 		/**
 		 * 

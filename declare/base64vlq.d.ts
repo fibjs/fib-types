@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -214,7 +217,7 @@ declare module "base64vlq" {
 		 * 
 		 * 
 		 */
-		export function encode(data: number): string;
+		export function encode(data?: number): string;
 	
 		/**
 		 * 
@@ -225,7 +228,7 @@ declare module "base64vlq" {
 		 * 
 		 * 
 		 */
-		export function encode(data: any[]): string;
+		export function encode(data?: any[]): string;
 	
 		/**
 		 * 
@@ -236,7 +239,7 @@ declare module "base64vlq" {
 		 * 
 		 * 
 		 */
-		export function decode(data: string): any[];
+		export function decode(data?: string): any[];
 	
 	} /** end of `module base64vlq` */
 	export = base64vlq

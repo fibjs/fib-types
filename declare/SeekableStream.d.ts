@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -32,7 +35,7 @@ declare class Class_SeekableStream extends Class_Stream {
 	 * 
 	 * 
 	 */
-	seek(offset: number, whence: number): void;
+	seek(offset?: number, whence?: number): void;
 
 	/**
 	 * 
@@ -80,7 +83,7 @@ declare class Class_SeekableStream extends Class_Stream {
 	 * 
 	 * @async
 	 */
-	truncate(bytes: number): void;
+	truncate(bytes?: number): void;
 
 	/**
 	 * 

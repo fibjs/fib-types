@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -78,7 +81,7 @@ declare class Class_HandlerEx extends Class_Handler {
 	 * 
 	 * 
 	 */
-	onerror(hdlrs: Object): void;
+	onerror(hdlrs?: Object): void;
 
 } /** endof class */
 

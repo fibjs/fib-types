@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -209,6 +212,8 @@ declare module "vm" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 创建一个 SandBox 对象，参见 SandBox ","deprecated":null,"name":"SandBox","type":"SandBox","doc":{"descript":"创建一个 SandBox 对象，参见 SandBox","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个 SandBox 对象，参见 SandBox ","deprecated":null,"name":"SandBox","type":"SandBox","doc":{"descript":"创建一个 SandBox 对象，参见 SandBox","detail":[],"params":[]}}]} */
 		
 		export class SandBox extends Class_SandBox {}
 		

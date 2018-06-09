@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -257,7 +260,7 @@ declare module "uuid" {
 		 * 
 		 * 
 		 */
-		export function md5(ns: number, name: string): Class_Buffer;
+		export function md5(ns?: number, name?: string): Class_Buffer;
 	
 		/**
 		 * 
@@ -279,7 +282,7 @@ declare module "uuid" {
 		 * 
 		 * 
 		 */
-		export function sha1(ns: number, name: string): Class_Buffer;
+		export function sha1(ns?: number, name?: string): Class_Buffer;
 	
 		/**
 		 * 

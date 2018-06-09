@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -78,7 +81,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(DerKey: Class_Buffer, password?: string/** = ""*/);
+	constructor(DerKey?: Class_Buffer, password?: string/** = ""*/);
 
 	/**
 	 * 
@@ -89,7 +92,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(pemKey: string, password?: string/** = ""*/);
+	constructor(pemKey?: string, password?: string/** = ""*/);
 
 	/**
 	 * 
@@ -141,7 +144,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(jsonKey: Object);
+	constructor(jsonKey?: Object);
 
 	/**
 	 * 
@@ -151,7 +154,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * @async
 	 */
-	genRsaKey(size: number): void;
+	genRsaKey(size?: number): void;
 
 	/**
 	 * 
@@ -192,7 +195,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * 
 	 */
-	importKey(DerKey: Class_Buffer, password?: string/** = ""*/): void;
+	importKey(DerKey?: Class_Buffer, password?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -203,7 +206,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * 
 	 */
-	importKey(pemKey: string, password?: string/** = ""*/): void;
+	importKey(pemKey?: string, password?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -255,7 +258,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * 
 	 */
-	importKey(jsonKey: Object): void;
+	importKey(jsonKey?: Object): void;
 
 	/**
 	 * 
@@ -266,7 +269,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * 
 	 */
-	importFile(filename: string, password?: string/** = ""*/): void;
+	importFile(filename?: string, password?: string/** = ""*/): void;
 
 	/**
 	 * 
@@ -307,7 +310,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * @async
 	 */
-	encrypt(data: Class_Buffer): Class_Buffer;
+	encrypt(data?: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -318,7 +321,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * @async
 	 */
-	decrypt(data: Class_Buffer): Class_Buffer;
+	decrypt(data?: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -330,7 +333,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * @async
 	 */
-	sign(data: Class_Buffer, alg?: number/** = 0*/): Class_Buffer;
+	sign(data?: Class_Buffer, alg?: number/** = 0*/): Class_Buffer;
 
 	/**
 	 * 
@@ -343,7 +346,7 @@ declare class Class_PKey extends Class__object {
 	 * 
 	 * @async
 	 */
-	verify(data: Class_Buffer, sign: Class_Buffer, alg?: number/** = 0*/): boolean;
+	verify(data?: Class_Buffer, sign?: Class_Buffer, alg?: number/** = 0*/): boolean;
 
 } /** endof class */
 

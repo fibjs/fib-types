@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -43,7 +46,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(datas: any[]);
+	constructor(datas?: any[]);
 
 	/**
 	 * 
@@ -53,7 +56,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(datas: ArrayBuffer);
+	constructor(datas?: ArrayBuffer);
 
 	/**
 	 * 
@@ -63,7 +66,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(datas: TypedArray);
+	constructor(datas?: TypedArray);
 
 	/**
 	 * 
@@ -73,7 +76,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(datas: ArrayBufferView);
+	constructor(datas?: ArrayBufferView);
 
 	/**
 	 * 
@@ -83,7 +86,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(buffer: Class_Buffer);
+	constructor(buffer?: Class_Buffer);
 
 	/**
 	 * 
@@ -94,7 +97,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(str: string, codec?: string/** = "utf8"*/);
+	constructor(str?: string, codec?: string/** = "utf8"*/);
 
 	/**
 	 * 
@@ -115,7 +118,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static isBuffer(v: any): boolean;
+	static isBuffer(v?: any): boolean;
 
 	/**
 	 * 
@@ -128,7 +131,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static from(buffer: Class_Buffer, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Class_Buffer;
+	static from(buffer?: Class_Buffer, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Class_Buffer;
 
 	/**
 	 * 
@@ -141,7 +144,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static from(str: string, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Class_Buffer;
+	static from(str?: string, byteOffset?: number/** = 0*/, length?: number/** = -1*/): Class_Buffer;
 
 	/**
 	 * 
@@ -153,7 +156,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static from(str: string, codec?: string/** = "utf8"*/): Class_Buffer;
+	static from(str?: string, codec?: string/** = "utf8"*/): Class_Buffer;
 
 	/**
 	 * 
@@ -165,7 +168,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static concat(buflist: any[], cutLength?: number/** = -1*/): Class_Buffer;
+	static concat(buflist?: any[], cutLength?: number/** = -1*/): Class_Buffer;
 
 	/**
 	 * 
@@ -178,7 +181,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static alloc(size: number, fill?: number/** = 0*/, codec?: string/** = "utf8"*/): Class_Buffer;
+	static alloc(size?: number, fill?: number/** = 0*/, codec?: string/** = "utf8"*/): Class_Buffer;
 
 	/**
 	 * 
@@ -191,7 +194,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static alloc(size: number, fill?: string/** = ""*/, codec?: string/** = "utf8"*/): Class_Buffer;
+	static alloc(size?: number, fill?: string/** = ""*/, codec?: string/** = "utf8"*/): Class_Buffer;
 
 	/**
 	 * 
@@ -204,7 +207,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static alloc(size: number, fill: Class_Buffer, codec?: string/** = "utf8"*/): Class_Buffer;
+	static alloc(size?: number, fill?: Class_Buffer, codec?: string/** = "utf8"*/): Class_Buffer;
 
 	/**
 	 * 
@@ -215,7 +218,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static allocUnsafe(size: number): Class_Buffer;
+	static allocUnsafe(size?: number): Class_Buffer;
 
 	/**
 	 * 
@@ -226,7 +229,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static allocUnsafeSlow(size: number): Class_Buffer;
+	static allocUnsafeSlow(size?: number): Class_Buffer;
 
 	/**
 	 * 
@@ -238,7 +241,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static byteLength(str: string, codec?: string/** = "utf8"*/): number;
+	static byteLength(str?: string, codec?: string/** = "utf8"*/): number;
 
 	/**
 	 * 
@@ -250,7 +253,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static byteLength(str: ArrayBuffer, codec?: string/** = "utf8"*/): number;
+	static byteLength(str?: ArrayBuffer, codec?: string/** = "utf8"*/): number;
 
 	/**
 	 * 
@@ -262,7 +265,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static byteLength(str: ArrayBufferView, codec?: string/** = "utf8"*/): number;
+	static byteLength(str?: ArrayBufferView, codec?: string/** = "utf8"*/): number;
 
 	/**
 	 * 
@@ -274,7 +277,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static byteLength(str: Class_Buffer, codec?: string/** = "utf8"*/): number;
+	static byteLength(str?: Class_Buffer, codec?: string/** = "utf8"*/): number;
 
 	/**
 	 * 
@@ -285,7 +288,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	static isEncoding(codec: string): boolean;
+	static isEncoding(codec?: string): boolean;
 
 	/**
 	 * 
@@ -295,7 +298,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	resize(sz: number): void;
+	resize(sz?: number): void;
 
 	/**
 	 * 
@@ -305,7 +308,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	append(data: Class_Buffer): void;
+	append(data?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -316,7 +319,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	append(str: string, codec?: string/** = "utf8"*/): void;
+	append(str?: string, codec?: string/** = "utf8"*/): void;
 
 	/**
 	 * 
@@ -330,7 +333,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	write(str: string, offset?: number/** = 0*/, length?: number/** = -1*/, codec?: string/** = "utf8"*/): number;
+	write(str?: string, offset?: number/** = 0*/, length?: number/** = -1*/, codec?: string/** = "utf8"*/): number;
 
 	/**
 	 * 
@@ -343,7 +346,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	write(str: string, offset?: number/** = 0*/, codec?: string/** = "utf8"*/): number;
+	write(str?: string, offset?: number/** = 0*/, codec?: string/** = "utf8"*/): number;
 
 	/**
 	 * 
@@ -355,7 +358,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	write(str: string, codec?: string/** = "utf8"*/): number;
+	write(str?: string, codec?: string/** = "utf8"*/): number;
 
 	/**
 	 * 
@@ -368,7 +371,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	fill(v: number, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
+	fill(v?: number, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
 
 	/**
 	 * 
@@ -381,7 +384,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	fill(v: Class_Buffer, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
+	fill(v?: Class_Buffer, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
 
 	/**
 	 * 
@@ -394,7 +397,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	fill(v: string, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
+	fill(v?: string, offset?: number/** = 0*/, end?: number/** = -1*/): Class_Buffer;
 
 	/**
 	 * 
@@ -406,7 +409,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	indexOf(v: number, offset?: number/** = 0*/): number;
+	indexOf(v?: number, offset?: number/** = 0*/): number;
 
 	/**
 	 * 
@@ -418,7 +421,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	indexOf(v: Class_Buffer, offset?: number/** = 0*/): number;
+	indexOf(v?: Class_Buffer, offset?: number/** = 0*/): number;
 
 	/**
 	 * 
@@ -430,7 +433,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	indexOf(v: string, offset?: number/** = 0*/): number;
+	indexOf(v?: string, offset?: number/** = 0*/): number;
 
 	/**
 	 * 
@@ -441,7 +444,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	compare(buf: Class_Buffer): number;
+	compare(buf?: Class_Buffer): number;
 
 	/**
 	 * 
@@ -455,7 +458,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	copy(targetBuffer: Class_Buffer, targetStart?: number/** = 0*/, sourceStart?: number/** = 0*/, sourceEnd?: number/** = -1*/): number;
+	copy(targetBuffer?: Class_Buffer, targetStart?: number/** = 0*/, sourceStart?: number/** = 0*/, sourceEnd?: number/** = -1*/): number;
 
 	/**
 	 * 
@@ -708,7 +711,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeUInt8(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeUInt8(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -721,7 +724,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeUInt16LE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeUInt16LE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -734,7 +737,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeUInt16BE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeUInt16BE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -747,7 +750,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeUInt32LE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeUInt32LE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -760,7 +763,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeUInt32BE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeUInt32BE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -773,7 +776,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeUIntLE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeUIntLE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -786,7 +789,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeUIntBE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeUIntBE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -799,7 +802,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeInt8(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt8(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -812,7 +815,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeInt16LE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt16LE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -825,7 +828,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeInt16BE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt16BE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -838,7 +841,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeInt32LE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt32LE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -851,7 +854,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeInt32BE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt32BE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -864,7 +867,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeIntLE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeIntLE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -877,7 +880,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeIntBE(value: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeIntBE(value?: number, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -890,7 +893,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeInt64LE(value: Class_Int64, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt64LE(value?: Class_Int64, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -903,7 +906,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeInt64BE(value: Class_Int64, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
+	writeInt64BE(value?: Class_Int64, offset?: number/** = 0*/, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -916,7 +919,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeFloatLE(value: number, offset: number, noAssert?: boolean/** = false*/): number;
+	writeFloatLE(value?: number, offset?: number, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -929,7 +932,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeFloatBE(value: number, offset: number, noAssert?: boolean/** = false*/): number;
+	writeFloatBE(value?: number, offset?: number, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -942,7 +945,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeDoubleLE(value: number, offset: number, noAssert?: boolean/** = false*/): number;
+	writeDoubleLE(value?: number, offset?: number, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -955,7 +958,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	writeDoubleBE(value: number, offset: number, noAssert?: boolean/** = false*/): number;
+	writeDoubleBE(value?: number, offset?: number, noAssert?: boolean/** = false*/): number;
 
 	/**
 	 * 
@@ -978,7 +981,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	slice(start: number, end: number): Class_Buffer;
+	slice(start?: number, end?: number): Class_Buffer;
 
 	/**
 	 * 
@@ -1010,7 +1013,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	equals(expected: Class_object): boolean;
+	equals(expected?: Class__object): boolean;
 
 	/**
 	 * 
@@ -1097,7 +1100,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	toString(codec: string, offset?: number/** = 0*/, end: number): string;
+	toString(codec?: string, offset?: number/** = 0*/, end?: number): string;
 
 	/**
 	 * 
@@ -1109,7 +1112,7 @@ declare class Class_Buffer extends Class__object {
 	 * 
 	 * 
 	 */
-	toString(codec: string, offset?: number/** = 0*/): string;
+	toString(codec?: string, offset?: number/** = 0*/): string;
 
 	/**
 	 * 

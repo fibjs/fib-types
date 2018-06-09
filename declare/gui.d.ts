@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -261,7 +264,7 @@ declare module "gui" {
 		 * 
 		 * 
 		 */
-		export function setVersion(ver: number): void;
+		export function setVersion(ver?: number): void;
 	
 		/**
 		 * 
@@ -290,7 +293,7 @@ declare module "gui" {
 		 * 
 		 * 
 		 */
-		export function open(url: string, opt?: Object/** = v8::Object::New(isolate)*/): Class_WebView;
+		export function open(url?: string, opt?: Object/** = v8::Object::New(isolate)*/): Class_WebView;
 	
 	} /** end of `module gui` */
 	export = gui

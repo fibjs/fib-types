@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -55,7 +58,7 @@ declare class Class_ZmqSocket extends Class__object {
 	 * 
 	 * 
 	 */
-	bind(addr: string): void;
+	bind(addr?: string): void;
 
 	/**
 	 * 
@@ -65,7 +68,7 @@ declare class Class_ZmqSocket extends Class__object {
 	 * 
 	 * 
 	 */
-	connect(addr: string): void;
+	connect(addr?: string): void;
 
 	/**
 	 * 
@@ -85,7 +88,7 @@ declare class Class_ZmqSocket extends Class__object {
 	 * 
 	 * 
 	 */
-	send(data: Class_Buffer): void;
+	send(data?: Class_Buffer): void;
 
 	/**
 	 * 

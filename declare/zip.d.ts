@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -230,7 +233,7 @@ declare module "zip" {
 		 * 
 		 * @async
 		 */
-		export function isZipFile(filename: string): boolean;
+		export function isZipFile(filename?: string): boolean;
 	
 		/**
 		 * 
@@ -243,7 +246,7 @@ declare module "zip" {
 		 * 
 		 * @async
 		 */
-		export function open(path: string, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
+		export function open(path?: string, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
 	
 		/**
 		 * 
@@ -256,7 +259,7 @@ declare module "zip" {
 		 * 
 		 * @async
 		 */
-		export function open(data: Class_Buffer, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
+		export function open(data?: Class_Buffer, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
 	
 		/**
 		 * 
@@ -269,7 +272,7 @@ declare module "zip" {
 		 * 
 		 * @async
 		 */
-		export function open(strm: Class_SeekableStream, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
+		export function open(strm?: Class_SeekableStream, mod?: string/** = "r"*/, compress_type?: number/** = undefined*/): Class_ZipFile;
 	
 	} /** end of `module zip` */
 	export = zip

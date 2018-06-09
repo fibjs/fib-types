@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -68,7 +71,7 @@ declare class Class_HeapSnapshot extends Class__object {
 	 * 
 	 * 
 	 */
-	diff(before: Class_HeapSnapshot): Object;
+	diff(before?: Class_HeapSnapshot): Object;
 
 	/**
 	 * 
@@ -79,7 +82,7 @@ declare class Class_HeapSnapshot extends Class__object {
 	 * 
 	 * 
 	 */
-	getNodeById(id: number): Class_HeapGraphNode;
+	getNodeById(id?: number): Class_HeapGraphNode;
 
 	/**
 	 * 
@@ -89,7 +92,7 @@ declare class Class_HeapSnapshot extends Class__object {
 	 * 
 	 * @async
 	 */
-	save(fname: string): void;
+	save(fname?: string): void;
 
 } /** endof class */
 

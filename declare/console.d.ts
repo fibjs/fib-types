@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -312,7 +315,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function add(type: string): void;
+		export function add(type?: string): void;
 	
 		/**
 		 * 
@@ -363,7 +366,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function add(cfg: Object): void;
+		export function add(cfg?: Object): void;
 	
 		/**
 		 * 
@@ -383,7 +386,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function add(cfg: any[]): void;
+		export function add(cfg?: any[]): void;
 	
 		/**
 		 * 
@@ -404,7 +407,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function log(fmt: string, ...args: any[]): void;
+		export function log(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -429,7 +432,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function debug(fmt: string, ...args: any[]): void;
+		export function debug(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -454,7 +457,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function info(fmt: string, ...args: any[]): void;
+		export function info(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -479,7 +482,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function notice(fmt: string, ...args: any[]): void;
+		export function notice(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -504,7 +507,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function warn(fmt: string, ...args: any[]): void;
+		export function warn(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -529,7 +532,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function error(fmt: string, ...args: any[]): void;
+		export function error(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -554,7 +557,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function crit(fmt: string, ...args: any[]): void;
+		export function crit(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -579,7 +582,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function alert(fmt: string, ...args: any[]): void;
+		export function alert(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -601,7 +604,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function dir(obj: any): void;
+		export function dir(obj?: any): void;
 	
 		/**
 		 * 
@@ -646,7 +649,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function assert(value: any, msg?: string/** = ""*/): void;
+		export function assert(value?: any, msg?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -657,7 +660,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function print(fmt: string, ...args: any[]): void;
+		export function print(fmt?: string, ...args: any[]): void;
 	
 		/**
 		 * 
@@ -678,7 +681,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function moveTo(row: number, column: number): void;
+		export function moveTo(row?: number, column?: number): void;
 	
 		/**
 		 * 
@@ -719,7 +722,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function keyDown(key: string, modifier?: string/** = ""*/): void;
+		export function keyDown(key?: string, modifier?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -736,7 +739,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function keyDown(key: string, modifier: any[]): void;
+		export function keyDown(key?: string, modifier?: any[]): void;
 	
 		/**
 		 * 
@@ -753,7 +756,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function keyUp(key: string, modifier?: string/** = ""*/): void;
+		export function keyUp(key?: string, modifier?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -770,7 +773,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function keyUp(key: string, modifier: any[]): void;
+		export function keyUp(key?: string, modifier?: any[]): void;
 	
 		/**
 		 * 
@@ -787,7 +790,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function keyTap(key: string, modifier?: string/** = ""*/): void;
+		export function keyTap(key?: string, modifier?: string/** = ""*/): void;
 	
 		/**
 		 * 
@@ -804,7 +807,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function keyTap(key: string, modifier: any[]): void;
+		export function keyTap(key?: string, modifier?: any[]): void;
 	
 		/**
 		 * 
@@ -814,7 +817,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function typeString(text: string): void;
+		export function typeString(text?: string): void;
 	
 		/**
 		 * 
@@ -825,7 +828,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function moveMouse(x: number, y: number): void;
+		export function moveMouse(x?: number, y?: number): void;
 	
 		/**
 		 * 
@@ -835,7 +838,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function mouseUp(button: string): void;
+		export function mouseUp(button?: string): void;
 	
 		/**
 		 * 
@@ -845,7 +848,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function mouseDown(button: string): void;
+		export function mouseDown(button?: string): void;
 	
 		/**
 		 * 
@@ -856,7 +859,7 @@ declare module "console" {
 		 * 
 		 * 
 		 */
-		export function clickMouse(button: string, dbclick?: boolean/** = false*/): void;
+		export function clickMouse(button?: string, dbclick?: boolean/** = false*/): void;
 	
 		/**
 		 * 

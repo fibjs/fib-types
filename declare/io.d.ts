@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -209,6 +212,8 @@ declare module "io" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 创建一个内存流对象，参见 MemoryStream ","deprecated":null,"name":"MemoryStream","type":"MemoryStream","doc":{"descript":"创建一个内存流对象，参见 MemoryStream","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个内存流对象，参见 MemoryStream ","deprecated":null,"name":"MemoryStream","type":"MemoryStream","doc":{"descript":"创建一个内存流对象，参见 MemoryStream","detail":[],"params":[]}}]} */
 		
 		export class MemoryStream extends Class_MemoryStream {}
 		
@@ -218,6 +223,8 @@ declare module "io" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 创建一个缓存流读取对象，参见 BufferedStream ","deprecated":null,"name":"BufferedStream","type":"BufferedStream","doc":{"descript":"创建一个缓存流读取对象，参见 BufferedStream","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 创建一个缓存流读取对象，参见 BufferedStream ","deprecated":null,"name":"BufferedStream","type":"BufferedStream","doc":{"descript":"创建一个缓存流读取对象，参见 BufferedStream","detail":[],"params":[]}}]} */
 		
 		export class BufferedStream extends Class_BufferedStream {}
 		
@@ -234,7 +241,7 @@ declare module "io" {
 		 * 
 		 * @async
 		 */
-		export function copyStream(from: Class_Stream, to: Class_Stream, bytes?: number/** = -1*/): number;
+		export function copyStream(from?: Class_Stream, to?: Class_Stream, bytes?: number/** = -1*/): number;
 	
 		/**
 		 * 
@@ -245,7 +252,7 @@ declare module "io" {
 		 * 
 		 * @async
 		 */
-		export function bridge(stm1: Class_Stream, stm2: Class_Stream): void;
+		export function bridge(stm1?: Class_Stream, stm2?: Class_Stream): void;
 	
 	} /** end of `module io` */
 	export = io

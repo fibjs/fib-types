@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -214,7 +217,7 @@ declare module "punycode" {
 		 * 
 		 * 
 		 */
-		export function encode(domain: string): string;
+		export function encode(domain?: string): string;
 	
 		/**
 		 * 
@@ -225,7 +228,7 @@ declare module "punycode" {
 		 * 
 		 * 
 		 */
-		export function decode(domain: string): string;
+		export function decode(domain?: string): string;
 	
 		/**
 		 * 
@@ -236,7 +239,7 @@ declare module "punycode" {
 		 * 
 		 * 
 		 */
-		export function toASCII(domain: string): string;
+		export function toASCII(domain?: string): string;
 	
 		/**
 		 * 
@@ -247,7 +250,7 @@ declare module "punycode" {
 		 * 
 		 * 
 		 */
-		export function toUnicode(domain: string): string;
+		export function toUnicode(domain?: string): string;
 	
 	} /** end of `module punycode` */
 	export = punycode

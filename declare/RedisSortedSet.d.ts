@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -31,7 +34,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	add(sms: Object): number;
+	add(sms?: Object): number;
 
 	/**
 	 * 
@@ -51,7 +54,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	score(member: Class_Buffer): Class_Buffer;
+	score(member?: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 
@@ -62,7 +65,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	incr(member: Class_Buffer, num?: number/** = 1*/): Class_Buffer;
+	incr(member?: Class_Buffer, num?: number/** = 1*/): Class_Buffer;
 
 	/**
 	 * 
@@ -72,7 +75,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	remove(members: any[]): number;
+	remove(members?: any[]): number;
 
 	/**
 	 * 
@@ -102,7 +105,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	count(min: number, max: number): number;
+	count(min?: number, max?: number): number;
 
 	/**
 	 * 
@@ -114,7 +117,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	range(start: number, stop: number, withScores?: boolean/** = false*/): any[];
+	range(start?: number, stop?: number, withScores?: boolean/** = false*/): any[];
 
 	/**
 	 * 
@@ -126,7 +129,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	rangeRev(start: number, stop: number, withScores?: boolean/** = false*/): any[];
+	rangeRev(start?: number, stop?: number, withScores?: boolean/** = false*/): any[];
 
 	/**
 	 * 
@@ -136,7 +139,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	rank(member: Class_Buffer): number;
+	rank(member?: Class_Buffer): number;
 
 	/**
 	 * 
@@ -146,7 +149,7 @@ declare class Class_RedisSortedSet extends Class__object {
 	 * 
 	 * 
 	 */
-	rankRev(member: Class_Buffer): number;
+	rankRev(member?: Class_Buffer): number;
 
 } /** endof class */
 

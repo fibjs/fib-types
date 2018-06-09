@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -32,7 +35,7 @@ declare class Class_MongoCursor extends Class__object {
 	 * 
 	 * @async
 	 */
-	skip(num: number): Class_MongoCursor;
+	skip(num?: number): Class_MongoCursor;
 
 	/**
 	 * 
@@ -43,7 +46,7 @@ declare class Class_MongoCursor extends Class__object {
 	 * 
 	 * @async
 	 */
-	limit(size: number): Class_MongoCursor;
+	limit(size?: number): Class_MongoCursor;
 
 	/**
 	 * 
@@ -54,7 +57,7 @@ declare class Class_MongoCursor extends Class__object {
 	 * 
 	 * 
 	 */
-	sort(opts: Object): Class_MongoCursor;
+	sort(opts?: Object): Class_MongoCursor;
 
 	/**
 	 * 
@@ -105,7 +108,7 @@ declare class Class_MongoCursor extends Class__object {
 	 * 
 	 * 
 	 */
-	forEach(func: Function): void;
+	forEach(func?: Function): void;
 
 	/**
 	 * 
@@ -116,7 +119,7 @@ declare class Class_MongoCursor extends Class__object {
 	 * 
 	 * 
 	 */
-	map(func: Function): any[];
+	map(func?: Function): any[];
 
 	/**
 	 * 
@@ -137,7 +140,7 @@ declare class Class_MongoCursor extends Class__object {
 	 * 
 	 * 
 	 */
-	hint(opts: Object): Class_MongoCursor;
+	hint(opts?: Object): Class_MongoCursor;
 
 } /** endof class */
 

@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -297,6 +300,8 @@ declare module "zmq" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief ZmqSocket 对象，参见 ZmqSocket ","deprecated":null,"name":"Socket","type":"ZmqSocket","doc":{"descript":"ZmqSocket 对象，参见 ZmqSocket","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief ZmqSocket 对象，参见 ZmqSocket ","deprecated":null,"name":"Socket","type":"ZmqSocket","doc":{"descript":"ZmqSocket 对象，参见 ZmqSocket","detail":[],"params":[]}}]} */
 		
 		export class ZmqSocket extends Class_ZmqSocket {}
 		

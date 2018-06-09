@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -45,7 +48,7 @@ declare class Class_XmlNamedNodeMap extends Class__object {
 	 * 
 	 * 
 	 */
-	item(index: number): Class_XmlAttr;
+	item(index?: number): Class_XmlAttr;
 
 	/**
 	 * 
@@ -56,7 +59,7 @@ declare class Class_XmlNamedNodeMap extends Class__object {
 	 * 
 	 * 
 	 */
-	getNamedItem(name: string): Class_XmlAttr;
+	getNamedItem(name?: string): Class_XmlAttr;
 
 } /** endof class */
 

@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -39,7 +42,7 @@ declare class Class_X509Crl extends Class__object {
 	 * 
 	 * 
 	 */
-	load(derCrl: Class_Buffer): void;
+	load(derCrl?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -49,7 +52,7 @@ declare class Class_X509Crl extends Class__object {
 	 * 
 	 * 
 	 */
-	load(pemCrl: string): void;
+	load(pemCrl?: string): void;
 
 	/**
 	 * 
@@ -59,7 +62,7 @@ declare class Class_X509Crl extends Class__object {
 	 * 
 	 * 
 	 */
-	loadFile(filename: string): void;
+	loadFile(filename?: string): void;
 
 	/**
 	 * 

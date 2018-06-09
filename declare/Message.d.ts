@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -156,7 +159,7 @@ declare class Class_Message extends Class__object {
 	 * 
 	 * @async
 	 */
-	write(data: Class_Buffer): void;
+	write(data?: Class_Buffer): void;
 
 	/**
 	 * 
@@ -167,7 +170,7 @@ declare class Class_Message extends Class__object {
 	 * 
 	 * 
 	 */
-	json(data: any): any;
+	json(data?: any): any;
 
 	/**
 	 * 
@@ -213,7 +216,7 @@ declare class Class_Message extends Class__object {
 	 * 
 	 * @async
 	 */
-	sendTo(stm: Class_Stream): void;
+	sendTo(stm?: Class_Stream): void;
 
 	/**
 	 * 
@@ -223,7 +226,7 @@ declare class Class_Message extends Class__object {
 	 * 
 	 * @async
 	 */
-	readFrom(stm: Class_Stream): void;
+	readFrom(stm?: Class_Stream): void;
 
 } /** endof class */
 

@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -281,6 +284,8 @@ declare module "xml" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief xml 文档对象，参见 XmlDocument 对象","deprecated":null,"name":"Document","type":"XmlDocument","doc":{"descript":"xml 文档对象，参见 XmlDocument 对象","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief xml 文档对象，参见 XmlDocument 对象","deprecated":null,"name":"Document","type":"XmlDocument","doc":{"descript":"xml 文档对象，参见 XmlDocument 对象","detail":[],"params":[]}}]} */
 		
 		export class XmlDocument extends Class_XmlDocument {}
 		
@@ -296,7 +301,7 @@ declare module "xml" {
 		 * 
 		 * 
 		 */
-		export function parse(source: string, type?: string/** = "text/xml"*/): Class_XmlDocument;
+		export function parse(source?: string, type?: string/** = "text/xml"*/): Class_XmlDocument;
 	
 		/**
 		 * 
@@ -308,7 +313,7 @@ declare module "xml" {
 		 * 
 		 * 
 		 */
-		export function parse(source: Class_Buffer, type?: string/** = "text/xml"*/): Class_XmlDocument;
+		export function parse(source?: Class_Buffer, type?: string/** = "text/xml"*/): Class_XmlDocument;
 	
 		/**
 		 * 
@@ -319,7 +324,7 @@ declare module "xml" {
 		 * 
 		 * 
 		 */
-		export function serialize(node: Class_XmlNode): string;
+		export function serialize(node?: Class_XmlNode): string;
 	
 	} /** end of `module xml` */
 	export = xml

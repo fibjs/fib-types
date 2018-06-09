@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -36,7 +39,7 @@ declare class Class_XmlText extends Class_XmlCharacterData {
 	 * 
 	 * 
 	 */
-	splitText(offset: number): Class_XmlText;
+	splitText(offset?: number): Class_XmlText;
 
 } /** endof class */
 

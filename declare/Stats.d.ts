@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -31,7 +34,7 @@ declare class Class_Stats extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(keys: any[]);
+	constructor(keys?: any[]);
 
 	/**
 	 * 
@@ -42,7 +45,7 @@ declare class Class_Stats extends Class__object {
 	 * 
 	 * 
 	 */
-	constructor(staticKeys: any[], keys: any[]);
+	constructor(staticKeys?: any[], keys?: any[]);
 
 	/**
 	 * 
@@ -52,7 +55,7 @@ declare class Class_Stats extends Class__object {
 	 * 
 	 * 
 	 */
-	inc(key: string): void;
+	inc(key?: string): void;
 
 	/**
 	 * 
@@ -62,7 +65,7 @@ declare class Class_Stats extends Class__object {
 	 * 
 	 * 
 	 */
-	dec(key: string): void;
+	dec(key?: string): void;
 
 	/**
 	 * 
@@ -73,7 +76,7 @@ declare class Class_Stats extends Class__object {
 	 * 
 	 * 
 	 */
-	add(key: string, value: number): void;
+	add(key?: string, value?: number): void;
 
 	/**
 	 * 

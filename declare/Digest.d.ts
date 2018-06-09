@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -44,7 +47,7 @@ declare class Class_Digest extends Class__object {
 	 * 
 	 * 
 	 */
-	update(data: Class_Buffer): Class_Digest;
+	update(data?: Class_Buffer): Class_Digest;
 
 	/**
 	 * 
@@ -55,7 +58,7 @@ declare class Class_Digest extends Class__object {
 	 * 
 	 * 
 	 */
-	digest(data: Class_Buffer): Class_Buffer;
+	digest(data?: Class_Buffer): Class_Buffer;
 
 	/**
 	 * 

@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -216,7 +219,7 @@ declare module "timers" {
 		 * 
 		 * 
 		 */
-		export function setTimeout(callback: Function, timeout: number, ...args: any[]): Class_Timer;
+		export function setTimeout(callback?: Function, timeout?: number, ...args: any[]): Class_Timer;
 	
 		/**
 		 * 
@@ -226,7 +229,7 @@ declare module "timers" {
 		 * 
 		 * 
 		 */
-		export function clearTimeout(t: any): void;
+		export function clearTimeout(t?: any): void;
 	
 		/**
 		 * 
@@ -239,7 +242,7 @@ declare module "timers" {
 		 * 
 		 * 
 		 */
-		export function setInterval(callback: Function, timeout: number, ...args: any[]): Class_Timer;
+		export function setInterval(callback?: Function, timeout?: number, ...args: any[]): Class_Timer;
 	
 		/**
 		 * 
@@ -249,7 +252,7 @@ declare module "timers" {
 		 * 
 		 * 
 		 */
-		export function clearInterval(t: any): void;
+		export function clearInterval(t?: any): void;
 	
 		/**
 		 * 
@@ -276,7 +279,7 @@ declare module "timers" {
 		 * 
 		 * 
 		 */
-		export function setHrInterval(callback: Function, timeout: number, ...args: any[]): Class_Timer;
+		export function setHrInterval(callback?: Function, timeout?: number, ...args: any[]): Class_Timer;
 	
 		/**
 		 * 
@@ -286,7 +289,7 @@ declare module "timers" {
 		 * 
 		 * 
 		 */
-		export function clearHrInterval(t: any): void;
+		export function clearHrInterval(t?: any): void;
 	
 		/**
 		 * 
@@ -298,7 +301,7 @@ declare module "timers" {
 		 * 
 		 * 
 		 */
-		export function setImmediate(callback: Function, ...args: any[]): Class_Timer;
+		export function setImmediate(callback?: Function, ...args: any[]): Class_Timer;
 	
 		/**
 		 * 
@@ -308,7 +311,7 @@ declare module "timers" {
 		 * 
 		 * 
 		 */
-		export function clearImmediate(t: any): void;
+		export function clearImmediate(t?: any): void;
 	
 	} /** end of `module timers` */
 	export = timers

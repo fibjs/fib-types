@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -113,7 +116,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	request(conn: Class_Stream, req: Class_HttpRequest): Class_HttpResponse;
+	request(conn?: Class_Stream, req?: Class_HttpRequest): Class_HttpResponse;
 
 	/**
 	 * 
@@ -136,7 +139,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	request(method: string, url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	request(method?: string, url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -158,7 +161,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	get(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	get(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -180,7 +183,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	post(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	post(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -202,7 +205,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	del(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	del(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -224,7 +227,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	put(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	put(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -246,7 +249,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	patch(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	patch(url?: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 } /** endof class */
 

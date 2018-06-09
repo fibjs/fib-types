@@ -1,6 +1,9 @@
 /***************************************************************************
  *                                                                         *
- *   This file was automatically generated with idlc.js                   *
+ *   This file was automatically generated with idlc.js                    *
+ *	 build info: 								   						   *
+ *   	- fibjs	: 0.25.0-dev                                               *
+ *   	- date	: Jun  9 2018 20:50:38                                     *
  *                                                                         *
  ***************************************************************************/
 
@@ -215,6 +218,8 @@ declare module "global" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 二进制数据缓存对象，用于 io 读写的数据处理，参见 Buffer 对象。","deprecated":null,"name":"Buffer","type":"Buffer","doc":{"descript":"二进制数据缓存对象，用于 io 读写的数据处理，参见 Buffer 对象。","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 二进制数据缓存对象，用于 io 读写的数据处理，参见 Buffer 对象。","deprecated":null,"name":"Buffer","type":"Buffer","doc":{"descript":"二进制数据缓存对象，用于 io 读写的数据处理，参见 Buffer 对象。","detail":[],"params":[]}}]} */
 		
 		export class Buffer extends Class_Buffer {}
 		
@@ -224,6 +229,8 @@ declare module "global" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 64位整数对象，参见 Int64 对象。","deprecated":null,"name":"Int64","type":"Int64","doc":{"descript":"64位整数对象，参见 Int64 对象。","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 64位整数对象，参见 Int64 对象。","deprecated":null,"name":"Int64","type":"Int64","doc":{"descript":"64位整数对象，参见 Int64 对象。","detail":[],"params":[]}}]} */
 		
 		export class Int64 extends Class_Int64 {}
 		
@@ -233,6 +240,8 @@ declare module "global" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 控制台访问对象 ","deprecated":null,"name":"console","type":"console","doc":{"descript":"控制台访问对象","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 控制台访问对象 ","deprecated":null,"name":"console","type":"console","doc":{"descript":"控制台访问对象","detail":[],"params":[]}}]} */
 		
 		export class console extends Class_console {}
 		
@@ -242,6 +251,8 @@ declare module "global" {
 		 * 
 		 * 
 		 */
+
+		/** {"memType":"object","comments":"! @brief 进程对象 ","deprecated":null,"name":"process","type":"process","doc":{"descript":"进程对象","detail":[],"params":[]},"overs":[{"memType":"object","comments":"! @brief 进程对象 ","deprecated":null,"name":"process","type":"process","doc":{"descript":"进程对象","detail":[],"params":[]}}]} */
 		
 		export class process extends Class_process {}
 		
@@ -256,7 +267,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function run(fname: string, argv?: any[]/** = v8::Array::New(isolate)*/): void;
+		export function run(fname?: string, argv?: any[]/** = v8::Array::New(isolate)*/): void;
 	
 		/**
 		 * 
@@ -323,7 +334,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function require(id: string): any;
+		export function require(id?: string): any;
 	
 		/**
 		 * 
@@ -336,7 +347,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function setTimeout(callback: Function, timeout: number, ...args: any[]): Class_Timer;
+		export function setTimeout(callback?: Function, timeout?: number, ...args: any[]): Class_Timer;
 	
 		/**
 		 * 
@@ -346,7 +357,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function clearTimeout(t: any): void;
+		export function clearTimeout(t?: any): void;
 	
 		/**
 		 * 
@@ -359,7 +370,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function setInterval(callback: Function, timeout: number, ...args: any[]): Class_Timer;
+		export function setInterval(callback?: Function, timeout?: number, ...args: any[]): Class_Timer;
 	
 		/**
 		 * 
@@ -369,7 +380,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function clearInterval(t: any): void;
+		export function clearInterval(t?: any): void;
 	
 		/**
 		 * 
@@ -396,7 +407,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function setHrInterval(callback: Function, timeout: number, ...args: any[]): Class_Timer;
+		export function setHrInterval(callback?: Function, timeout?: number, ...args: any[]): Class_Timer;
 	
 		/**
 		 * 
@@ -406,7 +417,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function clearHrInterval(t: any): void;
+		export function clearHrInterval(t?: any): void;
 	
 		/**
 		 * 
@@ -418,7 +429,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function setImmediate(callback: Function, ...args: any[]): Class_Timer;
+		export function setImmediate(callback?: Function, ...args: any[]): Class_Timer;
 	
 		/**
 		 * 
@@ -428,7 +439,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function clearImmediate(t: any): void;
+		export function clearImmediate(t?: any): void;
 	
 		/**
 		 * 
@@ -499,7 +510,7 @@ declare module "global" {
 		 * 
 		 * 
 		 */
-		export function repl(out: Class_Stream, cmds?: any[]/** = v8::Array::New(isolate)*/): void;
+		export function repl(out?: Class_Stream, cmds?: any[]/** = v8::Array::New(isolate)*/): void;
 	
 	} /** end of `module global` */
 	export = global
