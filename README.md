@@ -32,7 +32,9 @@ import fs from 'fs' // wrong
 | @types/fibjs(fib-types) | fibjs |
 | --- | --- |
 | 1.0.2 | 0.25.0 |
-| 1.0.3 | 0.25.0 |
+| 1.0.3(depreacted) | 0.25.0 |
+| 1.0.4 | 0.25.0 |
+| 1.0.5 | 0.25.0 |
 
 ## TODO
 
