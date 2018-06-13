@@ -14,7 +14,7 @@
 /// <reference path="object.d.ts" />
 
 
-import gd = require('gd')
+
 
 
 
