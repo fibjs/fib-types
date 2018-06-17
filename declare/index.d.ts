@@ -66,12 +66,6 @@
 import _Global from 'global';
 import _Process from 'process';
 
-// declare const process: typeof _Process;
-// declare const global: typeof _Global;
-// declare const __filename: string;
-// declare const __dirname: string;
-// declare const require: typeof _Global.require;
-
 type GlobalExportsType = any;
 interface ModuleType {
 	exports: GlobalExportsType;
@@ -86,7 +80,7 @@ interface RealProcess extends O_Process {
 
 declare global {
 	var exports: GlobalExportsType;
-	const module: ModuleType;
+	const module: FibModule;
 	const __filename: string;
 	const __dirname: string;
 	const process: RealProcess;
@@ -100,7 +94,7 @@ declare global {
 	const Master: typeof Class_Worker;
 	/** const global: Object; */
 	/** const run: null; */
-	const require: typeof _Global.require
+	const require: FibRequire;
 	/** const setTimeout: Timer; */
 	/** const clearTimeout: null; */
 	/** const setInterval: Timer; */
@@ -113,4 +107,34 @@ declare global {
 	const repl: typeof _Global.repl
 }
 
+type FibRequireFunction = typeof _Global.require
 
+interface FibRequire extends FibRequireFunction {
+    resolve: RequireResolve;
+    cache: any;
+    extensions: FibExtensions;
+    main: FibModule | undefined;
+}
+
+interface RequireResolve {
+    (id: string, options?: { paths?: string[]; }): string;
+    paths(request: string): string[] | null;
+}
+
+interface FibExtensions {
+    '.js': (m: FibModule, filename: string) => any;
+    '.json': (m: FibModule, filename: string) => any;
+    '.jsc': (m: FibModule, filename: string) => any;
+    [ext: string]: (m: FibModule, filename: string) => any;
+}
+
+interface FibModule {
+    exports: GlobalExportsType;
+    require: FibRequireFunction;
+    id: string;
+    filename: string;
+    loaded: boolean;
+    parent: FibModule | null;
+    children: FibModule[];
+    paths: string[];
+}
