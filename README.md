@@ -5,11 +5,7 @@ fibjs's *.d.ts files for internal modules.
 ## Usage
 
 ```
-# use fibjs's '--install' option
-fibjs --install fib-types --save-dev
-
-# if you like npm
-npm i -S fib-types
+npm i -S @types/fibjs
 ```
 
 ### Hint with IDE
@@ -35,6 +31,8 @@ import fs from 'fs' // wrong
 | 1.0.3(depreacted) | 0.25.0 |
 | 1.0.4 | 0.25.0 |
 | 1.0.5 | 0.25.0 |
+| 1.0.6 | 0.25.0 |
+| 1.0.7 | 0.25.0 |
 
 ## TODO
 
