@@ -299,6 +299,6 @@ declare module "gui" {
 	export = gui
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

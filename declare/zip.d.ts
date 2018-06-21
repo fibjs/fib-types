@@ -278,6 +278,6 @@ declare module "zip" {
 	export = zip
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

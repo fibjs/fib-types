@@ -132,6 +132,6 @@ declare class Class_HttpsServer extends Class_HttpServer {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

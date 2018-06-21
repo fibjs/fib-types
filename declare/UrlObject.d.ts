@@ -274,6 +274,6 @@ declare class Class_UrlObject extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

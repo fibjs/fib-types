@@ -435,6 +435,6 @@ declare module "profiler" {
 	export = profiler
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

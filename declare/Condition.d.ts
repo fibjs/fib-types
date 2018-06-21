@@ -70,6 +70,6 @@ declare class Class_Condition extends Class_Lock {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

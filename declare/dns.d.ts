@@ -234,6 +234,6 @@ declare module "dns" {
 	export = dns
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

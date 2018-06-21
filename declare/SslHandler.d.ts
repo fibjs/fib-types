@@ -101,6 +101,6 @@ declare class Class_SslHandler extends Class_Handler {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

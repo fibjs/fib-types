@@ -328,6 +328,6 @@ declare module "xml" {
 	export = xml
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

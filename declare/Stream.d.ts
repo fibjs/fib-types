@@ -77,6 +77,6 @@ declare class Class_Stream extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

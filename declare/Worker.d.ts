@@ -61,6 +61,6 @@ declare class Class_Worker extends Class_EventEmitter {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

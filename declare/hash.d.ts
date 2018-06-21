@@ -517,6 +517,6 @@ declare module "hash" {
 	export = hash
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

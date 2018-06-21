@@ -582,6 +582,6 @@ declare module "gd" {
 	export = gd
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

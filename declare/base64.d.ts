@@ -235,6 +235,6 @@ declare module "base64" {
 	export = base64
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

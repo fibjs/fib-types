@@ -141,6 +141,6 @@ declare class Class_StringDecoder extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

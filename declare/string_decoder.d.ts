@@ -221,6 +221,6 @@ declare module "string_decoder" {
 	export = string_decoder
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

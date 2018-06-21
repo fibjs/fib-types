@@ -132,6 +132,6 @@ declare class Class_SslServer extends Class_TcpServer {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

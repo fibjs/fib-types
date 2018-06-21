@@ -969,6 +969,6 @@ declare module "util" {
 	export = util
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

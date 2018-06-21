@@ -234,6 +234,6 @@ declare module "hex" {
 	export = hex
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -601,6 +601,6 @@ declare module "crypto" {
 	export = crypto
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

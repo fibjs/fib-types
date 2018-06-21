@@ -310,6 +310,6 @@ declare class Class_XmlNode extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

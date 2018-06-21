@@ -302,6 +302,6 @@ declare module "mq" {
 	export = mq
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

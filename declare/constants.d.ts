@@ -212,6 +212,6 @@ declare module "constants" {
 	export = constants
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

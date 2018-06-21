@@ -98,6 +98,6 @@ declare class Class_SubProcess extends Class_BufferedStream {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

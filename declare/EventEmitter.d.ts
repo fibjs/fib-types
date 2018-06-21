@@ -306,6 +306,6 @@ declare class Class_EventEmitter extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

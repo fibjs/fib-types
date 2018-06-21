@@ -296,6 +296,6 @@ declare class Class_XmlElement extends Class_XmlNode {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

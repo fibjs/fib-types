@@ -158,6 +158,6 @@ declare class Class_LruCache extends Class_EventEmitter {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -85,6 +85,6 @@ declare class Class_X509Crl extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

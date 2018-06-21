@@ -96,6 +96,6 @@ declare class Class_HttpHandler extends Class_HandlerEx {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

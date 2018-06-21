@@ -309,6 +309,6 @@ declare module "zmq" {
 	export = zmq
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

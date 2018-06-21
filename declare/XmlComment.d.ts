@@ -28,6 +28,6 @@ declare class Class_XmlComment extends Class_XmlCharacterData {
 	
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

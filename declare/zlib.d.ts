@@ -508,6 +508,6 @@ declare module "zlib" {
 	export = zlib
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

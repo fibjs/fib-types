@@ -96,6 +96,6 @@ declare class Class_HeapSnapshot extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

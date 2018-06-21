@@ -115,6 +115,6 @@ declare class Class_HeapGraphNode extends Class__object {
 	
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -289,6 +289,6 @@ declare module "dgram" {
 	export = dgram
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

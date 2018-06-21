@@ -79,6 +79,6 @@ declare class Class_WebSocketMessage extends Class_Message {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

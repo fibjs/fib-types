@@ -236,6 +236,6 @@ declare class Class_Int64 extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

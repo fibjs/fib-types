@@ -58,6 +58,6 @@ declare class Class_Chain extends Class_Handler {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

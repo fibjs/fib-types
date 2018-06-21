@@ -172,6 +172,6 @@ declare class Class_SandBox extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

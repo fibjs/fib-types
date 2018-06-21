@@ -221,6 +221,6 @@ declare module "vm" {
 	export = vm
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

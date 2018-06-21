@@ -237,6 +237,14 @@ declare module "uuid" {
 		export const X509 = 3;
 		
 		
+		/**
+		 * 
+		 * @brief 查询和修改 Snowflake 算法的主机 id
+		 * 
+		 * 
+		 */
+		export const hostID: number;
+		
 		
 		
 		
@@ -298,6 +306,6 @@ declare module "uuid" {
 	export = uuid
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

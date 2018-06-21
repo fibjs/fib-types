@@ -257,6 +257,6 @@ declare class Class_Routing extends Class_Handler {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

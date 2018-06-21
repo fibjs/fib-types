@@ -236,6 +236,6 @@ declare module "url" {
 	export = url
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

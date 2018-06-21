@@ -107,6 +107,6 @@ declare class Class_SeekableStream extends Class_Stream {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

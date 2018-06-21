@@ -229,6 +229,14 @@ declare module "fs" {
 		export const SEEK_END = 2;
 		
 		
+		/**
+		 * 
+		 * ! fs模块的常量对象
+		 * 
+		 * 
+		 */
+		export const constants: Object;
+		
 		
 		
 		
@@ -643,6 +651,6 @@ declare module "fs" {
 	export = fs
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

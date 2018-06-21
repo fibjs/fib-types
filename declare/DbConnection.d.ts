@@ -114,6 +114,6 @@ declare class Class_DbConnection extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

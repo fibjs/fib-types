@@ -234,6 +234,6 @@ declare module "bson" {
 	export = bson
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -234,6 +234,6 @@ declare module "json" {
 	export = json
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -381,6 +381,6 @@ declare module "registry" {
 	export = registry
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

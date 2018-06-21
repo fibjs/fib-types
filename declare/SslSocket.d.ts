@@ -134,6 +134,6 @@ declare class Class_SslSocket extends Class_Stream {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

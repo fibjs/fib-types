@@ -391,6 +391,6 @@ declare module "net" {
 	export = net
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

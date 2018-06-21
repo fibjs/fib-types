@@ -64,6 +64,6 @@ declare class Class_MemoryStream extends Class_SeekableStream {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

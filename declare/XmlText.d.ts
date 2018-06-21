@@ -43,6 +43,6 @@ declare class Class_XmlText extends Class_XmlCharacterData {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

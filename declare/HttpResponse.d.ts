@@ -125,6 +125,6 @@ declare class Class_HttpResponse extends Class_HttpMessage {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

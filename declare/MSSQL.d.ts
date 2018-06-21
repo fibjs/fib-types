@@ -38,6 +38,6 @@ declare class Class_MSSQL extends Class_DbConnection {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

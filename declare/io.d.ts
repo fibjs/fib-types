@@ -254,6 +254,6 @@ declare module "io" {
 	export = io
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

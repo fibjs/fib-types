@@ -341,6 +341,6 @@ declare module "encoding" {
 	export = encoding
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

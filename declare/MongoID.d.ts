@@ -28,6 +28,6 @@ declare class Class_MongoID extends Class__object {
 	
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -245,6 +245,6 @@ declare module "base64vlq" {
 	export = base64vlq
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

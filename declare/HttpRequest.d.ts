@@ -120,6 +120,6 @@ declare class Class_HttpRequest extends Class_HttpMessage {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -256,6 +256,6 @@ declare module "punycode" {
 	export = punycode
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

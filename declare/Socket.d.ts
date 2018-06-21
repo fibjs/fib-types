@@ -227,6 +227,6 @@ declare class Class_Socket extends Class_Stream {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

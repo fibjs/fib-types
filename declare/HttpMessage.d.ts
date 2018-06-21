@@ -197,6 +197,6 @@ declare class Class_HttpMessage extends Class_Message {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

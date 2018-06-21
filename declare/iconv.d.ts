@@ -247,6 +247,6 @@ declare module "iconv" {
 	export = iconv
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

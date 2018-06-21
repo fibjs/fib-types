@@ -317,6 +317,6 @@ declare module "timers" {
 	export = timers
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

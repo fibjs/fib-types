@@ -340,6 +340,6 @@ declare module "db" {
 	export = db
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

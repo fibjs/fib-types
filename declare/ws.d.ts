@@ -322,6 +322,6 @@ declare module "ws" {
 	export = ws
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -61,6 +61,6 @@ declare class Class_SQLite extends Class_DbConnection {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

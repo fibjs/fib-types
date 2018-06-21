@@ -139,6 +139,6 @@ declare class Class_BufferedStream extends Class_Stream {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

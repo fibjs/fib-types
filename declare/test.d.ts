@@ -211,6 +211,15 @@ declare module "test" {
 	module test {
 		
 		
+		/**
+		 * 
+		 * @brief 设置和查询慢速测试警告阀值，以 ms 为单位，缺省为 75
+		 * 
+		 * 
+		 * 
+		 */
+		export const slow: number;
+		
 		
 		/**
 		 * 
@@ -352,6 +361,6 @@ declare module "test" {
 	export = test
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -157,6 +157,6 @@ declare class Class_HttpServer extends Class_TcpServer {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

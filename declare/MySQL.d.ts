@@ -62,6 +62,6 @@ declare class Class_MySQL extends Class_DbConnection {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

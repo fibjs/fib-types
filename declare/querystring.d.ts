@@ -262,6 +262,6 @@ declare module "querystring" {
 	export = querystring
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

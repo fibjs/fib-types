@@ -67,6 +67,6 @@ declare class Class_XmlDocumentType extends Class_XmlNode {
 	
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

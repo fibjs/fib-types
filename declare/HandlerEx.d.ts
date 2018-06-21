@@ -85,6 +85,6 @@ declare class Class_HandlerEx extends Class_Handler {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

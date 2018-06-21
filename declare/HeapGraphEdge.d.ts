@@ -92,6 +92,6 @@ declare class Class_HeapGraphEdge extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

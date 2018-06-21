@@ -234,6 +234,6 @@ declare module "base32" {
 	export = base32
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

@@ -789,6 +789,6 @@ declare module "assert" {
 	export = assert
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

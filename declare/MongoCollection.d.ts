@@ -222,6 +222,6 @@ declare class Class_MongoCollection extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

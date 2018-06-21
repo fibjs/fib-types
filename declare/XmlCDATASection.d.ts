@@ -28,6 +28,6 @@ declare class Class_XmlCDATASection extends Class_XmlText {
 	
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

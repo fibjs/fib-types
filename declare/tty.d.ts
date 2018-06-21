@@ -223,6 +223,6 @@ declare module "tty" {
 	export = tty
 }
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

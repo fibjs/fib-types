@@ -171,6 +171,6 @@ declare class Class_Service extends Class_EventEmitter {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 

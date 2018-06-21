@@ -155,6 +155,6 @@ declare class Class_HttpCookie extends Class__object {
 
 } /** endof class */
 
-/** } /** endof `module Or Internal Object` */
+/** endof `module Or Internal Object` */
 
 
