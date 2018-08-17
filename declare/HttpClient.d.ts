@@ -163,7 +163,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	request(method: string, url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	request(method: string, url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -185,7 +185,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	get(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	get(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -207,7 +207,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	post(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	post(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -229,7 +229,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	del(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	del(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -251,7 +251,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	put(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	put(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 	/**
 	 * 
@@ -273,7 +273,7 @@ declare class Class_HttpClient extends Class__object {
 	 * 
 	 * @async
 	 */
-	patch(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+	patch(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 
 } /** endof class */
 

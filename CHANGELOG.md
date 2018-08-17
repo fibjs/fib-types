@@ -1,7 +1,13 @@
 
-v0.25.2 / 2018-08-18
+v0.26.2 / 2018-08-18
 ==================
 
+  * upgrade to adapt to fibjs 0.26.0
+
+v0.25.2 / 2018-08-18
+====================
+
+  * Release v0.25.2
   * reset point
   * fix lack of `member_props` in module, and fix TypeMap.
   * update README.md

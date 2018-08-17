@@ -1,6 +1,6 @@
 {
   "name": "@types/fibjs",
-  "version": "0.25.2",
+  "version": "0.26.0",
   "description": "fibjs's *.d.ts files for internal modules.",
   "main": "index.js",
   "typings": "declare",

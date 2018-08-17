@@ -357,7 +357,7 @@ declare module "http" {
 		 * 
 		 * 
 		 */
-		export function fileHandler(root: string, mimes?: Object/** = v8::Object::New(isolate)*/, autoIndex?: boolean/** = false*/): Class_Handler;
+		export function fileHandler(root: string, mimes?: object/** = v8::Object::New(isolate)*/, autoIndex?: boolean/** = false*/): Class_Handler;
 	
 		/**
 		 * 
@@ -392,7 +392,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function request(method: string, url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function request(method: string, url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -414,7 +414,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function get(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function get(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -436,7 +436,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function post(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function post(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -458,7 +458,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function del(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function del(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -480,7 +480,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function put(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function put(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 		/**
 		 * 
@@ -502,7 +502,7 @@ declare module "http" {
 		 * 
 		 * @async
 		 */
-		export function patch(url: string, opts?: Object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
+		export function patch(url: string, opts?: object/** = v8::Object::New(isolate)*/): Class_HttpResponse;
 	
 	} /** end of `module http` */
 	export = http
