@@ -196,7 +196,7 @@
 
 /** module Or Internal Object */
 /**
-	* @brief 超文本传输协议模块，用以支持 http 协议处理
+	* @brief 超文本传输协议模块，用以支持 http 协议处理，模块别名：https
 	* @detail 
 	*/
 declare module "http" {
@@ -204,6 +204,14 @@ declare module "http" {
 
 	module http {
 		
+		
+		/**
+		 * 
+		 * @brief 返回标准的 HTTP 响应状态码的集合，以及各自的简短描述。
+		 * 
+		 * 
+		 */
+		export const STATUS_CODES: any[];
 		
 		/**
 		 * 
@@ -252,6 +260,22 @@ declare module "http" {
 		 * 
 		 */
 		export const userAgent: string;
+		
+		/**
+		 * 
+		 * @brief 查询和设置 keep-alive 最大缓存连接数，缺省 128
+		 * 
+		 * 
+		 */
+		export const poolSize: number;
+		
+		/**
+		 * 
+		 * @brief 查询和设置 keep-alive 缓存连接超时时间，缺省 10000 ms
+		 * 
+		 * 
+		 */
+		export const poolTimeout: number;
 		
 		
 		/**

@@ -96,6 +96,30 @@ declare class Class_HttpClient extends Class__object {
 	
 	userAgent: string
 	
+	/**
+	 * class prop 
+	 *
+	 * 
+	 * @brief 查询和设置 keep-alive 最大缓存连接数，缺省 128
+	 * 
+	 * 
+	 * @type Integer
+	 */
+	
+	poolSize: number
+	
+	/**
+	 * class prop 
+	 *
+	 * 
+	 * @brief 查询和设置 keep-alive 缓存连接超时时间，缺省 10000 ms
+	 * 
+	 * 
+	 * @type Integer
+	 */
+	
+	poolTimeout: number
+	
 	
 	
 	/**
