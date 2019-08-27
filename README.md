@@ -1,6 +1,8 @@
+**NOTICE** This repo had been migrated to [@fibjs/types](https://github.com/fibjs-modules/types).
+
 # fib-types
 
-fibjs's *.d.ts files for internal modules.
+fibjs's \*.d.ts files for internal modules.
 
 ## Usage
 
